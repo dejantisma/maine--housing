@@ -1,28 +1,31 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { readString } from 'react-papaparse'
 import redfin from './data.js';
 import React, { useEffect, useState } from "react";
-import { Row, Col, Dropdown, Container } from "react-bootstrap";
+import { Row, Col, Dropdown, Container, OverlayTrigger, Tooltip } from "react-bootstrap";
 import Emoji from './emoji'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DatePicker from 'react-date-picker';
-
-
-
+import 'react-date-range/dist/styles.css'; // main css file
+import 'react-date-range/dist/theme/default.css'; // theme css file
 
 const name = <Emoji symbol="🏡" />;
 
 function App() {
 
-  const [date1, setDate1] = useState(new Date(2021, 9));
-  const [date2, setDate2] = useState(new Date(2021, 10));
+  const [date1, setDate1] = useState(new Date(2021, 8));
+  const [date2, setDate2] = useState(new Date(2021, 9));
   const [data, setData] = useState([]);
   const [regions, setRegions] = useState([]);
-  const [neighborhood1, setNeighborhood1] = useState([]);
-  const [neighborhood2, setNeighborhood2] = useState([]);
+  const [statisticButtonTitle, setStatisticButtonTitle] = useState('Metric');
+  const [metric, setMetric] = useState();
+  const [headers, setHeaders] = useState([]);
+  const [neighborhood1, setNeighborhood1] = useState();
+  const [neighborhood2, setNeighborhood2] = useState();
   const [neighborhoodButtonTitle, setneighborhoodButtonTitle] = useState('Neighborhood 1');
   const [neighborhoodButtonTitle2, setneighborhoodButtonTitle2] = useState('Neighborhood 2');
+  
 
   useEffect(() => {
 
@@ -31,6 +34,7 @@ function App() {
       header: true,
       complete: (results) => {
         setData(results.data);
+        setHeaders(results.meta.fields);
         setRegions(results.data.map(item => item.Region).filter((value, index, self) => self.indexOf(value) === index).sort());
       }
     })
@@ -40,67 +44,63 @@ function App() {
 
   const onNeighborhood1DateChange = (date) => {
     setDate1(date);
+    if (!(typeof neighborhood1 === 'undefined' || neighborhood1 === null)) {
+      getNeighborhoodData(neighborhood1.Region, date);
+    }
   }
 
   const onNeighborhood2DateChange = (date) => {
     setDate2(date);
+    if (!(typeof neighborhood2 === 'undefined' || neighborhood2 === null)) {
+      getNeighborhoodData2(neighborhood2.Region, date);
+    }
+
   }
 
-  const getNeighborhoodData = (neighborhood) => {
-
-    // console.log(neighborhood);[65]
-    var neighborhoodArr = data.filter(item => item.Region === neighborhood && item["Month of Period End"] === date1.toLocaleString('default', { month: 'long', year: 'numeric' }));
+  const getNeighborhoodData = (neighborhood, date) => {
+    var neighborhoodArr = data.filter(item => item.Region === neighborhood && item["Month of Period End"] === date.toLocaleString('default', { month: 'long', year: 'numeric' }));
     console.log(neighborhoodArr);
-    //   console.log(date1.toLocaleString('default',{month: 'long', year: 'numeric'}));
-    setneighborhoodButtonTitle(neighborhood);
-    setNeighborhood1(neighborhoodArr[0]);
-    // console.log(value1);
-    // console.log(value2);
-
+    if (neighborhoodArr.length > 0)
+      setNeighborhood1(neighborhoodArr[0]);
   }
 
-
-
-  const getNeighborhoodData2 = (neighborhood) => {
-
-    //  console.log(neighborhood);
-    var neighborhoodArr = data.filter(item => item.Region === neighborhood && item["Month of Period End"] === date2.toLocaleString('default', { month: 'long', year: 'numeric' }));
+  const getNeighborhoodData2 = (neighborhood, date) => {
+    var neighborhoodArr = data.filter(item => item.Region === neighborhood && item["Month of Period End"] === date.toLocaleString('default', { month: 'long', year: 'numeric' }));
     console.log(neighborhoodArr);
-    setneighborhoodButtonTitle2(neighborhood);
-    setNeighborhood2(neighborhoodArr[0]);
-
-
+    if (neighborhoodArr.length > 0)
+      setNeighborhood2(neighborhoodArr[0]);
   }
-
-
 
   return (
     <div className="container">
       <h1 style={{ textAlign: 'center', fontSize: 72 }}>{name}</h1>
       <Container>
         <Row>
-          <Col style={{ textAlign: 'right' }}>
-            <Dropdown onSelect={(e, data) => getNeighborhoodData(data.target.innerText)}>
+          <Col style={{ textAlign: 'center' }}>
+            <Dropdown onSelect={(e, data) => {
+              setneighborhoodButtonTitle(data.target.innerText);
+              getNeighborhoodData(data.target.innerText, date1)
+            }}>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
                 {neighborhoodButtonTitle}
               </Dropdown.Toggle>
-
               <Dropdown.Menu>
                 {regions?.map(obj => {
                   return <Dropdown.Item>{obj}</Dropdown.Item>
                 })}
               </Dropdown.Menu>
             </Dropdown>
-
             <DatePicker
               onChange={onNeighborhood1DateChange}
               value={date1}
             />
           </Col>
 
-          <Col />
-          <Col>
-            <Dropdown onSelect={(e, data) => getNeighborhoodData2(data.target.innerText)}>
+          <Col style={{ textAlign: 'center' }}>
+            <Dropdown onSelect={(e, data) => {
+              setneighborhoodButtonTitle2(data.target.innerText);
+              getNeighborhoodData2(data.target.innerText, date2)
+            }}>
               <Dropdown.Toggle variant="success" id="dropdown-basic">
                 {neighborhoodButtonTitle2}
               </Dropdown.Toggle>
@@ -111,16 +111,43 @@ function App() {
                 })}
               </Dropdown.Menu>
             </Dropdown>
-
             <DatePicker
               onChange={onNeighborhood2DateChange}
               value={date2}
             />
           </Col>
-        </Row>
 
+          <Col style={{ textAlign: 'center' }}>
+            <Dropdown onSelect={(e, data) => {
+              setStatisticButtonTitle(data.target.innerText);
+              setMetric(data.target.innerText);
+              }}>
+              <OverlayTrigger
+                placement='right'
+                overlay={
+                  <Tooltip id={`tooltip-right}`}>
+                    <strong>Mom</strong> = Month over month <strong>Yoy</strong> = Year over year
+                  </Tooltip>
+                }>
+                <Dropdown.Toggle variant="success" id="dropdown-basic">
+                  {statisticButtonTitle}
+                </Dropdown.Toggle>
+              </OverlayTrigger>
+              <Dropdown.Menu>
+                {headers?.slice(6).map(obj => {
+                  return <Dropdown.Item>{obj}</Dropdown.Item>
+                })}
+              </Dropdown.Menu>
+            </Dropdown>
+          </Col>
+        </Row>
         <Row>
-<h3>{neighborhood1?.Region+' had '+neighborhood1?.["Homes Sold"]+ ' homes sold in '+neighborhood1?.["Month of Period End"]}</h3>
+
+          {(!(typeof neighborhood1 === 'undefined' || neighborhood1 === null)) ? <h1>Please set</h1> : <h2>neighborhood1 not set</h2>}
+
+          <h3>{neighborhood1?.Region + ' had ' + neighborhood1?.["Homes Sold"] + ' homes sold in ' + neighborhood1?.["Month of Period End"]}</h3>
+          <h3>{neighborhood2?.Region + ' had ' + neighborhood2?.["Homes Sold"] + ' homes sold in ' + neighborhood2?.["Month of Period End"]}</h3>
+
         </Row>
       </Container>
     </div>
