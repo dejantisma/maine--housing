@@ -3,7 +3,7 @@ import './App.css';
 import { readString } from 'react-papaparse'
 import redfin from './data.js';
 import React, { useEffect, useState } from "react";
-import { Row, Col, Dropdown, Container, OverlayTrigger, Tooltip } from "react-bootstrap";
+import { Row, Col, Dropdown, Container, OverlayTrigger, Tooltip, Alert } from "react-bootstrap";
 import Emoji from './emoji'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DatePicker from 'react-date-picker';
@@ -25,7 +25,12 @@ function App() {
   const [neighborhood2, setNeighborhood2] = useState();
   const [neighborhoodButtonTitle, setneighborhoodButtonTitle] = useState('Neighborhood 1');
   const [neighborhoodButtonTitle2, setneighborhoodButtonTitle2] = useState('Neighborhood 2');
-  
+  const [neighborhood1Selected, setNeighborhood1Selected] = useState(false);
+  const [neighborhood2Selected, setNeighborhood2Selected] = useState(false);
+  const [metricSelected, setMetricSelected] = useState(false);
+  const [allSelected, setAllSelected] = useState(neighborhood1Selected && neighborhood2Selected && metricSelected);
+
+
 
   useEffect(() => {
 
@@ -58,6 +63,8 @@ function App() {
   }
 
   const getNeighborhoodData = (neighborhood, date) => {
+    setNeighborhood1Selected(true);
+    setAllSelected(true && neighborhood2Selected && metricSelected);
     var neighborhoodArr = data.filter(item => item.Region === neighborhood && item["Month of Period End"] === date.toLocaleString('default', { month: 'long', year: 'numeric' }));
     console.log(neighborhoodArr);
     if (neighborhoodArr.length > 0)
@@ -65,6 +72,8 @@ function App() {
   }
 
   const getNeighborhoodData2 = (neighborhood, date) => {
+    setNeighborhood2Selected(true);
+    setAllSelected(neighborhood1Selected && true && metricSelected);
     var neighborhoodArr = data.filter(item => item.Region === neighborhood && item["Month of Period End"] === date.toLocaleString('default', { month: 'long', year: 'numeric' }));
     console.log(neighborhoodArr);
     if (neighborhoodArr.length > 0)
@@ -121,7 +130,9 @@ function App() {
             <Dropdown onSelect={(e, data) => {
               setStatisticButtonTitle(data.target.innerText);
               setMetric(data.target.innerText);
-              }}>
+              setMetricSelected(true);
+              setAllSelected(neighborhood1Selected && neighborhood2Selected && true);
+            }}>
               <OverlayTrigger
                 placement='right'
                 overlay={
@@ -141,12 +152,58 @@ function App() {
             </Dropdown>
           </Col>
         </Row>
+        <br />
         <Row>
 
-          {(!(typeof neighborhood1 === 'undefined' || neighborhood1 === null)) ? <h1>Please set</h1> : <h2>neighborhood1 not set</h2>}
 
+          {((typeof neighborhood1 === 'undefined' || neighborhood1 === null)) ?
+
+
+            <Alert variant="warning">
+              Choose a neighborhood from the first dropdown!
+            </Alert>
+
+
+            : ''}
+
+          {
+
+
+            ((typeof neighborhood2 === 'undefined' || neighborhood2 === null)) ?
+
+              <Alert variant="warning">
+                Choose a neighborhood from the second dropdown!
+              </Alert> : ''
+
+
+
+          }
+
+          {
+
+
+            ((typeof metric === 'undefined' || metric === null)) ?
+
+              <Alert variant="warning">
+                Choose a metric from the second dropdown!
+              </Alert> : ''
+
+
+
+          }
+
+          {allSelected ? 
+          <div>
           <h3>{neighborhood1?.Region + ' had ' + neighborhood1?.["Homes Sold"] + ' homes sold in ' + neighborhood1?.["Month of Period End"]}</h3>
           <h3>{neighborhood2?.Region + ' had ' + neighborhood2?.["Homes Sold"] + ' homes sold in ' + neighborhood2?.["Month of Period End"]}</h3>
+          </div>
+          
+          
+          : ''
+          
+        }
+
+
 
         </Row>
       </Container>
