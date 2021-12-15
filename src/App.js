@@ -3,7 +3,7 @@ import './App.css';
 import { readString } from 'react-papaparse'
 import redfin from './data.js';
 import React, { useEffect, useState } from "react";
-import { Row, Col, Dropdown, Container, OverlayTrigger, Tooltip, Alert } from "react-bootstrap";
+import { Row, Col, Dropdown, Container, OverlayTrigger, Tooltip, Alert,Button,Modal } from "react-bootstrap";
 import Emoji from './emoji'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import DatePicker from 'react-date-picker';
@@ -21,14 +21,20 @@ function App() {
   const [statisticButtonTitle, setStatisticButtonTitle] = useState('Metric');
   const [metric, setMetric] = useState();
   const [headers, setHeaders] = useState([]);
-  const [neighborhood1, setNeighborhood1] = useState();
-  const [neighborhood2, setNeighborhood2] = useState();
+  const [neighborhood1, setNeighborhood1] = useState([]);
+  const [neighborhood2, setNeighborhood2] = useState([]);
   const [neighborhoodButtonTitle, setneighborhoodButtonTitle] = useState('Neighborhood 1');
   const [neighborhoodButtonTitle2, setneighborhoodButtonTitle2] = useState('Neighborhood 2');
   const [neighborhood1Selected, setNeighborhood1Selected] = useState(false);
   const [neighborhood2Selected, setNeighborhood2Selected] = useState(false);
   const [metricSelected, setMetricSelected] = useState(false);
   const [allSelected, setAllSelected] = useState(neighborhood1Selected && neighborhood2Selected && metricSelected);
+  const[dateSuggestion, setDateSuggestion] = useState('');
+
+  //modal vars
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
 
 
@@ -49,16 +55,18 @@ function App() {
 
   const onNeighborhood1DateChange = (date) => {
     setDate1(date);
+    console.log(neighborhood1);
     if (!(typeof neighborhood1 === 'undefined' || neighborhood1 === null)) {
+      console.log('hi');
       getNeighborhoodData(neighborhood1.Region, date);
     }
   }
 
   const onNeighborhood2DateChange = (date) => {
     setDate2(date);
-    if (!(typeof neighborhood2 === 'undefined' || neighborhood2 === null)) {
+  //  if (!(typeof neighborhood2 === 'undefined' || neighborhood2 === null)) {
       getNeighborhoodData2(neighborhood2.Region, date);
-    }
+  //  }
 
   }
 
@@ -67,8 +75,12 @@ function App() {
     setAllSelected(true && neighborhood2Selected && metricSelected);
     var neighborhoodArr = data.filter(item => item.Region === neighborhood && item["Month of Period End"] === date.toLocaleString('default', { month: 'long', year: 'numeric' }));
     console.log(neighborhoodArr);
-    if (neighborhoodArr.length > 0)
+    if(neighborhoodArr.length <= 0){
+      handleShow();
+    }
+    else // (neighborhoodArr.length > 0)
       setNeighborhood1(neighborhoodArr[0]);
+      console.log(neighborhoodArr[0]);
   }
 
   const getNeighborhoodData2 = (neighborhood, date) => {
@@ -78,6 +90,22 @@ function App() {
     console.log(neighborhoodArr);
     if (neighborhoodArr.length > 0)
       setNeighborhood2(neighborhoodArr[0]);
+  }
+
+  const getAvailableDates = (neighborhood) => {
+    return data.filter(item => item.Region === neighborhood).map(item => item['Month of Period End']).filter((value, index, self) => self.indexOf(value) === index) //get all neighborhoods with that neighborhood then get all unique dates
+  }
+
+  const getClosestDate = (neighborhood, date) => {
+    var dates = getAvailableDates(neighborhood);
+    dates.push(date); //add new date
+    dates.sort(function(a,b){
+      return new Date(a) - new Date(b);
+    });
+
+    var i = dates.indexOf(date);
+    return dates.length > 1 ? i === 0 ? dates[i+1] : dates[i-1] : null; //return close date
+  
   }
 
   return (
@@ -155,8 +183,32 @@ function App() {
         <br />
         <Row>
 
+        <Modal show={show} onHide={handleClose}>
+        <Modal.Header closeButton>
+          <Modal.Title>🙁</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>No housing data available for {neighborhoodButtonTitle} during <i>{date1.toLocaleString('default', { month: 'long', year: 'numeric' })}</i>. </Modal.Body>
+        <Modal.Body>There is data for month of period end <i>{getClosestDate(neighborhoodButtonTitle, date1.toLocaleString('default', { month: 'long', year: 'numeric' }))}</i>. Change to this month?
 
-          {((typeof neighborhood1 === 'undefined' || neighborhood1 === null)) ?
+        </Modal.Body>
+      
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+          <Button variant="primary" onClick={() => {
+            handleClose();
+            setDate1(new Date(getClosestDate(neighborhoodButtonTitle, date1.toLocaleString('default', { month: 'long', year: 'numeric' }))));
+         //   getNeighborhoodData(neighborhoodButtonTitle, date1.toLocaleString('default', { month: 'long', year: 'numeric' }));
+           // onNeighborhood1DateChange(new Date(getClosestDate(neighborhoodButtonTitle, date1.toLocaleString('default', { month: 'long', year: 'numeric' }))));
+          }}>
+            Change date
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+
+          {((typeof neighborhood1 === 'undefined' || neighborhood1 === null || neighborhood1.length === 0)) ?
 
 
             <Alert variant="warning">
@@ -169,7 +221,7 @@ function App() {
           {
 
 
-            ((typeof neighborhood2 === 'undefined' || neighborhood2 === null)) ?
+            ((typeof neighborhood2 === 'undefined' || neighborhood2 === null || neighborhood2.length === 0)) ?
 
               <Alert variant="warning">
                 Choose a neighborhood from the second dropdown!
@@ -193,6 +245,7 @@ function App() {
           }
 
           {allSelected ? 
+          
           <div>
           <h3>{neighborhood1?.Region + ' had ' + neighborhood1?.["Homes Sold"] + ' homes sold in ' + neighborhood1?.["Month of Period End"]}</h3>
           <h3>{neighborhood2?.Region + ' had ' + neighborhood2?.["Homes Sold"] + ' homes sold in ' + neighborhood2?.["Month of Period End"]}</h3>
