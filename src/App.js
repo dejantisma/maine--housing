@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import DatePicker from 'react-date-picker';
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
+import { Radar, RadarChart, Tooltip as TooltipRecharts, PolarGrid, Legend, PolarAngleAxis, PolarRadiusAxis, ResponsiveContainer } from 'recharts';
 
 const name = <Emoji symbol="🏡" />;
 
@@ -39,6 +40,7 @@ function App() {
   const [show2, setShow2] = useState(false);
   const handleClose2 = () => setShow2(false);
   const handleShow2 = () => setShow2(true);
+  
 
 
 
@@ -57,12 +59,38 @@ function App() {
   }, [data]);
 
 
+  const getRadarChartData = (neighborhood1, neighborhood2) =>{
+    console.log(neighborhood1);
+    console.log(neighborhood2);
+
+    var metric = ['Homes Sold', 'Inventory', 'New Listings'];
+    var chartData = [];
+    for(var i = 0; i < metric.length; i++){
+
+      chartData.push({
+        metric: metric[i],
+        A: neighborhood1[metric[i]],
+        B: neighborhood2[metric[i]],
+        fullMark: Math.max(neighborhood1[metric[i]],neighborhood2[metric[i]])
+      })
+    }
+    console.log(chartData);
+    var maxMark = chartData.reduce((a, b) => a.fullMark > b.fullMark ? a : b);
+    console.log(maxMark.fullMark);
+
+
+
+return {data: chartData, domainMax: maxMark.fullMark};
+    
+    //return {arr: chartData, domain: };
+
+  }
+
+
   const onNeighborhood1DateChange = (date) => {
     setDate1(date);
-    console.log('setting date 1 change');
     console.log(neighborhood1);
     if (!(typeof neighborhood1 === 'undefined' || neighborhood1 === null)) {
-      console.log('calling neighborhood data..');
       getNeighborhoodData(neighborhood1.Region, date);
     }
   }
@@ -76,7 +104,6 @@ function App() {
   }
 
   const getNeighborhoodData = (neighborhood, date) => {
-    console.log('getting neighborhood data for ' + date);
     setNeighborhood1Selected(true);
     setAllSelected(true && neighborhood2Selected && metricSelected);
     var neighborhoodArr = data.filter(item => item.Region === neighborhood && item["Month of Period End"] === date.toLocaleString('default', { month: 'long', year: 'numeric' }));
@@ -196,7 +223,6 @@ function App() {
           </Col>
         </Row>
         <br />
-        <Row>
 
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton>
@@ -244,64 +270,67 @@ function App() {
 
 
           {((typeof neighborhood1 === 'undefined' || neighborhood1 === null || neighborhood1.length === 0)) ?
-
-
             <Alert variant="warning">
               Choose a neighborhood from the first dropdown!
-            </Alert>
-
-
-            : ''}
-
+            </Alert> : ''}
           {
-
-
             ((typeof neighborhood2 === 'undefined' || neighborhood2 === null || neighborhood2.length === 0)) ?
 
               <Alert variant="warning">
                 Choose a neighborhood from the second dropdown!
               </Alert> : ''
-
-
-
           }
-
           {
-
-
             ((typeof metric === 'undefined' || metric === null)) ?
 
               <Alert variant="warning">
                 Choose a metric from the third dropdown!
               </Alert> : ''
-
-
-
           }
 
-          {allSelected ?
 
-            <div>
+          {allSelected ?
+        <>
+           <Row>
               <br />
               <h3 style={{ textAlign: 'center' }}>{neighborhood1?.Region + ' had a value of ' + neighborhood1?.[`${metric}`] + ` ${metric} during ` + neighborhood1?.["Month of Period End"]}</h3>
               <h3 style={{ textAlign: 'center' }}>{neighborhood2?.Region + ' had a value of ' + neighborhood2?.[`${metric}`] + ` ${metric} during ` + neighborhood2?.["Month of Period End"]}</h3>
-              <br />
+              </Row>
+             <br />
 
+<Row>
               <ProgressBar>
-                <ProgressBar variant="success" label={neighborhood1?.Region} now={100*parseInt(neighborhood1?.[`${metric}`])/(parseInt(neighborhood1?.[`${metric}`])+parseInt(neighborhood2?.[`${metric}`]))} key={1} />
-                <ProgressBar variant="danger" label={neighborhood2?.Region} now={100*parseInt(neighborhood2?.[`${metric}`])/(parseInt(neighborhood1?.[`${metric}`])+parseInt(neighborhood2?.[`${metric}`]))} key={2} />
+                <ProgressBar variant="success" label={neighborhood1?.Region} now={100 * parseInt(neighborhood1?.[`${metric}`]) / (parseInt(neighborhood1?.[`${metric}`]) + parseInt(neighborhood2?.[`${metric}`]))} key={1} />
+                <ProgressBar variant="danger" label={neighborhood2?.Region} now={100 * parseInt(neighborhood2?.[`${metric}`]) / (parseInt(neighborhood1?.[`${metric}`]) + parseInt(neighborhood2?.[`${metric}`]))} key={2} />
               </ProgressBar>
+              </Row>
 
-            </div>
+              <br />
+           <Row className="justify-content-md-center">
+              <ResponsiveContainer width={700} height={800}>
+        <RadarChart cx="50%" cy="50%" outerRadius="80%" data={getRadarChartData(neighborhood1,neighborhood2).data}>
+        <TooltipRecharts/>
+          <PolarGrid />    
+          <PolarAngleAxis dataKey="metric" />
+          <PolarRadiusAxis angle={45} domain={[0, getRadarChartData(neighborhood1,neighborhood2).domainMax]} />
+          <Radar name={neighborhood1.Region} dataKey="A" stroke="#8884d8" fill="#8884d8" fillOpacity={0.6} />
+          <Radar name={neighborhood2.Region} dataKey="B" stroke="#82ca9d" fill="#82ca9d" fillOpacity={0.6} />
+          <Legend />
+        </RadarChart>
+        
+      </ResponsiveContainer>
+      </Row>
+      </>
 
+     
 
             : ''
 
           }
 
 
-
-        </Row>
+      
+    
       </Container>
     </div>
   );
