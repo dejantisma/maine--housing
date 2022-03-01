@@ -1,163 +1,167 @@
 ﻿const data =
 `Region,Month of Period End,Property Type,Region Type,Seasonally Adjusted,State Code,Avg Sale To List,Avg Sale To List Mom,Avg Sale To List Yoy,Homes Sold,Homes Sold Mom,Homes Sold Yoy,Inventory,Inventory Mom,Inventory Yoy,Median Dom,Median Dom Mom,Median Dom Yoy,Median Sale Price,Median Sale Price Mom,Median Sale Price Yoy,New Listings,New Listings Mom,New Listings Yoy
-"Portland, ME",May 2015,All Residential,Place/City,False,ME,0.988866614,,,99,,,253,,,14,,,$255K,,,150,,
-"Portland, ME",June 2015,All Residential,Place/City,False,ME,0.984599556,-0.4%,,139,40.4%,,281,11.1%,,22,8,,$279K,9.1%,,145,-3.3%,
-"Portland, ME",July 2015,All Residential,Place/City,False,ME,0.986417222,0.2%,,112,-19.4%,,274,-2.5%,,14,-8,,$262K,-5.9%,,121,-16.6%,
-"Portland, ME",August 2015,All Residential,Place/City,False,ME,0.985730158,-0.1%,,115,2.7%,,295,7.7%,,20,6,,$262K,-0.2%,,119,-1.7%,
-"Portland, ME",September 2015,All Residential,Place/City,False,ME,0.988654100,0.3%,,104,-9.6%,,327,10.8%,,25,5,,$277K,5.8%,,117,-1.7%,
-"Portland, ME",October 2015,All Residential,Place/City,False,ME,0.984348397,-0.4%,,86,-17.3%,,321,-1.8%,,26,1,,$235K,-15.1%,,118,0.9%,
-"Portland, ME",November 2015,All Residential,Place/City,False,ME,0.981707641,-0.3%,,62,-27.9%,,276,-14.0%,,33,7,,$274K,16.6%,,63,-46.6%,
-"Portland, ME",December 2015,All Residential,Place/City,False,ME,0.981267499,0.0%,,87,40.3%,,253,-8.3%,,30,-3,,$248K,-9.7%,,52,-17.5%,
-"Portland, ME",January 2016,All Residential,Place/City,False,ME,0.972895618,-0.8%,,73,-16.1%,,226,-10.7%,,54,24,,$260K,5.1%,,76,46.2%,
-"Portland, ME",February 2016,All Residential,Place/City,False,ME,0.978634014,0.6%,,56,-23.3%,,204,-9.7%,,55,1,,$239K,-8.3%,,66,-13.2%,
-"Portland, ME",March 2016,All Residential,Place/City,False,ME,0.986606698,0.8%,,70,25.0%,,214,4.9%,,36,-19,,$242K,1.6%,,129,95.5%,
-"Portland, ME",April 2016,All Residential,Place/City,False,ME,0.986241376,0.0%,,87,24.3%,,232,8.4%,,22,-14,,$257K,6.1%,,157,21.7%,
-"Portland, ME",May 2016,All Residential,Place/City,False,ME,1.005792146,2.0%,1.7%,123,41.4%,24.2%,243,4.7%,-4.0%,12,-10,-2,$268K,4.1%,4.8%,128,-18.5%,-14.7%
-"Portland, ME",June 2016,All Residential,Place/City,False,ME,0.998851255,-0.7%,1.4%,114,-7.3%,-18.0%,250,2.9%,-11.0%,12,0,-10,$276K,3.0%,-1.1%,106,-17.2%,-26.9%
-"Portland, ME",July 2016,All Residential,Place/City,False,ME,0.993289223,-0.6%,0.7%,98,-14.0%,-12.5%,244,-2.4%,-10.9%,16,4,2,$287K,4.1%,9.5%,98,-7.5%,-19.0%
-"Portland, ME",August 2016,All Residential,Place/City,False,ME,1.000062455,0.7%,1.4%,87,-11.2%,-24.3%,243,-0.4%,-17.6%,12,-4,-8,$308K,7.4%,17.8%,119,21.4%,0.0%
-"Portland, ME",September 2016,All Residential,Place/City,False,ME,0.988503031,-1.2%,0.0%,77,-11.5%,-26.0%,236,-2.9%,-27.8%,14,2,-11,$270K,-12.3%,-2.4%,107,-10.1%,-8.5%
-"Portland, ME",October 2016,All Residential,Place/City,False,ME,0.981179604,-0.7%,-0.3%,107,39.0%,24.4%,219,-7.2%,-31.8%,28,14,2,$300K,11.1%,27.7%,89,-16.8%,-24.6%
-"Portland, ME",November 2016,All Residential,Place/City,False,ME,0.992517117,1.1%,1.1%,102,-4.7%,64.5%,196,-10.5%,-29.0%,22,-6,-11,$300K,0.0%,9.5%,68,-23.6%,7.9%
-"Portland, ME",December 2016,All Residential,Place/City,False,ME,0.984620444,-0.8%,0.3%,82,-19.6%,-5.7%,170,-13.3%,-32.8%,34,12,4,$307K,2.5%,24.2%,39,-42.6%,-25.0%
-"Portland, ME",January 2017,All Residential,Place/City,False,ME,0.986858339,0.2%,1.4%,72,-12.2%,-1.4%,154,-9.4%,-31.9%,41,7,-13,$287K,-6.7%,10.4%,62,59.0%,-18.4%
-"Portland, ME",February 2017,All Residential,Place/City,False,ME,0.976054368,-1.1%,-0.3%,48,-33.3%,-14.3%,136,-11.7%,-33.3%,62,21,7,$281K,-2.3%,17.6%,51,-17.7%,-22.7%
-"Portland, ME",March 2017,All Residential,Place/City,False,ME,0.991806137,1.6%,0.5%,75,56.3%,7.1%,163,19.9%,-23.8%,27,-35,-9,$300K,7.0%,23.9%,125,145.1%,-3.1%
-"Portland, ME",April 2017,All Residential,Place/City,False,ME,0.999918968,0.8%,1.4%,64,-14.7%,-26.4%,160,-1.8%,-31.0%,25,-2,3,$293K,-2.5%,13.8%,104,-16.8%,-33.8%
-"Portland, ME",May 2017,All Residential,Place/City,False,ME,0.995819770,-0.4%,-1.0%,92,43.8%,-25.2%,170,6.3%,-30.0%,13,-12,1,$301K,2.9%,12.5%,150,44.2%,17.2%
-"Portland, ME",June 2017,All Residential,Place/City,False,ME,0.992942507,-0.3%,-0.6%,132,43.5%,15.8%,200,17.6%,-20.0%,12,-1,0,$296K,-1.7%,7.4%,139,-7.3%,31.1%
-"Portland, ME",July 2017,All Residential,Place/City,False,ME,1.000700012,0.8%,0.7%,95,-28.0%,-3.1%,186,-7.0%,-23.8%,11,-1,-5,$300K,1.2%,4.4%,93,-33.1%,-5.1%
-"Portland, ME",August 2017,All Residential,Place/City,False,ME,0.998003463,-0.3%,-0.2%,114,20.0%,31.0%,199,7.0%,-18.1%,15,4,3,$300K,0.0%,-2.8%,111,19.4%,-6.7%
-"Portland, ME",September 2017,All Residential,Place/City,False,ME,0.992454601,-0.6%,0.4%,91,-20.2%,18.2%,202,1.5%,-14.4%,24,9,10,$325K,8.5%,20.4%,96,-13.5%,-10.3%
-"Portland, ME",October 2017,All Residential,Place/City,False,ME,0.982769657,-1.0%,0.2%,71,-22.0%,-33.6%,187,-7.4%,-14.6%,26,2,-2,$280K,-13.8%,-6.7%,85,-11.5%,-4.5%
-"Portland, ME",November 2017,All Residential,Place/City,False,ME,0.999661819,1.7%,0.7%,85,19.7%,-16.7%,147,-21.4%,-25.0%,33,7,11,$332K,18.6%,10.7%,58,-31.8%,-14.7%
-"Portland, ME",December 2017,All Residential,Place/City,False,ME,0.992518490,-0.7%,0.8%,94,10.6%,14.6%,116,-21.1%,-31.8%,16,-17,-18,$324K,-2.5%,5.3%,39,-32.8%,0.0%
-"Portland, ME",January 2018,All Residential,Place/City,False,ME,0.995061292,0.3%,0.8%,66,-29.8%,-8.3%,106,-8.6%,-31.2%,32,16,-9,$315K,-2.7%,9.8%,61,56.4%,-1.6%
-"Portland, ME",February 2018,All Residential,Place/City,False,ME,0.986709612,-0.8%,1.1%,50,-24.2%,4.2%,95,-10.4%,-30.1%,26,-6,-36,$286K,-9.2%,2.0%,52,-14.8%,2.0%
-"Portland, ME",March 2018,All Residential,Place/City,False,ME,0.991047751,0.4%,-0.1%,66,32.0%,-12.0%,87,-8.4%,-46.6%,24,-2,-3,$344K,20.2%,14.6%,78,50.0%,-37.6%
-"Portland, ME",April 2018,All Residential,Place/City,False,ME,1.005183082,1.4%,0.5%,80,21.2%,25.0%,104,19.5%,-35.0%,9,-15,-16,$325K,-5.6%,10.9%,106,35.9%,1.9%
-"Portland, ME",May 2018,All Residential,Place/City,False,ME,1.002504952,-0.3%,0.7%,89,11.3%,-3.3%,113,8.7%,-33.5%,10,1,-3,$334K,2.9%,11.0%,139,31.1%,-7.3%
-"Portland, ME",June 2018,All Residential,Place/City,False,ME,1.002930204,0.0%,1.0%,110,23.6%,-16.7%,173,53.1%,-13.5%,8,-2,-4,$340K,1.8%,14.9%,163,17.3%,17.3%
-"Portland, ME",July 2018,All Residential,Place/City,False,ME,0.998661063,-0.4%,-0.2%,118,7.3%,24.2%,188,8.7%,1.1%,11,3,0,$415K,21.9%,38.4%,119,-27.0%,28.0%
-"Portland, ME",August 2018,All Residential,Place/City,False,ME,0.992458727,-0.6%,-0.6%,113,-4.2%,-0.9%,198,5.3%,-0.5%,15,4,0,$360K,-13.2%,20.2%,115,-3.4%,3.6%
-"Portland, ME",September 2018,All Residential,Place/City,False,ME,1.000954065,0.8%,0.8%,81,-28.3%,-11.0%,236,19.2%,16.8%,14,-1,-10,$315K,-12.5%,-3.1%,129,12.2%,34.4%
-"Portland, ME",October 2018,All Residential,Place/City,False,ME,0.986117262,-1.5%,0.3%,91,12.3%,28.2%,250,5.9%,33.7%,17,3,-9,$372K,18.1%,32.9%,126,-2.3%,48.2%
-"Portland, ME",November 2018,All Residential,Place/City,False,ME,0.990906750,0.5%,-0.9%,82,-9.9%,-3.5%,240,-4.0%,63.3%,21,4,-12,$310K,-16.6%,-6.6%,63,-50.0%,8.6%
-"Portland, ME",December 2018,All Residential,Place/City,False,ME,0.976876157,-1.4%,-1.6%,60,-26.8%,-36.2%,205,-14.6%,76.7%,33,12,17,$293K,-5.7%,-9.7%,43,-31.7%,10.3%
-"Portland, ME",January 2019,All Residential,Place/City,False,ME,0.979161119,0.2%,-1.6%,47,-21.7%,-28.8%,188,-8.3%,77.4%,33,0,1,$323K,10.4%,2.5%,60,39.5%,-1.6%
-"Portland, ME",February 2019,All Residential,Place/City,False,ME,0.982836975,0.4%,-0.4%,65,38.3%,30.0%,194,3.2%,104.2%,49,16,23,$330K,2.2%,15.4%,91,51.7%,75.0%
-"Portland, ME",March 2019,All Residential,Place/City,False,ME,0.983180381,0.0%,-0.8%,87,33.8%,31.8%,188,-3.1%,116.1%,34,-15,10,$350K,6.1%,1.8%,83,-8.8%,6.4%
-"Portland, ME",April 2019,All Residential,Place/City,False,ME,0.990971767,0.8%,-1.4%,79,-9.2%,-1.3%,211,12.2%,102.9%,15,-19,6,$362K,3.4%,11.6%,136,63.9%,28.3%
-"Portland, ME",May 2019,All Residential,Place/City,False,ME,1.009673180,1.9%,0.7%,108,36.7%,21.3%,247,17.1%,118.6%,9,-6,-1,$338K,-6.8%,1.0%,160,17.6%,15.1%
-"Portland, ME",June 2019,All Residential,Place/City,False,ME,1.009028522,-0.1%,0.6%,123,13.9%,11.8%,233,-5.7%,34.7%,12,3,4,$345K,2.2%,1.5%,134,-16.3%,-17.8%
-"Portland, ME",July 2019,All Residential,Place/City,False,ME,1.006688174,-0.2%,0.8%,126,2.4%,6.8%,254,9.0%,35.1%,14,2,3,$352K,2.1%,-15.0%,143,6.7%,20.2%
-"Portland, ME",August 2019,All Residential,Place/City,False,ME,1.002028055,-0.5%,1.0%,112,-11.1%,-0.9%,238,-6.3%,20.2%,14,0,-1,$336K,-4.6%,-6.7%,102,-28.7%,-11.3%
-"Portland, ME",September 2019,All Residential,Place/City,False,ME,0.982215617,-2.0%,-1.9%,84,-25.0%,3.7%,261,9.7%,10.6%,18,4,4,$344K,2.3%,9.1%,117,14.7%,-9.3%
-"Portland, ME",October 2019,All Residential,Place/City,False,ME,0.987986772,0.6%,0.2%,86,2.4%,-5.5%,220,-15.7%,-12.0%,20,2,3,$323K,-6.1%,-13.2%,81,-30.8%,-35.7%
-"Portland, ME",November 2019,All Residential,Place/City,False,ME,0.982052419,-0.6%,-0.9%,85,-1.2%,3.7%,196,-10.9%,-18.3%,20,0,-1,$330K,2.2%,6.4%,54,-33.3%,-14.3%
-"Portland, ME",December 2019,All Residential,Place/City,False,ME,0.989107887,0.7%,1.2%,79,-7.1%,31.7%,155,-20.9%,-24.4%,28,8,-5,$335K,1.5%,14.5%,46,-14.8%,7.0%
-"Portland, ME",January 2020,All Residential,Place/City,False,ME,0.984558226,-0.5%,0.5%,61,-22.8%,29.8%,153,-1.3%,-18.6%,32,4,-1,$314K,-6.3%,-2.8%,58,26.1%,-3.3%
-"Portland, ME",February 2020,All Residential,Place/City,False,ME,0.987209600,0.3%,0.4%,53,-13.1%,-18.5%,123,-19.6%,-36.6%,35,3,-14,$349K,11.1%,5.8%,47,-19.0%,-48.4%
-"Portland, ME",March 2020,All Residential,Place/City,False,ME,0.990042760,0.3%,0.7%,64,20.8%,-26.4%,137,11.4%,-27.1%,18,-17,-16,$361K,3.4%,3.1%,62,31.9%,-25.3%
-"Portland, ME",April 2020,All Residential,Place/City,False,ME,1.001543252,1.2%,1.1%,53,-17.2%,-32.9%,131,-4.4%,-37.9%,9,-9,-6,$345K,-4.4%,-4.7%,55,-11.3%,-59.6%
-"Portland, ME",May 2020,All Residential,Place/City,False,ME,0.998356852,-0.3%,-1.1%,48,-9.4%,-55.6%,155,18.3%,-37.2%,17,8,8,$387K,12.2%,14.7%,105,90.9%,-34.4%
-"Portland, ME",June 2020,All Residential,Place/City,False,ME,1.006323075,0.8%,-0.3%,80,66.7%,-35.0%,156,0.6%,-33.0%,8,-9,-4,$369K,-4.7%,7.0%,102,-2.9%,-23.9%
-"Portland, ME",July 2020,All Residential,Place/City,False,ME,1.005241695,-0.1%,-0.1%,88,10.0%,-30.2%,150,-3.8%,-40.9%,9,1,-5,$393K,6.4%,11.4%,132,29.4%,-7.7%
-"Portland, ME",August 2020,All Residential,Place/City,False,ME,1.015612772,1.0%,1.4%,107,21.6%,-4.5%,157,4.7%,-34.0%,8,-1,-6,$365K,-7.0%,8.7%,120,-9.1%,17.6%
-"Portland, ME",September 2020,All Residential,Place/City,False,ME,1.015260133,0.0%,3.3%,95,-11.2%,13.1%,144,-8.3%,-44.8%,11,3,-7,$390K,6.8%,13.5%,107,-10.8%,-8.5%
-"Portland, ME",October 2020,All Residential,Place/City,False,ME,1.022783046,0.8%,3.5%,108,13.7%,25.6%,143,-0.7%,-35.0%,8,-3,-12,$406K,4.0%,25.6%,118,10.3%,45.7%
-"Portland, ME",November 2020,All Residential,Place/City,False,ME,1.027772614,0.5%,4.6%,94,-13.0%,10.6%,117,-18.2%,-40.3%,10,2,-10,$395K,-2.6%,19.7%,81,-31.4%,50.0%
-"Portland, ME",December 2020,All Residential,Place/City,False,ME,1.022484600,-0.5%,3.3%,110,17.0%,39.2%,92,-21.4%,-40.6%,13,3,-15,$407K,2.9%,21.3%,40,-50.6%,-13.0%
-"Portland, ME",January 2021,All Residential,Place/City,False,ME,1.004461148,-1.8%,2.0%,67,-39.1%,9.8%,78,-15.2%,-49.0%,12,-1,-20,$448K,10.2%,42.7%,48,20.0%,-17.2%
-"Portland, ME",February 2021,All Residential,Place/City,False,ME,1.016038735,1.2%,2.9%,58,-13.4%,9.4%,79,1.3%,-35.8%,13,1,-22,$455K,1.5%,30.2%,67,39.6%,42.6%
-"Portland, ME",March 2021,All Residential,Place/City,False,ME,1.044292088,2.8%,5.4%,122,110.3%,90.6%,69,-12.7%,-49.6%,35,22,17,$513K,12.9%,42.1%,99,47.8%,59.7%
-"Portland, ME",April 2021,All Residential,Place/City,False,ME,1.064764722,2.0%,6.3%,106,-13.1%,100.0%,88,27.5%,-32.8%,7,-28,-2,$533K,3.9%,54.6%,104,5.1%,89.1%
-"Portland, ME",May 2021,All Residential,Place/City,False,ME,1.068103306,0.3%,7.0%,101,-4.7%,110.4%,87,-1.1%,-43.9%,9,2,-8,$528K,-1.0%,36.4%,110,5.8%,4.8%
-"Portland, ME",June 2021,All Residential,Place/City,False,ME,1.072874063,0.5%,6.7%,125,23.8%,56.3%,105,20.7%,-32.7%,7,-2,-1,$460K,-12.8%,24.7%,135,22.7%,32.4%
-"Portland, ME",July 2021,All Residential,Place/City,False,ME,1.061878657,-1.1%,5.7%,105,-16.0%,19.3%,116,10.5%,-22.7%,7,0,-2,$514K,11.7%,31.0%,111,-17.8%,-15.9%
-"Portland, ME",August 2021,All Residential,Place/City,False,ME,1.053435089,-0.8%,3.8%,103,-1.9%,-3.7%,97,-16.4%,-38.2%,8,1,0,$450K,-12.5%,23.3%,104,-6.3%,-13.3%
-"Portland, ME",September 2021,All Residential,Place/City,False,ME,1.032588935,-2.1%,1.7%,114,10.7%,20.0%,80,-17.5%,-44.4%,10,2,-1,$475K,5.6%,21.8%,100,-3.8%,-6.5%
-"Portland, ME",October 2021,All Residential,Place/City,False,ME,1.019046757,-1.4%,-0.4%,122,7.0%,13.0%,46,-42.5%,-67.8%,16,6,8,$470K,-1.1%,15.9%,50,-50.0%,-57.6%
-"Portland, ME",November 2021,All Residential,Place/City,False,ME,1.037799195,1.9%,1.0%,95,-22.1%,1.1%,50,8.7%,-57.3%,9,-7,-1,$485K,3.2%,22.8%,24,-52.0%,-70.4%
-"Portland, ME metro area",May 2015,All Residential,Metro,False,ME,0.975319406,,,791,,,4687,,,21,,,$232K,,,1690,,
-"Portland, ME metro area",June 2015,All Residential,Metro,False,ME,0.976143547,0.1%,,1113,40.7%,,5071,8.2%,,28,7,,$240K,3.5%,,1557,-7.9%,
-"Portland, ME metro area",July 2015,All Residential,Metro,False,ME,0.975022707,-0.1%,,997,-10.4%,,5174,2.0%,,27,-1,,$237K,-1.3%,,1266,-18.7%,
-"Portland, ME metro area",August 2015,All Residential,Metro,False,ME,0.973341483,-0.2%,,943,-5.4%,,5116,-1.1%,,38,11,,$235K,-0.8%,,1055,-16.7%,
-"Portland, ME metro area",September 2015,All Residential,Metro,False,ME,0.971125703,-0.2%,,901,-4.5%,,5016,-2.0%,,46,8,,$245K,4.3%,,994,-5.8%,
-"Portland, ME metro area",October 2015,All Residential,Metro,False,ME,0.970952273,0.0%,,840,-6.8%,,4565,-9.0%,,56,10,,$237K,-3.3%,,776,-21.9%,
-"Portland, ME metro area",November 2015,All Residential,Metro,False,ME,0.962115862,-0.9%,,626,-25.5%,,4051,-11.3%,,63,7,,$235K,-0.8%,,575,-25.9%,
-"Portland, ME metro area",December 2015,All Residential,Metro,False,ME,0.969988002,0.8%,,752,20.1%,,3589,-11.4%,,64,1,,$231K,-1.7%,,405,-29.6%,
-"Portland, ME metro area",January 2016,All Residential,Metro,False,ME,0.971808302,0.2%,,511,-32.0%,,3294,-8.2%,,77,13,,$225K,-2.6%,,622,53.6%,
-"Portland, ME metro area",February 2016,All Residential,Metro,False,ME,0.962237322,-1.0%,,496,-2.9%,,3204,-2.7%,,82,5,,$230K,2.0%,,689,10.8%,
-"Portland, ME metro area",March 2016,All Residential,Metro,False,ME,0.974022824,1.2%,,628,26.6%,,2986,-6.8%,,71,-11,,$230K,0.2%,,1216,76.5%,
-"Portland, ME metro area",April 2016,All Residential,Metro,False,ME,0.978200750,0.4%,,706,12.4%,,3143,5.3%,,54,-17,,$233K,1.3%,,1321,8.6%,
-"Portland, ME metro area",May 2016,All Residential,Metro,False,ME,0.983010312,0.5%,0.8%,1000,41.6%,26.4%,3305,5.2%,-29.5%,33,-21,12,$241K,3.4%,3.9%,1386,4.9%,-18.0%
-"Portland, ME metro area",June 2016,All Residential,Metro,False,ME,0.981641332,-0.1%,0.5%,1028,2.8%,-7.6%,3468,4.9%,-31.6%,31,-2,3,$251K,4.1%,4.6%,1320,-4.8%,-15.2%
-"Portland, ME metro area",July 2016,All Residential,Metro,False,ME,0.979937119,-0.2%,0.5%,962,-6.4%,-3.5%,3490,0.6%,-32.5%,29,-2,2,$250K,-0.4%,5.5%,1068,-19.1%,-15.6%
-"Portland, ME metro area",August 2016,All Residential,Metro,False,ME,0.981633050,0.2%,0.8%,977,1.6%,3.6%,3359,-3.8%,-34.3%,30,1,-8,$262K,4.8%,11.5%,1042,-2.4%,-1.2%
-"Portland, ME metro area",September 2016,All Residential,Metro,False,ME,0.977335545,-0.4%,0.6%,869,-11.1%,-3.6%,3220,-4.1%,-35.8%,38,8,-8,$253K,-3.6%,3.1%,910,-12.7%,-8.5%
-"Portland, ME metro area",October 2016,All Residential,Metro,False,ME,0.973888988,-0.3%,0.3%,881,1.4%,4.9%,2924,-9.2%,-35.9%,43,5,-13,$252K,-0.4%,6.2%,747,-17.9%,-3.7%
-"Portland, ME metro area",November 2016,All Residential,Metro,False,ME,0.974597699,0.1%,1.2%,766,-13.1%,22.4%,2595,-11.3%,-35.9%,46,3,-17,$255K,1.4%,8.5%,538,-28.0%,-6.4%
-"Portland, ME metro area",December 2016,All Residential,Metro,False,ME,0.978215682,0.4%,0.8%,740,-3.4%,-1.6%,2230,-14.1%,-37.9%,49,3,-15,$255K,0.0%,10.4%,338,-37.2%,-16.5%
-"Portland, ME metro area",January 2017,All Residential,Metro,False,ME,0.972121985,-0.6%,0.0%,526,-28.9%,2.9%,1968,-11.7%,-40.3%,60,11,-17,$246K,-3.5%,9.3%,492,45.6%,-20.9%
-"Portland, ME metro area",February 2017,All Residential,Metro,False,ME,0.975814528,0.4%,1.4%,439,-16.5%,-11.5%,1870,-5.0%,-41.6%,70,10,-12,$244K,-0.8%,6.3%,563,14.4%,-18.3%
-"Portland, ME metro area",March 2017,All Residential,Metro,False,ME,0.977800820,0.2%,0.4%,661,50.6%,5.3%,1974,5.6%,-33.9%,59,-11,-12,$248K,1.4%,7.6%,981,74.2%,-19.3%
-"Portland, ME metro area",April 2017,All Residential,Metro,False,ME,0.984235863,0.6%,0.6%,567,-14.2%,-19.7%,2111,6.9%,-32.8%,40,-19,-14,$260K,4.9%,11.4%,1055,7.5%,-20.1%
-"Portland, ME metro area",May 2017,All Residential,Metro,False,ME,0.987397463,0.3%,0.4%,869,53.3%,-13.1%,2453,16.2%,-25.8%,21,-19,-12,$262K,0.9%,8.7%,1481,40.4%,6.9%
-"Portland, ME metro area",June 2017,All Residential,Metro,False,ME,0.990007549,0.3%,0.8%,1038,19.4%,1.0%,2673,9.0%,-22.9%,17,-4,-14,$270K,3.1%,7.6%,1328,-10.3%,0.6%
-"Portland, ME metro area",July 2017,All Residential,Metro,False,ME,0.989407106,-0.1%,0.9%,915,-11.8%,-4.9%,2704,1.2%,-22.5%,17,0,-12,$270K,0.0%,8.0%,1063,-20.0%,-0.5%
-"Portland, ME metro area",August 2017,All Residential,Metro,False,ME,0.985992609,-0.3%,0.4%,1017,11.1%,4.1%,2738,1.3%,-18.5%,24,7,-6,$274K,1.5%,4.6%,1183,11.3%,13.5%
-"Portland, ME metro area",September 2017,All Residential,Metro,False,ME,0.980234435,-0.6%,0.3%,962,-5.4%,10.7%,2693,-1.6%,-16.4%,29,5,-9,$265K,-3.3%,5.0%,965,-18.4%,6.0%
-"Portland, ME metro area",October 2017,All Residential,Metro,False,ME,0.976796372,-0.3%,0.3%,869,-9.7%,-1.4%,2504,-7.0%,-14.4%,34,5,-9,$266K,0.2%,5.6%,839,-13.1%,12.3%
-"Portland, ME metro area",November 2017,All Residential,Metro,False,ME,0.977388763,0.1%,0.3%,836,-3.8%,9.1%,2156,-13.9%,-16.9%,39,5,-7,$267K,0.7%,4.8%,583,-30.5%,8.4%
-"Portland, ME metro area",December 2017,All Residential,Metro,False,ME,0.979868568,0.2%,0.2%,755,-9.7%,2.0%,1838,-14.7%,-17.6%,36,-3,-13,$267K,-0.2%,4.6%,327,-43.9%,-3.3%
-"Portland, ME metro area",January 2018,All Residential,Metro,False,ME,0.979763047,0.0%,0.8%,546,-27.7%,3.8%,1572,-14.5%,-20.1%,46,10,-14,$270K,1.2%,9.8%,470,43.7%,-4.5%
-"Portland, ME metro area",February 2018,All Residential,Metro,False,ME,0.978725531,-0.1%,0.3%,457,-16.3%,4.1%,1489,-5.3%,-20.4%,60,14,-10,$269K,-0.4%,10.2%,572,21.7%,1.6%
-"Portland, ME metro area",March 2018,All Residential,Metro,False,ME,0.981693286,0.3%,0.4%,626,37.0%,-5.3%,1467,-1.5%,-25.7%,45,-15,-14,$285K,5.9%,15.2%,823,43.9%,-16.1%
-"Portland, ME metro area",April 2018,All Residential,Metro,False,ME,0.987399396,0.6%,0.3%,681,8.8%,20.1%,1585,8.0%,-24.9%,25,-20,-15,$269K,-5.6%,3.6%,1054,28.1%,-0.1%
-"Portland, ME metro area",May 2018,All Residential,Metro,False,ME,0.993424264,0.6%,0.6%,812,19.2%,-6.6%,1930,21.8%,-21.3%,18,-7,-3,$285K,5.9%,8.8%,1434,36.1%,-3.2%
-"Portland, ME metro area",June 2018,All Residential,Metro,False,ME,0.994259367,0.1%,0.4%,1036,27.6%,-0.2%,2231,15.6%,-16.5%,12,-6,-5,$291K,1.9%,7.6%,1373,-4.3%,3.4%
-"Portland, ME metro area",July 2018,All Residential,Metro,False,ME,0.991716468,-0.3%,0.2%,963,-7.0%,5.2%,2388,7.0%,-11.7%,14,2,-3,$295K,1.5%,9.3%,1205,-12.2%,13.4%
-"Portland, ME metro area",August 2018,All Residential,Metro,False,ME,0.989485086,-0.2%,0.3%,1083,12.5%,6.5%,2571,7.7%,-6.1%,21,7,-3,$285K,-3.4%,4.0%,1207,0.2%,2.0%
-"Portland, ME metro area",September 2018,All Residential,Metro,False,ME,0.986252599,-0.3%,0.6%,848,-21.7%,-11.9%,2656,3.3%,-1.4%,23,2,-6,$280K,-1.8%,5.7%,1026,-15.0%,6.3%
-"Portland, ME metro area",October 2018,All Residential,Metro,False,ME,0.982038656,-0.4%,0.5%,888,4.7%,2.2%,2532,-4.7%,1.1%,24,1,-10,$280K,0.0%,5.5%,943,-8.1%,12.4%
-"Portland, ME metro area",November 2018,All Residential,Metro,False,ME,0.980486154,-0.2%,0.3%,806,-9.2%,-3.6%,2338,-7.7%,8.4%,31,7,-8,$295K,5.4%,10.4%,582,-38.3%,-0.2%
-"Portland, ME metro area",December 2018,All Residential,Metro,False,ME,0.981884061,0.1%,0.2%,626,-22.3%,-17.1%,2030,-13.2%,10.4%,33,2,-3,$274K,-7.1%,2.7%,343,-41.1%,4.9%
-"Portland, ME metro area",January 2019,All Residential,Metro,False,ME,0.973927253,-0.8%,-0.6%,417,-33.4%,-23.6%,1810,-10.8%,15.1%,44,11,-2,$275K,0.4%,1.9%,530,54.5%,12.8%
-"Portland, ME metro area",February 2019,All Residential,Metro,False,ME,0.976445103,0.3%,-0.2%,460,10.3%,0.7%,1776,-1.9%,19.3%,57,13,-3,$276K,0.4%,2.6%,623,17.5%,8.9%
-"Portland, ME metro area",March 2019,All Residential,Metro,False,ME,0.982063445,0.6%,0.0%,637,38.5%,1.8%,1778,0.1%,21.2%,52,-5,7,$290K,5.0%,1.7%,811,30.2%,-1.5%
-"Portland, ME metro area",April 2019,All Residential,Metro,False,ME,0.986989732,0.5%,0.0%,671,5.3%,-1.5%,1890,6.3%,19.2%,26,-26,1,$285K,-1.7%,5.9%,1062,30.9%,0.8%
-"Portland, ME metro area",May 2019,All Residential,Metro,False,ME,0.992251521,0.5%,-0.1%,879,31.0%,8.3%,2262,19.7%,17.2%,18,-8,0,$300K,5.3%,5.3%,1492,40.5%,4.0%
-"Portland, ME metro area",June 2019,All Residential,Metro,False,ME,0.992378690,0.0%,-0.2%,1001,13.9%,-3.4%,2402,6.2%,7.7%,13,-5,1,$315K,5.0%,8.4%,1293,-13.3%,-5.8%
-"Portland, ME metro area",July 2019,All Residential,Metro,False,ME,0.995134123,0.3%,0.3%,1004,0.3%,4.3%,2507,4.4%,5.0%,13,0,-1,$305K,-3.1%,3.4%,1210,-6.4%,0.4%
-"Portland, ME metro area",August 2019,All Residential,Metro,False,ME,0.986958091,-0.8%,-0.3%,1082,7.8%,-0.1%,2465,-1.7%,-4.1%,18,5,-3,$299K,-1.9%,5.1%,1092,-9.8%,-9.5%
-"Portland, ME metro area",September 2019,All Residential,Metro,False,ME,0.983990742,-0.3%,-0.2%,864,-20.1%,1.9%,2435,-1.2%,-8.3%,22,4,-1,$309K,3.3%,10.5%,960,-12.1%,-6.4%
-"Portland, ME metro area",October 2019,All Residential,Metro,False,ME,0.986721351,0.3%,0.5%,893,3.4%,0.6%,2203,-9.5%,-13.0%,25,3,1,$294K,-5.0%,5.0%,816,-15.0%,-13.5%
-"Portland, ME metro area",November 2019,All Residential,Metro,False,ME,0.983596937,-0.3%,0.3%,783,-12.3%,-2.9%,1843,-16.3%,-21.2%,26,1,-5,$300K,2.1%,1.8%,547,-33.0%,-6.0%
-"Portland, ME metro area",December 2019,All Residential,Metro,False,ME,0.981513227,-0.2%,0.0%,776,-0.9%,24.0%,1487,-19.3%,-26.7%,33,7,0,$297K,-1.2%,8.2%,324,-40.8%,-5.5%
-"Portland, ME metro area",January 2020,All Residential,Metro,False,ME,0.984417426,0.3%,1.0%,574,-26.0%,37.6%,1351,-9.1%,-25.4%,38,5,-6,$300K,1.2%,9.1%,493,52.2%,-7.0%
-"Portland, ME metro area",February 2020,All Residential,Metro,False,ME,0.987108449,0.3%,1.1%,442,-23.0%,-3.9%,1260,-6.7%,-29.1%,42,4,-15,$300K,0.0%,8.7%,512,3.9%,-17.8%
-"Portland, ME metro area",March 2020,All Residential,Metro,False,ME,0.988898301,0.2%,0.7%,582,31.7%,-8.6%,1375,9.1%,-22.7%,45,3,-7,$316K,5.4%,9.1%,766,49.6%,-5.5%
-"Portland, ME metro area",April 2020,All Residential,Metro,False,ME,0.996540976,0.8%,1.0%,559,-4.0%,-16.7%,1362,-0.9%,-27.9%,16,-29,-10,$310K,-2.0%,8.8%,590,-23.0%,-44.4%
-"Portland, ME metro area",May 2020,All Residential,Metro,False,ME,0.994869966,-0.2%,0.3%,609,8.9%,-30.7%,1413,3.7%,-37.5%,13,-3,-5,$315K,1.6%,5.0%,961,62.9%,-35.6%
-"Portland, ME metro area",June 2020,All Residential,Metro,False,ME,0.998805370,0.4%,0.6%,816,34.0%,-18.5%,1439,1.8%,-40.1%,12,-1,-1,$330K,4.8%,4.8%,1113,15.8%,-13.9%
-"Portland, ME metro area",July 2020,All Residential,Metro,False,ME,1.002952799,0.4%,0.8%,964,18.1%,-4.0%,1381,-4.0%,-44.9%,11,-1,-2,$345K,4.5%,13.1%,1082,-2.8%,-10.6%
-"Portland, ME metro area",August 2020,All Residential,Metro,False,ME,1.004489385,0.2%,1.8%,1034,7.3%,-4.4%,1256,-9.1%,-49.0%,11,0,-7,$352K,2.0%,17.5%,1080,-0.2%,-1.1%
-"Portland, ME metro area",September 2020,All Residential,Metro,False,ME,1.013873455,0.9%,3.0%,1069,3.4%,23.7%,1246,-0.8%,-48.8%,11,0,-11,$350K,-0.6%,13.1%,1075,-0.5%,12.0%
-"Portland, ME metro area",October 2020,All Residential,Metro,False,ME,1.013023357,-0.1%,2.6%,1082,1.2%,21.2%,1233,-1.0%,-44.0%,10,-1,-15,$370K,5.7%,25.8%,1033,-3.9%,26.6%
-"Portland, ME metro area",November 2020,All Residential,Metro,False,ME,1.006944414,-0.6%,2.3%,918,-15.2%,17.2%,1011,-18.0%,-45.1%,11,1,-15,$350K,-5.4%,16.6%,598,-42.1%,9.3%
-"Portland, ME metro area",December 2020,All Residential,Metro,False,ME,1.010622728,0.4%,2.9%,962,4.8%,24.0%,804,-20.5%,-45.9%,11,0,-22,$350K,0.0%,18.0%,397,-33.6%,22.5%
-"Portland, ME metro area",January 2021,All Residential,Metro,False,ME,1.001604364,-0.9%,1.7%,593,-38.4%,3.3%,658,-18.2%,-51.3%,18,7,-20,$347K,-1.0%,15.5%,432,8.8%,-12.4%
-"Portland, ME metro area",February 2021,All Residential,Metro,False,ME,1.012411258,1.1%,2.5%,457,-22.9%,3.4%,630,-4.3%,-50.0%,13,-5,-29,$350K,1.0%,16.7%,526,21.8%,2.7%
-"Portland, ME metro area",March 2021,All Residential,Metro,False,ME,1.029819231,1.7%,4.1%,657,43.8%,12.9%,606,-3.8%,-55.9%,11,-2,-34,$384K,9.6%,21.3%,798,51.7%,4.2%
-"Portland, ME metro area",April 2021,All Residential,Metro,False,ME,1.043622323,1.4%,4.7%,714,8.7%,27.7%,698,15.2%,-48.8%,7,-4,-9,$400K,4.2%,28.9%,881,10.4%,49.3%
-"Portland, ME metro area",May 2021,All Residential,Metro,False,ME,1.050084154,0.6%,5.5%,804,12.6%,32.0%,762,9.2%,-46.1%,7,0,-6,$400K,0.1%,27.0%,990,12.4%,3.0%
-"Portland, ME metro area",June 2021,All Residential,Metro,False,ME,1.060465133,1.0%,6.2%,986,22.6%,20.8%,912,19.7%,-36.6%,7,0,-5,$425K,6.3%,28.8%,1175,18.7%,5.6%
-"Portland, ME metro area",July 2021,All Residential,Metro,False,ME,1.056357828,-0.4%,5.3%,953,-3.3%,-1.1%,1029,12.8%,-25.5%,7,0,-4,$410K,-3.5%,18.8%,1096,-6.7%,1.3%
-"Portland, ME metro area",August 2021,All Residential,Metro,False,ME,1.043101151,-1.3%,3.9%,959,0.6%,-7.3%,959,-6.8%,-23.6%,8,1,-3,$410K,0.0%,16.5%,956,-12.8%,-11.5%
-"Portland, ME metro area",September 2021,All Residential,Metro,False,ME,1.024760423,-1.8%,1.1%,1013,5.6%,-5.2%,802,-16.4%,-35.6%,9,1,-2,$415K,1.1%,18.4%,820,-14.2%,-23.7%
-"Portland, ME metro area",October 2021,All Residential,Metro,False,ME,1.027296770,0.3%,1.4%,995,-1.8%,-8.0%,563,-29.8%,-54.3%,11,2,1,$400K,-3.5%,8.1%,475,-42.1%,-54.0%
-"Portland, ME metro area",November 2021,All Residential,Metro,False,ME,1.027342547,0.0%,2.0%,805,-19.1%,-12.3%,507,-9.9%,-49.9%,10,-1,-1,$400K,0.0%,14.3%,180,-62.1%,-69.9%
+"Portland, ME",May 2015,All Residential,Place/City,False,ME,0.988866614,,,99,,,253,,,14,,,$255K,,,151,,
+"Portland, ME",June 2015,All Residential,Place/City,False,ME,0.985183953,-0.4%,,140,41.4%,,280,10.7%,,22,8,,$277K,8.4%,,145,-4.0%,
+"Portland, ME",July 2015,All Residential,Place/City,False,ME,0.986249098,0.1%,,113,-19.3%,,273,-2.5%,,14,-8,,$263K,-5.0%,,121,-16.6%,
+"Portland, ME",August 2015,All Residential,Place/City,False,ME,0.985730158,-0.1%,,115,1.8%,,296,8.4%,,20,6,,$262K,-0.6%,,121,0.0%,
+"Portland, ME",September 2015,All Residential,Place/City,False,ME,0.988654100,0.3%,,104,-9.6%,,328,10.8%,,25,5,,$277K,5.8%,,117,-3.3%,
+"Portland, ME",October 2015,All Residential,Place/City,False,ME,0.984348397,-0.4%,,86,-17.3%,,320,-2.4%,,26,1,,$235K,-15.1%,,117,0.0%,
+"Portland, ME",November 2015,All Residential,Place/City,False,ME,0.981707641,-0.3%,,62,-27.9%,,275,-14.1%,,33,7,,$274K,16.6%,,63,-46.2%,
+"Portland, ME",December 2015,All Residential,Place/City,False,ME,0.981267499,0.0%,,87,40.3%,,252,-8.4%,,30,-3,,$248K,-9.7%,,52,-17.5%,
+"Portland, ME",January 2016,All Residential,Place/City,False,ME,0.972895618,-0.8%,,73,-16.1%,,225,-10.7%,,54,24,,$260K,5.1%,,75,44.2%,
+"Portland, ME",February 2016,All Residential,Place/City,False,ME,0.978634014,0.6%,,56,-23.3%,,203,-9.8%,,55,1,,$239K,-8.3%,,66,-12.0%,
+"Portland, ME",March 2016,All Residential,Place/City,False,ME,0.986606698,0.8%,,70,25.0%,,213,4.9%,,36,-19,,$242K,1.6%,,129,95.5%,
+"Portland, ME",April 2016,All Residential,Place/City,False,ME,0.986241376,0.0%,,87,24.3%,,232,8.9%,,22,-14,,$257K,6.1%,,157,21.7%,
+"Portland, ME",May 2016,All Residential,Place/City,False,ME,1.005515021,1.9%,1.7%,124,42.5%,25.3%,242,4.3%,-4.3%,12,-10,-2,$267K,4.0%,4.7%,128,-18.5%,-15.2%
+"Portland, ME",June 2016,All Residential,Place/City,False,ME,0.998851255,-0.7%,1.4%,114,-8.1%,-18.6%,249,2.9%,-11.1%,12,0,-10,$276K,3.1%,-0.5%,106,-17.2%,-26.9%
+"Portland, ME",July 2016,All Residential,Place/City,False,ME,0.992622850,-0.6%,0.6%,99,-13.2%,-12.4%,243,-2.4%,-11.0%,16,4,2,$289K,4.8%,9.7%,98,-7.5%,-19.0%
+"Portland, ME",August 2016,All Residential,Place/City,False,ME,1.000062455,0.7%,1.4%,87,-12.1%,-24.3%,242,-0.4%,-18.2%,12,-4,-8,$308K,6.7%,17.8%,119,21.4%,-1.7%
+"Portland, ME",September 2016,All Residential,Place/City,False,ME,0.988503031,-1.2%,0.0%,77,-11.5%,-26.0%,235,-2.9%,-28.4%,14,2,-11,$270K,-12.3%,-2.4%,106,-10.9%,-9.4%
+"Portland, ME",October 2016,All Residential,Place/City,False,ME,0.981179604,-0.7%,-0.3%,107,39.0%,24.4%,217,-7.7%,-32.2%,28,14,2,$300K,11.1%,27.7%,88,-17.0%,-24.8%
+"Portland, ME",November 2016,All Residential,Place/City,False,ME,0.992380166,1.1%,1.1%,101,-5.6%,62.9%,195,-10.1%,-29.1%,22,-6,-11,$295K,-1.7%,7.7%,68,-22.7%,7.9%
+"Portland, ME",December 2016,All Residential,Place/City,False,ME,0.984620444,-0.8%,0.3%,82,-18.8%,-5.7%,169,-13.3%,-32.9%,34,12,4,$307K,4.2%,24.2%,38,-44.1%,-26.9%
+"Portland, ME",January 2017,All Residential,Place/City,False,ME,0.986858339,0.2%,1.4%,72,-12.2%,-1.4%,153,-9.5%,-32.0%,41,7,-13,$287K,-6.7%,10.4%,61,60.5%,-18.7%
+"Portland, ME",February 2017,All Residential,Place/City,False,ME,0.976054368,-1.1%,-0.3%,48,-33.3%,-14.3%,135,-11.8%,-33.5%,62,21,7,$281K,-2.3%,17.6%,51,-16.4%,-22.7%
+"Portland, ME",March 2017,All Residential,Place/City,False,ME,0.991806137,1.6%,0.5%,75,56.3%,7.1%,162,20.0%,-23.9%,27,-35,-9,$300K,7.0%,23.9%,125,145.1%,-3.1%
+"Portland, ME",April 2017,All Residential,Place/City,False,ME,0.999918968,0.8%,1.4%,64,-14.7%,-26.4%,158,-2.5%,-31.9%,25,-2,3,$293K,-2.5%,13.8%,103,-17.6%,-34.4%
+"Portland, ME",May 2017,All Residential,Place/City,False,ME,0.995819770,-0.4%,-1.0%,92,43.8%,-25.8%,167,5.7%,-31.0%,13,-12,1,$301K,2.9%,12.6%,149,44.7%,16.4%
+"Portland, ME",June 2017,All Residential,Place/City,False,ME,0.992942507,-0.3%,-0.6%,132,43.5%,15.8%,198,18.6%,-20.5%,12,-1,0,$296K,-1.7%,7.4%,139,-6.7%,31.1%
+"Portland, ME",July 2017,All Residential,Place/City,False,ME,1.000700012,0.8%,0.8%,95,-28.0%,-4.0%,185,-6.6%,-23.9%,11,-1,-5,$300K,1.2%,3.8%,93,-33.1%,-5.1%
+"Portland, ME",August 2017,All Residential,Place/City,False,ME,0.998146695,-0.3%,-0.2%,113,18.9%,29.9%,198,7.0%,-18.2%,15,4,3,$300K,0.2%,-2.6%,111,19.4%,-6.7%
+"Portland, ME",September 2017,All Residential,Place/City,False,ME,0.992454601,-0.6%,0.4%,91,-19.5%,18.2%,201,1.5%,-14.5%,24,9,10,$325K,8.3%,20.4%,96,-13.5%,-9.4%
+"Portland, ME",October 2017,All Residential,Place/City,False,ME,0.982769657,-1.0%,0.2%,71,-22.0%,-33.6%,187,-7.0%,-13.8%,26,2,-2,$280K,-13.8%,-6.7%,85,-11.5%,-3.4%
+"Portland, ME",November 2017,All Residential,Place/City,False,ME,1.000088085,1.7%,0.8%,84,18.3%,-16.8%,147,-21.4%,-24.6%,31,5,9,$331K,18.1%,12.1%,58,-31.8%,-14.7%
+"Portland, ME",December 2017,All Residential,Place/City,False,ME,0.992518490,-0.8%,0.8%,94,11.9%,14.6%,116,-21.1%,-31.4%,16,-15,-18,$324K,-2.1%,5.3%,39,-32.8%,2.6%
+"Portland, ME",January 2018,All Residential,Place/City,False,ME,0.995061292,0.3%,0.8%,66,-29.8%,-8.3%,106,-8.6%,-30.7%,32,16,-9,$315K,-2.7%,9.8%,61,56.4%,0.0%
+"Portland, ME",February 2018,All Residential,Place/City,False,ME,0.986709612,-0.8%,1.1%,50,-24.2%,4.2%,95,-10.4%,-29.6%,26,-6,-36,$286K,-9.2%,2.0%,52,-14.8%,2.0%
+"Portland, ME",March 2018,All Residential,Place/City,False,ME,0.991047751,0.4%,-0.1%,66,32.0%,-12.0%,87,-8.4%,-46.3%,24,-2,-3,$344K,20.2%,14.6%,78,50.0%,-37.6%
+"Portland, ME",April 2018,All Residential,Place/City,False,ME,1.005183082,1.4%,0.5%,80,21.2%,25.0%,104,19.5%,-34.2%,9,-15,-16,$325K,-5.6%,10.9%,106,35.9%,2.9%
+"Portland, ME",May 2018,All Residential,Place/City,False,ME,1.002504952,-0.3%,0.7%,89,11.3%,-3.3%,113,8.7%,-32.3%,10,1,-3,$334K,2.9%,11.0%,139,31.1%,-6.7%
+"Portland, ME",June 2018,All Residential,Place/City,False,ME,1.002930204,0.0%,1.0%,110,23.6%,-16.7%,173,53.1%,-12.6%,8,-2,-4,$340K,1.8%,14.9%,163,17.3%,17.3%
+"Portland, ME",July 2018,All Residential,Place/City,False,ME,0.998661063,-0.4%,-0.2%,118,7.3%,24.2%,187,8.1%,1.1%,11,3,0,$415K,21.9%,38.4%,119,-27.0%,28.0%
+"Portland, ME",August 2018,All Residential,Place/City,False,ME,0.992458727,-0.6%,-0.6%,113,-4.2%,0.0%,197,5.3%,-0.5%,15,4,0,$360K,-13.2%,20.0%,115,-3.4%,3.6%
+"Portland, ME",September 2018,All Residential,Place/City,False,ME,1.000954065,0.8%,0.8%,81,-28.3%,-11.0%,235,19.3%,16.9%,14,-1,-10,$315K,-12.5%,-3.1%,129,12.2%,34.4%
+"Portland, ME",October 2018,All Residential,Place/City,False,ME,0.986117262,-1.5%,0.3%,91,12.3%,28.2%,248,5.5%,32.6%,17,3,-9,$372K,18.1%,32.9%,125,-3.1%,47.1%
+"Portland, ME",November 2018,All Residential,Place/City,False,ME,0.990906750,0.5%,-0.9%,82,-9.9%,-2.4%,238,-4.0%,61.9%,21,4,-10,$310K,-16.6%,-6.2%,64,-48.8%,10.3%
+"Portland, ME",December 2018,All Residential,Place/City,False,ME,0.976978053,-1.4%,-1.6%,61,-25.6%,-35.1%,203,-14.7%,75.0%,33,12,17,$300K,-3.3%,-7.3%,43,-32.8%,10.3%
+"Portland, ME",January 2019,All Residential,Place/City,False,ME,0.979161119,0.2%,-1.6%,47,-23.0%,-28.8%,187,-7.9%,76.4%,33,0,1,$323K,7.7%,2.5%,60,39.5%,-1.6%
+"Portland, ME",February 2019,All Residential,Place/City,False,ME,0.982836975,0.4%,-0.4%,65,38.3%,30.0%,194,3.7%,104.2%,49,16,23,$330K,2.2%,15.4%,92,53.3%,76.9%
+"Portland, ME",March 2019,All Residential,Place/City,False,ME,0.983180381,0.0%,-0.8%,87,33.8%,31.8%,188,-3.1%,116.1%,34,-15,10,$350K,6.1%,1.8%,83,-9.8%,6.4%
+"Portland, ME",April 2019,All Residential,Place/City,False,ME,0.990971767,0.8%,-1.4%,79,-9.2%,-1.3%,211,12.2%,102.9%,15,-19,6,$362K,3.4%,11.6%,135,62.7%,27.4%
+"Portland, ME",May 2019,All Residential,Place/City,False,ME,1.009673180,1.9%,0.7%,108,36.7%,21.3%,248,17.5%,119.5%,9,-6,-1,$338K,-6.8%,1.0%,161,19.3%,15.8%
+"Portland, ME",June 2019,All Residential,Place/City,False,ME,1.008985691,-0.1%,0.6%,124,14.8%,12.7%,234,-5.6%,35.3%,12,3,4,$346K,2.4%,1.6%,135,-16.1%,-17.2%
+"Portland, ME",July 2019,All Residential,Place/City,False,ME,1.006852471,-0.2%,0.8%,126,1.6%,6.8%,254,8.5%,35.8%,14,2,3,$352K,2.0%,-15.0%,143,5.9%,20.2%
+"Portland, ME",August 2019,All Residential,Place/City,False,ME,1.001698157,-0.5%,0.9%,113,-10.3%,0.0%,239,-5.9%,21.3%,14,0,-1,$329K,-6.6%,-8.6%,103,-28.0%,-10.4%
+"Portland, ME",September 2019,All Residential,Place/City,False,ME,0.982215617,-1.9%,-1.9%,84,-25.7%,3.7%,261,9.2%,11.1%,18,4,4,$344K,4.5%,9.1%,116,12.6%,-10.1%
+"Portland, ME",October 2019,All Residential,Place/City,False,ME,0.988636345,0.6%,0.3%,85,1.2%,-6.6%,220,-15.7%,-11.3%,20,2,3,$321K,-6.8%,-13.8%,81,-30.2%,-35.2%
+"Portland, ME",November 2019,All Residential,Place/City,False,ME,0.982028937,-0.7%,-0.9%,86,1.2%,4.9%,197,-10.5%,-17.2%,21,1,0,$330K,3.0%,6.4%,55,-32.1%,-14.1%
+"Portland, ME",December 2019,All Residential,Place/City,False,ME,0.989107887,0.7%,1.2%,79,-8.1%,29.5%,156,-20.8%,-23.2%,28,7,-5,$335K,1.5%,11.7%,46,-16.4%,7.0%
+"Portland, ME",January 2020,All Residential,Place/City,False,ME,0.984558226,-0.5%,0.5%,61,-22.8%,29.8%,154,-1.3%,-17.6%,32,4,-1,$314K,-6.3%,-2.8%,58,26.1%,-3.3%
+"Portland, ME",February 2020,All Residential,Place/City,False,ME,0.987209600,0.3%,0.4%,53,-13.1%,-18.5%,124,-19.5%,-36.1%,35,3,-14,$349K,11.1%,5.8%,47,-19.0%,-48.9%
+"Portland, ME",March 2020,All Residential,Place/City,False,ME,0.990042760,0.3%,0.7%,64,20.8%,-26.4%,138,11.3%,-26.6%,18,-17,-16,$361K,3.4%,3.1%,61,29.8%,-26.5%
+"Portland, ME",April 2020,All Residential,Place/City,False,ME,1.001573511,1.2%,1.1%,52,-18.8%,-34.2%,132,-4.3%,-37.4%,9,-9,-6,$346K,-4.2%,-4.4%,55,-9.8%,-59.3%
+"Portland, ME",May 2020,All Residential,Place/City,False,ME,0.998356852,-0.3%,-1.1%,48,-7.7%,-55.6%,156,18.2%,-37.1%,17,8,8,$387K,11.8%,14.7%,105,90.9%,-34.8%
+"Portland, ME",June 2020,All Residential,Place/City,False,ME,1.006323075,0.8%,-0.3%,80,66.7%,-35.5%,157,0.6%,-32.9%,8,-9,-4,$369K,-4.7%,6.8%,101,-3.8%,-25.2%
+"Portland, ME",July 2020,All Residential,Place/City,False,ME,1.005241695,-0.1%,-0.2%,88,10.0%,-30.2%,153,-2.5%,-39.8%,9,1,-5,$393K,6.4%,11.4%,134,32.7%,-6.3%
+"Portland, ME",August 2020,All Residential,Place/City,False,ME,1.016284171,1.1%,1.5%,106,20.5%,-6.2%,160,4.6%,-33.1%,8,-1,-6,$363K,-7.6%,10.2%,119,-11.2%,15.5%
+"Portland, ME",September 2020,All Residential,Place/City,False,ME,1.015422474,-0.1%,3.3%,94,-11.3%,11.9%,149,-6.9%,-42.9%,11,3,-7,$393K,8.3%,14.2%,109,-8.4%,-6.0%
+"Portland, ME",October 2020,All Residential,Place/City,False,ME,1.022320849,0.7%,3.4%,108,14.9%,27.1%,150,0.7%,-31.8%,8,-3,-12,$406K,3.3%,26.5%,121,11.0%,49.4%
+"Portland, ME",November 2020,All Residential,Place/City,False,ME,1.027015271,0.5%,4.5%,94,-13.0%,9.3%,123,-18.0%,-37.6%,10,2,-11,$395K,-2.6%,19.7%,80,-33.9%,45.5%
+"Portland, ME",December 2020,All Residential,Place/City,False,ME,1.022484600,-0.5%,3.3%,110,17.0%,39.2%,98,-20.3%,-37.2%,13,3,-15,$407K,2.9%,21.3%,40,-50.0%,-13.0%
+"Portland, ME",January 2021,All Residential,Place/City,False,ME,1.005617969,-1.7%,2.1%,68,-38.2%,11.5%,83,-15.3%,-46.1%,12,-1,-20,$452K,11.1%,43.8%,46,15.0%,-20.7%
+"Portland, ME",February 2021,All Residential,Place/City,False,ME,1.014738005,0.9%,2.8%,57,-16.2%,7.5%,82,-1.2%,-33.9%,16,4,-19,$454K,0.6%,30.1%,66,43.5%,40.4%
+"Portland, ME",March 2021,All Residential,Place/City,False,ME,1.043421775,2.9%,5.3%,120,110.5%,87.5%,74,-9.8%,-46.4%,41,25,23,$513K,13.0%,42.1%,101,53.0%,65.6%
+"Portland, ME",April 2021,All Residential,Place/City,False,ME,1.064764722,2.1%,6.3%,106,-11.7%,103.8%,95,28.4%,-28.0%,7,-34,-2,$533K,3.9%,54.1%,106,5.0%,92.7%
+"Portland, ME",May 2021,All Residential,Place/City,False,ME,1.068103306,0.3%,7.0%,101,-4.7%,110.4%,93,-2.1%,-40.4%,9,2,-8,$528K,-1.0%,36.4%,109,2.8%,3.8%
+"Portland, ME",June 2021,All Residential,Place/City,False,ME,1.072874063,0.5%,6.7%,125,23.8%,56.3%,112,20.4%,-28.7%,7,-2,-1,$460K,-12.8%,24.7%,137,25.7%,35.6%
+"Portland, ME",July 2021,All Residential,Place/City,False,ME,1.061777801,-1.1%,5.7%,106,-15.2%,20.5%,124,10.7%,-19.0%,7,0,-2,$515K,11.8%,31.1%,113,-17.5%,-15.7%
+"Portland, ME",August 2021,All Residential,Place/City,False,ME,1.053435089,-0.8%,3.7%,103,-2.8%,-2.8%,105,-15.3%,-34.4%,8,1,0,$450K,-12.5%,24.1%,109,-3.5%,-8.4%
+"Portland, ME",September 2021,All Residential,Place/City,False,ME,1.032711110,-2.1%,1.7%,115,11.7%,22.3%,94,-10.5%,-36.9%,11,3,0,$475K,5.6%,21.0%,110,0.9%,0.9%
+"Portland, ME",October 2021,All Residential,Place/City,False,ME,1.018905737,-1.4%,-0.3%,123,7.0%,13.9%,73,-22.3%,-51.3%,16,5,8,$475K,0.0%,17.1%,78,-29.1%,-35.5%
+"Portland, ME",November 2021,All Residential,Place/City,False,ME,1.037417943,1.9%,1.0%,96,-22.0%,2.1%,63,-13.7%,-48.8%,9,-7,-1,$486K,2.3%,23.0%,50,-35.9%,-37.5%
+"Portland, ME",December 2021,All Residential,Place/City,False,ME,1.029043436,-0.8%,0.7%,75,-21.9%,-31.8%,52,-17.5%,-46.9%,9,0,-4,$500K,2.9%,23.0%,37,-26.0%,-7.5%
+"Portland, ME",January 2022,All Residential,Place/City,False,ME,1.029181611,0.0%,2.4%,64,-14.7%,-5.9%,57,9.6%,-31.3%,12,3,0,$433K,-13.5%,-4.2%,27,-27.0%,-41.3%
+"Portland, ME metro area",May 2015,All Residential,Metro,False,ME,0.975319406,,,791,,,4684,,,21,,,$232K,,,1690,,
+"Portland, ME metro area",June 2015,All Residential,Metro,False,ME,0.976219056,0.1%,,1114,40.8%,,5068,8.2%,,28,7,,$240K,3.5%,,1557,-7.9%,
+"Portland, ME metro area",July 2015,All Residential,Metro,False,ME,0.974967068,-0.1%,,998,-10.4%,,5171,2.0%,,27,-1,,$237K,-1.4%,,1266,-18.7%,
+"Portland, ME metro area",August 2015,All Residential,Metro,False,ME,0.973401134,-0.2%,,942,-5.6%,,5117,-1.0%,,38,11,,$235K,-0.7%,,1058,-16.4%,
+"Portland, ME metro area",September 2015,All Residential,Metro,False,ME,0.971125703,-0.2%,,901,-4.4%,,5019,-1.9%,,46,8,,$245K,4.3%,,994,-6.0%,
+"Portland, ME metro area",October 2015,All Residential,Metro,False,ME,0.970872814,0.0%,,840,-6.8%,,4565,-9.0%,,56,10,,$238K,-3.0%,,776,-21.9%,
+"Portland, ME metro area",November 2015,All Residential,Metro,False,ME,0.962047704,-0.9%,,626,-25.5%,,4050,-11.3%,,63,7,,$235K,-1.2%,,574,-26.0%,
+"Portland, ME metro area",December 2015,All Residential,Metro,False,ME,0.969988002,0.8%,,752,20.1%,,3585,-11.5%,,64,1,,$231K,-1.7%,,403,-29.8%,
+"Portland, ME metro area",January 2016,All Residential,Metro,False,ME,0.971402634,0.1%,,510,-32.2%,,3289,-8.3%,,77,13,,$225K,-2.6%,,621,54.1%,
+"Portland, ME metro area",February 2016,All Residential,Metro,False,ME,0.962160725,-0.9%,,495,-2.9%,,3200,-2.7%,,82,5,,$230K,2.2%,,690,11.1%,
+"Portland, ME metro area",March 2016,All Residential,Metro,False,ME,0.974092331,1.2%,,630,27.3%,,2991,-6.5%,,71,-11,,$230K,0.0%,,1224,77.4%,
+"Portland, ME metro area",April 2016,All Residential,Metro,False,ME,0.978138337,0.4%,,707,12.2%,,3164,5.8%,,53,-18,,$233K,1.3%,,1337,9.2%,
+"Portland, ME metro area",May 2016,All Residential,Metro,False,ME,0.982975057,0.5%,0.8%,1001,41.6%,26.5%,3325,5.1%,-29.0%,33,-20,12,$241K,3.4%,3.9%,1384,3.5%,-18.1%
+"Portland, ME metro area",June 2016,All Residential,Metro,False,ME,0.981473192,-0.2%,0.5%,1026,2.5%,-7.9%,3487,4.9%,-31.2%,31,-2,3,$251K,4.1%,4.6%,1319,-4.7%,-15.3%
+"Portland, ME metro area",July 2016,All Residential,Metro,False,ME,0.979967184,-0.2%,0.5%,964,-6.0%,-3.4%,3508,0.6%,-32.2%,29,-2,2,$250K,-0.4%,5.7%,1068,-19.0%,-15.6%
+"Portland, ME metro area",August 2016,All Residential,Metro,False,ME,0.981652381,0.2%,0.8%,978,1.5%,3.8%,3374,-3.8%,-34.1%,30,1,-8,$262K,4.8%,11.5%,1043,-2.3%,-1.4%
+"Portland, ME metro area",September 2016,All Residential,Metro,False,ME,0.977278225,-0.4%,0.6%,868,-11.2%,-3.7%,3233,-4.2%,-35.6%,38,8,-8,$254K,-3.1%,3.6%,910,-12.8%,-8.5%
+"Portland, ME metro area",October 2016,All Residential,Metro,False,ME,0.973783386,-0.3%,0.3%,883,1.7%,5.1%,2934,-9.2%,-35.7%,44,6,-12,$252K,-0.9%,5.8%,745,-18.1%,-4.0%
+"Portland, ME metro area",November 2016,All Residential,Metro,False,ME,0.974586118,0.1%,1.3%,766,-13.3%,22.4%,2603,-11.3%,-35.7%,46,2,-17,$255K,1.4%,8.5%,536,-28.1%,-6.6%
+"Portland, ME metro area",December 2016,All Residential,Metro,False,ME,0.978329165,0.4%,0.8%,740,-3.4%,-1.6%,2237,-14.1%,-37.6%,50,4,-14,$255K,0.0%,10.4%,336,-37.3%,-16.6%
+"Portland, ME metro area",January 2017,All Residential,Metro,False,ME,0.972093397,-0.6%,0.1%,526,-28.9%,3.1%,1974,-11.8%,-40.0%,60,10,-17,$246K,-3.5%,9.3%,490,45.8%,-21.1%
+"Portland, ME metro area",February 2017,All Residential,Metro,False,ME,0.975814528,0.4%,1.4%,439,-16.5%,-11.3%,1876,-5.0%,-41.4%,70,10,-12,$244K,-0.8%,6.1%,562,14.7%,-18.6%
+"Portland, ME metro area",March 2017,All Residential,Metro,False,ME,0.978010271,0.2%,0.4%,659,50.1%,4.6%,1982,5.7%,-33.7%,59,-11,-12,$248K,1.4%,7.6%,978,74.0%,-20.1%
+"Portland, ME metro area",April 2017,All Residential,Metro,False,ME,0.983915114,0.6%,0.6%,566,-14.1%,-19.9%,2110,6.5%,-33.3%,39,-20,-14,$258K,4.2%,10.7%,1050,7.4%,-21.5%
+"Portland, ME metro area",May 2017,All Residential,Metro,False,ME,0.987383565,0.3%,0.4%,872,54.1%,-12.9%,2451,16.2%,-26.3%,21,-18,-12,$262K,1.5%,8.6%,1483,41.2%,7.2%
+"Portland, ME metro area",June 2017,All Residential,Metro,False,ME,0.990023206,0.3%,0.9%,1036,18.8%,1.0%,2673,9.1%,-23.3%,17,-4,-14,$270K,3.2%,7.6%,1327,-10.5%,0.6%
+"Portland, ME metro area",July 2017,All Residential,Metro,False,ME,0.989410431,-0.1%,0.9%,916,-11.6%,-5.0%,2706,1.2%,-22.9%,17,0,-12,$270K,-0.2%,7.8%,1066,-19.7%,-0.2%
+"Portland, ME metro area",August 2017,All Residential,Metro,False,ME,0.985881123,-0.4%,0.4%,1017,11.0%,4.0%,2739,1.2%,-18.8%,24,7,-6,$275K,2.0%,5.0%,1186,11.3%,13.7%
+"Portland, ME metro area",September 2017,All Residential,Metro,False,ME,0.980141835,-0.6%,0.3%,963,-5.3%,10.9%,2692,-1.7%,-16.7%,29,5,-9,$265K,-3.6%,4.4%,964,-18.7%,5.9%
+"Portland, ME metro area",October 2017,All Residential,Metro,False,ME,0.976877842,-0.3%,0.3%,871,-9.6%,-1.4%,2506,-6.9%,-14.6%,34,5,-10,$265K,0.0%,5.4%,841,-12.8%,12.9%
+"Portland, ME metro area",November 2017,All Residential,Metro,False,ME,0.977243219,0.0%,0.3%,836,-4.0%,9.1%,2158,-13.9%,-17.1%,39,5,-7,$267K,0.8%,4.7%,579,-31.2%,8.0%
+"Portland, ME metro area",December 2017,All Residential,Metro,False,ME,0.979876155,0.3%,0.2%,752,-10.0%,1.6%,1840,-14.7%,-17.7%,36,-3,-14,$267K,0.0%,4.7%,325,-43.9%,-3.3%
+"Portland, ME metro area",January 2018,All Residential,Metro,False,ME,0.980054779,0.0%,0.8%,543,-27.8%,3.2%,1573,-14.5%,-20.3%,46,10,-14,$271K,1.3%,10.0%,470,44.6%,-4.1%
+"Portland, ME metro area",February 2018,All Residential,Metro,False,ME,0.978718651,-0.1%,0.3%,455,-16.2%,3.6%,1490,-5.3%,-20.6%,60,14,-10,$269K,-0.6%,10.2%,573,21.9%,2.0%
+"Portland, ME metro area",March 2018,All Residential,Metro,False,ME,0.981988739,0.3%,0.4%,627,37.8%,-4.9%,1474,-1.1%,-25.6%,47,-13,-12,$285K,5.9%,15.2%,826,44.2%,-15.5%
+"Portland, ME metro area",April 2018,All Residential,Metro,False,ME,0.987326193,0.5%,0.3%,680,8.5%,20.1%,1591,7.9%,-24.6%,25,-22,-14,$269K,-5.6%,4.3%,1053,27.5%,0.3%
+"Portland, ME metro area",May 2018,All Residential,Metro,False,ME,0.993200876,0.6%,0.6%,812,19.4%,-6.9%,1938,21.8%,-20.9%,18,-7,-3,$285K,5.9%,8.9%,1433,36.1%,-3.4%
+"Portland, ME metro area",June 2018,All Residential,Metro,False,ME,0.994374072,0.1%,0.4%,1037,27.7%,0.1%,2238,15.5%,-16.3%,12,-6,-5,$290K,1.8%,7.4%,1373,-4.2%,3.5%
+"Portland, ME metro area",July 2018,All Residential,Metro,False,ME,0.991720032,-0.3%,0.2%,960,-7.4%,4.8%,2394,7.0%,-11.5%,14,2,-3,$295K,1.7%,9.5%,1206,-12.2%,13.1%
+"Portland, ME metro area",August 2018,All Residential,Metro,False,ME,0.989480741,-0.2%,0.4%,1084,12.9%,6.6%,2573,7.5%,-6.1%,21,7,-3,$285K,-3.4%,3.6%,1206,0.0%,1.7%
+"Portland, ME metro area",September 2018,All Residential,Metro,False,ME,0.986259992,-0.3%,0.6%,846,-22.0%,-12.1%,2658,3.3%,-1.3%,22,1,-7,$281K,-1.5%,5.9%,1024,-15.1%,6.2%
+"Portland, ME metro area",October 2018,All Residential,Metro,False,ME,0.982013542,-0.4%,0.5%,888,5.0%,2.0%,2536,-4.6%,1.2%,24,2,-10,$280K,-0.3%,5.7%,946,-7.6%,12.5%
+"Portland, ME metro area",November 2018,All Residential,Metro,False,ME,0.980542055,-0.1%,0.3%,806,-9.2%,-3.6%,2341,-7.7%,8.5%,31,7,-8,$295K,5.4%,10.5%,580,-38.7%,0.2%
+"Portland, ME metro area",December 2018,All Residential,Metro,False,ME,0.981872179,0.1%,0.2%,627,-22.2%,-16.6%,2029,-13.3%,10.3%,33,2,-3,$275K,-6.8%,3.0%,342,-41.0%,5.2%
+"Portland, ME metro area",January 2019,All Residential,Metro,False,ME,0.974101897,-0.8%,-0.6%,421,-32.9%,-22.5%,1811,-10.7%,15.1%,44,11,-2,$275K,0.0%,1.7%,531,55.3%,13.0%
+"Portland, ME metro area",February 2019,All Residential,Metro,False,ME,0.976969759,0.3%,-0.2%,457,8.6%,0.4%,1785,-1.4%,19.8%,57,13,-3,$276K,0.4%,2.6%,633,19.2%,10.5%
+"Portland, ME metro area",March 2019,All Residential,Metro,False,ME,0.982292707,0.5%,0.0%,639,39.8%,1.9%,1783,-0.1%,21.0%,52,-5,5,$290K,5.0%,1.7%,812,28.3%,-1.7%
+"Portland, ME metro area",April 2019,All Residential,Metro,False,ME,0.986915085,0.5%,0.0%,676,5.8%,-0.6%,1894,6.2%,19.0%,27,-25,2,$286K,-1.5%,6.1%,1062,30.8%,0.9%
+"Portland, ME metro area",May 2019,All Residential,Metro,False,ME,0.992175749,0.5%,-0.1%,880,30.2%,8.4%,2262,19.4%,16.7%,18,-9,0,$300K,5.1%,5.3%,1490,40.3%,4.0%
+"Portland, ME metro area",June 2019,All Residential,Metro,False,ME,0.992421611,0.0%,-0.2%,1001,13.8%,-3.5%,2406,6.4%,7.5%,12,-6,0,$315K,5.0%,8.6%,1293,-13.2%,-5.8%
+"Portland, ME metro area",July 2019,All Residential,Metro,False,ME,0.995366598,0.3%,0.4%,1005,0.4%,4.7%,2508,4.2%,4.8%,13,1,-1,$305K,-3.2%,3.4%,1210,-6.4%,0.3%
+"Portland, ME metro area",August 2019,All Residential,Metro,False,ME,0.987000744,-0.8%,-0.2%,1087,8.2%,0.3%,2469,-1.6%,-4.0%,18,5,-3,$298K,-2.2%,4.7%,1095,-9.5%,-9.2%
+"Portland, ME metro area",September 2019,All Residential,Metro,False,ME,0.983978294,-0.3%,-0.2%,867,-20.2%,2.5%,2437,-1.3%,-8.3%,23,5,1,$310K,3.9%,10.4%,959,-12.4%,-6.3%
+"Portland, ME metro area",October 2019,All Residential,Metro,False,ME,0.986683619,0.3%,0.5%,891,2.8%,0.3%,2207,-9.4%,-13.0%,25,2,1,$294K,-5.1%,5.0%,820,-14.5%,-13.3%
+"Portland, ME metro area",November 2019,All Residential,Metro,False,ME,0.983718208,-0.3%,0.3%,782,-12.2%,-3.0%,1852,-16.1%,-20.9%,26,1,-5,$300K,2.2%,1.8%,553,-32.6%,-4.7%
+"Portland, ME metro area",December 2019,All Residential,Metro,False,ME,0.981624991,-0.2%,0.0%,779,-0.4%,24.2%,1496,-19.2%,-26.3%,33,7,0,$296K,-1.4%,7.6%,323,-41.6%,-5.6%
+"Portland, ME metro area",January 2020,All Residential,Metro,False,ME,0.984250755,0.3%,1.0%,573,-26.4%,36.1%,1358,-9.2%,-25.0%,38,5,-6,$300K,1.4%,9.1%,494,52.9%,-7.0%
+"Portland, ME metro area",February 2020,All Residential,Metro,False,ME,0.987172590,0.3%,1.0%,442,-22.9%,-3.3%,1268,-6.6%,-29.0%,42,4,-15,$300K,0.0%,8.7%,514,4.0%,-18.8%
+"Portland, ME metro area",March 2020,All Residential,Metro,False,ME,0.988936320,0.2%,0.7%,584,32.1%,-8.6%,1382,9.0%,-22.5%,45,3,-7,$315K,5.0%,8.7%,766,49.0%,-5.7%
+"Portland, ME metro area",April 2020,All Residential,Metro,False,ME,0.996559942,0.8%,1.0%,560,-4.1%,-17.2%,1371,-0.8%,-27.6%,16,-29,-11,$310K,-1.6%,8.6%,594,-22.5%,-44.1%
+"Portland, ME metro area",May 2020,All Residential,Metro,False,ME,0.994885099,-0.2%,0.3%,607,8.4%,-31.0%,1425,3.9%,-37.0%,13,-3,-5,$315K,1.6%,5.0%,964,62.3%,-35.3%
+"Portland, ME metro area",June 2020,All Residential,Metro,False,ME,0.998856540,0.4%,0.6%,819,34.9%,-18.2%,1449,1.7%,-39.8%,12,-1,0,$330K,4.8%,4.8%,1111,15.2%,-14.1%
+"Portland, ME metro area",July 2020,All Residential,Metro,False,ME,1.002903246,0.4%,0.8%,963,17.6%,-4.2%,1396,-3.7%,-44.3%,11,-1,-2,$345K,4.5%,13.1%,1084,-2.4%,-10.4%
+"Portland, ME metro area",August 2020,All Residential,Metro,False,ME,1.004242966,0.1%,1.7%,1033,7.3%,-5.0%,1273,-8.8%,-48.4%,11,0,-7,$352K,2.0%,18.0%,1084,0.0%,-1.0%
+"Portland, ME metro area",September 2020,All Residential,Metro,False,ME,1.013725533,0.9%,3.0%,1071,3.7%,23.5%,1263,-0.8%,-48.2%,11,0,-12,$350K,-0.6%,12.9%,1079,-0.5%,12.5%
+"Portland, ME metro area",October 2020,All Residential,Metro,False,ME,1.012900180,-0.1%,2.6%,1085,1.3%,21.8%,1250,-1.0%,-43.4%,10,-1,-15,$370K,5.7%,25.9%,1035,-4.1%,26.2%
+"Portland, ME metro area",November 2020,All Residential,Metro,False,ME,1.006800425,-0.6%,2.3%,917,-15.5%,17.3%,1031,-17.5%,-44.3%,11,1,-15,$350K,-5.4%,16.5%,601,-41.9%,8.7%
+"Portland, ME metro area",December 2020,All Residential,Metro,False,ME,1.010412359,0.4%,2.9%,959,4.6%,23.1%,823,-20.2%,-45.0%,11,0,-22,$350K,0.0%,18.2%,398,-33.8%,23.2%
+"Portland, ME metro area",January 2021,All Residential,Metro,False,ME,1.001417552,-0.9%,1.7%,596,-37.9%,4.0%,675,-18.0%,-50.3%,19,8,-19,$346K,-1.1%,15.3%,435,9.3%,-11.9%
+"Portland, ME metro area",February 2021,All Residential,Metro,False,ME,1.012213059,1.1%,2.5%,457,-23.3%,3.4%,653,-3.3%,-48.5%,13,-6,-29,$350K,1.2%,16.7%,532,22.3%,3.5%
+"Portland, ME metro area",March 2021,All Residential,Metro,False,ME,1.030032043,1.8%,4.1%,656,43.5%,12.3%,630,-3.5%,-54.4%,10,-3,-35,$382K,9.1%,21.3%,809,52.1%,5.6%
+"Portland, ME metro area",April 2021,All Residential,Metro,False,ME,1.043593658,1.4%,4.7%,717,9.3%,28.0%,728,15.6%,-46.9%,7,-3,-9,$400K,4.7%,29.0%,896,10.8%,50.8%
+"Portland, ME metro area",May 2021,All Residential,Metro,False,ME,1.050113822,0.7%,5.5%,804,12.1%,32.5%,798,9.6%,-44.0%,7,0,-6,$400K,0.0%,27.0%,998,11.4%,3.5%
+"Portland, ME metro area",June 2021,All Residential,Metro,False,ME,1.059962882,1.0%,6.1%,995,23.8%,21.5%,961,20.4%,-33.7%,7,0,-5,$425K,6.3%,28.8%,1197,19.9%,7.7%
+"Portland, ME metro area",July 2021,All Residential,Metro,False,ME,1.056263933,-0.4%,5.3%,955,-4.0%,-0.8%,1094,13.8%,-21.6%,7,0,-4,$410K,-3.5%,18.8%,1118,-6.6%,3.1%
+"Portland, ME metro area",August 2021,All Residential,Metro,False,ME,1.043059458,-1.3%,3.9%,957,0.2%,-7.4%,1042,-4.8%,-18.1%,8,1,-3,$410K,0.0%,16.5%,994,-11.1%,-8.3%
+"Portland, ME metro area",September 2021,All Residential,Metro,False,ME,1.025401020,-1.8%,1.2%,1016,6.2%,-5.1%,921,-11.6%,-27.1%,9,1,-2,$413K,0.7%,17.9%,882,-11.3%,-18.3%
+"Portland, ME metro area",October 2021,All Residential,Metro,False,ME,1.027527263,0.2%,1.5%,1000,-1.6%,-7.8%,734,-20.3%,-41.3%,11,2,1,$400K,-3.1%,8.1%,683,-22.6%,-34.0%
+"Portland, ME metro area",November 2021,All Residential,Metro,False,ME,1.027060497,0.0%,2.0%,810,-19.0%,-11.7%,528,-28.1%,-48.8%,10,-1,-1,$400K,0.0%,14.3%,472,-30.9%,-21.5%
+"Portland, ME metro area",December 2021,All Residential,Metro,False,ME,1.024706440,-0.2%,1.4%,814,0.5%,-15.1%,326,-38.3%,-60.4%,10,0,-1,$400K,0.0%,14.3%,251,-46.8%,-36.9%
+"Portland, ME metro area",January 2022,All Residential,Metro,False,ME,1.023287251,-0.1%,2.2%,518,-36.4%,-13.1%,283,-13.2%,-58.1%,12,2,-7,$400K,0.0%,15.6%,158,-37.1%,-63.7%
 "South Portland, ME",May 2015,All Residential,Place/City,False,ME,1.001420366,,,34,,,77,,,13,,,$212K,,,77,,
 "South Portland, ME",June 2015,All Residential,Place/City,False,ME,0.993470370,-0.8%,,58,70.6%,,96,24.7%,,13,0,,$212K,0.2%,,77,0.0%,
 "South Portland, ME",July 2015,All Residential,Place/City,False,ME,0.989312923,-0.4%,,44,-24.1%,,103,7.3%,,20,7,,$211K,-0.3%,,62,-19.5%,
@@ -174,69 +178,71 @@
 "South Portland, ME",June 2016,All Residential,Place/City,False,ME,1.015969589,1.5%,2.2%,42,7.7%,-27.6%,55,0.0%,-42.7%,10,-12,-3,$257K,1.4%,21.0%,57,21.3%,-26.0%
 "South Portland, ME",July 2016,All Residential,Place/City,False,ME,1.002818721,-1.3%,1.4%,52,23.8%,18.2%,65,18.2%,-36.9%,8,-2,-12,$249K,-2.9%,17.8%,43,-24.6%,-30.6%
 "South Portland, ME",August 2016,All Residential,Place/City,False,ME,1.014245281,1.1%,0.3%,48,-7.7%,-5.9%,56,-13.8%,-44.0%,8,0,-2,$260K,4.4%,6.1%,36,-16.3%,-29.4%
-"South Portland, ME",September 2016,All Residential,Place/City,False,ME,0.993807814,-2.0%,0.8%,39,-18.8%,-22.0%,59,5.4%,-36.6%,26,18,5,$260K,0.0%,20.1%,44,22.2%,18.9%
-"South Portland, ME",October 2016,All Residential,Place/City,False,ME,1.003660325,1.0%,1.1%,36,-7.7%,-7.7%,52,-11.9%,-36.6%,13,-13,-12,$238K,-8.6%,-1.0%,33,-25.0%,3.1%
-"South Portland, ME",November 2016,All Residential,Place/City,False,ME,1.001376118,-0.2%,2.7%,37,2.8%,68.2%,43,-17.3%,-37.7%,14,1,-13,$240K,0.9%,7.1%,19,-42.4%,0.0%
-"South Portland, ME",December 2016,All Residential,Place/City,False,ME,0.979229415,-2.2%,-0.6%,29,-21.6%,-50.0%,28,-34.9%,-41.7%,21,7,-4,$255K,6.3%,-4.0%,7,-63.2%,-41.7%
-"South Portland, ME",January 2017,All Residential,Place/City,False,ME,0.988175753,0.9%,-0.1%,15,-48.3%,-40.0%,28,0.0%,-47.2%,56,35,-14,$250K,-1.9%,1.0%,22,214.3%,-8.3%
+"South Portland, ME",September 2016,All Residential,Place/City,False,ME,0.993807814,-2.0%,0.8%,39,-18.8%,-22.0%,58,3.6%,-37.6%,26,18,5,$260K,0.0%,20.1%,43,19.4%,16.2%
+"South Portland, ME",October 2016,All Residential,Place/City,False,ME,1.004243089,1.0%,1.1%,35,-10.3%,-10.3%,52,-10.3%,-36.6%,15,-11,-10,$238K,-8.5%,-0.9%,33,-23.3%,3.1%
+"South Portland, ME",November 2016,All Residential,Place/City,False,ME,1.001506988,-0.3%,2.7%,38,8.6%,72.7%,43,-17.3%,-37.7%,15,0,-12,$240K,0.9%,7.1%,19,-42.4%,0.0%
+"South Portland, ME",December 2016,All Residential,Place/City,False,ME,0.981635676,-2.0%,-0.4%,28,-26.3%,-51.7%,28,-34.9%,-41.7%,21,6,-4,$247K,2.9%,-7.0%,7,-63.2%,-41.7%
+"South Portland, ME",January 2017,All Residential,Place/City,False,ME,0.988175753,0.7%,-0.1%,15,-46.4%,-40.0%,28,0.0%,-47.2%,56,35,-14,$250K,1.2%,1.0%,22,214.3%,-8.3%
 "South Portland, ME",February 2017,All Residential,Place/City,False,ME,0.992194194,0.4%,1.9%,17,13.3%,13.3%,22,-21.4%,-50.0%,24,-32,-10,$222K,-11.2%,16.9%,18,-18.2%,12.5%
 "South Portland, ME",March 2017,All Residential,Place/City,False,ME,0.995915087,0.4%,1.6%,30,76.5%,11.1%,31,40.9%,-36.7%,7,-17,-10,$256K,15.2%,8.4%,37,105.6%,-2.6%
 "South Portland, ME",April 2017,All Residential,Place/City,False,ME,1.003933266,0.8%,0.9%,20,-33.3%,-4.8%,32,3.2%,-51.5%,7,0,-5,$246K,-4.0%,11.6%,40,8.1%,-27.3%
 "South Portland, ME",May 2017,All Residential,Place/City,False,ME,1.034138030,3.0%,3.3%,40,100.0%,2.6%,43,34.4%,-21.8%,7,0,-15,$224K,-8.8%,-11.5%,56,40.0%,19.1%
-"South Portland, ME",June 2017,All Residential,Place/City,False,ME,1.020843202,-1.3%,0.5%,42,5.0%,0.0%,39,-9.3%,-29.1%,8,1,-2,$259K,15.8%,1.2%,52,-7.1%,-8.8%
-"South Portland, ME",July 2017,All Residential,Place/City,False,ME,1.022256541,0.1%,1.9%,39,-7.1%,-25.0%,38,-2.6%,-41.5%,9,1,1,$288K,10.8%,15.5%,42,-19.2%,-2.3%
-"South Portland, ME",August 2017,All Residential,Place/City,False,ME,1.015499073,-0.7%,0.1%,53,35.9%,10.4%,43,13.2%,-23.2%,9,0,1,$280K,-2.6%,7.7%,56,33.3%,55.6%
-"South Portland, ME",September 2017,All Residential,Place/City,False,ME,0.989427357,-2.6%,-0.4%,46,-13.2%,17.9%,58,34.9%,-1.7%,15,6,-11,$250K,-10.6%,-3.7%,47,-16.1%,6.8%
-"South Portland, ME",October 2017,All Residential,Place/City,False,ME,0.987264323,-0.2%,-1.6%,37,-19.6%,2.8%,40,-31.0%,-23.1%,14,-1,1,$269K,7.4%,13.2%,28,-40.4%,-15.2%
-"South Portland, ME",November 2017,All Residential,Place/City,False,ME,0.986937678,0.0%,-1.4%,40,8.1%,8.1%,37,-7.5%,-14.0%,17,3,3,$306K,13.8%,27.6%,33,17.9%,73.7%
-"South Portland, ME",December 2017,All Residential,Place/City,False,ME,0.986372842,-0.1%,0.7%,34,-15.0%,17.2%,31,-16.2%,10.7%,20,3,-1,$273K,-10.7%,7.2%,20,-39.4%,185.7%
+"South Portland, ME",June 2017,All Residential,Place/City,False,ME,1.020843202,-1.3%,0.5%,42,5.0%,0.0%,38,-11.6%,-30.9%,8,1,-2,$259K,15.8%,1.2%,51,-8.9%,-10.5%
+"South Portland, ME",July 2017,All Residential,Place/City,False,ME,1.022256541,0.1%,1.9%,39,-7.1%,-25.0%,38,0.0%,-41.5%,9,1,1,$288K,10.8%,15.5%,42,-17.6%,-2.3%
+"South Portland, ME",August 2017,All Residential,Place/City,False,ME,1.016336312,-0.6%,0.2%,52,33.3%,8.3%,43,13.2%,-23.2%,9,0,1,$280K,-2.6%,7.7%,56,33.3%,55.6%
+"South Portland, ME",September 2017,All Residential,Place/City,False,ME,0.989427357,-2.7%,-0.4%,46,-11.5%,17.9%,58,34.9%,0.0%,15,6,-11,$250K,-10.6%,-3.7%,47,-16.1%,9.3%
+"South Portland, ME",October 2017,All Residential,Place/City,False,ME,0.987264323,-0.2%,-1.7%,37,-19.6%,5.7%,40,-31.0%,-23.1%,14,-1,-1,$269K,7.4%,13.1%,28,-40.4%,-15.2%
+"South Portland, ME",November 2017,All Residential,Place/City,False,ME,0.986937678,0.0%,-1.5%,40,8.1%,5.3%,37,-7.5%,-14.0%,17,3,2,$306K,13.8%,27.5%,33,17.9%,73.7%
+"South Portland, ME",December 2017,All Residential,Place/City,False,ME,0.986372842,-0.1%,0.5%,34,-15.0%,21.4%,31,-16.2%,10.7%,20,3,-1,$273K,-10.7%,10.7%,20,-39.4%,185.7%
 "South Portland, ME",January 2018,All Residential,Place/City,False,ME,0.988212579,0.2%,0.0%,28,-17.6%,86.7%,23,-25.8%,-17.9%,10,-10,-46,$300K,9.8%,20.0%,21,5.0%,-4.5%
 "South Portland, ME",February 2018,All Residential,Place/City,False,ME,0.999333368,1.1%,0.7%,22,-21.4%,29.4%,22,-4.3%,0.0%,8,-2,-16,$281K,-6.4%,26.5%,22,4.8%,22.2%
 "South Portland, ME",March 2018,All Residential,Place/City,False,ME,1.004407651,0.5%,0.8%,26,18.2%,-13.3%,24,9.1%,-22.6%,8,0,1,$255K,-9.2%,-0.3%,30,36.4%,-18.9%
 "South Portland, ME",April 2018,All Residential,Place/City,False,ME,1.011188482,0.7%,0.7%,29,11.5%,45.0%,21,-12.5%,-34.4%,7,-1,0,$285K,11.8%,16.1%,40,33.3%,0.0%
 "South Portland, ME",May 2018,All Residential,Place/City,False,ME,1.035259421,2.4%,0.1%,29,0.0%,-27.5%,35,66.7%,-18.6%,8,1,1,$280K,-1.8%,25.0%,51,27.5%,-8.9%
-"South Portland, ME",June 2018,All Residential,Place/City,False,ME,1.004447421,-3.1%,-1.6%,41,41.4%,-2.4%,36,2.9%,-7.7%,7,-1,-1,$319K,13.9%,23.0%,43,-15.7%,-17.3%
+"South Portland, ME",June 2018,All Residential,Place/City,False,ME,1.004447421,-3.1%,-1.6%,41,41.4%,-2.4%,36,2.9%,-5.3%,7,-1,-1,$319K,13.9%,23.0%,43,-15.7%,-15.7%
 "South Portland, ME",July 2018,All Residential,Place/City,False,ME,1.007743563,0.3%,-1.5%,43,4.9%,10.3%,45,25.0%,18.4%,9,2,0,$295K,-7.5%,2.6%,47,9.3%,11.9%
-"South Portland, ME",August 2018,All Residential,Place/City,False,ME,1.011400736,0.4%,-0.4%,40,-7.0%,-24.5%,54,20.0%,25.6%,10,1,1,$314K,6.5%,12.2%,49,4.3%,-12.5%
+"South Portland, ME",August 2018,All Residential,Place/City,False,ME,1.011400736,0.4%,-0.5%,40,-7.0%,-23.1%,54,20.0%,25.6%,10,1,1,$314K,6.5%,12.2%,49,4.3%,-12.5%
 "South Portland, ME",September 2018,All Residential,Place/City,False,ME,0.983996417,-2.7%,-0.5%,33,-17.5%,-28.3%,52,-3.7%,-10.3%,17,7,2,$290K,-7.7%,15.8%,36,-26.5%,-23.4%
 "South Portland, ME",October 2018,All Residential,Place/City,False,ME,1.000238087,1.6%,1.3%,44,33.3%,18.9%,46,-11.5%,15.0%,20,3,6,$261K,-10.1%,-3.1%,35,-2.8%,25.0%
-"South Portland, ME",November 2018,All Residential,Place/City,False,ME,0.986548598,-1.4%,0.0%,39,-11.4%,-2.5%,41,-10.9%,10.8%,19,-1,2,$301K,15.4%,-1.6%,29,-17.1%,-12.1%
-"South Portland, ME",December 2018,All Residential,Place/City,False,ME,1.005051840,1.9%,1.9%,29,-25.6%,-14.7%,32,-22.0%,3.2%,12,-7,-8,$277K,-8.0%,1.3%,14,-51.7%,-30.0%
-"South Portland, ME",January 2019,All Residential,Place/City,False,ME,0.997017315,-0.8%,0.9%,20,-31.0%,-28.6%,20,-37.5%,-13.0%,9,-3,-1,$253K,-8.8%,-15.8%,14,0.0%,-33.3%
-"South Portland, ME",February 2019,All Residential,Place/City,False,ME,0.987634586,-0.9%,-1.2%,22,10.0%,0.0%,25,25.0%,13.6%,21,12,13,$247K,-2.2%,-12.0%,28,100.0%,27.3%
-"South Portland, ME",March 2019,All Residential,Place/City,False,ME,1.005731830,1.8%,0.1%,23,4.5%,-11.5%,31,24.0%,29.2%,13,-8,5,$282K,14.2%,10.6%,25,-10.7%,-16.7%
+"South Portland, ME",November 2018,All Residential,Place/City,False,ME,0.986548598,-1.4%,0.0%,39,-11.4%,-2.5%,41,-10.9%,10.8%,19,-1,2,$301K,15.4%,-1.6%,28,-20.0%,-15.2%
+"South Portland, ME",December 2018,All Residential,Place/City,False,ME,1.004922635,1.8%,1.9%,28,-28.2%,-17.6%,31,-24.4%,0.0%,12,-7,-8,$274K,-9.1%,0.1%,13,-53.6%,-35.0%
+"South Portland, ME",January 2019,All Residential,Place/City,False,ME,0.997409508,-0.8%,0.9%,21,-25.0%,-25.0%,20,-35.5%,-13.0%,9,-3,-1,$260K,-4.9%,-13.3%,14,7.7%,-33.3%
+"South Portland, ME",February 2019,All Residential,Place/City,False,ME,0.988958168,-0.8%,-1.0%,21,0.0%,-4.5%,25,25.0%,13.6%,18,9,10,$255K,-1.9%,-9.2%,28,100.0%,27.3%
+"South Portland, ME",March 2019,All Residential,Place/City,False,ME,1.005731830,1.7%,0.1%,23,9.5%,-11.5%,31,24.0%,29.2%,13,-5,5,$282K,10.6%,10.6%,25,-10.7%,-16.7%
 "South Portland, ME",April 2019,All Residential,Place/City,False,ME,1.018746567,1.3%,0.8%,25,8.7%,-13.8%,37,19.4%,76.2%,15,2,8,$325K,15.2%,14.0%,51,104.0%,27.5%
-"South Portland, ME",May 2019,All Residential,Place/City,False,ME,1.022065788,0.3%,-1.3%,36,44.0%,24.1%,50,35.1%,42.9%,7,-8,-1,$327K,0.8%,16.9%,60,17.6%,17.6%
-"South Portland, ME",June 2019,All Residential,Place/City,False,ME,1.016494595,-0.6%,1.2%,49,36.1%,19.5%,58,16.0%,61.1%,8,1,1,$330K,0.8%,3.4%,54,-10.0%,25.6%
-"South Portland, ME",July 2019,All Residential,Place/City,False,ME,1.021381117,0.5%,1.4%,42,-14.3%,-2.3%,44,-24.1%,-2.2%,10,2,1,$304K,-8.0%,2.9%,32,-40.7%,-31.9%
-"South Portland, ME",August 2019,All Residential,Place/City,False,ME,1.013242897,-0.8%,0.2%,44,4.8%,10.0%,41,-6.8%,-24.1%,12,2,2,$320K,5.4%,1.8%,46,43.8%,-6.1%
-"South Portland, ME",September 2019,All Residential,Place/City,False,ME,0.999254210,-1.4%,1.5%,41,-6.8%,24.2%,47,14.6%,-9.6%,13,1,-4,$305K,-4.7%,5.2%,42,-8.7%,16.7%
-"South Portland, ME",October 2019,All Residential,Place/City,False,ME,1.012174607,1.3%,1.2%,39,-4.9%,-11.4%,55,17.0%,19.6%,11,-2,-9,$315K,3.3%,20.8%,42,0.0%,20.0%
-"South Portland, ME",November 2019,All Residential,Place/City,False,ME,1.025602554,1.3%,3.9%,28,-28.2%,-28.2%,46,-16.4%,12.2%,18,7,-1,$325K,3.2%,8.0%,24,-42.9%,-17.2%
-"South Portland, ME",December 2019,All Residential,Place/City,False,ME,0.990681984,-3.5%,-1.4%,35,25.0%,20.7%,28,-39.1%,-12.5%,12,-6,0,$315K,-3.1%,13.7%,12,-50.0%,-14.3%
-"South Portland, ME",January 2020,All Residential,Place/City,False,ME,0.982418912,-0.8%,-1.5%,23,-34.3%,15.0%,28,0.0%,40.0%,36,24,27,$280K,-11.3%,10.7%,23,91.7%,64.3%
-"South Portland, ME",February 2020,All Residential,Place/City,False,ME,1.008148311,2.6%,2.1%,24,4.3%,9.1%,20,-28.6%,-20.0%,7,-29,-14,$281K,0.5%,13.8%,22,-4.3%,-21.4%
+"South Portland, ME",May 2019,All Residential,Place/City,False,ME,1.022065788,0.3%,-1.3%,36,44.0%,24.1%,49,32.4%,40.0%,7,-8,-1,$327K,0.8%,16.9%,59,15.7%,15.7%
+"South Portland, ME",June 2019,All Residential,Place/City,False,ME,1.016494595,-0.6%,1.2%,49,36.1%,19.5%,57,16.3%,58.3%,8,1,1,$330K,0.8%,3.4%,54,-8.5%,25.6%
+"South Portland, ME",July 2019,All Residential,Place/City,False,ME,1.021381117,0.5%,1.4%,42,-14.3%,-2.3%,43,-24.6%,-4.4%,10,2,1,$304K,-8.0%,2.9%,32,-40.7%,-31.9%
+"South Portland, ME",August 2019,All Residential,Place/City,False,ME,1.012958905,-0.8%,0.2%,43,2.4%,7.5%,41,-4.7%,-24.1%,12,2,2,$320K,5.4%,1.8%,46,43.8%,-6.1%
+"South Portland, ME",September 2019,All Residential,Place/City,False,ME,0.999439646,-1.4%,1.5%,40,-7.0%,21.2%,47,14.6%,-9.6%,13,1,-4,$305K,-4.7%,5.2%,42,-8.7%,16.7%
+"South Portland, ME",October 2019,All Residential,Place/City,False,ME,1.012174607,1.3%,1.2%,39,-2.5%,-11.4%,55,17.0%,19.6%,11,-2,-9,$315K,3.3%,20.8%,42,0.0%,20.0%
+"South Portland, ME",November 2019,All Residential,Place/City,False,ME,1.025602554,1.3%,3.9%,28,-28.2%,-28.2%,46,-16.4%,12.2%,18,7,-1,$325K,3.2%,8.0%,24,-42.9%,-14.3%
+"South Portland, ME",December 2019,All Residential,Place/City,False,ME,0.990681984,-3.5%,-1.4%,35,25.0%,25.0%,28,-39.1%,-9.7%,12,-6,0,$315K,-3.1%,15.2%,12,-50.0%,-7.7%
+"South Portland, ME",January 2020,All Residential,Place/City,False,ME,0.982418912,-0.8%,-1.5%,23,-34.3%,9.5%,28,0.0%,40.0%,36,24,27,$280K,-11.3%,7.5%,23,91.7%,64.3%
+"South Portland, ME",February 2020,All Residential,Place/City,False,ME,1.008148311,2.6%,1.9%,24,4.3%,14.3%,20,-28.6%,-20.0%,7,-29,-11,$281K,0.5%,10.2%,22,-4.3%,-21.4%
 "South Portland, ME",March 2020,All Residential,Place/City,False,ME,0.995599506,-1.3%,-1.0%,23,-4.2%,0.0%,20,0.0%,-35.5%,19,12,6,$266K,-5.3%,-5.7%,37,68.2%,48.0%
 "South Portland, ME",April 2020,All Residential,Place/City,False,ME,1.014368787,1.9%,-0.4%,27,17.4%,8.0%,25,25.0%,-32.4%,7,-12,-8,$305K,14.7%,-6.2%,22,-40.5%,-56.9%
-"South Portland, ME",May 2020,All Residential,Place/City,False,ME,1.006850533,-0.8%,-1.5%,31,14.8%,-13.9%,28,12.0%,-44.0%,8,1,1,$320K,4.9%,-2.3%,34,54.5%,-43.3%
-"South Portland, ME",June 2020,All Residential,Place/City,False,ME,1.030667473,2.4%,1.4%,30,-3.2%,-38.8%,24,-14.3%,-58.6%,6,-2,-2,$324K,1.2%,-1.9%,48,41.2%,-11.1%
-"South Portland, ME",July 2020,All Residential,Place/City,False,ME,1.036153992,0.5%,1.5%,41,36.7%,-2.4%,34,41.7%,-22.7%,8,2,-2,$385K,18.9%,26.9%,41,-14.6%,28.1%
-"South Portland, ME",August 2020,All Residential,Place/City,False,ME,1.039464093,0.3%,2.6%,35,-14.6%,-20.5%,37,8.8%,-9.8%,7,-1,-5,$415K,7.8%,29.7%,45,9.8%,-2.2%
-"South Portland, ME",September 2020,All Residential,Place/City,False,ME,1.056086747,1.7%,5.7%,44,25.7%,7.3%,36,-2.7%,-23.4%,7,0,-6,$363K,-12.7%,18.9%,50,11.1%,19.0%
+"South Portland, ME",May 2020,All Residential,Place/City,False,ME,1.006850533,-0.8%,-1.5%,31,14.8%,-13.9%,28,12.0%,-42.9%,8,1,1,$320K,4.9%,-2.3%,34,54.5%,-42.4%
+"South Portland, ME",June 2020,All Residential,Place/City,False,ME,1.030667473,2.4%,1.4%,30,-3.2%,-38.8%,24,-14.3%,-57.9%,6,-2,-2,$324K,1.2%,-1.9%,48,41.2%,-11.1%
+"South Portland, ME",July 2020,All Residential,Place/City,False,ME,1.036153992,0.5%,1.5%,41,36.7%,-2.4%,34,41.7%,-20.9%,8,2,-2,$385K,18.9%,26.9%,41,-14.6%,28.1%
+"South Portland, ME",August 2020,All Residential,Place/City,False,ME,1.039464093,0.3%,2.7%,35,-14.6%,-18.6%,37,8.8%,-9.8%,7,-1,-5,$415K,7.8%,29.7%,45,9.8%,-2.2%
+"South Portland, ME",September 2020,All Residential,Place/City,False,ME,1.056086747,1.7%,5.7%,44,25.7%,10.0%,36,-2.7%,-23.4%,7,0,-6,$363K,-12.7%,18.9%,50,11.1%,19.0%
 "South Portland, ME",October 2020,All Residential,Place/City,False,ME,1.042636849,-1.3%,3.0%,43,-2.3%,10.3%,33,-8.3%,-40.0%,9,2,-2,$370K,2.0%,17.4%,44,-12.0%,4.8%
 "South Portland, ME",November 2020,All Residential,Place/City,False,ME,1.023151391,-1.9%,-0.2%,56,30.2%,100.0%,28,-15.2%,-39.1%,7,-2,-11,$350K,-5.4%,7.7%,27,-38.6%,12.5%
 "South Portland, ME",December 2020,All Residential,Place/City,False,ME,1.042941932,2.0%,5.2%,46,-17.9%,31.4%,18,-35.7%,-35.7%,8,1,-4,$315K,-9.9%,0.1%,20,-25.9%,66.7%
-"South Portland, ME",January 2021,All Residential,Place/City,False,ME,1.008270174,-3.5%,2.6%,23,-50.0%,0.0%,15,-16.7%,-46.4%,13,5,-23,$295K,-6.4%,5.5%,24,20.0%,4.3%
-"South Portland, ME",February 2021,All Residential,Place/City,False,ME,1.038149818,3.0%,3.0%,25,8.7%,4.2%,13,-13.3%,-35.0%,11,-2,4,$340K,15.3%,21.0%,33,37.5%,50.0%
-"South Portland, ME",March 2021,All Residential,Place/City,False,ME,1.071130951,3.3%,7.6%,28,12.0%,21.7%,18,38.5%,-10.0%,8,-3,-11,$343K,0.7%,28.8%,34,3.0%,-8.1%
-"South Portland, ME",April 2021,All Residential,Place/City,False,ME,1.082807975,1.2%,6.8%,36,28.6%,33.3%,14,-22.2%,-44.0%,6,-2,-1,$355K,3.6%,16.4%,26,-23.5%,18.2%
-"South Portland, ME",May 2021,All Residential,Place/City,False,ME,1.095166732,1.2%,8.8%,30,-16.7%,-3.2%,22,57.1%,-21.4%,7,1,-1,$459K,29.4%,43.6%,47,80.8%,38.2%
-"South Portland, ME",June 2021,All Residential,Place/City,False,ME,1.101915449,0.7%,7.1%,38,26.7%,26.7%,13,-40.9%,-45.8%,7,0,1,$429K,-6.6%,32.5%,44,-6.4%,-8.3%
-"South Portland, ME",July 2021,All Residential,Place/City,False,ME,1.071755798,-3.0%,3.6%,41,7.9%,0.0%,29,123.1%,-14.7%,7,0,-1,$425K,-0.9%,10.4%,50,13.6%,22.0%
-"South Portland, ME",August 2021,All Residential,Place/City,False,ME,1.064729233,-0.7%,2.5%,45,9.8%,28.6%,25,-13.8%,-32.4%,7,0,0,$420K,-1.2%,1.2%,35,-30.0%,-22.2%
-"South Portland, ME",September 2021,All Residential,Place/City,False,ME,1.045611809,-1.9%,-1.0%,38,-15.6%,-13.6%,22,-12.0%,-38.9%,7,0,0,$414K,-1.5%,14.1%,36,2.9%,-28.0%
-"South Portland, ME",October 2021,All Residential,Place/City,False,ME,1.050816373,0.5%,0.8%,33,-13.2%,-23.3%,9,-59.1%,-72.7%,7,0,-2,$390K,-5.7%,5.4%,16,-55.6%,-63.6%
-"South Portland, ME",November 2021,All Residential,Place/City,False,ME,1.038399898,-1.2%,1.5%,37,12.1%,-33.9%,9,0.0%,-67.9%,9,2,2,$410K,5.1%,17.1%,6,-62.5%,-77.8%
+"South Portland, ME",January 2021,All Residential,Place/City,False,ME,1.008270174,-3.5%,2.6%,23,-50.0%,0.0%,15,-16.7%,-46.4%,13,5,-23,$295K,-6.4%,5.5%,25,25.0%,8.7%
+"South Portland, ME",February 2021,All Residential,Place/City,False,ME,1.038149818,3.0%,3.0%,25,8.7%,4.2%,13,-13.3%,-35.0%,11,-2,4,$340K,15.3%,21.0%,33,32.0%,50.0%
+"South Portland, ME",March 2021,All Residential,Place/City,False,ME,1.075246304,3.7%,8.0%,29,16.0%,26.1%,18,38.5%,-10.0%,8,-3,-11,$345K,1.5%,29.7%,34,3.0%,-8.1%
+"South Portland, ME",April 2021,All Residential,Place/City,False,ME,1.082807975,0.8%,6.8%,36,24.1%,33.3%,16,-11.1%,-36.0%,6,-2,-1,$355K,2.9%,16.4%,28,-17.6%,27.3%
+"South Portland, ME",May 2021,All Residential,Place/City,False,ME,1.095166732,1.2%,8.8%,30,-16.7%,-3.2%,25,56.3%,-10.7%,7,1,-1,$459K,29.4%,43.6%,48,71.4%,41.2%
+"South Portland, ME",June 2021,All Residential,Place/City,False,ME,1.101915449,0.7%,7.1%,38,26.7%,26.7%,17,-32.0%,-29.2%,7,0,1,$429K,-6.6%,32.5%,45,-6.3%,-6.3%
+"South Portland, ME",July 2021,All Residential,Place/City,False,ME,1.071755798,-3.0%,3.6%,41,7.9%,0.0%,34,100.0%,0.0%,7,0,-1,$425K,-0.9%,10.4%,50,11.1%,22.0%
+"South Portland, ME",August 2021,All Residential,Place/City,False,ME,1.064097057,-0.8%,2.5%,44,7.3%,25.7%,31,-8.8%,-16.2%,7,0,0,$420K,-1.2%,1.2%,36,-28.0%,-20.0%
+"South Portland, ME",September 2021,All Residential,Place/City,False,ME,1.045611809,-1.8%,-1.0%,38,-13.6%,-13.6%,31,0.0%,-13.9%,7,0,0,$414K,-1.5%,14.1%,38,5.6%,-24.0%
+"South Portland, ME",October 2021,All Residential,Place/City,False,ME,1.050816373,0.5%,0.8%,33,-13.2%,-23.3%,19,-38.7%,-42.4%,7,0,-2,$390K,-5.7%,5.4%,20,-47.4%,-54.5%
+"South Portland, ME",November 2021,All Residential,Place/City,False,ME,1.038399898,-1.2%,1.5%,37,12.1%,-33.9%,16,-15.8%,-42.9%,9,2,2,$410K,5.1%,17.1%,23,15.0%,-14.8%
+"South Portland, ME",December 2021,All Residential,Place/City,False,ME,1.025826077,-1.3%,-1.7%,30,-18.9%,-34.8%,7,-56.3%,-61.1%,11,2,3,$368K,-10.4%,16.6%,13,-43.5%,-35.0%
+"South Portland, ME",January 2022,All Residential,Place/City,False,ME,1.052314515,2.6%,4.4%,19,-36.7%,-17.4%,4,-42.9%,-73.3%,13,2,0,$465K,26.5%,57.6%,5,-61.5%,-80.0%
 "Portland, ME - Arts District",July 2015,All Residential,Neighborhood,False,ME,0.987865577,,,4,,,5,,,71,,,$230K,,,4,,
 "Portland, ME - Arts District",August 2015,All Residential,Neighborhood,False,ME,0.958650655,-2.9%,,2,-50.0%,,4,-20.0%,,91.5,20.5,,$399K,73.9%,,2,-50.0%,
 "Portland, ME - Arts District",September 2015,All Residential,Neighborhood,False,ME,0.958650655,0.0%,,2,0.0%,,5,25.0%,,91.5,0,,$399K,0.0%,,2,0.0%,
@@ -316,75 +322,77 @@
 "Portland, ME - Back Cove",December 2015,All Residential,Neighborhood,False,ME,0.973522308,1.8%,,20,17.6%,,9,-25.0%,,14,-25.5,,$223K,-15.8%,,20,-16.7%,
 "Portland, ME - Back Cove",January 2016,All Residential,Neighborhood,False,ME,0.994890471,2.1%,,16,-20.0%,,9,0.0%,,14.5,0.5,,$226K,1.3%,,5,-75.0%,
 "Portland, ME - Back Cove",February 2016,All Residential,Neighborhood,False,ME,0.986502473,-0.8%,,16,0.0%,,6,-33.3%,,43.5,29,,$227K,0.4%,,8,60.0%,
-"Portland, ME - Back Cove",March 2016,All Residential,Neighborhood,False,ME,0.979690269,-0.7%,,13,-18.8%,,10,66.7%,,54,10.5,,$244K,7.5%,,16,100.0%,
-"Portland, ME - Back Cove",April 2016,All Residential,Neighborhood,False,ME,0.980387227,0.1%,,13,0.0%,,7,-30.0%,,39,-15,,$244K,0.0%,,23,43.8%,
-"Portland, ME - Back Cove",May 2016,All Residential,Neighborhood,False,ME,0.998844402,1.8%,,21,61.5%,,5,-28.6%,,23,-16,,$348K,42.6%,,23,0.0%,
-"Portland, ME - Back Cove",June 2016,All Residential,Neighborhood,False,ME,1.001666247,0.3%,,21,0.0%,,5,0.0%,,13,-10,,$270K,-22.4%,,16,-30.4%,
-"Portland, ME - Back Cove",July 2016,All Residential,Neighborhood,False,ME,1.003688156,0.2%,0.7%,25,19.0%,13.6%,9,80.0%,-40.0%,11,-2,4,$295K,9.3%,22.4%,14,-12.5%,-48.1%
-"Portland, ME - Back Cove",August 2016,All Residential,Neighborhood,False,ME,1.002096931,-0.2%,0.9%,18,-28.0%,-21.7%,9,0.0%,-25.0%,11,0,-2,$270K,-8.5%,17.4%,17,21.4%,-10.5%
-"Portland, ME - Back Cove",September 2016,All Residential,Neighborhood,False,ME,0.994367230,-0.8%,0.8%,14,-22.2%,-22.2%,9,0.0%,-30.8%,11,0,-9,$300K,11.1%,22.1%,23,35.3%,43.8%
-"Portland, ME - Back Cove",October 2016,All Residential,Neighborhood,False,ME,0.993630895,-0.1%,3.8%,14,0.0%,-26.3%,6,-33.3%,-68.4%,9,-2,-21,$293K,-2.5%,17.0%,19,-17.4%,-32.1%
-"Portland, ME - Back Cove",November 2016,All Residential,Neighborhood,False,ME,0.988368406,-0.5%,3.3%,14,0.0%,-17.6%,4,-33.3%,-66.7%,16,7,-23.5,$269K,-8.2%,1.3%,15,-21.1%,-37.5%
+"Portland, ME - Back Cove",March 2016,All Residential,Neighborhood,False,ME,0.979690269,-0.7%,,13,-18.8%,,10,66.7%,,54,10.5,,$244K,7.5%,,17,112.5%,
+"Portland, ME - Back Cove",April 2016,All Residential,Neighborhood,False,ME,0.980387227,0.1%,,13,0.0%,,7,-30.0%,,39,-15,,$244K,0.0%,,24,41.2%,
+"Portland, ME - Back Cove",May 2016,All Residential,Neighborhood,False,ME,0.997598228,1.7%,,22,69.2%,,6,-14.3%,,22,-17,,$327K,33.8%,,25,4.2%,
+"Portland, ME - Back Cove",June 2016,All Residential,Neighborhood,False,ME,1.000291807,0.3%,,22,0.0%,,6,0.0%,,12,-10,,$269K,-17.8%,,17,-32.0%,
+"Portland, ME - Back Cove",July 2016,All Residential,Neighborhood,False,ME,1.002447402,0.2%,0.5%,26,18.2%,18.2%,9,50.0%,-40.0%,11,-1,4,$283K,5.2%,17.2%,15,-11.8%,-44.4%
+"Portland, ME - Back Cove",August 2016,All Residential,Neighborhood,False,ME,1.001432549,-0.1%,0.8%,19,-26.9%,-17.4%,9,0.0%,-25.0%,11,0,-2,$270K,-4.4%,17.4%,17,13.3%,-10.5%
+"Portland, ME - Back Cove",September 2016,All Residential,Neighborhood,False,ME,0.994040994,-0.7%,0.8%,15,-21.1%,-16.7%,9,0.0%,-30.8%,11,0,-9,$310K,14.8%,26.2%,23,35.3%,43.8%
+"Portland, ME - Back Cove",October 2016,All Residential,Neighborhood,False,ME,0.993353748,-0.1%,3.8%,15,0.0%,-21.1%,6,-33.3%,-68.4%,10,-1,-20,$295K,-4.8%,18.0%,19,-17.4%,-32.1%
+"Portland, ME - Back Cove",November 2016,All Residential,Neighborhood,False,ME,0.988368406,-0.5%,3.3%,14,-6.7%,-17.6%,4,-33.3%,-66.7%,16,6,-23.5,$269K,-9.0%,1.3%,15,-21.1%,-37.5%
 "Portland, ME - Back Cove",December 2016,All Residential,Neighborhood,False,ME,0.990446086,0.2%,1.7%,16,14.3%,-20.0%,5,25.0%,-44.4%,15,-1,1,$257K,-4.5%,15.0%,8,-46.7%,-60.0%
-"Portland, ME - Back Cove",January 2017,All Residential,Neighborhood,False,ME,0.975689041,-1.5%,-1.9%,11,-31.3%,-31.3%,5,0.0%,-44.4%,25,10,10.5,$215K,-16.2%,-4.9%,6,-25.0%,20.0%
-"Portland, ME - Back Cove",February 2017,All Residential,Neighborhood,False,ME,0.959732195,-1.6%,-2.7%,7,-36.4%,-56.3%,5,0.0%,-16.7%,25,0,-18.5,$215K,0.0%,-5.3%,7,16.7%,-12.5%
-"Portland, ME - Back Cove",March 2017,All Residential,Neighborhood,False,ME,0.977987605,1.8%,-0.2%,7,0.0%,-46.2%,7,40.0%,-30.0%,25,0,-29,$325K,51.2%,33.2%,12,71.4%,-25.0%
-"Portland, ME - Back Cove",April 2017,All Residential,Neighborhood,False,ME,0.986449479,0.8%,0.6%,8,14.3%,-38.5%,4,-42.9%,-42.9%,16,-9,-23,$299K,-8.0%,22.5%,14,16.7%,-39.1%
-"Portland, ME - Back Cove",May 2017,All Residential,Neighborhood,False,ME,0.999469334,1.3%,0.1%,11,37.5%,-47.6%,4,0.0%,-20.0%,12,-4,-11,$195K,-34.8%,-44.0%,18,28.6%,-21.7%
-"Portland, ME - Back Cove",June 2017,All Residential,Neighborhood,False,ME,1.008371007,0.9%,0.7%,16,45.5%,-23.8%,7,75.0%,40.0%,10,-2,-3,$256K,31.2%,-5.3%,17,-5.6%,6.3%
-"Portland, ME - Back Cove",July 2017,All Residential,Neighborhood,False,ME,1.014694730,0.6%,1.1%,17,6.3%,-32.0%,4,-42.9%,-55.6%,9,-1,-2,$255K,-0.3%,-13.6%,16,-5.9%,14.3%
-"Portland, ME - Back Cove",August 2017,All Residential,Neighborhood,False,ME,1.019729462,0.5%,1.8%,20,17.6%,11.1%,4,0.0%,-55.6%,9,0,-2,$265K,4.0%,-1.8%,15,-6.3%,-11.8%
-"Portland, ME - Back Cove",September 2017,All Residential,Neighborhood,False,ME,1.015630875,-0.4%,2.1%,16,-20.0%,14.3%,5,25.0%,-44.4%,10,1,-1,$293K,10.3%,-2.5%,15,0.0%,-34.8%
-"Portland, ME - Back Cove",October 2017,All Residential,Neighborhood,False,ME,1.015640273,0.0%,2.2%,14,-12.5%,0.0%,4,-20.0%,-33.3%,8,-2,-1,$306K,4.6%,4.6%,19,26.7%,0.0%
+"Portland, ME - Back Cove",January 2017,All Residential,Neighborhood,False,ME,0.975689041,-1.5%,-1.9%,11,-31.3%,-31.3%,5,0.0%,-44.4%,25,10,10.5,$215K,-16.2%,-4.9%,7,-12.5%,40.0%
+"Portland, ME - Back Cove",February 2017,All Residential,Neighborhood,False,ME,0.966882684,-0.9%,-2.0%,8,-27.3%,-50.0%,5,0.0%,-16.7%,16.5,-8.5,-27,$206K,-4.1%,-9.1%,8,14.3%,0.0%
+"Portland, ME - Back Cove",March 2017,All Residential,Neighborhood,False,ME,0.982856167,1.6%,0.3%,8,0.0%,-38.5%,7,40.0%,-30.0%,22.5,6,-31.5,$259K,25.6%,6.1%,13,62.5%,-23.5%
+"Portland, ME - Back Cove",April 2017,All Residential,Neighborhood,False,ME,0.989836882,0.7%,0.9%,9,12.5%,-30.8%,4,-42.9%,-42.9%,12,-10.5,-27,$193K,-25.5%,-20.9%,14,7.7%,-41.7%
+"Portland, ME - Back Cove",May 2017,All Residential,Neighborhood,False,ME,0.999469334,1.0%,0.2%,11,22.2%,-50.0%,4,0.0%,-33.3%,12,0,-10,$195K,1.0%,-40.3%,18,28.6%,-28.0%
+"Portland, ME - Back Cove",June 2017,All Residential,Neighborhood,False,ME,1.008371007,0.9%,0.8%,16,45.5%,-27.3%,7,75.0%,16.7%,10,-2,-2,$256K,31.2%,-4.7%,17,-5.6%,0.0%
+"Portland, ME - Back Cove",July 2017,All Residential,Neighborhood,False,ME,1.014694730,0.6%,1.2%,17,6.3%,-34.6%,4,-42.9%,-55.6%,9,-1,-2,$255K,-0.3%,-9.7%,16,-5.9%,6.7%
+"Portland, ME - Back Cove",August 2017,All Residential,Neighborhood,False,ME,1.019729462,0.5%,1.8%,20,17.6%,5.3%,4,0.0%,-55.6%,9,0,-2,$265K,4.0%,-1.8%,15,-6.3%,-11.8%
+"Portland, ME - Back Cove",September 2017,All Residential,Neighborhood,False,ME,1.015630875,-0.4%,2.2%,16,-20.0%,6.7%,5,25.0%,-44.4%,10,1,-1,$293K,10.3%,-5.6%,15,0.0%,-34.8%
+"Portland, ME - Back Cove",October 2017,All Residential,Neighborhood,False,ME,1.015640273,0.0%,2.2%,14,-12.5%,-6.7%,4,-20.0%,-33.3%,8,-2,-2,$306K,4.6%,3.7%,19,26.7%,0.0%
 "Portland, ME - Back Cove",November 2017,All Residential,Neighborhood,False,ME,1.009816922,-0.6%,2.1%,13,-7.1%,-7.1%,4,0.0%,0.0%,16,8,0,$335K,9.5%,24.8%,17,-10.5%,13.3%
 "Portland, ME - Back Cove",December 2017,All Residential,Neighborhood,False,ME,1.010612445,0.1%,2.0%,12,-7.7%,-25.0%,2,-50.0%,-60.0%,15,-1,0,$323K,-3.7%,25.7%,14,-17.6%,75.0%
-"Portland, ME - Back Cove",January 2018,All Residential,Neighborhood,False,ME,1.016010660,0.5%,4.0%,17,41.7%,54.5%,3,50.0%,-40.0%,14,-1,-11,$335K,3.9%,55.8%,12,-14.3%,100.0%
-"Portland, ME - Back Cove",February 2018,All Residential,Neighborhood,False,ME,1.007153959,-0.9%,4.7%,14,-17.6%,100.0%,5,66.7%,0.0%,14,0,-11,$361K,7.7%,67.9%,11,-8.3%,57.1%
-"Portland, ME - Back Cove",March 2018,All Residential,Neighborhood,False,ME,1.008265159,0.1%,3.0%,15,7.1%,114.3%,2,-60.0%,-71.4%,12.5,-1.5,-12.5,$305K,-15.6%,-6.3%,11,0.0%,-8.3%
-"Portland, ME - Back Cove",April 2018,All Residential,Neighborhood,False,ME,1.034188713,2.6%,4.8%,11,-26.7%,37.5%,2,0.0%,-50.0%,11,-1.5,-5,$248K,-18.4%,-16.9%,15,36.4%,7.1%
+"Portland, ME - Back Cove",January 2018,All Residential,Neighborhood,False,ME,1.016010660,0.5%,4.0%,17,41.7%,54.5%,3,50.0%,-40.0%,14,-1,-11,$335K,3.9%,55.8%,12,-14.3%,71.4%
+"Portland, ME - Back Cove",February 2018,All Residential,Neighborhood,False,ME,1.007153959,-0.9%,4.0%,14,-17.6%,75.0%,5,66.7%,0.0%,14,0,-2.5,$361K,7.7%,75.0%,11,-8.3%,37.5%
+"Portland, ME - Back Cove",March 2018,All Residential,Neighborhood,False,ME,1.008265159,0.1%,2.5%,15,7.1%,87.5%,2,-60.0%,-71.4%,12.5,-1.5,-10,$305K,-15.6%,17.6%,11,0.0%,-15.4%
+"Portland, ME - Back Cove",April 2018,All Residential,Neighborhood,False,ME,1.034188713,2.6%,4.4%,11,-26.7%,22.2%,2,0.0%,-50.0%,11,-1.5,-1,$248K,-18.4%,28.7%,15,36.4%,7.1%
 "Portland, ME - Back Cove",May 2018,All Residential,Neighborhood,False,ME,1.037554450,0.3%,3.8%,14,27.3%,27.3%,4,100.0%,0.0%,8,-3,-4,$280K,12.5%,43.3%,17,13.3%,-5.6%
 "Portland, ME - Back Cove",June 2018,All Residential,Neighborhood,False,ME,1.057063085,2.0%,4.9%,13,-7.1%,-18.8%,13,225.0%,85.7%,7,-1,-3,$350K,25.2%,36.9%,27,58.8%,58.8%
-"Portland, ME - Back Cove",July 2018,All Residential,Neighborhood,False,ME,1.040787725,-1.6%,2.6%,16,23.1%,-5.9%,15,15.4%,275.0%,6.5,-0.5,-2.5,$362K,3.5%,42.1%,29,7.4%,81.3%
-"Portland, ME - Back Cove",August 2018,All Residential,Neighborhood,False,ME,1.019149444,-2.2%,-0.1%,18,12.5%,-10.0%,12,-20.0%,200.0%,10,3.5,1,$418K,15.3%,57.5%,25,-13.8%,66.7%
-"Portland, ME - Back Cove",September 2018,All Residential,Neighborhood,False,ME,1.006609220,-1.3%,-0.9%,17,-5.6%,6.3%,15,25.0%,200.0%,11,1,1,$335K,-19.8%,14.5%,20,-20.0%,33.3%
-"Portland, ME - Back Cove",October 2018,All Residential,Neighborhood,False,ME,0.975754260,-3.1%,-4.0%,19,11.8%,35.7%,12,-20.0%,200.0%,21,10,13,$325K,-3.1%,6.0%,15,-25.0%,-21.1%
-"Portland, ME - Back Cove",November 2018,All Residential,Neighborhood,False,ME,0.986390033,1.1%,-2.3%,13,-31.6%,0.0%,11,-8.3%,175.0%,13,-8,-3,$275K,-15.3%,-17.9%,14,-6.7%,-17.6%
-"Portland, ME - Back Cove",December 2018,All Residential,Neighborhood,False,ME,0.992142554,0.6%,-1.8%,12,-7.7%,0.0%,9,-18.2%,350.0%,11,-2,-4,$269K,-2.3%,-16.7%,7,-50.0%,-50.0%
-"Portland, ME - Back Cove",January 2019,All Residential,Neighborhood,False,ME,1.037433441,4.5%,2.1%,4,-66.7%,-76.5%,11,22.2%,266.7%,6,-5,-8,$269K,0.0%,-19.8%,6,-14.3%,-50.0%
+"Portland, ME - Back Cove",July 2018,All Residential,Neighborhood,False,ME,1.040787725,-1.6%,2.6%,16,23.1%,-5.9%,16,23.1%,300.0%,6.5,-0.5,-2.5,$362K,3.5%,42.1%,31,14.8%,93.8%
+"Portland, ME - Back Cove",August 2018,All Residential,Neighborhood,False,ME,1.019149444,-2.2%,-0.1%,18,12.5%,-10.0%,13,-18.8%,225.0%,10,3.5,1,$418K,15.3%,57.5%,27,-12.9%,80.0%
+"Portland, ME - Back Cove",September 2018,All Residential,Neighborhood,False,ME,1.006609220,-1.3%,-0.9%,17,-5.6%,6.3%,15,15.4%,200.0%,11,1,1,$335K,-19.8%,14.5%,22,-18.5%,46.7%
+"Portland, ME - Back Cove",October 2018,All Residential,Neighborhood,False,ME,0.972739434,-3.4%,-4.3%,20,17.6%,42.9%,12,-20.0%,200.0%,24,13,16,$307K,-8.3%,0.4%,15,-31.8%,-21.1%
+"Portland, ME - Back Cove",November 2018,All Residential,Neighborhood,False,ME,0.981323440,0.9%,-2.8%,14,-30.0%,7.7%,11,-8.3%,175.0%,15,-9,-1,$271K,-11.7%,-19.0%,14,-6.7%,-17.6%
+"Portland, ME - Back Cove",December 2018,All Residential,Neighborhood,False,ME,0.986243721,0.5%,-2.4%,13,-7.1%,8.3%,9,-18.2%,350.0%,13,-2,-2,$268K,-1.4%,-17.1%,7,-50.0%,-50.0%
+"Portland, ME - Back Cove",January 2019,All Residential,Neighborhood,False,ME,1.037433441,5.1%,2.1%,4,-69.2%,-76.5%,11,22.2%,266.7%,6,-7,-8,$269K,0.5%,-19.8%,6,-14.3%,-50.0%
 "Portland, ME - Back Cove",February 2019,All Residential,Neighborhood,False,ME,1.007683492,-3.0%,0.1%,5,25.0%,-64.3%,10,-9.1%,100.0%,7,1,-7,$385K,43.3%,6.7%,10,66.7%,-9.1%
 "Portland, ME - Back Cove",March 2019,All Residential,Neighborhood,False,ME,0.977300253,-3.0%,-3.1%,7,40.0%,-53.3%,7,-30.0%,250.0%,10,3,-2.5,$385K,0.0%,26.4%,13,30.0%,18.2%
-"Portland, ME - Back Cove",April 2019,All Residential,Neighborhood,False,ME,0.992520193,1.5%,-4.2%,16,128.6%,45.5%,9,28.6%,350.0%,10,0,-1,$330K,-14.3%,32.9%,18,38.5%,20.0%
-"Portland, ME - Back Cove",May 2019,All Residential,Neighborhood,False,ME,0.997403446,0.5%,-4.0%,22,37.5%,57.1%,10,11.1%,150.0%,10,0,2,$280K,-15.2%,0.2%,24,33.3%,41.2%
-"Portland, ME - Back Cove",June 2019,All Residential,Neighborhood,False,ME,1.006220654,0.9%,-5.1%,24,9.1%,84.6%,13,30.0%,0.0%,12,2,5,$348K,24.3%,-0.6%,32,33.3%,18.5%
-"Portland, ME - Back Cove",July 2019,All Residential,Neighborhood,False,ME,0.997175443,-0.9%,-4.4%,25,4.2%,56.3%,7,-46.2%,-53.3%,15,3,8.5,$385K,10.6%,6.3%,25,-21.9%,-13.8%
-"Portland, ME - Back Cove",August 2019,All Residential,Neighborhood,False,ME,0.997627242,0.0%,-2.2%,23,-8.0%,27.8%,7,0.0%,-41.7%,17,2,7,$366K,-4.9%,-12.3%,21,-16.0%,-16.0%
-"Portland, ME - Back Cove",September 2019,All Residential,Neighborhood,False,ME,0.996668981,-0.1%,-1.0%,22,-4.3%,29.4%,13,85.7%,-13.3%,14.5,-2.5,3.5,$358K,-2.2%,6.9%,17,-19.0%,-15.0%
-"Portland, ME - Back Cove",October 2019,All Residential,Neighborhood,False,ME,1.011788631,1.5%,3.6%,17,-22.7%,-10.5%,6,-53.8%,-50.0%,12,-2.5,-9,$329K,-8.1%,1.4%,20,17.6%,33.3%
-"Portland, ME - Back Cove",November 2019,All Residential,Neighborhood,False,ME,0.986938834,-2.5%,0.1%,18,5.9%,38.5%,5,-16.7%,-54.5%,11,-1,-2,$346K,5.2%,25.9%,15,-25.0%,7.1%
-"Portland, ME - Back Cove",December 2019,All Residential,Neighborhood,False,ME,0.980641097,-0.6%,-1.2%,18,0.0%,50.0%,2,-60.0%,-77.8%,11.5,0.5,0.5,$377K,8.7%,40.1%,7,-53.3%,0.0%
-"Portland, ME - Back Cove",January 2020,All Residential,Neighborhood,False,ME,0.966041454,-1.5%,-7.1%,13,-27.8%,225.0%,1,-50.0%,-90.9%,11,-0.5,5,$369K,-2.0%,37.3%,2,-71.4%,-66.7%
-"Portland, ME - Back Cove",February 2020,All Residential,Neighborhood,False,ME,0.994708605,2.9%,-1.3%,5,-61.5%,0.0%,1,0.0%,-90.0%,9,-2,2,$414K,12.2%,7.5%,4,100.0%,-60.0%
-"Portland, ME - Back Cove",March 2020,All Residential,Neighborhood,False,ME,1.021462109,2.7%,4.4%,4,-20.0%,-42.9%,1,0.0%,-85.7%,6,-3,-4,$381K,-7.9%,-1.0%,6,50.0%,-53.8%
-"Portland, ME - Back Cove",April 2020,All Residential,Neighborhood,False,ME,1.027322536,0.6%,3.5%,8,100.0%,-50.0%,1,0.0%,-88.9%,6.5,0.5,-3.5,$286K,-25.1%,-13.5%,8,33.3%,-55.6%
-"Portland, ME - Back Cove",May 2020,All Residential,Neighborhood,False,ME,1.019681057,-0.8%,2.2%,9,12.5%,-59.1%,3,200.0%,-70.0%,7,0.5,-3,$311K,8.9%,11.1%,10,25.0%,-58.3%
-"Portland, ME - Back Cove",June 2020,All Residential,Neighborhood,False,ME,1.013149890,-0.7%,0.7%,9,0.0%,-62.5%,3,0.0%,-76.9%,11.5,4.5,-0.5,$309K,-0.6%,-11.2%,13,30.0%,-59.4%
-"Portland, ME - Back Cove",July 2020,All Residential,Neighborhood,False,ME,1.004365204,-0.9%,0.7%,11,22.2%,-56.0%,7,133.3%,0.0%,14,2.5,-1,$309K,0.0%,-19.7%,23,76.9%,-8.0%
-"Portland, ME - Back Cove",August 2020,All Residential,Neighborhood,False,ME,1.007706771,0.3%,1.0%,16,45.5%,-30.4%,8,14.3%,14.3%,12.5,-1.5,-4.5,$325K,5.2%,-11.2%,27,17.4%,28.6%
-"Portland, ME - Back Cove",September 2020,All Residential,Neighborhood,False,ME,1.015486389,0.8%,1.9%,23,43.8%,4.5%,7,-12.5%,-46.2%,10,-2.5,-4.5,$335K,3.1%,-6.4%,28,3.7%,64.7%
-"Portland, ME - Back Cove",October 2020,All Residential,Neighborhood,False,ME,1.028698624,1.3%,1.7%,26,13.0%,52.9%,9,28.6%,50.0%,7.5,-2.5,-4.5,$415K,23.9%,26.1%,25,-10.7%,25.0%
-"Portland, ME - Back Cove",November 2020,All Residential,Neighborhood,False,ME,1.042560701,1.4%,5.6%,25,-3.8%,38.9%,5,-44.4%,0.0%,5.5,-2,-5.5,$405K,-2.4%,17.0%,21,-16.0%,40.0%
-"Portland, ME - Back Cove",December 2020,All Residential,Neighborhood,False,ME,1.046903883,0.4%,6.6%,19,-24.0%,5.6%,3,-40.0%,50.0%,5.5,0,-6,$390K,-3.7%,3.6%,16,-23.8%,128.6%
-"Portland, ME - Back Cove",January 2021,All Residential,Neighborhood,False,ME,1.022738139,-2.4%,5.7%,16,-15.8%,23.1%,3,0.0%,200.0%,7,1.5,-4,$354K,-9.2%,-4.1%,12,-25.0%,500.0%
-"Portland, ME - Back Cove",February 2021,All Residential,Neighborhood,False,ME,0.997896864,-2.5%,0.3%,16,0.0%,220.0%,1,-66.7%,0.0%,9,2,0,$318K,-10.0%,-23.1%,9,-25.0%,125.0%
-"Portland, ME - Back Cove",March 2021,All Residential,Neighborhood,False,ME,1.017375832,1.9%,-0.4%,16,0.0%,300.0%,,,,9,0,3,$330K,3.5%,-13.5%,11,22.2%,83.3%
-"Portland, ME - Back Cove",April 2021,All Residential,Neighborhood,False,ME,1.051830337,3.4%,2.5%,14,-12.5%,75.0%,5,,400.0%,6,-3,-0.5,$343K,3.9%,20.0%,15,36.4%,87.5%
-"Portland, ME - Back Cove",May 2021,All Residential,Neighborhood,False,ME,1.146241516,9.4%,12.7%,15,7.1%,66.7%,2,-60.0%,-33.3%,6,0,-1,$490K,43.1%,57.6%,18,20.0%,80.0%
-"Portland, ME - Back Cove",June 2021,All Residential,Neighborhood,False,ME,1.162015089,1.6%,14.9%,18,20.0%,100.0%,6,200.0%,100.0%,6,0,-5.5,$538K,9.7%,73.9%,26,44.4%,100.0%
-"Portland, ME - Back Cove",July 2021,All Residential,Neighborhood,False,ME,1.168675041,0.7%,16.4%,20,11.1%,81.8%,4,-33.3%,-42.9%,6,0,-8,$575K,7.0%,86.1%,24,-7.7%,4.3%
-"Portland, ME - Back Cove",August 2021,All Residential,Neighborhood,False,ME,1.119493910,-4.9%,11.2%,20,0.0%,25.0%,3,-25.0%,-62.5%,6,0,-6.5,$542K,-5.8%,66.7%,23,-4.2%,-14.8%
-"Portland, ME - Back Cove",September 2021,All Residential,Neighborhood,False,ME,1.081729389,-3.8%,6.6%,19,-5.0%,-17.4%,3,0.0%,-57.1%,7,1,-3,$435K,-19.7%,29.9%,20,-13.0%,-28.6%
-"Portland, ME - Back Cove",October 2021,All Residential,Neighborhood,False,ME,1.055901710,-2.6%,2.7%,16,-15.8%,-38.5%,1,-66.7%,-88.9%,13,6,5.5,$371K,-14.7%,-10.6%,18,-10.0%,-28.0%
-"Portland, ME - Back Cove",November 2021,All Residential,Neighborhood,False,ME,1.052957821,-0.3%,1.0%,21,31.3%,-16.0%,1,0.0%,-80.0%,8,-5,2.5,$370K,-0.3%,-8.6%,13,-27.8%,-38.1%
+"Portland, ME - Back Cove",April 2019,All Residential,Neighborhood,False,ME,0.992520193,1.5%,-4.2%,16,128.6%,45.5%,10,42.9%,400.0%,10,0,-1,$330K,-14.3%,32.9%,19,46.2%,26.7%
+"Portland, ME - Back Cove",May 2019,All Residential,Neighborhood,False,ME,0.997403446,0.5%,-4.0%,22,37.5%,57.1%,11,10.0%,175.0%,10,0,2,$280K,-15.2%,0.2%,25,31.6%,47.1%
+"Portland, ME - Back Cove",June 2019,All Residential,Neighborhood,False,ME,1.006220654,0.9%,-5.1%,24,9.1%,84.6%,14,27.3%,7.7%,12,2,5,$348K,24.3%,-0.6%,33,32.0%,22.2%
+"Portland, ME - Back Cove",July 2019,All Residential,Neighborhood,False,ME,0.997175443,-0.9%,-4.4%,25,4.2%,56.3%,8,-42.9%,-50.0%,15,3,8.5,$385K,10.6%,6.3%,25,-24.2%,-19.4%
+"Portland, ME - Back Cove",August 2019,All Residential,Neighborhood,False,ME,0.997627242,0.0%,-2.2%,23,-8.0%,27.8%,8,0.0%,-38.5%,17,2,7,$366K,-4.9%,-12.3%,21,-16.0%,-22.2%
+"Portland, ME - Back Cove",September 2019,All Residential,Neighborhood,False,ME,0.996668981,-0.1%,-1.0%,22,-4.3%,29.4%,14,75.0%,-6.7%,14.5,-2.5,3.5,$358K,-2.2%,6.9%,17,-19.0%,-22.7%
+"Portland, ME - Back Cove",October 2019,All Residential,Neighborhood,False,ME,1.011788631,1.5%,3.9%,17,-22.7%,-15.0%,7,-50.0%,-41.7%,12,-2.5,-12,$329K,-8.1%,7.1%,20,17.6%,33.3%
+"Portland, ME - Back Cove",November 2019,All Residential,Neighborhood,False,ME,0.986938834,-2.5%,0.6%,18,5.9%,28.6%,6,-14.3%,-45.5%,11,-1,-4,$346K,5.2%,27.6%,15,-25.0%,7.1%
+"Portland, ME - Back Cove",December 2019,All Residential,Neighborhood,False,ME,0.980641097,-0.6%,-0.6%,18,0.0%,38.5%,3,-50.0%,-66.7%,11.5,0.5,-1.5,$377K,8.7%,40.7%,7,-53.3%,0.0%
+"Portland, ME - Back Cove",January 2020,All Residential,Neighborhood,False,ME,0.966041454,-1.5%,-7.1%,13,-27.8%,225.0%,2,-33.3%,-81.8%,11,-0.5,5,$369K,-2.0%,37.3%,2,-71.4%,-66.7%
+"Portland, ME - Back Cove",February 2020,All Residential,Neighborhood,False,ME,0.994708605,2.9%,-1.3%,5,-61.5%,0.0%,2,0.0%,-80.0%,9,-2,2,$414K,12.2%,7.5%,4,100.0%,-60.0%
+"Portland, ME - Back Cove",March 2020,All Residential,Neighborhood,False,ME,1.021462109,2.7%,4.4%,4,-20.0%,-42.9%,2,0.0%,-71.4%,6,-3,-4,$381K,-7.9%,-1.0%,6,50.0%,-53.8%
+"Portland, ME - Back Cove",April 2020,All Residential,Neighborhood,False,ME,1.027322536,0.6%,3.5%,8,100.0%,-50.0%,1,-50.0%,-90.0%,6.5,0.5,-3.5,$286K,-25.1%,-13.5%,8,33.3%,-57.9%
+"Portland, ME - Back Cove",May 2020,All Residential,Neighborhood,False,ME,1.019681057,-0.8%,2.2%,9,12.5%,-59.1%,3,200.0%,-72.7%,7,0.5,-3,$311K,8.9%,11.1%,10,25.0%,-60.0%
+"Portland, ME - Back Cove",June 2020,All Residential,Neighborhood,False,ME,1.013149890,-0.7%,0.7%,9,0.0%,-62.5%,3,0.0%,-78.6%,11.5,4.5,-0.5,$309K,-0.6%,-11.2%,13,30.0%,-60.6%
+"Portland, ME - Back Cove",July 2020,All Residential,Neighborhood,False,ME,1.004365204,-0.9%,0.7%,11,22.2%,-56.0%,7,133.3%,-12.5%,14,2.5,-1,$309K,0.0%,-19.7%,23,76.9%,-8.0%
+"Portland, ME - Back Cove",August 2020,All Residential,Neighborhood,False,ME,1.007706771,0.3%,1.0%,16,45.5%,-30.4%,7,0.0%,-12.5%,12.5,-1.5,-4.5,$325K,5.2%,-11.2%,26,13.0%,23.8%
+"Portland, ME - Back Cove",September 2020,All Residential,Neighborhood,False,ME,1.016190316,0.8%,2.0%,22,37.5%,0.0%,7,0.0%,-50.0%,10,-2.5,-4.5,$368K,13.1%,2.7%,27,3.8%,58.8%
+"Portland, ME - Back Cove",October 2020,All Residential,Neighborhood,False,ME,1.029846569,1.4%,1.8%,25,13.6%,47.1%,9,28.6%,28.6%,7,-3,-5,$425K,15.6%,29.2%,24,-11.1%,20.0%
+"Portland, ME - Back Cove",November 2020,All Residential,Neighborhood,False,ME,1.044334064,1.4%,5.7%,24,-4.0%,33.3%,5,-44.4%,-16.7%,5,-2,-6,$415K,-2.4%,19.9%,21,-12.5%,40.0%
+"Portland, ME - Back Cove",December 2020,All Residential,Neighborhood,False,ME,1.046903883,0.3%,6.6%,19,-20.8%,5.6%,3,-40.0%,0.0%,5.5,0.5,-6,$390K,-6.0%,3.6%,16,-23.8%,128.6%
+"Portland, ME - Back Cove",January 2021,All Residential,Neighborhood,False,ME,1.021400601,-2.6%,5.5%,17,-10.5%,30.8%,3,0.0%,50.0%,7.5,2,-3.5,$365K,-6.4%,-1.1%,12,-25.0%,500.0%
+"Portland, ME - Back Cove",February 2021,All Residential,Neighborhood,False,ME,0.998020578,-2.3%,0.3%,17,0.0%,240.0%,1,-66.7%,-50.0%,9.5,2,0.5,$320K,-12.4%,-22.7%,9,-25.0%,125.0%
+"Portland, ME - Back Cove",March 2021,All Residential,Neighborhood,False,ME,1.016353724,1.8%,-0.5%,17,0.0%,325.0%,,,,9.5,0,3.5,$335K,4.7%,-12.1%,13,44.4%,116.7%
+"Portland, ME - Back Cove",April 2021,All Residential,Neighborhood,False,ME,1.063521835,4.7%,3.6%,16,-5.9%,100.0%,6,,500.0%,6,-3.5,-0.5,$413K,23.1%,44.5%,18,38.5%,125.0%
+"Portland, ME - Back Cove",May 2021,All Residential,Neighborhood,False,ME,1.146138081,8.3%,12.6%,17,6.3%,88.9%,3,-50.0%,0.0%,6,0,-1,$500K,21.2%,60.8%,21,16.7%,110.0%
+"Portland, ME - Back Cove",June 2021,All Residential,Neighborhood,False,ME,1.160349812,1.4%,14.7%,20,17.6%,122.2%,7,133.3%,133.3%,6,0,-5.5,$580K,16.0%,87.7%,27,28.6%,107.7%
+"Portland, ME - Back Cove",July 2021,All Residential,Neighborhood,False,ME,1.168675041,0.8%,16.4%,20,0.0%,81.8%,5,-28.6%,-28.6%,6,0,-8,$575K,-0.9%,86.1%,24,-11.1%,4.3%
+"Portland, ME - Back Cove",August 2021,All Residential,Neighborhood,False,ME,1.119493910,-4.9%,11.2%,20,0.0%,25.0%,4,-20.0%,-42.9%,6,0,-6.5,$542K,-5.8%,66.7%,23,-4.2%,-11.5%
+"Portland, ME - Back Cove",September 2021,All Residential,Neighborhood,False,ME,1.081729389,-3.8%,6.6%,19,-5.0%,-13.6%,4,0.0%,-42.9%,7,1,-3,$435K,-19.7%,18.4%,20,-13.0%,-25.9%
+"Portland, ME - Back Cove",October 2021,All Residential,Neighborhood,False,ME,1.055901710,-2.6%,2.6%,16,-15.8%,-36.0%,4,0.0%,-55.6%,13,6,6,$371K,-14.7%,-12.7%,22,10.0%,-8.3%
+"Portland, ME - Back Cove",November 2021,All Residential,Neighborhood,False,ME,1.052957821,-0.3%,0.9%,21,31.3%,-12.5%,1,-75.0%,-80.0%,8,-5,3,$370K,-0.3%,-10.8%,19,-13.6%,-9.5%
+"Portland, ME - Back Cove",December 2021,All Residential,Neighborhood,False,ME,1.065576181,1.3%,1.9%,20,-4.8%,5.3%,2,100.0%,-33.3%,8,0,2.5,$463K,25.0%,18.6%,13,-31.6%,-18.8%
+"Portland, ME - Back Cove",January 2022,All Residential,Neighborhood,False,ME,1.052596362,-1.3%,3.1%,20,0.0%,17.6%,,,,8,0,0.5,$463K,0.0%,26.7%,5,-61.5%,-58.3%
 "Portland, ME - Deering Center",July 2015,All Residential,Neighborhood,False,ME,0.993025862,,,24,,,7,,,7.5,,,$251K,,,21,,
 "Portland, ME - Deering Center",August 2015,All Residential,Neighborhood,False,ME,0.990305818,-0.3%,,22,-8.3%,,6,-14.3%,,10,2.5,,$268K,6.6%,,18,-14.3%,
 "Portland, ME - Deering Center",September 2015,All Residential,Neighborhood,False,ME,0.985968220,-0.4%,,22,0.0%,,13,116.7%,,20,10,,$306K,14.5%,,20,11.1%,
@@ -400,10 +408,10 @@
 "Portland, ME - Deering Center",July 2016,All Residential,Neighborhood,False,ME,0.994521535,0.5%,0.1%,22,22.2%,-8.3%,5,25.0%,-28.6%,17,2,9.5,$295K,11.3%,17.3%,20,5.3%,-4.8%
 "Portland, ME - Deering Center",August 2016,All Residential,Neighborhood,False,ME,1.001258056,0.7%,1.1%,23,4.5%,4.5%,4,-20.0%,-33.3%,15.5,-1.5,5.5,$305K,3.6%,14.0%,21,5.0%,16.7%
 "Portland, ME - Deering Center",September 2016,All Residential,Neighborhood,False,ME,1.004610238,0.3%,1.9%,20,-13.0%,-9.1%,11,175.0%,-15.4%,15.5,0,-4.5,$270K,-11.4%,-11.8%,28,33.3%,40.0%
-"Portland, ME - Deering Center",October 2016,All Residential,Neighborhood,False,ME,1.022131717,1.8%,3.8%,14,-30.0%,-22.2%,8,-27.3%,-11.1%,7.5,-8,-4.5,$303K,12.1%,-3.1%,21,-25.0%,10.5%
-"Portland, ME - Deering Center",November 2016,All Residential,Neighborhood,False,ME,1.010324727,-1.2%,4.1%,16,14.3%,0.0%,8,0.0%,-27.3%,9.5,2,-9.5,$248K,-18.3%,-14.7%,22,4.8%,22.2%
-"Portland, ME - Deering Center",December 2016,All Residential,Neighborhood,False,ME,0.998710898,-1.2%,3.0%,21,31.3%,110.0%,3,-62.5%,-76.9%,12,2.5,-2.5,$300K,21.2%,14.3%,10,-54.5%,-23.1%
-"Portland, ME - Deering Center",January 2017,All Residential,Neighborhood,False,ME,0.995022303,-0.4%,2.3%,20,-4.8%,100.0%,2,-33.3%,-60.0%,13,1,-24.5,$244K,-18.8%,-29.4%,8,-20.0%,0.0%
+"Portland, ME - Deering Center",October 2016,All Residential,Neighborhood,False,ME,1.022131717,1.8%,3.8%,14,-30.0%,-22.2%,7,-36.4%,-22.2%,7.5,-8,-4.5,$303K,12.1%,-3.1%,20,-28.6%,5.3%
+"Portland, ME - Deering Center",November 2016,All Residential,Neighborhood,False,ME,1.010324727,-1.2%,4.1%,16,14.3%,0.0%,7,0.0%,-36.4%,9.5,2,-9.5,$248K,-18.3%,-14.7%,21,5.0%,16.7%
+"Portland, ME - Deering Center",December 2016,All Residential,Neighborhood,False,ME,0.998710898,-1.2%,3.0%,21,31.3%,110.0%,3,-57.1%,-76.9%,12,2.5,-2.5,$300K,21.2%,14.3%,9,-57.1%,-30.8%
+"Portland, ME - Deering Center",January 2017,All Residential,Neighborhood,False,ME,0.995022303,-0.4%,2.3%,20,-4.8%,100.0%,2,-33.3%,-60.0%,13,1,-24.5,$244K,-18.8%,-29.4%,8,-11.1%,0.0%
 "Portland, ME - Deering Center",February 2017,All Residential,Neighborhood,False,ME,0.983438148,-1.2%,2.0%,13,-35.0%,8.3%,3,50.0%,0.0%,42,29,-30.5,$248K,1.5%,-21.0%,5,-37.5%,-16.7%
 "Portland, ME - Deering Center",March 2017,All Residential,Neighborhood,False,ME,0.985331775,0.2%,2.9%,8,-38.5%,-20.0%,3,0.0%,-25.0%,35.5,-6.5,-39.5,$213K,-13.8%,-31.9%,6,20.0%,-14.3%
 "Portland, ME - Deering Center",April 2017,All Residential,Neighborhood,False,ME,0.992158648,0.7%,3.6%,7,-12.5%,-50.0%,5,66.7%,-16.7%,17.5,-18,-58.5,$355K,66.4%,54.3%,8,33.3%,-52.9%
@@ -412,9 +420,9 @@
 "Portland, ME - Deering Center",July 2017,All Residential,Neighborhood,False,ME,1.011659063,0.7%,1.7%,15,25.0%,-31.8%,6,20.0%,20.0%,9.5,-3.5,-7.5,$325K,13.1%,10.5%,19,18.8%,-5.0%
 "Portland, ME - Deering Center",August 2017,All Residential,Neighborhood,False,ME,1.006836810,-0.5%,0.6%,15,0.0%,-34.8%,4,-33.3%,0.0%,7.5,-2,-8,$305K,-6.3%,0.0%,16,-15.8%,-23.8%
 "Portland, ME - Deering Center",September 2017,All Residential,Neighborhood,False,ME,1.010012549,0.3%,0.5%,16,6.7%,-20.0%,6,50.0%,-45.5%,8,0.5,-7.5,$343K,12.4%,26.8%,15,-6.3%,-46.4%
-"Portland, ME - Deering Center",October 2017,All Residential,Neighborhood,False,ME,1.007586568,-0.2%,-1.5%,14,-12.5%,0.0%,10,66.7%,25.0%,8,0,0.5,$306K,-10.7%,1.0%,15,0.0%,-28.6%
-"Portland, ME - Deering Center",November 2017,All Residential,Neighborhood,False,ME,1.013705878,0.6%,0.3%,15,7.1%,-6.3%,5,-50.0%,-37.5%,9,1,-0.5,$323K,5.6%,30.5%,12,-20.0%,-45.5%
-"Portland, ME - Deering Center",December 2017,All Residential,Neighborhood,False,ME,1.029274486,1.6%,3.1%,12,-20.0%,-42.9%,4,-20.0%,33.3%,8,-1,-4,$318K,-1.6%,5.9%,8,-33.3%,-20.0%
+"Portland, ME - Deering Center",October 2017,All Residential,Neighborhood,False,ME,1.007586568,-0.2%,-1.5%,14,-12.5%,0.0%,10,66.7%,42.9%,8,0,0.5,$306K,-10.7%,1.0%,15,0.0%,-25.0%
+"Portland, ME - Deering Center",November 2017,All Residential,Neighborhood,False,ME,1.013705878,0.6%,0.3%,15,7.1%,-6.3%,5,-50.0%,-28.6%,9,1,-0.5,$323K,5.6%,30.5%,12,-20.0%,-42.9%
+"Portland, ME - Deering Center",December 2017,All Residential,Neighborhood,False,ME,1.029274486,1.6%,3.1%,12,-20.0%,-42.9%,4,-20.0%,33.3%,8,-1,-4,$318K,-1.6%,5.9%,8,-33.3%,-11.1%
 "Portland, ME - Deering Center",January 2018,All Residential,Neighborhood,False,ME,1.023768463,-0.6%,2.9%,11,-8.3%,-45.0%,2,-50.0%,0.0%,10,2,-3,$315K,-0.9%,29.2%,2,-75.0%,-75.0%
 "Portland, ME - Deering Center",February 2018,All Residential,Neighborhood,False,ME,1.025064234,0.1%,4.2%,7,-36.4%,-46.2%,2,0.0%,-33.3%,12,2,-30,$315K,0.0%,27.3%,3,50.0%,-40.0%
 "Portland, ME - Deering Center",March 2018,All Residential,Neighborhood,False,ME,1.027199512,0.2%,4.2%,6,-14.3%,-25.0%,1,-50.0%,-66.7%,10,-2,-25.5,$313K,-0.8%,46.5%,9,200.0%,50.0%
@@ -429,11 +437,11 @@
 "Portland, ME - Deering Center",December 2018,All Residential,Neighborhood,False,ME,0.987832727,-2.2%,-4.1%,11,-21.4%,-8.3%,12,9.1%,200.0%,37,8.5,29,$451K,14.1%,41.8%,14,7.7%,75.0%
 "Portland, ME - Deering Center",January 2019,All Residential,Neighborhood,False,ME,0.958775532,-2.9%,-6.5%,5,-54.5%,-54.5%,14,16.7%,600.0%,61,24,51,$388K,-13.9%,23.2%,18,28.6%,800.0%
 "Portland, ME - Deering Center",February 2019,All Residential,Neighborhood,False,ME,0.970757194,1.2%,-5.4%,8,60.0%,14.3%,3,-78.6%,50.0%,12,-49,0,$214K,-44.8%,-32.1%,11,-38.9%,266.7%
-"Portland, ME - Deering Center",March 2019,All Residential,Neighborhood,False,ME,0.948506609,-2.2%,-7.9%,10,25.0%,66.7%,1,-66.7%,0.0%,12,0,2,$215K,0.5%,-31.2%,11,0.0%,22.2%
-"Portland, ME - Deering Center",April 2019,All Residential,Neighborhood,False,ME,0.955345508,0.7%,-8.4%,9,-10.0%,50.0%,6,500.0%,100.0%,11,-1,5,$205K,-4.7%,-21.4%,12,9.1%,-7.7%
-"Portland, ME - Deering Center",May 2019,All Residential,Neighborhood,False,ME,0.957024902,0.2%,-7.8%,5,-44.4%,-58.3%,10,66.7%,100.0%,7,-4,1,$324K,58.0%,-2.4%,20,66.7%,-9.1%
-"Portland, ME - Deering Center",June 2019,All Residential,Neighborhood,False,ME,1.027935724,7.1%,-1.2%,9,80.0%,-43.8%,10,0.0%,233.3%,10,3,5,$375K,15.7%,13.6%,24,20.0%,-4.0%
-"Portland, ME - Deering Center",July 2019,All Residential,Neighborhood,False,ME,1.012756889,-1.5%,-1.8%,14,55.6%,-39.1%,10,0.0%,25.0%,8.5,-1.5,2.5,$404K,7.7%,22.3%,21,-12.5%,-22.2%
+"Portland, ME - Deering Center",March 2019,All Residential,Neighborhood,False,ME,0.948506609,-2.2%,-7.9%,10,25.0%,66.7%,1,-66.7%,0.0%,12,0,2,$215K,0.5%,-31.2%,12,9.1%,33.3%
+"Portland, ME - Deering Center",April 2019,All Residential,Neighborhood,False,ME,0.955276351,0.7%,-8.4%,10,0.0%,66.7%,6,500.0%,100.0%,9,-3,3,$215K,0.0%,-17.5%,13,8.3%,0.0%
+"Portland, ME - Deering Center",May 2019,All Residential,Neighborhood,False,ME,0.956629741,0.1%,-7.9%,6,-40.0%,-50.0%,10,66.7%,100.0%,7,-2,1,$357K,66.0%,7.5%,21,61.5%,-4.5%
+"Portland, ME - Deering Center",June 2019,All Residential,Neighborhood,False,ME,1.020607545,6.4%,-2.0%,10,66.7%,-37.5%,10,0.0%,233.3%,8.5,1.5,3.5,$388K,8.5%,17.4%,24,14.3%,-4.0%
+"Portland, ME - Deering Center",July 2019,All Residential,Neighborhood,False,ME,1.012756889,-0.8%,-1.8%,14,40.0%,-39.1%,10,0.0%,25.0%,8.5,0,2.5,$404K,4.2%,22.3%,21,-12.5%,-22.2%
 "Portland, ME - Deering Center",August 2019,All Residential,Neighborhood,False,ME,1.008388316,-0.4%,-1.9%,15,7.1%,-31.8%,11,10.0%,57.1%,11,2.5,5,$375K,-7.1%,13.6%,14,-33.3%,-39.1%
 "Portland, ME - Deering Center",September 2019,All Residential,Neighborhood,False,ME,0.990575609,-1.8%,-3.5%,8,-46.7%,-60.0%,13,18.2%,225.0%,14,3,8,$319K,-15.0%,-4.1%,14,0.0%,-6.7%
 "Portland, ME - Deering Center",October 2019,All Residential,Neighborhood,False,ME,1.001609525,1.1%,-1.6%,7,-12.5%,-58.8%,12,-7.7%,500.0%,9,-5,2,$385K,20.9%,1.3%,14,0.0%,40.0%
@@ -441,27 +449,29 @@
 "Portland, ME - Deering Center",December 2019,All Residential,Neighborhood,False,ME,0.991656206,0.6%,0.4%,11,22.2%,0.0%,10,0.0%,-16.7%,11,2,-26,$385K,3.5%,-14.5%,8,-33.3%,-42.9%
 "Portland, ME - Deering Center",January 2020,All Residential,Neighborhood,False,ME,0.979349937,-1.2%,2.1%,8,-27.3%,60.0%,13,30.0%,-7.1%,15.5,4.5,-45.5,$330K,-14.2%,-14.9%,7,-12.5%,-61.1%
 "Portland, ME - Deering Center",February 2020,All Residential,Neighborhood,False,ME,0.969877921,-0.9%,-0.1%,7,-12.5%,-12.5%,9,-30.8%,200.0%,21,5.5,9,$375K,13.6%,75.2%,6,-14.3%,-45.5%
-"Portland, ME - Deering Center",March 2020,All Residential,Neighborhood,False,ME,0.962886739,-0.7%,1.4%,8,14.3%,-20.0%,9,0.0%,800.0%,50,29,38,$367K,-2.1%,70.7%,7,16.7%,-36.4%
-"Portland, ME - Deering Center",April 2020,All Residential,Neighborhood,False,ME,0.976017857,1.3%,2.1%,9,12.5%,0.0%,3,-66.7%,-50.0%,31,-19,20,$372K,1.4%,81.5%,7,0.0%,-41.7%
-"Portland, ME - Deering Center",May 2020,All Residential,Neighborhood,False,ME,0.988287031,1.2%,3.1%,12,33.3%,140.0%,3,0.0%,-70.0%,29,-2,22,$367K,-1.3%,13.3%,11,57.1%,-45.0%
-"Portland, ME - Deering Center",June 2020,All Residential,Neighborhood,False,ME,0.995603276,0.7%,-3.2%,14,16.7%,55.6%,1,-66.7%,-90.0%,25.5,-3.5,15.5,$362K,-1.3%,-3.4%,12,9.1%,-50.0%
-"Portland, ME - Deering Center",July 2020,All Residential,Neighborhood,False,ME,0.996099344,0.0%,-1.7%,19,35.7%,35.7%,2,100.0%,-80.0%,7,-18.5,-1.5,$393K,8.5%,-2.7%,17,41.7%,-19.0%
-"Portland, ME - Deering Center",August 2020,All Residential,Neighborhood,False,ME,1.007645742,1.2%,-0.1%,18,-5.3%,20.0%,5,150.0%,-54.5%,7,0,-4,$418K,6.4%,11.5%,25,47.1%,78.6%
-"Portland, ME - Deering Center",September 2020,All Residential,Neighborhood,False,ME,1.016540373,0.9%,2.6%,20,11.1%,150.0%,2,-60.0%,-84.6%,7,0,-7,$418K,0.0%,31.2%,25,0.0%,78.6%
-"Portland, ME - Deering Center",October 2020,All Residential,Neighborhood,False,ME,1.039331010,2.3%,3.8%,20,0.0%,185.7%,1,-50.0%,-91.7%,8,1,-1,$412K,-1.6%,6.9%,24,-4.0%,71.4%
-"Portland, ME - Deering Center",November 2020,All Residential,Neighborhood,False,ME,1.051686390,1.2%,6.6%,20,0.0%,122.2%,2,100.0%,-80.0%,8,0,-1,$341K,-17.3%,-8.5%,13,-45.8%,8.3%
-"Portland, ME - Deering Center",December 2020,All Residential,Neighborhood,False,ME,1.063544727,1.2%,7.2%,17,-15.0%,54.5%,,,,8,0,-3,$385K,13.1%,0.0%,11,-15.4%,37.5%
-"Portland, ME - Deering Center",January 2021,All Residential,Neighborhood,False,ME,1.048483724,-1.5%,6.9%,14,-17.6%,75.0%,,,,7,-1,-8.5,$371K,-3.8%,12.2%,8,-27.3%,14.3%
-"Portland, ME - Deering Center",February 2021,All Residential,Neighborhood,False,ME,1.036712057,-1.2%,6.7%,12,-14.3%,71.4%,2,,-77.8%,7,0,-14,$358K,-3.5%,-4.7%,9,12.5%,50.0%
-"Portland, ME - Deering Center",March 2021,All Residential,Neighborhood,False,ME,1.029928505,-0.7%,6.7%,11,-8.3%,37.5%,1,-50.0%,-88.9%,6,-1,-44,$445K,24.5%,21.3%,8,-11.1%,14.3%
-"Portland, ME - Deering Center",April 2021,All Residential,Neighborhood,False,ME,1.054096258,2.4%,7.8%,10,-9.1%,11.1%,4,300.0%,33.3%,4.5,-1.5,-26.5,$523K,17.5%,40.6%,9,12.5%,28.6%
-"Portland, ME - Deering Center",May 2021,All Residential,Neighborhood,False,ME,1.051771168,-0.2%,6.3%,12,20.0%,0.0%,5,25.0%,66.7%,21,16.5,-8,$542K,3.6%,47.7%,9,0.0%,-18.2%
-"Portland, ME - Deering Center",June 2021,All Residential,Neighborhood,False,ME,1.046706578,-0.5%,5.1%,11,-8.3%,-21.4%,3,-40.0%,200.0%,25.5,4.5,0,$550K,1.5%,51.8%,13,44.4%,8.3%
-"Portland, ME - Deering Center",July 2021,All Residential,Neighborhood,False,ME,1.044165188,-0.3%,4.8%,11,0.0%,-42.1%,7,133.3%,250.0%,27,1.5,20,$515K,-6.4%,31.0%,18,38.5%,5.9%
-"Portland, ME - Deering Center",August 2021,All Residential,Neighborhood,False,ME,1.042557736,-0.2%,3.5%,11,0.0%,-38.9%,7,0.0%,40.0%,8,-19,1,$552K,7.1%,31.9%,22,22.2%,-12.0%
-"Portland, ME - Deering Center",September 2021,All Residential,Neighborhood,False,ME,1.056301756,1.4%,4.0%,14,27.3%,-30.0%,9,28.6%,350.0%,7.5,-0.5,0.5,$536K,-2.9%,28.2%,23,4.5%,-8.0%
-"Portland, ME - Deering Center",October 2021,All Residential,Neighborhood,False,ME,1.035658413,-2.1%,-0.4%,17,21.4%,-15.0%,6,-33.3%,500.0%,7,-0.5,-1,$552K,2.9%,34.0%,14,-39.1%,-41.7%
-"Portland, ME - Deering Center",November 2021,All Residential,Neighborhood,False,ME,1.031147074,-0.5%,-2.1%,13,-23.5%,-35.0%,7,16.7%,250.0%,7,0,-1,$520K,-5.7%,52.7%,9,-35.7%,-30.8%
+"Portland, ME - Deering Center",March 2020,All Residential,Neighborhood,False,ME,0.962886739,-0.7%,1.4%,8,14.3%,-20.0%,9,0.0%,800.0%,50,29,38,$367K,-2.1%,70.7%,7,16.7%,-41.7%
+"Portland, ME - Deering Center",April 2020,All Residential,Neighborhood,False,ME,0.976017857,1.3%,2.1%,9,12.5%,-10.0%,3,-66.7%,-50.0%,31,-19,22,$372K,1.4%,73.0%,7,0.0%,-46.2%
+"Portland, ME - Deering Center",May 2020,All Residential,Neighborhood,False,ME,0.988287031,1.2%,3.2%,12,33.3%,100.0%,4,33.3%,-60.0%,29,-2,22,$367K,-1.3%,2.8%,12,71.4%,-42.9%
+"Portland, ME - Deering Center",June 2020,All Residential,Neighborhood,False,ME,0.995603276,0.7%,-2.5%,14,16.7%,40.0%,1,-75.0%,-90.0%,25.5,-3.5,17,$362K,-1.3%,-6.5%,13,8.3%,-45.8%
+"Portland, ME - Deering Center",July 2020,All Residential,Neighborhood,False,ME,0.996099344,0.0%,-1.7%,19,35.7%,35.7%,3,200.0%,-70.0%,7,-18.5,-1.5,$393K,8.5%,-2.7%,19,46.2%,-9.5%
+"Portland, ME - Deering Center",August 2020,All Residential,Neighborhood,False,ME,1.007645742,1.2%,-0.1%,18,-5.3%,20.0%,6,100.0%,-45.5%,7,0,-4,$418K,6.4%,11.5%,26,36.8%,85.7%
+"Portland, ME - Deering Center",September 2020,All Residential,Neighborhood,False,ME,1.016540373,0.9%,2.6%,20,11.1%,150.0%,3,-50.0%,-76.9%,7,0,-7,$418K,0.0%,31.2%,26,0.0%,85.7%
+"Portland, ME - Deering Center",October 2020,All Residential,Neighborhood,False,ME,1.039331010,2.3%,3.8%,20,0.0%,185.7%,1,-66.7%,-91.7%,8,1,-1,$412K,-1.6%,6.9%,24,-7.7%,71.4%
+"Portland, ME - Deering Center",November 2020,All Residential,Neighborhood,False,ME,1.045835123,0.7%,6.0%,21,5.0%,133.3%,2,100.0%,-80.0%,8,0,-1,$356K,-13.5%,-4.3%,12,-50.0%,0.0%
+"Portland, ME - Deering Center",December 2020,All Residential,Neighborhood,False,ME,1.056059453,1.0%,6.4%,18,-14.3%,63.6%,,,,8,0,-3,$396K,11.1%,2.7%,10,-16.7%,25.0%
+"Portland, ME - Deering Center",January 2021,All Residential,Neighborhood,False,ME,1.040505462,-1.6%,6.1%,15,-16.7%,87.5%,,,,7.5,-0.5,-8,$385K,-2.7%,16.6%,7,-30.0%,0.0%
+"Portland, ME - Deering Center",February 2021,All Residential,Neighborhood,False,ME,1.031851302,-0.9%,6.2%,11,-26.7%,57.1%,2,,-77.8%,7,-0.5,-14,$330K,-14.3%,-12.0%,9,28.6%,50.0%
+"Portland, ME - Deering Center",March 2021,All Residential,Neighborhood,False,ME,1.021730290,-1.0%,5.9%,11,0.0%,37.5%,1,-50.0%,-88.9%,6,-1,-44,$445K,34.8%,21.3%,8,-11.1%,14.3%
+"Portland, ME - Deering Center",April 2021,All Residential,Neighborhood,False,ME,1.045078222,2.3%,6.9%,10,-9.1%,11.1%,4,300.0%,33.3%,5,-1,-26,$493K,10.7%,32.4%,9,12.5%,28.6%
+"Portland, ME - Deering Center",May 2021,All Residential,Neighborhood,False,ME,1.047788770,0.3%,6.0%,13,30.0%,8.3%,5,25.0%,25.0%,21,16,-8,$534K,8.4%,45.5%,9,0.0%,-25.0%
+"Portland, ME - Deering Center",June 2021,All Residential,Neighborhood,False,ME,1.046706578,-0.1%,5.1%,11,-15.4%,-21.4%,3,-40.0%,200.0%,25.5,4.5,0,$550K,3.0%,51.8%,12,33.3%,-7.7%
+"Portland, ME - Deering Center",July 2021,All Residential,Neighborhood,False,ME,1.043646471,-0.3%,4.8%,10,-9.1%,-47.4%,7,133.3%,133.3%,35.5,10,28.5,$481K,-12.5%,22.4%,17,41.7%,-10.5%
+"Portland, ME - Deering Center",August 2021,All Residential,Neighborhood,False,ME,1.041878274,-0.2%,3.4%,10,0.0%,-44.4%,8,14.3%,33.3%,10,-25.5,3,$533K,10.8%,27.6%,22,29.4%,-15.4%
+"Portland, ME - Deering Center",September 2021,All Residential,Neighborhood,False,ME,1.056836326,1.5%,4.0%,13,30.0%,-35.0%,10,25.0%,233.3%,8,-2,1,$520K,-2.5%,24.4%,24,9.1%,-7.7%
+"Portland, ME - Deering Center",October 2021,All Residential,Neighborhood,False,ME,1.035658413,-2.1%,-0.4%,17,30.8%,-15.0%,7,-30.0%,600.0%,7,-1,-1,$552K,6.1%,34.0%,16,-33.3%,-33.3%
+"Portland, ME - Deering Center",November 2021,All Residential,Neighborhood,False,ME,1.031147074,-0.5%,-1.5%,13,-23.5%,-38.1%,8,14.3%,300.0%,7,0,-1,$520K,-5.7%,46.1%,12,-25.0%,0.0%
+"Portland, ME - Deering Center",December 2021,All Residential,Neighborhood,False,ME,1.022456910,-0.9%,-3.4%,13,0.0%,-27.8%,7,-12.5%,,8,1,0,$495K,-4.8%,25.2%,9,-25.0%,-10.0%
+"Portland, ME - Deering Center",January 2022,All Residential,Neighborhood,False,ME,1.015459388,-0.7%,-2.5%,12,-7.7%,-20.0%,7,0.0%,,7.5,-0.5,0,$420K,-15.2%,9.1%,8,-11.1%,14.3%
 "Portland, ME - Deering Highlands",July 2015,All Residential,Neighborhood,False,ME,0.968859239,,,8,,,7,,,19,,,$330K,,,11,,
 "Portland, ME - Deering Highlands",August 2015,All Residential,Neighborhood,False,ME,0.973714654,0.5%,,11,37.5%,,10,42.9%,,24,5,,$350K,6.2%,,10,-9.1%,
 "Portland, ME - Deering Highlands",September 2015,All Residential,Neighborhood,False,ME,0.981860061,0.8%,,4,-63.6%,,9,-10.0%,,20,-4,,$412K,17.8%,,8,-20.0%,
@@ -539,9 +549,11 @@
 "Portland, ME - Deering Highlands",September 2021,All Residential,Neighborhood,False,ME,1.071028876,0.5%,8.6%,5,0.0%,25.0%,3,0.0%,,10,2,-16,$535K,-10.8%,-4.4%,8,14.3%,166.7%
 "Portland, ME - Deering Highlands",October 2021,All Residential,Neighborhood,False,ME,1.087563071,1.7%,9.0%,6,20.0%,100.0%,,,,9,-1,-26,$560K,4.7%,141.4%,7,-12.5%,40.0%
 "Portland, ME - Deering Highlands",November 2021,All Residential,Neighborhood,False,ME,1.081682064,-0.6%,8.4%,5,-16.7%,25.0%,,,,14,5,-14,$535K,-4.5%,41.7%,3,-57.1%,-25.0%
-"Portland, ME - Downtown Portland",July 2015,All Residential,Neighborhood,False,ME,0.983629372,,,18,,,16,,,25,,,$396K,,,20,,
-"Portland, ME - Downtown Portland",August 2015,All Residential,Neighborhood,False,ME,1.010454576,2.7%,,14,-22.2%,,12,-25.0%,,20.5,-4.5,,$329K,-17.1%,,17,-15.0%,
-"Portland, ME - Downtown Portland",September 2015,All Residential,Neighborhood,False,ME,0.996564480,-1.4%,,17,21.4%,,12,0.0%,,24.5,4,,$288K,-12.5%,,15,-11.8%,
+"Portland, ME - Deering Highlands",December 2021,All Residential,Neighborhood,False,ME,1.024979972,-5.7%,-1.9%,4,-20.0%,0.0%,,,,19.5,5.5,-0.5,$550K,2.8%,18.2%,1,-66.7%,-75.0%
+"Portland, ME - Deering Highlands",January 2022,All Residential,Neighborhood,False,ME,0.976561947,-4.8%,-7.0%,3,-25.0%,0.0%,1,,,25,5.5,6,$515K,-6.4%,-1.5%,1,0.0%,-50.0%
+"Portland, ME - Downtown Portland",July 2015,All Residential,Neighborhood,False,ME,0.983629372,,,18,,,17,,,25,,,$396K,,,20,,
+"Portland, ME - Downtown Portland",August 2015,All Residential,Neighborhood,False,ME,1.010454576,2.7%,,14,-22.2%,,13,-23.5%,,20.5,-4.5,,$329K,-17.1%,,17,-15.0%,
+"Portland, ME - Downtown Portland",September 2015,All Residential,Neighborhood,False,ME,0.996564480,-1.4%,,17,21.4%,,12,-7.7%,,24.5,4,,$288K,-12.5%,,15,-11.8%,
 "Portland, ME - Downtown Portland",October 2015,All Residential,Neighborhood,False,ME,0.997183260,0.1%,,15,-11.8%,,15,25.0%,,24.5,0,,$288K,0.0%,,16,6.7%,
 "Portland, ME - Downtown Portland",November 2015,All Residential,Neighborhood,False,ME,0.976985514,-2.0%,,14,-6.7%,,14,-6.7%,,24.5,0,,$300K,4.3%,,18,12.5%,
 "Portland, ME - Downtown Portland",December 2015,All Residential,Neighborhood,False,ME,0.982067856,0.5%,,17,21.4%,,13,-7.1%,,22.5,-2,,$315K,5.0%,,17,-5.6%,
@@ -551,8 +563,8 @@
 "Portland, ME - Downtown Portland",April 2016,All Residential,Neighborhood,False,ME,0.972743206,-0.9%,,13,116.7%,,14,40.0%,,36,24,,$370K,23.3%,,18,12.5%,
 "Portland, ME - Downtown Portland",May 2016,All Residential,Neighborhood,False,ME,0.985077555,1.2%,,24,84.6%,,10,-28.6%,,13,-23,,$344K,-7.1%,,21,16.7%,
 "Portland, ME - Downtown Portland",June 2016,All Residential,Neighborhood,False,ME,0.984976430,0.0%,,24,0.0%,,10,0.0%,,14,1,,$383K,11.3%,,19,-9.5%,
-"Portland, ME - Downtown Portland",July 2016,All Residential,Neighborhood,False,ME,0.980286289,-0.5%,-0.3%,21,-12.5%,16.7%,9,-10.0%,-43.8%,25,11,0,$388K,1.3%,-2.2%,17,-10.5%,-15.0%
-"Portland, ME - Downtown Portland",August 2016,All Residential,Neighborhood,False,ME,0.968140855,-1.2%,-4.2%,14,-33.3%,0.0%,10,11.1%,-16.7%,42,17,21.5,$396K,2.3%,20.6%,17,0.0%,0.0%
+"Portland, ME - Downtown Portland",July 2016,All Residential,Neighborhood,False,ME,0.980286289,-0.5%,-0.3%,21,-12.5%,16.7%,9,-10.0%,-47.1%,25,11,0,$388K,1.3%,-2.2%,17,-10.5%,-15.0%
+"Portland, ME - Downtown Portland",August 2016,All Residential,Neighborhood,False,ME,0.968140855,-1.2%,-4.2%,14,-33.3%,0.0%,10,11.1%,-23.1%,42,17,21.5,$396K,2.3%,20.6%,17,0.0%,0.0%
 "Portland, ME - Downtown Portland",September 2016,All Residential,Neighborhood,False,ME,0.968577300,0.0%,-2.8%,12,-14.3%,-29.4%,12,20.0%,0.0%,53,11,28.5,$360K,-9.1%,25.3%,16,-5.9%,6.7%
 "Portland, ME - Downtown Portland",October 2016,All Residential,Neighborhood,False,ME,0.990292698,2.2%,-0.7%,9,-25.0%,-40.0%,9,-25.0%,-40.0%,11.5,-41.5,-13,$320K,-11.3%,11.1%,13,-18.8%,-18.8%
 "Portland, ME - Downtown Portland",November 2016,All Residential,Neighborhood,False,ME,0.998140373,0.8%,2.1%,12,33.3%,-14.3%,6,-33.3%,-57.1%,40,28.5,15.5,$443K,38.5%,47.5%,8,-38.5%,-55.6%
@@ -562,37 +574,37 @@
 "Portland, ME - Downtown Portland",March 2017,All Residential,Neighborhood,False,ME,0.970049213,1.8%,-1.1%,14,40.0%,133.3%,7,75.0%,-30.0%,15,-12,3,$428K,4.9%,42.5%,13,18.2%,-18.8%
 "Portland, ME - Downtown Portland",April 2017,All Residential,Neighborhood,False,ME,0.984766858,1.5%,1.2%,15,7.1%,15.4%,7,0.0%,-50.0%,7,-8,-29,$447K,4.6%,20.8%,15,15.4%,-16.7%
 "Portland, ME - Downtown Portland",May 2017,All Residential,Neighborhood,False,ME,1.003823733,1.9%,1.9%,16,6.7%,-33.3%,7,0.0%,-30.0%,10,3,-3,$361K,-19.2%,5.1%,20,33.3%,-4.8%
-"Portland, ME - Downtown Portland",June 2017,All Residential,Neighborhood,False,ME,1.001313244,-0.3%,1.6%,15,-6.3%,-37.5%,17,142.9%,70.0%,10,0,-4,$306K,-15.3%,-20.0%,24,20.0%,26.3%
-"Portland, ME - Downtown Portland",July 2017,All Residential,Neighborhood,False,ME,0.993328327,-0.8%,1.3%,12,-20.0%,-42.9%,20,17.6%,122.2%,12.5,2.5,-12.5,$298K,-2.8%,-23.2%,25,4.2%,47.1%
-"Portland, ME - Downtown Portland",August 2017,All Residential,Neighborhood,False,ME,0.988620526,-0.5%,2.0%,11,-8.3%,-21.4%,27,35.0%,170.0%,12,-0.5,-30,$350K,17.6%,-11.7%,39,56.0%,129.4%
-"Portland, ME - Downtown Portland",September 2017,All Residential,Neighborhood,False,ME,0.982147716,-0.6%,1.4%,9,-18.2%,-25.0%,25,-7.4%,108.3%,12,0,-41,$383K,9.3%,6.2%,37,-5.1%,131.3%
-"Portland, ME - Downtown Portland",October 2017,All Residential,Neighborhood,False,ME,0.985266572,0.3%,-0.5%,15,66.7%,66.7%,24,-4.0%,166.7%,21,9,9.5,$350K,-8.5%,9.5%,37,0.0%,184.6%
-"Portland, ME - Downtown Portland",November 2017,All Residential,Neighborhood,False,ME,0.992216267,0.7%,-0.6%,23,53.3%,91.7%,16,-33.3%,166.7%,35,14,-5,$380K,8.5%,-14.1%,20,-45.9%,150.0%
-"Portland, ME - Downtown Portland",December 2017,All Residential,Neighborhood,False,ME,0.995151235,0.3%,-0.1%,39,69.6%,178.6%,9,-43.8%,12.5%,53.5,18.5,12.5,$362K,-4.6%,-19.4%,16,-20.0%,77.8%
-"Portland, ME - Downtown Portland",January 2018,All Residential,Neighborhood,False,ME,0.996463369,0.1%,0.4%,40,2.6%,185.7%,7,-22.2%,40.0%,64,10.5,22,$379K,4.5%,-10.3%,14,-12.5%,27.3%
-"Portland, ME - Downtown Portland",February 2018,All Residential,Neighborhood,False,ME,0.995127767,-0.1%,4.3%,33,-17.5%,230.0%,6,-14.3%,50.0%,62,-2,35,$362K,-4.3%,-11.1%,18,28.6%,63.6%
-"Portland, ME - Downtown Portland",March 2018,All Residential,Neighborhood,False,ME,0.989726463,-0.5%,2.0%,21,-36.4%,50.0%,9,50.0%,28.6%,15,-47,0,$396K,9.2%,-7.4%,24,33.3%,84.6%
-"Portland, ME - Downtown Portland",April 2018,All Residential,Neighborhood,False,ME,0.991670462,0.2%,0.7%,24,14.3%,60.0%,11,22.2%,57.1%,10,-5,3,$405K,2.4%,-9.3%,32,33.3%,113.3%
-"Portland, ME - Downtown Portland",May 2018,All Residential,Neighborhood,False,ME,0.994472606,0.3%,-0.9%,27,12.5%,68.8%,12,9.1%,71.4%,7,-3,-3,$406K,0.1%,12.3%,36,12.5%,80.0%
-"Portland, ME - Downtown Portland",June 2018,All Residential,Neighborhood,False,ME,0.998945375,0.4%,-0.2%,30,11.1%,100.0%,28,133.3%,64.7%,10.5,3.5,0.5,$410K,1.0%,34.0%,47,30.6%,95.8%
-"Portland, ME - Downtown Portland",July 2018,All Residential,Neighborhood,False,ME,0.995681949,-0.3%,0.2%,25,-16.7%,108.3%,23,-17.9%,15.0%,15,4.5,2.5,$420K,2.4%,41.1%,38,-19.1%,52.0%
-"Portland, ME - Downtown Portland",August 2018,All Residential,Neighborhood,False,ME,0.987426404,-0.8%,-0.1%,23,-8.0%,109.1%,22,-4.3%,-18.5%,23.5,8.5,11.5,$420K,0.0%,20.0%,27,-28.9%,-30.8%
-"Portland, ME - Downtown Portland",September 2018,All Residential,Neighborhood,False,ME,0.979190625,-0.8%,-0.3%,14,-39.1%,55.6%,25,13.6%,0.0%,26,2.5,14,$445K,6.0%,16.3%,12,-55.6%,-67.6%
-"Portland, ME - Downtown Portland",October 2018,All Residential,Neighborhood,False,ME,0.974438450,-0.5%,-1.1%,8,-42.9%,-46.7%,35,40.0%,45.8%,34,8,13,$450K,1.1%,28.5%,26,116.7%,-29.7%
-"Portland, ME - Downtown Portland",November 2018,All Residential,Neighborhood,False,ME,1.003006012,2.9%,1.1%,4,-50.0%,-82.6%,29,-17.1%,81.3%,52.5,18.5,17.5,$492K,9.5%,29.6%,32,23.1%,60.0%
-"Portland, ME - Downtown Portland",December 2018,All Residential,Neighborhood,False,ME,0.991142117,-1.2%,-0.4%,7,75.0%,-82.1%,30,3.4%,233.3%,55,2.5,1.5,$480K,-2.5%,32.4%,31,-3.1%,93.8%
-"Portland, ME - Downtown Portland",January 2019,All Residential,Neighborhood,False,ME,0.985081016,-0.6%,-1.1%,11,57.1%,-72.5%,26,-13.3%,271.4%,55.5,0.5,-8.5,$369K,-23.1%,-2.6%,20,-35.5%,42.9%
-"Portland, ME - Downtown Portland",February 2019,All Residential,Neighborhood,False,ME,0.980185913,-0.5%,-1.5%,12,9.1%,-63.6%,31,19.2%,416.7%,68,12.5,6,$344K,-6.8%,-5.1%,23,15.0%,27.8%
-"Portland, ME - Downtown Portland",March 2019,All Residential,Neighborhood,False,ME,0.985630555,0.5%,-0.4%,21,75.0%,0.0%,29,-6.5%,222.2%,91,23,76,$560K,62.8%,41.5%,17,-26.1%,-29.2%
-"Portland, ME - Downtown Portland",April 2019,All Residential,Neighborhood,False,ME,0.985965124,0.0%,-0.6%,23,9.5%,-4.2%,30,3.4%,172.7%,92,1,82,$750K,33.9%,85.0%,17,0.0%,-46.9%
+"Portland, ME - Downtown Portland",June 2017,All Residential,Neighborhood,False,ME,1.001313244,-0.3%,1.6%,15,-6.3%,-37.5%,18,157.1%,80.0%,10,0,-4,$306K,-15.3%,-20.0%,25,25.0%,31.6%
+"Portland, ME - Downtown Portland",July 2017,All Residential,Neighborhood,False,ME,0.993328327,-0.8%,1.3%,12,-20.0%,-42.9%,21,16.7%,133.3%,12.5,2.5,-12.5,$298K,-2.8%,-23.2%,26,4.0%,52.9%
+"Portland, ME - Downtown Portland",August 2017,All Residential,Neighborhood,False,ME,0.988620526,-0.5%,2.0%,11,-8.3%,-21.4%,28,33.3%,180.0%,12,-0.5,-30,$350K,17.6%,-11.7%,40,53.8%,135.3%
+"Portland, ME - Downtown Portland",September 2017,All Residential,Neighborhood,False,ME,0.982147716,-0.6%,1.4%,9,-18.2%,-25.0%,26,-7.1%,116.7%,12,0,-41,$383K,9.3%,6.2%,37,-7.5%,131.3%
+"Portland, ME - Downtown Portland",October 2017,All Residential,Neighborhood,False,ME,0.985266572,0.3%,-0.5%,15,66.7%,66.7%,25,-3.8%,177.8%,21,9,9.5,$350K,-8.5%,9.5%,37,0.0%,184.6%
+"Portland, ME - Downtown Portland",November 2017,All Residential,Neighborhood,False,ME,0.992216267,0.7%,-0.6%,23,53.3%,91.7%,17,-32.0%,183.3%,35,14,-5,$380K,8.5%,-14.1%,20,-45.9%,150.0%
+"Portland, ME - Downtown Portland",December 2017,All Residential,Neighborhood,False,ME,0.995151235,0.3%,-0.1%,39,69.6%,178.6%,10,-41.2%,25.0%,53.5,18.5,12.5,$362K,-4.6%,-19.4%,16,-20.0%,77.8%
+"Portland, ME - Downtown Portland",January 2018,All Residential,Neighborhood,False,ME,0.996463369,0.1%,0.4%,40,2.6%,185.7%,8,-20.0%,60.0%,64,10.5,22,$379K,4.5%,-10.3%,14,-12.5%,27.3%
+"Portland, ME - Downtown Portland",February 2018,All Residential,Neighborhood,False,ME,0.995127767,-0.1%,4.3%,33,-17.5%,230.0%,7,-12.5%,75.0%,62,-2,35,$362K,-4.3%,-11.1%,18,28.6%,63.6%
+"Portland, ME - Downtown Portland",March 2018,All Residential,Neighborhood,False,ME,0.989726463,-0.5%,2.0%,21,-36.4%,50.0%,10,42.9%,42.9%,15,-47,0,$396K,9.2%,-7.4%,24,33.3%,84.6%
+"Portland, ME - Downtown Portland",April 2018,All Residential,Neighborhood,False,ME,0.991670462,0.2%,0.7%,24,14.3%,60.0%,12,20.0%,71.4%,10,-5,3,$405K,2.4%,-9.3%,32,33.3%,113.3%
+"Portland, ME - Downtown Portland",May 2018,All Residential,Neighborhood,False,ME,0.994472606,0.3%,-0.9%,27,12.5%,68.8%,12,0.0%,71.4%,7,-3,-3,$406K,0.1%,12.3%,36,12.5%,80.0%
+"Portland, ME - Downtown Portland",June 2018,All Residential,Neighborhood,False,ME,0.998945375,0.4%,-0.2%,30,11.1%,100.0%,28,133.3%,55.6%,10.5,3.5,0.5,$410K,1.0%,34.0%,47,30.6%,88.0%
+"Portland, ME - Downtown Portland",July 2018,All Residential,Neighborhood,False,ME,0.995681949,-0.3%,0.2%,25,-16.7%,108.3%,23,-17.9%,9.5%,15,4.5,2.5,$420K,2.4%,41.1%,38,-19.1%,46.2%
+"Portland, ME - Downtown Portland",August 2018,All Residential,Neighborhood,False,ME,0.987426404,-0.8%,-0.1%,23,-8.0%,109.1%,22,-4.3%,-21.4%,23.5,8.5,11.5,$420K,0.0%,20.0%,27,-28.9%,-32.5%
+"Portland, ME - Downtown Portland",September 2018,All Residential,Neighborhood,False,ME,0.979190625,-0.8%,-0.3%,14,-39.1%,55.6%,25,13.6%,-3.8%,26,2.5,14,$445K,6.0%,16.3%,12,-55.6%,-67.6%
+"Portland, ME - Downtown Portland",October 2018,All Residential,Neighborhood,False,ME,0.974438450,-0.5%,-1.1%,8,-42.9%,-46.7%,36,44.0%,44.0%,34,8,13,$450K,1.1%,28.5%,27,125.0%,-27.0%
+"Portland, ME - Downtown Portland",November 2018,All Residential,Neighborhood,False,ME,1.003006012,2.9%,1.1%,4,-50.0%,-82.6%,30,-16.7%,76.5%,52.5,18.5,17.5,$492K,9.5%,29.6%,33,22.2%,65.0%
+"Portland, ME - Downtown Portland",December 2018,All Residential,Neighborhood,False,ME,0.991142117,-1.2%,-0.4%,7,75.0%,-82.1%,31,3.3%,210.0%,55,2.5,1.5,$480K,-2.5%,32.4%,32,-3.0%,100.0%
+"Portland, ME - Downtown Portland",January 2019,All Residential,Neighborhood,False,ME,0.985081016,-0.6%,-1.1%,11,57.1%,-72.5%,26,-16.1%,225.0%,55.5,0.5,-8.5,$369K,-23.1%,-2.6%,20,-37.5%,42.9%
+"Portland, ME - Downtown Portland",February 2019,All Residential,Neighborhood,False,ME,0.980185913,-0.5%,-1.5%,12,9.1%,-63.6%,31,19.2%,342.9%,68,12.5,6,$344K,-6.8%,-5.1%,23,15.0%,27.8%
+"Portland, ME - Downtown Portland",March 2019,All Residential,Neighborhood,False,ME,0.985630555,0.5%,-0.4%,21,75.0%,0.0%,29,-6.5%,190.0%,91,23,76,$560K,62.8%,41.5%,17,-26.1%,-29.2%
+"Portland, ME - Downtown Portland",April 2019,All Residential,Neighborhood,False,ME,0.985965124,0.0%,-0.6%,23,9.5%,-4.2%,30,3.4%,150.0%,92,1,82,$750K,33.9%,85.0%,17,0.0%,-46.9%
 "Portland, ME - Downtown Portland",May 2019,All Residential,Neighborhood,False,ME,0.997750701,1.2%,0.3%,28,21.7%,3.7%,34,13.3%,183.3%,100,8,93,$730K,-2.7%,79.9%,17,0.0%,-52.8%
 "Portland, ME - Downtown Portland",June 2019,All Residential,Neighborhood,False,ME,1.006344939,0.9%,0.7%,18,-35.7%,-40.0%,27,-20.6%,-3.6%,97,-3,86.5,$688K,-5.8%,67.7%,22,29.4%,-53.2%
 "Portland, ME - Downtown Portland",July 2019,All Residential,Neighborhood,False,ME,1.003355690,-0.3%,0.8%,22,22.2%,-12.0%,35,29.6%,52.2%,97,0,82,$549K,-20.1%,30.9%,31,40.9%,-18.4%
 "Portland, ME - Downtown Portland",August 2019,All Residential,Neighborhood,False,ME,0.989038294,-1.4%,0.2%,16,-27.3%,-30.4%,31,-11.4%,40.9%,57,-40,33.5,$484K,-11.8%,15.4%,31,0.0%,14.8%
 "Portland, ME - Downtown Portland",September 2019,All Residential,Neighborhood,False,ME,0.980766258,-0.8%,0.2%,16,0.0%,14.3%,30,-3.2%,20.0%,47,-10,21,$450K,-7.1%,1.1%,34,9.7%,183.3%
-"Portland, ME - Downtown Portland",October 2019,All Residential,Neighborhood,False,ME,0.984233337,0.3%,1.0%,12,-25.0%,50.0%,32,6.7%,-8.6%,36,-11,2,$465K,3.4%,3.4%,26,-23.5%,0.0%
-"Portland, ME - Downtown Portland",November 2019,All Residential,Neighborhood,False,ME,0.980689251,-0.4%,-2.2%,14,16.7%,250.0%,32,0.0%,10.3%,38,2,-14.5,$465K,0.0%,-5.6%,22,-15.4%,-31.3%
-"Portland, ME - Downtown Portland",December 2019,All Residential,Neighborhood,False,ME,0.988641214,0.8%,-0.3%,13,-7.1%,85.7%,31,-3.1%,3.3%,44,6,-11,$525K,12.9%,9.4%,21,-4.5%,-32.3%
+"Portland, ME - Downtown Portland",October 2019,All Residential,Neighborhood,False,ME,0.984233337,0.3%,1.0%,12,-25.0%,50.0%,32,6.7%,-11.1%,36,-11,2,$465K,3.4%,3.4%,26,-23.5%,-3.7%
+"Portland, ME - Downtown Portland",November 2019,All Residential,Neighborhood,False,ME,0.980689251,-0.4%,-2.2%,14,16.7%,250.0%,32,0.0%,6.7%,38,2,-14.5,$465K,0.0%,-5.6%,22,-15.4%,-33.3%
+"Portland, ME - Downtown Portland",December 2019,All Residential,Neighborhood,False,ME,0.988641214,0.8%,-0.3%,13,-7.1%,85.7%,31,-3.1%,0.0%,44,6,-11,$525K,12.9%,9.4%,21,-4.5%,-34.4%
 "Portland, ME - Downtown Portland",January 2020,All Residential,Neighborhood,False,ME,0.974545527,-1.4%,-1.1%,11,-15.4%,0.0%,26,-16.1%,0.0%,68.5,24.5,13,$525K,0.0%,42.3%,17,-19.0%,-15.0%
 "Portland, ME - Downtown Portland",February 2020,All Residential,Neighborhood,False,ME,0.974402178,0.0%,-0.6%,13,18.2%,8.3%,24,-7.7%,-22.6%,103,34.5,35,$525K,0.0%,52.6%,20,17.6%,-13.0%
 "Portland, ME - Downtown Portland",March 2020,All Residential,Neighborhood,False,ME,0.977652472,0.3%,-0.8%,15,15.4%,-28.6%,28,16.7%,-3.4%,63,-40,-28,$420K,-20.0%,-25.0%,18,-10.0%,5.9%
@@ -606,16 +618,18 @@
 "Portland, ME - Downtown Portland",November 2020,All Residential,Neighborhood,False,ME,0.983257504,-0.8%,0.3%,14,-30.0%,0.0%,16,-23.8%,-50.0%,24,-9,-14,$470K,0.0%,1.1%,24,-14.3%,9.1%
 "Portland, ME - Downtown Portland",December 2020,All Residential,Neighborhood,False,ME,0.985478832,0.2%,-0.3%,18,28.6%,38.5%,17,6.3%,-45.2%,36,12,-8,$460K,-2.1%,-12.4%,21,-12.5%,0.0%
 "Portland, ME - Downtown Portland",January 2021,All Residential,Neighborhood,False,ME,0.981225431,-0.4%,0.7%,15,-16.7%,36.4%,14,-17.6%,-46.2%,40,4,-28.5,$470K,2.2%,-10.5%,15,-28.6%,-11.8%
-"Portland, ME - Downtown Portland",February 2021,All Residential,Neighborhood,False,ME,1.006550290,2.5%,3.2%,20,33.3%,53.8%,12,-14.3%,-50.0%,66.5,26.5,-36.5,$514K,9.3%,-2.1%,18,20.0%,-10.0%
-"Portland, ME - Downtown Portland",March 2021,All Residential,Neighborhood,False,ME,1.034770212,2.8%,5.7%,60,200.0%,300.0%,13,8.3%,-53.6%,86.5,20,23.5,$604K,17.5%,43.8%,22,22.2%,22.2%
+"Portland, ME - Downtown Portland",February 2021,All Residential,Neighborhood,False,ME,1.006550290,2.5%,3.2%,20,33.3%,53.8%,11,-21.4%,-54.2%,66.5,26.5,-36.5,$514K,9.3%,-2.1%,17,13.3%,-15.0%
+"Portland, ME - Downtown Portland",March 2021,All Residential,Neighborhood,False,ME,1.034770212,2.8%,5.7%,60,200.0%,300.0%,13,18.2%,-53.6%,86.5,20,23.5,$604K,17.5%,43.8%,22,29.4%,22.2%
 "Portland, ME - Downtown Portland",April 2021,All Residential,Neighborhood,False,ME,1.039841858,0.5%,6.4%,77,28.3%,450.0%,16,23.1%,-40.7%,94,7.5,69.5,$625K,3.5%,47.1%,27,22.7%,50.0%
-"Portland, ME - Downtown Portland",May 2021,All Residential,Neighborhood,False,ME,1.038001891,-0.2%,5.4%,75,-2.6%,650.0%,13,-18.8%,-51.9%,106.5,12.5,98.5,$625K,0.0%,57.2%,29,7.4%,61.1%
-"Portland, ME - Downtown Portland",June 2021,All Residential,Neighborhood,False,ME,1.026777053,-1.1%,5.4%,47,-37.3%,261.5%,9,-30.8%,-70.0%,31,-75.5,9,$625K,0.0%,59.0%,24,-17.2%,-7.7%
-"Portland, ME - Downtown Portland",July 2021,All Residential,Neighborhood,False,ME,1.014188352,-1.3%,2.8%,34,-27.7%,88.9%,11,22.2%,-52.2%,41.5,10.5,20.5,$580K,-7.3%,43.1%,22,-8.3%,-33.3%
-"Portland, ME - Downtown Portland",August 2021,All Residential,Neighborhood,False,ME,1.024168169,1.0%,3.9%,34,0.0%,30.8%,7,-36.4%,-69.6%,31,-10.5,7,$648K,11.7%,59.9%,16,-27.3%,-51.5%
-"Portland, ME - Downtown Portland",September 2021,All Residential,Neighborhood,False,ME,1.022696403,-0.1%,3.5%,23,-32.4%,15.0%,10,42.9%,-52.4%,35,4,0.5,$645K,-0.4%,37.2%,21,31.3%,-27.6%
-"Portland, ME - Downtown Portland",October 2021,All Residential,Neighborhood,False,ME,1.013153178,-1.0%,2.2%,19,-17.4%,-5.0%,9,-10.0%,-57.1%,35,0,2,$710K,10.1%,51.1%,16,-23.8%,-42.9%
-"Portland, ME - Downtown Portland",November 2021,All Residential,Neighborhood,False,ME,1.003443211,-1.0%,2.0%,18,-5.3%,28.6%,11,22.2%,-31.3%,21,-14,-3,$710K,0.0%,51.1%,15,-6.3%,-37.5%
+"Portland, ME - Downtown Portland",May 2021,All Residential,Neighborhood,False,ME,1.038001891,-0.2%,5.4%,75,-2.6%,650.0%,13,-18.8%,-51.9%,106.5,12.5,98.5,$625K,0.0%,57.2%,30,11.1%,66.7%
+"Portland, ME - Downtown Portland",June 2021,All Residential,Neighborhood,False,ME,1.026777053,-1.1%,5.4%,47,-37.3%,261.5%,9,-30.8%,-70.0%,31,-75.5,9,$625K,0.0%,59.0%,24,-20.0%,-7.7%
+"Portland, ME - Downtown Portland",July 2021,All Residential,Neighborhood,False,ME,1.014188352,-1.3%,2.8%,34,-27.7%,88.9%,12,33.3%,-47.8%,41.5,10.5,20.5,$580K,-7.3%,43.1%,23,-4.2%,-30.3%
+"Portland, ME - Downtown Portland",August 2021,All Residential,Neighborhood,False,ME,1.024168169,1.0%,3.9%,34,0.0%,30.8%,7,-41.7%,-69.6%,31,-10.5,7,$648K,11.7%,59.9%,17,-26.1%,-48.5%
+"Portland, ME - Downtown Portland",September 2021,All Residential,Neighborhood,False,ME,1.022696403,-0.1%,3.5%,23,-32.4%,15.0%,10,42.9%,-52.4%,35,4,0.5,$645K,-0.4%,37.2%,22,29.4%,-24.1%
+"Portland, ME - Downtown Portland",October 2021,All Residential,Neighborhood,False,ME,1.013153178,-1.0%,2.2%,19,-17.4%,-5.0%,11,10.0%,-47.6%,35,0,2,$710K,10.1%,51.1%,18,-18.2%,-35.7%
+"Portland, ME - Downtown Portland",November 2021,All Residential,Neighborhood,False,ME,1.003443211,-1.0%,2.0%,18,-5.3%,28.6%,11,0.0%,-31.3%,21,-14,-3,$710K,0.0%,51.1%,20,11.1%,-16.7%
+"Portland, ME - Downtown Portland",December 2021,All Residential,Neighborhood,False,ME,1.008624792,0.5%,2.3%,15,-16.7%,-16.7%,11,0.0%,-35.3%,16,-5,-20,$715K,0.7%,55.4%,12,-40.0%,-42.9%
+"Portland, ME - Downtown Portland",January 2022,All Residential,Neighborhood,False,ME,1.029296978,2.1%,4.8%,14,-6.7%,-6.7%,11,0.0%,-21.4%,7,-9,-33,$703K,-1.7%,49.5%,8,-33.3%,-46.7%
 "Portland, ME - East Deering",July 2015,All Residential,Neighborhood,False,ME,0.981592471,,,17,,,7,,,12,,,$225K,,,15,,
 "Portland, ME - East Deering",August 2015,All Residential,Neighborhood,False,ME,0.986141473,0.5%,,18,5.9%,,9,28.6%,,15.5,3.5,,$226K,0.6%,,18,20.0%,
 "Portland, ME - East Deering",September 2015,All Residential,Neighborhood,False,ME,0.990534813,0.4%,,14,-22.2%,,13,44.4%,,11,-4.5,,$240K,6.1%,,19,5.6%,
@@ -637,25 +651,25 @@
 "Portland, ME - East Deering",January 2017,All Residential,Neighborhood,False,ME,0.980027409,2.3%,2.4%,15,-11.8%,-6.3%,7,-12.5%,-22.2%,13.5,-3.5,-27,$260K,7.4%,23.2%,11,-8.3%,0.0%
 "Portland, ME - East Deering",February 2017,All Residential,Neighborhood,False,ME,0.966812019,-1.3%,0.0%,7,-53.3%,-58.8%,4,-42.9%,-50.0%,11,-2.5,-24,$260K,0.0%,8.3%,8,-27.3%,0.0%
 "Portland, ME - East Deering",March 2017,All Residential,Neighborhood,False,ME,1.009805850,4.3%,5.9%,6,-14.3%,-68.4%,3,-25.0%,-57.1%,13.5,2.5,-18.5,$363K,39.5%,69.4%,6,-25.0%,-33.3%
-"Portland, ME - East Deering",April 2017,All Residential,Neighborhood,False,ME,0.974672758,-3.5%,2.2%,5,-16.7%,-50.0%,8,166.7%,0.0%,56,42.5,27.5,$280K,-22.8%,33.4%,10,66.7%,11.1%
-"Portland, ME - East Deering",May 2017,All Residential,Neighborhood,False,ME,0.951461241,-2.3%,-4.4%,10,100.0%,0.0%,5,-37.5%,-54.5%,34.5,-21.5,12,$262K,-6.3%,25.0%,13,30.0%,8.3%
-"Portland, ME - East Deering",June 2017,All Residential,Neighborhood,False,ME,0.955780685,0.4%,-12.8%,15,50.0%,150.0%,7,40.0%,-36.4%,14,-20.5,-15,$280K,6.7%,6.1%,19,46.2%,18.8%
-"Portland, ME - East Deering",July 2017,All Residential,Neighborhood,False,ME,0.971154309,1.5%,-8.2%,15,0.0%,50.0%,7,0.0%,-46.2%,7,-7,-22,$265K,-5.4%,7.5%,17,-10.5%,-15.0%
-"Portland, ME - East Deering",August 2017,All Residential,Neighborhood,False,ME,0.989098995,1.8%,-2.9%,19,26.7%,72.7%,6,-14.3%,-45.5%,9,2,-4,$265K,0.0%,0.0%,15,-11.8%,-25.0%
-"Portland, ME - East Deering",September 2017,All Residential,Neighborhood,False,ME,0.999869597,1.1%,0.5%,15,-21.1%,-6.3%,8,33.3%,-11.1%,9,0,-9,$247K,-6.8%,8.4%,13,-13.3%,-35.0%
-"Portland, ME - East Deering",October 2017,All Residential,Neighborhood,False,ME,0.992865851,-0.7%,1.7%,16,6.7%,-11.1%,5,-37.5%,-16.7%,22,13,4,$239K,-3.4%,4.5%,13,0.0%,-13.3%
-"Portland, ME - East Deering",November 2017,All Residential,Neighborhood,False,ME,1.007844023,1.5%,3.5%,10,-37.5%,-54.5%,6,20.0%,0.0%,22,0,2.5,$236K,-0.9%,0.1%,14,7.7%,0.0%
+"Portland, ME - East Deering",April 2017,All Residential,Neighborhood,False,ME,0.974672758,-3.5%,2.2%,5,-16.7%,-50.0%,7,133.3%,-12.5%,56,42.5,27.5,$280K,-22.8%,33.4%,9,50.0%,0.0%
+"Portland, ME - East Deering",May 2017,All Residential,Neighborhood,False,ME,0.951461241,-2.3%,-4.4%,10,100.0%,0.0%,4,-42.9%,-63.6%,34.5,-21.5,12,$262K,-6.3%,25.0%,12,33.3%,0.0%
+"Portland, ME - East Deering",June 2017,All Residential,Neighborhood,False,ME,0.955780685,0.4%,-12.8%,15,50.0%,150.0%,6,50.0%,-45.5%,14,-20.5,-15,$280K,6.7%,6.1%,18,50.0%,12.5%
+"Portland, ME - East Deering",July 2017,All Residential,Neighborhood,False,ME,0.971154309,1.5%,-8.2%,15,0.0%,50.0%,7,16.7%,-46.2%,7,-7,-22,$265K,-5.4%,7.5%,17,-5.6%,-15.0%
+"Portland, ME - East Deering",August 2017,All Residential,Neighborhood,False,ME,0.989503484,1.8%,-2.9%,18,20.0%,63.6%,6,-14.3%,-45.5%,8.5,1.5,-4.5,$268K,0.9%,0.9%,15,-11.8%,-25.0%
+"Portland, ME - East Deering",September 2017,All Residential,Neighborhood,False,ME,1.001158984,1.2%,0.6%,14,-22.2%,-12.5%,8,33.3%,-11.1%,8.5,0,-9.5,$249K,-6.9%,9.3%,13,-13.3%,-35.0%
+"Portland, ME - East Deering",October 2017,All Residential,Neighborhood,False,ME,0.993602362,-0.8%,1.8%,15,7.1%,-16.7%,5,-37.5%,-16.7%,22,13.5,4,$240K,-3.6%,5.1%,13,0.0%,-13.3%
+"Portland, ME - East Deering",November 2017,All Residential,Neighborhood,False,ME,1.007844023,1.4%,3.5%,10,-33.3%,-54.5%,6,20.0%,0.0%,22,0,2.5,$236K,-1.6%,0.1%,14,7.7%,0.0%
 "Portland, ME - East Deering",December 2017,All Residential,Neighborhood,False,ME,0.999655276,-0.8%,4.3%,10,0.0%,-41.2%,6,0.0%,-25.0%,8,-14,-9,$229K,-3.2%,-5.5%,10,-28.6%,-16.7%
 "Portland, ME - East Deering",January 2018,All Residential,Neighborhood,False,ME,0.988569758,-1.1%,0.9%,8,-20.0%,-46.7%,5,-16.7%,-28.6%,13,5,-0.5,$286K,25.0%,10.0%,6,-40.0%,-45.5%
 "Portland, ME - East Deering",February 2018,All Residential,Neighborhood,False,ME,0.965979284,-2.3%,-0.1%,7,-12.5%,0.0%,3,-40.0%,-25.0%,18,5,7,$238K,-16.8%,-8.4%,3,-50.0%,-62.5%
 "Portland, ME - East Deering",March 2018,All Residential,Neighborhood,False,ME,0.969097315,0.3%,-4.1%,6,-14.3%,0.0%,4,33.3%,33.3%,78.5,60.5,65,$238K,-0.2%,-34.5%,3,0.0%,-50.0%
-"Portland, ME - East Deering",April 2018,All Residential,Neighborhood,False,ME,0.965274603,-0.4%,-0.9%,4,-33.3%,-20.0%,6,50.0%,-25.0%,93.5,15,37.5,$204K,-14.3%,-27.3%,7,133.3%,-30.0%
-"Portland, ME - East Deering",May 2018,All Residential,Neighborhood,False,ME,0.996074427,3.1%,4.5%,7,75.0%,-30.0%,2,-66.7%,-60.0%,24,-69.5,-10.5,$310K,52.3%,18.2%,10,42.9%,-23.1%
-"Portland, ME - East Deering",June 2018,All Residential,Neighborhood,False,ME,1.009940738,1.4%,5.4%,9,28.6%,-40.0%,9,350.0%,28.6%,10,-14,-4,$310K,0.0%,10.7%,19,90.0%,0.0%
+"Portland, ME - East Deering",April 2018,All Residential,Neighborhood,False,ME,0.965274603,-0.4%,-0.9%,4,-33.3%,-20.0%,6,50.0%,-14.3%,93.5,15,37.5,$204K,-14.3%,-27.3%,7,133.3%,-22.2%
+"Portland, ME - East Deering",May 2018,All Residential,Neighborhood,False,ME,0.996074427,3.1%,4.5%,7,75.0%,-30.0%,2,-66.7%,-50.0%,24,-69.5,-10.5,$310K,52.3%,18.2%,10,42.9%,-16.7%
+"Portland, ME - East Deering",June 2018,All Residential,Neighborhood,False,ME,1.009940738,1.4%,5.4%,9,28.6%,-40.0%,9,350.0%,50.0%,10,-14,-4,$310K,0.0%,10.7%,19,90.0%,5.6%
 "Portland, ME - East Deering",July 2018,All Residential,Neighborhood,False,ME,1.013350112,0.3%,4.2%,11,22.2%,-26.7%,10,11.1%,42.9%,7,-3,0,$299K,-3.5%,12.8%,23,21.1%,35.3%
-"Portland, ME - East Deering",August 2018,All Residential,Neighborhood,False,ME,1.012163310,-0.1%,2.3%,15,36.4%,-21.1%,8,-20.0%,33.3%,9,2,0,$285K,-4.7%,7.5%,26,13.0%,73.3%
-"Portland, ME - East Deering",September 2018,All Residential,Neighborhood,False,ME,1.001447981,-1.1%,0.2%,17,13.3%,13.3%,10,25.0%,25.0%,11,2,2,$299K,4.9%,21.1%,21,-19.2%,61.5%
-"Portland, ME - East Deering",October 2018,All Residential,Neighborhood,False,ME,0.989713942,-1.2%,-0.3%,20,17.6%,25.0%,8,-20.0%,60.0%,13,2,-9,$318K,6.2%,33.1%,17,-19.0%,30.8%
+"Portland, ME - East Deering",August 2018,All Residential,Neighborhood,False,ME,1.012163310,-0.1%,2.3%,15,36.4%,-16.7%,8,-20.0%,33.3%,9,2,0.5,$285K,-4.7%,6.5%,26,13.0%,73.3%
+"Portland, ME - East Deering",September 2018,All Residential,Neighborhood,False,ME,1.001447981,-1.1%,0.0%,17,13.3%,21.4%,10,25.0%,25.0%,11,2,2.5,$299K,4.9%,20.1%,21,-19.2%,61.5%
+"Portland, ME - East Deering",October 2018,All Residential,Neighborhood,False,ME,0.989713942,-1.2%,-0.4%,20,17.6%,33.3%,8,-20.0%,60.0%,13,2,-9,$318K,6.2%,32.3%,17,-19.0%,30.8%
 "Portland, ME - East Deering",November 2018,All Residential,Neighborhood,False,ME,0.980446680,-0.9%,-2.7%,15,-25.0%,50.0%,8,0.0%,33.3%,11,-2,-11,$360K,13.4%,52.4%,13,-23.5%,-7.1%
 "Portland, ME - East Deering",December 2018,All Residential,Neighborhood,False,ME,0.978786678,-0.2%,-2.1%,10,-33.3%,0.0%,4,-50.0%,-33.3%,16,5,8,$266K,-26.3%,16.1%,8,-38.5%,-20.0%
 "Portland, ME - East Deering",January 2019,All Residential,Neighborhood,False,ME,0.976698118,-0.2%,-1.2%,9,-10.0%,12.5%,5,25.0%,0.0%,42,26,29,$207K,-22.0%,-27.6%,8,0.0%,33.3%
@@ -689,53 +703,55 @@
 "Portland, ME - East Deering",May 2021,All Residential,Neighborhood,False,ME,1.067239101,-0.3%,7.8%,7,0.0%,-12.5%,3,200.0%,-25.0%,6,0,-3,$485K,35.7%,50.9%,10,0.0%,-33.3%
 "Portland, ME - East Deering",June 2021,All Residential,Neighborhood,False,ME,1.083220460,1.6%,7.6%,11,57.1%,-8.3%,6,100.0%,200.0%,8,2,0.5,$470K,-3.1%,41.5%,15,50.0%,0.0%
 "Portland, ME - East Deering",July 2021,All Residential,Neighborhood,False,ME,1.072506638,-1.1%,5.8%,11,0.0%,-26.7%,7,16.7%,75.0%,9.5,1.5,4.5,$464K,-1.3%,5.7%,22,46.7%,10.0%
-"Portland, ME - East Deering",August 2021,All Residential,Neighborhood,False,ME,1.053509165,-1.9%,3.5%,17,54.5%,-22.7%,5,-28.6%,0.0%,11,1.5,5,$432K,-6.9%,5.2%,22,0.0%,0.0%
-"Portland, ME - East Deering",September 2021,All Residential,Neighborhood,False,ME,1.039309684,-1.4%,0.4%,18,5.9%,-21.7%,1,-80.0%,-66.7%,8.5,-2.5,2.5,$409K,-5.3%,19.9%,19,-13.6%,-17.4%
-"Portland, ME - East Deering",October 2021,All Residential,Neighborhood,False,ME,1.021021093,-1.8%,-2.2%,24,33.3%,14.3%,2,100.0%,-50.0%,11.5,3,4.5,$389K,-4.9%,17.9%,13,-31.6%,-27.8%
-"Portland, ME - East Deering",November 2021,All Residential,Neighborhood,False,ME,1.020525252,0.0%,-2.6%,20,-16.7%,17.6%,1,-50.0%,-66.7%,9,-2.5,2,$363K,-6.7%,5.2%,8,-38.5%,-38.5%
-"Portland, ME - East End",July 2015,All Residential,Neighborhood,False,ME,0.987639282,,,57,,,42,,,42,,,$640K,,,31,,
-"Portland, ME - East End",August 2015,All Residential,Neighborhood,False,ME,0.986236203,-0.1%,,47,-17.5%,,38,-9.5%,,47,5,,$635K,-0.8%,,27,-12.9%,
-"Portland, ME - East End",September 2015,All Residential,Neighborhood,False,ME,0.980911427,-0.5%,,29,-38.3%,,42,10.5%,,55,8,,$610K,-3.9%,,29,7.4%,
-"Portland, ME - East End",October 2015,All Residential,Neighborhood,False,ME,0.981440330,0.1%,,21,-27.6%,,41,-2.4%,,46,-9,,$525K,-13.9%,,24,-17.2%,
-"Portland, ME - East End",November 2015,All Residential,Neighborhood,False,ME,0.975582846,-0.6%,,15,-28.6%,,39,-4.9%,,68,22,,$568K,8.2%,,26,8.3%,
-"Portland, ME - East End",December 2015,All Residential,Neighborhood,False,ME,0.978922076,0.3%,,11,-26.7%,,32,-17.9%,,62,-6,,$620K,9.2%,,14,-46.2%,
-"Portland, ME - East End",January 2016,All Residential,Neighborhood,False,ME,0.984148295,0.5%,,12,9.1%,,40,25.0%,,63.5,1.5,,$441K,-28.9%,,22,57.1%,
-"Portland, ME - East End",February 2016,All Residential,Neighborhood,False,ME,0.977651771,-0.6%,,12,0.0%,,43,7.5%,,56.5,-7,,$383K,-13.2%,,22,0.0%,
-"Portland, ME - East End",March 2016,All Residential,Neighborhood,False,ME,0.985622529,0.8%,,11,-8.3%,,46,7.0%,,70,13.5,,$340K,-11.2%,,40,81.8%,
-"Portland, ME - East End",April 2016,All Residential,Neighborhood,False,ME,0.974820375,-1.1%,,11,0.0%,,47,2.2%,,54,-16,,$463K,36.0%,,39,-2.5%,
-"Portland, ME - East End",May 2016,All Residential,Neighborhood,False,ME,0.997169904,2.2%,,16,45.5%,,48,2.1%,,51,-3,,$482K,4.1%,,44,12.8%,
+"Portland, ME - East Deering",August 2021,All Residential,Neighborhood,False,ME,1.053509165,-1.9%,3.5%,17,54.5%,-22.7%,5,-28.6%,0.0%,11,1.5,5,$432K,-6.9%,5.2%,23,4.5%,4.5%
+"Portland, ME - East Deering",September 2021,All Residential,Neighborhood,False,ME,1.039309684,-1.4%,0.4%,18,5.9%,-21.7%,1,-80.0%,-66.7%,8.5,-2.5,2.5,$409K,-5.3%,19.9%,20,-13.0%,-13.0%
+"Portland, ME - East Deering",October 2021,All Residential,Neighborhood,False,ME,1.020248302,-1.9%,-2.3%,25,38.9%,19.0%,4,300.0%,0.0%,11,2.5,4,$403K,-1.5%,22.1%,16,-20.0%,-11.1%
+"Portland, ME - East Deering",November 2021,All Residential,Neighborhood,False,ME,1.019628874,-0.1%,-2.6%,21,-16.0%,23.5%,2,-50.0%,-33.3%,8.5,-2.5,1.5,$365K,-9.4%,5.8%,11,-31.3%,-15.4%
+"Portland, ME - East Deering",December 2021,All Residential,Neighborhood,False,ME,1.018482976,-0.1%,-1.4%,17,-19.0%,30.8%,,,,12,3.5,5,$390K,6.8%,13.0%,8,-27.3%,-20.0%
+"Portland, ME - East Deering",January 2022,All Residential,Neighborhood,False,ME,1.033432879,1.5%,-0.1%,12,-29.4%,-25.0%,,,,8.5,-3.5,1.5,$294K,-24.6%,-16.4%,3,-62.5%,-57.1%
+"Portland, ME - East End",July 2015,All Residential,Neighborhood,False,ME,0.987639282,,,57,,,41,,,42,,,$640K,,,31,,
+"Portland, ME - East End",August 2015,All Residential,Neighborhood,False,ME,0.986236203,-0.1%,,47,-17.5%,,38,-7.3%,,47,5,,$635K,-0.8%,,28,-9.7%,
+"Portland, ME - East End",September 2015,All Residential,Neighborhood,False,ME,0.980911427,-0.5%,,29,-38.3%,,43,13.2%,,55,8,,$610K,-3.9%,,30,7.1%,
+"Portland, ME - East End",October 2015,All Residential,Neighborhood,False,ME,0.981440330,0.1%,,21,-27.6%,,42,-2.3%,,46,-9,,$525K,-13.9%,,25,-16.7%,
+"Portland, ME - East End",November 2015,All Residential,Neighborhood,False,ME,0.975582846,-0.6%,,15,-28.6%,,40,-4.8%,,68,22,,$568K,8.2%,,26,4.0%,
+"Portland, ME - East End",December 2015,All Residential,Neighborhood,False,ME,0.978922076,0.3%,,11,-26.7%,,33,-17.5%,,62,-6,,$620K,9.2%,,14,-46.2%,
+"Portland, ME - East End",January 2016,All Residential,Neighborhood,False,ME,0.984148295,0.5%,,12,9.1%,,41,24.2%,,63.5,1.5,,$441K,-28.9%,,22,57.1%,
+"Portland, ME - East End",February 2016,All Residential,Neighborhood,False,ME,0.977651771,-0.6%,,12,0.0%,,44,7.3%,,56.5,-7,,$383K,-13.2%,,22,0.0%,
+"Portland, ME - East End",March 2016,All Residential,Neighborhood,False,ME,0.985622529,0.8%,,11,-8.3%,,47,6.8%,,70,13.5,,$340K,-11.2%,,40,81.8%,
+"Portland, ME - East End",April 2016,All Residential,Neighborhood,False,ME,0.974820375,-1.1%,,11,0.0%,,48,2.1%,,54,-16,,$463K,36.0%,,39,-2.5%,
+"Portland, ME - East End",May 2016,All Residential,Neighborhood,False,ME,0.997169904,2.2%,,16,45.5%,,48,0.0%,,51,-3,,$482K,4.1%,,44,12.8%,
 "Portland, ME - East End",June 2016,All Residential,Neighborhood,False,ME,0.988336687,-0.9%,,21,31.3%,,56,16.7%,,47.5,-3.5,,$403K,-16.3%,,39,-11.4%,
-"Portland, ME - East End",July 2016,All Residential,Neighborhood,False,ME,0.988064074,0.0%,0.0%,20,-4.8%,-64.9%,50,-10.7%,19.0%,44,-3.5,2,$437K,8.3%,-31.8%,29,-25.6%,-6.5%
-"Portland, ME - East End",August 2016,All Residential,Neighborhood,False,ME,0.975953427,-1.2%,-1.0%,18,-10.0%,-61.7%,48,-4.0%,26.3%,49,5,2,$380K,-12.9%,-40.1%,25,-13.8%,-7.4%
-"Portland, ME - East End",September 2016,All Residential,Neighborhood,False,ME,0.992211038,1.6%,1.1%,16,-11.1%,-44.8%,41,-14.6%,-2.4%,14.5,-34.5,-40.5,$385K,1.3%,-36.8%,22,-12.0%,-24.1%
-"Portland, ME - East End",October 2016,All Residential,Neighborhood,False,ME,0.985770728,-0.6%,0.4%,27,68.8%,28.6%,45,9.8%,9.8%,97,82.5,51,$425K,10.3%,-19.0%,34,54.5%,41.7%
-"Portland, ME - East End",November 2016,All Residential,Neighborhood,False,ME,0.989495731,0.4%,1.4%,36,33.3%,140.0%,42,-6.7%,7.7%,119.5,22.5,51.5,$489K,14.9%,-14.0%,31,-8.8%,19.2%
-"Portland, ME - East End",December 2016,All Residential,Neighborhood,False,ME,0.991091346,0.2%,1.2%,43,19.4%,290.9%,36,-14.3%,12.5%,138,18.5,76,$550K,12.6%,-11.3%,23,-25.8%,64.3%
-"Portland, ME - East End",January 2017,All Residential,Neighborhood,False,ME,0.996596338,0.6%,1.2%,38,-11.6%,216.7%,34,-5.6%,-15.0%,139,1,75.5,$602K,9.4%,36.5%,13,-43.5%,-40.9%
-"Portland, ME - East End",February 2017,All Residential,Neighborhood,False,ME,0.988793787,-0.8%,1.1%,28,-26.3%,133.3%,31,-8.8%,-27.9%,121,-18,64.5,$612K,1.7%,59.8%,13,0.0%,-40.9%
-"Portland, ME - East End",March 2017,All Residential,Neighborhood,False,ME,0.975674375,-1.3%,-1.0%,19,-32.1%,72.7%,36,16.1%,-21.7%,86,-35,16,$525K,-14.2%,54.4%,30,130.8%,-25.0%
-"Portland, ME - East End",April 2017,All Residential,Neighborhood,False,ME,0.961035708,-1.5%,-1.4%,15,-21.1%,36.4%,37,2.8%,-21.3%,76,-10,22,$500K,-4.8%,8.1%,42,40.0%,7.7%
-"Portland, ME - East End",May 2017,All Residential,Neighborhood,False,ME,0.983176889,2.2%,-1.4%,21,40.0%,31.3%,36,-2.7%,-25.0%,71,-5,20,$550K,10.0%,14.2%,54,28.6%,22.7%
-"Portland, ME - East End",June 2017,All Residential,Neighborhood,False,ME,0.988609438,0.5%,0.0%,30,42.9%,42.9%,36,0.0%,-35.7%,44.5,-26.5,-3,$545K,-0.9%,35.2%,44,-18.5%,12.8%
-"Portland, ME - East End",July 2017,All Residential,Neighborhood,False,ME,0.988551058,0.0%,0.0%,33,10.0%,65.0%,31,-13.9%,-38.0%,34.5,-10,-9.5,$540K,-0.9%,23.7%,40,-9.1%,37.9%
-"Portland, ME - East End",August 2017,All Residential,Neighborhood,False,ME,0.981558571,-0.7%,0.6%,34,3.0%,88.9%,36,16.1%,-25.0%,34.5,0,-14.5,$485K,-10.2%,27.5%,35,-12.5%,40.0%
-"Portland, ME - East End",September 2017,All Residential,Neighborhood,False,ME,0.975244117,-0.6%,-1.7%,34,0.0%,112.5%,33,-8.3%,-19.5%,78,43.5,63.5,$504K,3.9%,30.7%,32,-8.6%,45.5%
+"Portland, ME - East End",July 2016,All Residential,Neighborhood,False,ME,0.985171417,-0.3%,-0.2%,21,0.0%,-63.2%,50,-10.7%,22.0%,53.5,6,11.5,$403K,0.0%,-37.0%,29,-25.6%,-6.5%
+"Portland, ME - East End",August 2016,All Residential,Neighborhood,False,ME,0.973393684,-1.2%,-1.3%,19,-9.5%,-59.6%,48,-4.0%,26.3%,54,0.5,7,$380K,-5.7%,-40.1%,25,-13.8%,-10.7%
+"Portland, ME - East End",September 2016,All Residential,Neighborhood,False,ME,0.988393818,1.5%,0.7%,17,-10.5%,-41.4%,41,-14.6%,-4.7%,15,-39,-40,$381K,0.2%,-37.6%,22,-12.0%,-26.7%
+"Portland, ME - East End",October 2016,All Residential,Neighborhood,False,ME,0.985770728,-0.3%,0.4%,27,58.8%,28.6%,45,9.8%,7.1%,97,82,51,$425K,11.6%,-19.0%,34,54.5%,36.0%
+"Portland, ME - East End",November 2016,All Residential,Neighborhood,False,ME,0.989495731,0.4%,1.4%,36,33.3%,140.0%,42,-6.7%,5.0%,119.5,22.5,51.5,$489K,14.9%,-14.0%,31,-8.8%,19.2%
+"Portland, ME - East End",December 2016,All Residential,Neighborhood,False,ME,0.991091346,0.2%,1.2%,43,19.4%,290.9%,35,-16.7%,6.1%,138,18.5,76,$550K,12.6%,-11.3%,22,-29.0%,57.1%
+"Portland, ME - East End",January 2017,All Residential,Neighborhood,False,ME,0.996596338,0.6%,1.2%,38,-11.6%,216.7%,33,-5.7%,-19.5%,139,1,75.5,$602K,9.4%,36.5%,12,-45.5%,-45.5%
+"Portland, ME - East End",February 2017,All Residential,Neighborhood,False,ME,0.988793787,-0.8%,1.1%,28,-26.3%,133.3%,30,-9.1%,-31.8%,121,-18,64.5,$612K,1.7%,59.8%,12,0.0%,-45.5%
+"Portland, ME - East End",March 2017,All Residential,Neighborhood,False,ME,0.975674375,-1.3%,-1.0%,19,-32.1%,72.7%,35,16.7%,-25.5%,86,-35,16,$525K,-14.2%,54.4%,30,150.0%,-25.0%
+"Portland, ME - East End",April 2017,All Residential,Neighborhood,False,ME,0.961035708,-1.5%,-1.4%,15,-21.1%,36.4%,36,2.9%,-25.0%,76,-10,22,$500K,-4.8%,8.1%,42,40.0%,7.7%
+"Portland, ME - East End",May 2017,All Residential,Neighborhood,False,ME,0.983176889,2.2%,-1.4%,21,40.0%,31.3%,35,-2.8%,-27.1%,71,-5,20,$550K,10.0%,14.2%,54,28.6%,22.7%
+"Portland, ME - East End",June 2017,All Residential,Neighborhood,False,ME,0.988609438,0.5%,0.0%,30,42.9%,42.9%,36,2.9%,-35.7%,44.5,-26.5,-3,$545K,-0.9%,35.2%,44,-18.5%,12.8%
+"Portland, ME - East End",July 2017,All Residential,Neighborhood,False,ME,0.988551058,0.0%,0.3%,33,10.0%,57.1%,31,-13.9%,-38.0%,34.5,-10,-19,$540K,-0.9%,34.0%,40,-9.1%,37.9%
+"Portland, ME - East End",August 2017,All Residential,Neighborhood,False,ME,0.981558571,-0.7%,0.8%,34,3.0%,78.9%,36,16.1%,-25.0%,34.5,0,-19.5,$485K,-10.2%,27.6%,35,-12.5%,40.0%
+"Portland, ME - East End",September 2017,All Residential,Neighborhood,False,ME,0.975244117,-0.6%,-1.3%,34,0.0%,100.0%,33,-8.3%,-19.5%,78,43.5,63,$504K,3.9%,32.3%,32,-8.6%,45.5%
 "Portland, ME - East End",October 2017,All Residential,Neighborhood,False,ME,0.975718524,0.0%,-1.0%,30,-11.8%,11.1%,30,-9.1%,-33.3%,98,20,1,$540K,7.2%,27.1%,24,-25.0%,-29.4%
 "Portland, ME - East End",November 2017,All Residential,Neighborhood,False,ME,0.997069777,2.1%,0.8%,31,3.3%,-13.9%,24,-20.0%,-42.9%,82,-16,-37.5,$495K,-8.3%,1.3%,21,-12.5%,-32.3%
-"Portland, ME - East End",December 2017,All Residential,Neighborhood,False,ME,1.000758930,0.4%,1.0%,29,-6.5%,-32.6%,19,-20.8%,-47.2%,57.5,-24.5,-80.5,$469K,-5.3%,-14.7%,21,0.0%,-8.7%
-"Portland, ME - East End",January 2018,All Residential,Neighborhood,False,ME,0.999634326,-0.1%,0.3%,35,20.7%,-7.9%,24,26.3%,-29.4%,61,3.5,-78,$450K,-4.1%,-25.2%,31,47.6%,138.5%
-"Portland, ME - East End",February 2018,All Residential,Neighborhood,False,ME,0.984565394,-1.5%,-0.4%,26,-25.7%,-7.1%,22,-8.3%,-29.0%,53,-8,-68,$477K,6.0%,-22.1%,26,-16.1%,100.0%
-"Portland, ME - East End",March 2018,All Residential,Neighborhood,False,ME,0.979111347,-0.5%,0.3%,23,-11.5%,21.1%,25,13.6%,-30.6%,49,-4,-37,$528K,10.6%,0.5%,28,7.7%,-6.7%
-"Portland, ME - East End",April 2018,All Residential,Neighborhood,False,ME,0.976229096,-0.3%,1.5%,16,-30.4%,6.7%,24,-4.0%,-35.1%,28,-21,-48,$496K,-6.0%,-0.8%,19,-32.1%,-54.8%
-"Portland, ME - East End",May 2018,All Residential,Neighborhood,False,ME,0.965353473,-1.1%,-1.8%,17,6.3%,-19.0%,20,-16.7%,-44.4%,42,14,-29,$450K,-9.3%,-18.2%,28,47.4%,-48.1%
+"Portland, ME - East End",December 2017,All Residential,Neighborhood,False,ME,1.000758930,0.4%,1.0%,29,-6.5%,-32.6%,19,-20.8%,-45.7%,57.5,-24.5,-80.5,$469K,-5.3%,-14.7%,21,0.0%,-4.5%
+"Portland, ME - East End",January 2018,All Residential,Neighborhood,False,ME,0.999634326,-0.1%,0.3%,35,20.7%,-7.9%,24,26.3%,-27.3%,61,3.5,-78,$450K,-4.1%,-25.2%,31,47.6%,158.3%
+"Portland, ME - East End",February 2018,All Residential,Neighborhood,False,ME,0.984565394,-1.5%,-0.4%,26,-25.7%,-7.1%,22,-8.3%,-26.7%,53,-8,-68,$477K,6.0%,-22.1%,26,-16.1%,116.7%
+"Portland, ME - East End",March 2018,All Residential,Neighborhood,False,ME,0.979111347,-0.5%,0.3%,23,-11.5%,21.1%,25,13.6%,-28.6%,49,-4,-37,$528K,10.6%,0.5%,28,7.7%,-6.7%
+"Portland, ME - East End",April 2018,All Residential,Neighborhood,False,ME,0.976229096,-0.3%,1.5%,16,-30.4%,6.7%,24,-4.0%,-33.3%,28,-21,-48,$496K,-6.0%,-0.8%,19,-32.1%,-54.8%
+"Portland, ME - East End",May 2018,All Residential,Neighborhood,False,ME,0.965353473,-1.1%,-1.8%,17,6.3%,-19.0%,20,-16.7%,-42.9%,42,14,-29,$450K,-9.3%,-18.2%,28,47.4%,-48.1%
 "Portland, ME - East End",June 2018,All Residential,Neighborhood,False,ME,0.981134380,1.6%,-0.7%,19,11.8%,-36.7%,20,0.0%,-44.4%,40,-2,-4.5,$393K,-12.8%,-28.0%,33,17.9%,-25.0%
 "Portland, ME - East End",July 2018,All Residential,Neighborhood,False,ME,0.980496158,-0.1%,-0.8%,48,152.6%,45.5%,26,30.0%,-16.1%,67,27,32.5,$545K,38.9%,0.9%,38,15.2%,-5.0%
 "Portland, ME - East End",August 2018,All Residential,Neighborhood,False,ME,0.984699174,0.4%,0.3%,60,25.0%,76.5%,32,23.1%,-11.1%,63,-4,28.5,$587K,7.7%,21.0%,42,10.5%,20.0%
 "Portland, ME - East End",September 2018,All Residential,Neighborhood,False,ME,0.979959577,-0.5%,0.5%,55,-8.3%,61.8%,35,9.4%,6.1%,73,10,-5,$645K,9.9%,28.0%,40,-4.8%,25.0%
-"Portland, ME - East End",October 2018,All Residential,Neighborhood,False,ME,0.973763758,-0.6%,-0.2%,34,-38.2%,13.3%,43,22.9%,43.3%,21,-52,-77,$556K,-13.8%,2.9%,49,22.5%,104.2%
-"Portland, ME - East End",November 2018,All Residential,Neighborhood,False,ME,0.972669927,-0.1%,-2.4%,23,-32.4%,-25.8%,44,2.3%,83.3%,13,-8,-69,$499K,-10.2%,0.8%,39,-20.4%,85.7%
-"Portland, ME - East End",December 2018,All Residential,Neighborhood,False,ME,0.970890710,-0.2%,-3.0%,25,8.7%,-13.8%,43,-2.3%,126.3%,16,3,-41.5,$533K,6.7%,13.5%,33,-15.4%,57.1%
-"Portland, ME - East End",January 2019,All Residential,Neighborhood,False,ME,0.977116611,0.6%,-2.3%,20,-20.0%,-42.9%,41,-4.7%,70.8%,18,2,-43,$610K,14.6%,35.6%,17,-48.5%,-45.2%
+"Portland, ME - East End",October 2018,All Residential,Neighborhood,False,ME,0.973763758,-0.6%,-0.2%,34,-38.2%,13.3%,42,20.0%,40.0%,21,-52,-77,$556K,-13.8%,2.9%,48,20.0%,100.0%
+"Portland, ME - East End",November 2018,All Residential,Neighborhood,False,ME,0.972669927,-0.1%,-2.4%,23,-32.4%,-25.8%,43,2.4%,79.2%,13,-8,-69,$499K,-10.2%,0.8%,38,-20.8%,81.0%
+"Portland, ME - East End",December 2018,All Residential,Neighborhood,False,ME,0.970890710,-0.2%,-3.0%,25,8.7%,-13.8%,42,-2.3%,121.1%,16,3,-41.5,$533K,6.7%,13.5%,32,-15.8%,52.4%
+"Portland, ME - East End",January 2019,All Residential,Neighborhood,False,ME,0.977116611,0.6%,-2.3%,20,-20.0%,-42.9%,41,-2.4%,70.8%,18,2,-43,$610K,14.6%,35.6%,17,-46.9%,-45.2%
 "Portland, ME - East End",February 2019,All Residential,Neighborhood,False,ME,0.966869983,-1.0%,-1.8%,20,0.0%,-23.1%,40,-2.4%,81.8%,61,43,8,$628K,2.9%,31.6%,25,47.1%,-3.8%
 "Portland, ME - East End",March 2019,All Residential,Neighborhood,False,ME,0.971988569,0.5%,-0.7%,22,10.0%,-4.3%,38,-5.0%,52.0%,76,15,27,$543K,-13.5%,2.8%,29,16.0%,3.6%
 "Portland, ME - East End",April 2019,All Residential,Neighborhood,False,ME,0.968373604,-0.4%,-0.8%,25,13.6%,56.3%,38,0.0%,58.3%,103,27,75,$499K,-8.1%,0.5%,32,10.3%,68.4%
@@ -744,9 +760,9 @@
 "Portland, ME - East End",July 2019,All Residential,Neighborhood,False,ME,0.991737188,1.4%,1.1%,25,0.0%,-47.9%,36,2.9%,38.5%,49.5,-52.5,-17.5,$539K,8.1%,-1.1%,31,24.0%,-18.4%
 "Portland, ME - East End",August 2019,All Residential,Neighborhood,False,ME,0.989573451,-0.2%,0.5%,26,4.0%,-56.7%,28,-22.2%,-12.5%,49.5,0,-13.5,$550K,2.0%,-6.3%,28,-9.7%,-33.3%
 "Portland, ME - East End",September 2019,All Residential,Neighborhood,False,ME,0.977671259,-1.2%,-0.2%,28,7.7%,-49.1%,28,0.0%,-20.0%,50.5,1,-22.5,$638K,15.9%,-1.2%,26,-7.1%,-35.0%
-"Portland, ME - East End",October 2019,All Residential,Neighborhood,False,ME,0.964417922,-1.3%,-0.9%,23,-17.9%,-32.4%,29,3.6%,-32.6%,51,0.5,30,$675K,5.9%,21.5%,21,-19.2%,-57.1%
-"Portland, ME - East End",November 2019,All Residential,Neighborhood,False,ME,0.958313870,-0.6%,-1.4%,18,-21.7%,-21.7%,21,-27.6%,-52.3%,45.5,-5.5,32.5,$675K,0.0%,35.3%,16,-23.8%,-59.0%
-"Portland, ME - East End",December 2019,All Residential,Neighborhood,False,ME,0.960698125,0.2%,-1.0%,17,-5.6%,-32.0%,21,0.0%,-51.2%,50,4.5,34,$675K,0.0%,26.8%,18,12.5%,-45.5%
+"Portland, ME - East End",October 2019,All Residential,Neighborhood,False,ME,0.964417922,-1.3%,-0.9%,23,-17.9%,-32.4%,29,3.6%,-31.0%,51,0.5,30,$675K,5.9%,21.5%,21,-19.2%,-56.3%
+"Portland, ME - East End",November 2019,All Residential,Neighborhood,False,ME,0.958313870,-0.6%,-1.4%,18,-21.7%,-21.7%,21,-27.6%,-51.2%,45.5,-5.5,32.5,$675K,0.0%,35.3%,16,-23.8%,-57.9%
+"Portland, ME - East End",December 2019,All Residential,Neighborhood,False,ME,0.960698125,0.2%,-1.0%,17,-5.6%,-32.0%,21,0.0%,-50.0%,50,4.5,34,$675K,0.0%,26.8%,18,12.5%,-43.8%
 "Portland, ME - East End",January 2020,All Residential,Neighborhood,False,ME,0.965737551,0.5%,-1.1%,17,0.0%,-15.0%,27,28.6%,-34.1%,83,33,65,$545K,-19.3%,-10.7%,24,33.3%,41.2%
 "Portland, ME - East End",February 2020,All Residential,Neighborhood,False,ME,0.971046557,0.5%,0.4%,19,11.8%,-5.0%,20,-25.9%,-50.0%,85,2,24,$500K,-8.3%,-20.3%,25,4.2%,0.0%
 "Portland, ME - East End",March 2020,All Residential,Neighborhood,False,ME,0.981687153,1.1%,1.0%,19,0.0%,-13.6%,20,0.0%,-47.4%,78,-7,2,$475K,-5.0%,-12.4%,21,-16.0%,-27.6%
@@ -768,8 +784,10 @@
 "Portland, ME - East End",July 2021,All Residential,Neighborhood,False,ME,1.003836708,-0.2%,3.7%,25,-37.5%,78.6%,17,-10.5%,-26.1%,21,11,-35,$750K,10.2%,21.2%,28,-15.2%,12.0%
 "Portland, ME - East End",August 2021,All Residential,Neighborhood,False,ME,1.015172393,1.1%,3.1%,23,-8.0%,4.5%,15,-11.8%,-31.8%,14,-7,-7,$835K,11.3%,43.0%,32,14.3%,28.0%
 "Portland, ME - East End",September 2021,All Residential,Neighborhood,False,ME,0.996046294,-1.9%,1.5%,25,8.7%,-3.8%,4,-73.3%,-84.0%,35,21,12.5,$899K,7.7%,50.7%,23,-28.1%,-32.4%
-"Portland, ME - East End",October 2021,All Residential,Neighborhood,False,ME,0.983557787,-1.2%,-0.8%,33,32.0%,32.0%,4,0.0%,-84.6%,35,0,19.5,$899K,0.0%,71.2%,22,-4.3%,-40.5%
-"Portland, ME - East End",November 2021,All Residential,Neighborhood,False,ME,0.981712579,-0.2%,-2.5%,32,-3.0%,18.5%,2,-50.0%,-89.5%,40,5,22.5,$960K,6.8%,35.2%,11,-50.0%,-75.0%
+"Portland, ME - East End",October 2021,All Residential,Neighborhood,False,ME,0.983557787,-1.2%,-0.8%,33,32.0%,32.0%,4,0.0%,-84.6%,35,0,19.5,$899K,0.0%,71.2%,23,0.0%,-37.8%
+"Portland, ME - East End",November 2021,All Residential,Neighborhood,False,ME,0.981712579,-0.2%,-2.5%,32,-3.0%,18.5%,2,-50.0%,-89.5%,40,5,22.5,$960K,6.8%,35.2%,16,-30.4%,-63.6%
+"Portland, ME - East End",December 2021,All Residential,Neighborhood,False,ME,0.993086014,1.1%,-1.5%,31,-3.1%,-8.8%,3,50.0%,-78.6%,22,-18,8.5,$810K,-15.6%,28.6%,16,0.0%,-44.8%
+"Portland, ME - East End",January 2022,All Residential,Neighborhood,False,ME,1.011313263,1.8%,1.0%,26,-16.1%,-25.7%,2,-33.3%,-83.3%,10.5,-11.5,-8,$787K,-2.8%,21.1%,13,-18.8%,-50.0%
 "Portland, ME - Libbytown",July 2015,All Residential,Neighborhood,False,ME,0.985417599,,,12,,,2,,,12,,,$214K,,,8,,
 "Portland, ME - Libbytown",August 2015,All Residential,Neighborhood,False,ME,0.978072580,-0.7%,,10,-16.7%,,2,0.0%,,10.5,-1.5,,$228K,6.3%,,7,-12.5%,
 "Portland, ME - Libbytown",September 2015,All Residential,Neighborhood,False,ME,0.979589806,0.2%,,11,10.0%,,3,50.0%,,33,22.5,,$241K,5.7%,,5,-28.6%,
@@ -806,47 +824,49 @@
 "Portland, ME - Libbytown",April 2018,All Residential,Neighborhood,False,ME,0.975562611,-0.4%,-2.8%,5,25.0%,-50.0%,2,0.0%,-77.8%,108,40,100,$330K,10.9%,16.6%,3,0.0%,-84.2%
 "Portland, ME - Libbytown",May 2018,All Residential,Neighborhood,False,ME,0.985675486,1.0%,-0.8%,4,-20.0%,-66.7%,2,0.0%,-60.0%,68,-40,42,$343K,3.8%,21.9%,7,133.3%,-58.8%
 "Portland, ME - Libbytown",June 2018,All Residential,Neighborhood,False,ME,0.907941313,-7.8%,-7.6%,5,25.0%,-66.7%,3,50.0%,-25.0%,30,-38,1,$330K,-3.6%,15.8%,12,71.4%,-7.7%
-"Portland, ME - Libbytown",July 2018,All Residential,Neighborhood,False,ME,0.958455445,5.1%,-0.8%,8,60.0%,-46.7%,6,100.0%,50.0%,7.5,-22.5,-40.5,$305K,-7.6%,27.1%,15,25.0%,87.5%
-"Portland, ME - Libbytown",August 2018,All Residential,Neighborhood,False,ME,0.968186858,1.0%,-0.2%,11,37.5%,-8.3%,3,-50.0%,-25.0%,9,1.5,-14,$326K,6.9%,26.4%,10,-33.3%,100.0%
-"Portland, ME - Libbytown",September 2018,All Residential,Neighborhood,False,ME,0.998276222,3.0%,2.1%,9,-18.2%,50.0%,6,100.0%,0.0%,9,0,-5.5,$276K,-15.5%,15.3%,9,-10.0%,50.0%
-"Portland, ME - Libbytown",October 2018,All Residential,Neighborhood,False,ME,0.976802336,-2.1%,1.4%,7,-22.2%,600.0%,9,50.0%,28.6%,16,7,1,$315K,14.3%,-11.5%,7,-22.2%,0.0%
-"Portland, ME - Libbytown",November 2018,All Residential,Neighborhood,False,ME,0.960133201,-1.7%,-2.2%,5,-28.6%,66.7%,7,-22.2%,40.0%,23,7,-42,$307K,-2.5%,6.0%,8,14.3%,33.3%
-"Portland, ME - Libbytown",December 2018,All Residential,Neighborhood,False,ME,0.971457802,1.1%,0.8%,4,-20.0%,-20.0%,6,-14.3%,20.0%,42.5,19.5,-22.5,$271K,-11.8%,-6.5%,5,-37.5%,66.7%
-"Portland, ME - Libbytown",January 2019,All Residential,Neighborhood,False,ME,0.996285922,2.5%,3.3%,3,-25.0%,-40.0%,4,-33.3%,-20.0%,69,26.5,4,$277K,2.0%,-4.6%,3,-40.0%,50.0%
+"Portland, ME - Libbytown",July 2018,All Residential,Neighborhood,False,ME,0.958455445,5.1%,-0.8%,8,60.0%,-46.7%,5,66.7%,25.0%,7.5,-22.5,-40.5,$305K,-7.6%,27.1%,14,16.7%,75.0%
+"Portland, ME - Libbytown",August 2018,All Residential,Neighborhood,False,ME,0.968186858,1.0%,-0.2%,11,37.5%,-8.3%,2,-60.0%,-50.0%,9,1.5,-14,$326K,6.9%,26.4%,9,-35.7%,80.0%
+"Portland, ME - Libbytown",September 2018,All Residential,Neighborhood,False,ME,0.998276222,3.0%,2.1%,9,-18.2%,50.0%,5,150.0%,-16.7%,9,0,-5.5,$276K,-15.5%,15.3%,8,-11.1%,33.3%
+"Portland, ME - Libbytown",October 2018,All Residential,Neighborhood,False,ME,0.976802336,-2.1%,1.4%,7,-22.2%,600.0%,8,60.0%,14.3%,16,7,1,$315K,14.3%,-11.5%,7,-12.5%,0.0%
+"Portland, ME - Libbytown",November 2018,All Residential,Neighborhood,False,ME,0.960133201,-1.7%,-2.2%,5,-28.6%,66.7%,6,-25.0%,20.0%,23,7,-42,$307K,-2.5%,6.0%,8,14.3%,33.3%
+"Portland, ME - Libbytown",December 2018,All Residential,Neighborhood,False,ME,0.971457802,1.1%,0.8%,4,-20.0%,-20.0%,5,-16.7%,0.0%,42.5,19.5,-22.5,$271K,-11.8%,-6.5%,5,-37.5%,66.7%
+"Portland, ME - Libbytown",January 2019,All Residential,Neighborhood,False,ME,0.996285922,2.5%,3.3%,3,-25.0%,-40.0%,4,-20.0%,-20.0%,69,26.5,4,$277K,2.0%,-4.6%,3,-40.0%,50.0%
 "Portland, ME - Libbytown",February 2019,All Residential,Neighborhood,False,ME,0.996704281,0.0%,6.1%,5,66.7%,66.7%,4,0.0%,33.3%,50,-19,-16,$245K,-11.4%,40.0%,3,0.0%,0.0%
 "Portland, ME - Libbytown",March 2019,All Residential,Neighborhood,False,ME,0.992703199,-0.4%,1.3%,5,0.0%,25.0%,3,-25.0%,50.0%,7,-43,-61,$277K,12.9%,-7.0%,2,-33.3%,-33.3%
-"Portland, ME - Libbytown",April 2019,All Residential,Neighborhood,False,ME,0.980029942,-1.3%,0.4%,4,-20.0%,-20.0%,5,66.7%,150.0%,28,21,-80,$304K,9.9%,-8.0%,5,150.0%,66.7%
-"Portland, ME - Libbytown",May 2019,All Residential,Neighborhood,False,ME,0.981423418,0.1%,-0.4%,2,-50.0%,-50.0%,5,0.0%,150.0%,6,-22,-62,$353K,16.3%,3.1%,7,40.0%,0.0%
-"Portland, ME - Libbytown",June 2019,All Residential,Neighborhood,False,ME,0.978579511,-0.3%,7.1%,5,150.0%,0.0%,3,-40.0%,0.0%,19,13,-11,$344K,-2.6%,4.2%,10,42.9%,-16.7%
-"Portland, ME - Libbytown",July 2019,All Residential,Neighborhood,False,ME,0.994294780,1.6%,3.6%,9,80.0%,12.5%,4,33.3%,-33.3%,24,5,16.5,$295K,-14.2%,-3.3%,10,0.0%,-33.3%
-"Portland, ME - Libbytown",August 2019,All Residential,Neighborhood,False,ME,0.983972943,-1.0%,1.6%,11,22.2%,0.0%,4,0.0%,33.3%,28.5,4.5,19.5,$290K,-1.7%,-11.0%,10,0.0%,0.0%
-"Portland, ME - Libbytown",September 2019,All Residential,Neighborhood,False,ME,0.997592930,1.4%,-0.1%,10,-9.1%,11.1%,6,50.0%,0.0%,28,-0.5,19,$278K,-4.0%,1.1%,10,0.0%,11.1%
-"Portland, ME - Libbytown",October 2019,All Residential,Neighborhood,False,ME,0.986695638,-1.1%,1.0%,6,-40.0%,-14.3%,3,-50.0%,-66.7%,19,-9,3,$259K,-7.0%,-17.8%,7,-30.0%,0.0%
-"Portland, ME - Libbytown",November 2019,All Residential,Neighborhood,False,ME,1.010782792,2.4%,5.1%,8,33.3%,60.0%,3,0.0%,-57.1%,12.5,-6.5,-10.5,$279K,7.7%,-9.2%,5,-28.6%,-37.5%
-"Portland, ME - Libbytown",December 2019,All Residential,Neighborhood,False,ME,0.983007324,-2.8%,1.2%,7,-12.5%,75.0%,1,-66.7%,-83.3%,71,58.5,28.5,$313K,12.0%,15.3%,4,-20.0%,-20.0%
+"Portland, ME - Libbytown",April 2019,All Residential,Neighborhood,False,ME,0.980029942,-1.3%,0.4%,4,-20.0%,-20.0%,5,66.7%,150.0%,28,21,-80,$304K,9.9%,-8.0%,4,100.0%,33.3%
+"Portland, ME - Libbytown",May 2019,All Residential,Neighborhood,False,ME,0.981423418,0.1%,-0.4%,2,-50.0%,-50.0%,5,0.0%,150.0%,6,-22,-62,$353K,16.3%,3.1%,6,50.0%,-14.3%
+"Portland, ME - Libbytown",June 2019,All Residential,Neighborhood,False,ME,0.978579511,-0.3%,7.1%,5,150.0%,0.0%,3,-40.0%,0.0%,19,13,-11,$344K,-2.6%,4.2%,9,50.0%,-25.0%
+"Portland, ME - Libbytown",July 2019,All Residential,Neighborhood,False,ME,0.991299174,1.3%,3.3%,8,60.0%,0.0%,4,33.3%,-20.0%,24,5,16.5,$292K,-15.0%,-4.1%,10,11.1%,-28.6%
+"Portland, ME - Libbytown",August 2019,All Residential,Neighborhood,False,ME,0.980544274,-1.1%,1.2%,10,25.0%,-9.1%,4,0.0%,100.0%,28.5,4.5,19.5,$289K,-1.4%,-11.5%,10,0.0%,11.1%
+"Portland, ME - Libbytown",September 2019,All Residential,Neighborhood,False,ME,0.995296630,1.5%,-0.3%,9,-10.0%,0.0%,6,50.0%,20.0%,28,-0.5,19,$270K,-6.4%,-2.0%,10,0.0%,25.0%
+"Portland, ME - Libbytown",October 2019,All Residential,Neighborhood,False,ME,0.986695638,-0.9%,1.0%,6,-33.3%,-14.3%,3,-50.0%,-62.5%,19,-9,3,$259K,-4.1%,-17.8%,7,-30.0%,0.0%
+"Portland, ME - Libbytown",November 2019,All Residential,Neighborhood,False,ME,1.010782792,2.4%,5.1%,8,33.3%,60.0%,3,0.0%,-50.0%,12.5,-6.5,-10.5,$279K,7.7%,-9.2%,5,-28.6%,-37.5%
+"Portland, ME - Libbytown",December 2019,All Residential,Neighborhood,False,ME,0.983007324,-2.8%,1.2%,7,-12.5%,75.0%,1,-66.7%,-80.0%,71,58.5,28.5,$313K,12.0%,15.3%,4,-20.0%,-20.0%
 "Portland, ME - Libbytown",January 2020,All Residential,Neighborhood,False,ME,0.984219606,0.1%,-1.2%,9,28.6%,200.0%,2,100.0%,-50.0%,16,-55,-53,$273K,-12.8%,-1.4%,4,0.0%,33.3%
 "Portland, ME - Libbytown",February 2020,All Residential,Neighborhood,False,ME,0.958496589,-2.6%,-3.8%,4,-55.6%,-20.0%,1,-50.0%,-75.0%,40.5,24.5,-9.5,$272K,-0.3%,10.9%,3,-25.0%,0.0%
 "Portland, ME - Libbytown",March 2020,All Residential,Neighborhood,False,ME,0.997166925,3.9%,0.4%,3,-25.0%,-40.0%,2,100.0%,-33.3%,10,-30.5,3,$273K,0.3%,-1.4%,2,-33.3%,0.0%
-"Portland, ME - Libbytown",April 2020,All Residential,Neighborhood,False,ME,1.014575593,1.7%,3.5%,1,-66.7%,-75.0%,1,-50.0%,-80.0%,167,157,139,$355K,30.3%,16.9%,3,50.0%,-40.0%
-"Portland, ME - Libbytown",May 2020,All Residential,Neighborhood,False,ME,1.022680584,0.8%,4.1%,4,300.0%,100.0%,2,100.0%,-60.0%,39.5,-127.5,33.5,$362K,2.0%,2.5%,7,133.3%,0.0%
-"Portland, ME - Libbytown",June 2020,All Residential,Neighborhood,False,ME,1.014997020,-0.8%,3.6%,8,100.0%,60.0%,,,,5.5,-34,-13.5,$351K,-3.0%,2.1%,7,0.0%,-30.0%
-"Portland, ME - Libbytown",July 2020,All Residential,Neighborhood,False,ME,1.011381367,-0.4%,1.7%,9,12.5%,0.0%,,,,6,0.5,-18,$365K,4.0%,23.8%,8,14.3%,-20.0%
-"Portland, ME - Libbytown",August 2020,All Residential,Neighborhood,False,ME,1.018685190,0.7%,3.5%,9,0.0%,-18.2%,,,,7,1,-21.5,$310K,-15.1%,6.9%,4,-50.0%,-60.0%
-"Portland, ME - Libbytown",September 2020,All Residential,Neighborhood,False,ME,1.031084322,1.2%,3.3%,4,-55.6%,-60.0%,,,,7,0,-21,$333K,7.4%,19.5%,6,50.0%,-40.0%
+"Portland, ME - Libbytown",April 2020,All Residential,Neighborhood,False,ME,1.014575593,1.7%,3.5%,1,-66.7%,-75.0%,1,-50.0%,-80.0%,167,157,139,$355K,30.3%,16.9%,3,50.0%,-25.0%
+"Portland, ME - Libbytown",May 2020,All Residential,Neighborhood,False,ME,1.022680584,0.8%,4.1%,4,300.0%,100.0%,2,100.0%,-60.0%,39.5,-127.5,33.5,$362K,2.0%,2.5%,7,133.3%,16.7%
+"Portland, ME - Libbytown",June 2020,All Residential,Neighborhood,False,ME,1.014997020,-0.8%,3.6%,8,100.0%,60.0%,,,,5.5,-34,-13.5,$351K,-3.0%,2.1%,7,0.0%,-22.2%
+"Portland, ME - Libbytown",July 2020,All Residential,Neighborhood,False,ME,1.011381367,-0.4%,2.0%,9,12.5%,12.5%,,,,6,0.5,-18,$365K,4.0%,24.8%,8,14.3%,-20.0%
+"Portland, ME - Libbytown",August 2020,All Residential,Neighborhood,False,ME,1.018685190,0.7%,3.8%,9,0.0%,-10.0%,,,,7,1,-21.5,$310K,-15.1%,7.5%,4,-50.0%,-60.0%
+"Portland, ME - Libbytown",September 2020,All Residential,Neighborhood,False,ME,1.031084322,1.2%,3.6%,4,-55.6%,-55.6%,,,,7,0,-21,$333K,7.4%,23.3%,6,50.0%,-40.0%
 "Portland, ME - Libbytown",October 2020,All Residential,Neighborhood,False,ME,1.071300081,4.0%,8.5%,7,75.0%,16.7%,1,,-66.7%,7,0,-12,$335K,0.7%,29.4%,5,-16.7%,-28.6%
 "Portland, ME - Libbytown",November 2020,All Residential,Neighborhood,False,ME,1.074379197,0.3%,6.4%,6,-14.3%,-25.0%,3,200.0%,0.0%,7.5,0.5,-5,$438K,30.6%,56.8%,9,80.0%,80.0%
 "Portland, ME - Libbytown",December 2020,All Residential,Neighborhood,False,ME,1.074379197,0.0%,9.1%,6,0.0%,-14.3%,3,0.0%,200.0%,7.5,0,-63.5,$438K,0.0%,40.0%,7,-22.2%,75.0%
-"Portland, ME - Libbytown",January 2021,All Residential,Neighborhood,False,ME,1.013948572,-6.0%,3.0%,5,-16.7%,-44.4%,3,0.0%,50.0%,8,0.5,-8,$448K,2.4%,64.4%,6,-14.3%,50.0%
-"Portland, ME - Libbytown",February 2021,All Residential,Neighborhood,False,ME,0.993562365,-2.0%,3.5%,3,-40.0%,-25.0%,2,-33.3%,100.0%,13,5,-27.5,$448K,0.0%,64.9%,4,-33.3%,33.3%
-"Portland, ME - Libbytown",March 2021,All Residential,Neighborhood,False,ME,0.992644910,-0.1%,-0.5%,5,66.7%,66.7%,1,-50.0%,-50.0%,13,0,3,$448K,0.0%,64.4%,6,50.0%,200.0%
-"Portland, ME - Libbytown",April 2021,All Residential,Neighborhood,False,ME,1.047916289,5.5%,3.3%,5,0.0%,400.0%,2,100.0%,100.0%,10,-3,-157,$376K,-16.1%,5.9%,7,16.7%,133.3%
-"Portland, ME - Libbytown",May 2021,All Residential,Neighborhood,False,ME,1.026495608,-2.1%,0.4%,8,60.0%,100.0%,3,50.0%,50.0%,8.5,-1.5,-31,$415K,10.5%,14.8%,9,28.6%,28.6%
-"Portland, ME - Libbytown",June 2021,All Residential,Neighborhood,False,ME,1.023961446,-0.3%,0.9%,8,0.0%,0.0%,1,-66.7%,,10,1.5,4.5,$349K,-16.0%,-0.6%,8,-11.1%,14.3%
+"Portland, ME - Libbytown",January 2021,All Residential,Neighborhood,False,ME,1.013948572,-6.0%,3.0%,5,-16.7%,-44.4%,2,-33.3%,0.0%,8,0.5,-8,$448K,2.4%,64.4%,5,-28.6%,25.0%
+"Portland, ME - Libbytown",February 2021,All Residential,Neighborhood,False,ME,0.993562365,-2.0%,3.5%,3,-40.0%,-25.0%,2,0.0%,100.0%,13,5,-27.5,$448K,0.0%,64.9%,3,-40.0%,0.0%
+"Portland, ME - Libbytown",March 2021,All Residential,Neighborhood,False,ME,0.990169773,-0.3%,-0.7%,4,33.3%,33.3%,1,-50.0%,-50.0%,16,3,6,$354K,-21.0%,29.9%,5,66.7%,150.0%
+"Portland, ME - Libbytown",April 2021,All Residential,Neighborhood,False,ME,1.059258998,6.9%,4.5%,4,0.0%,300.0%,2,100.0%,100.0%,48.5,32.5,-118.5,$349K,-1.4%,-1.7%,7,40.0%,133.3%
+"Portland, ME - Libbytown",May 2021,All Residential,Neighborhood,False,ME,1.029917059,-2.9%,0.7%,7,75.0%,75.0%,3,50.0%,50.0%,10,-38.5,-29.5,$376K,7.7%,3.9%,9,28.6%,28.6%
+"Portland, ME - Libbytown",June 2021,All Residential,Neighborhood,False,ME,1.023961446,-0.6%,0.9%,8,14.3%,0.0%,1,-66.7%,,10,0,4.5,$349K,-7.2%,-0.6%,8,-11.1%,14.3%
 "Portland, ME - Libbytown",July 2021,All Residential,Neighborhood,False,ME,1.041030781,1.7%,3.0%,9,12.5%,0.0%,1,0.0%,,6,-4,0,$411K,17.8%,12.6%,8,0.0%,0.0%
 "Portland, ME - Libbytown",August 2021,All Residential,Neighborhood,False,ME,1.053082493,1.2%,3.4%,8,-11.1%,-11.1%,,,,10.5,4.5,3.5,$300K,-27.0%,-3.2%,7,-12.5%,75.0%
 "Portland, ME - Libbytown",September 2021,All Residential,Neighborhood,False,ME,1.059362535,0.6%,2.8%,11,37.5%,175.0%,2,,,6.5,-4,-0.5,$360K,20.0%,8.2%,8,14.3%,33.3%
 "Portland, ME - Libbytown",October 2021,All Residential,Neighborhood,False,ME,1.040816144,-1.9%,-3.0%,10,-9.1%,42.9%,1,-50.0%,0.0%,6,-0.5,-1,$358K,-0.7%,6.7%,8,0.0%,60.0%
 "Portland, ME - Libbytown",November 2021,All Residential,Neighborhood,False,ME,1.054964536,1.4%,-1.9%,9,-10.0%,50.0%,1,0.0%,-66.7%,4.5,-1.5,-3,$388K,8.5%,-11.3%,5,-37.5%,-44.4%
+"Portland, ME - Libbytown",December 2021,All Residential,Neighborhood,False,ME,1.076022183,2.1%,0.2%,4,-55.6%,-33.3%,1,0.0%,-66.7%,4,-0.5,-3.5,$573K,47.6%,30.9%,2,-60.0%,-71.4%
+"Portland, ME - Libbytown",January 2022,All Residential,Neighborhood,False,ME,1.114285714,3.8%,10.0%,1,-75.0%,-80.0%,1,0.0%,-50.0%,4,0,-4,$585K,2.2%,30.6%,,,
 "Portland, ME - Nasons Corner",July 2015,All Residential,Neighborhood,False,ME,0.991226413,,,14,,,9,,,10,,,$223K,,,20,,
 "Portland, ME - Nasons Corner",August 2015,All Residential,Neighborhood,False,ME,0.987382537,-0.4%,,16,14.3%,,10,11.1%,,10,0,,$224K,0.6%,,23,15.0%,
 "Portland, ME - Nasons Corner",September 2015,All Residential,Neighborhood,False,ME,1.011274669,2.4%,,18,12.5%,,16,60.0%,,7,-3,,$221K,-1.6%,,28,21.7%,
@@ -896,11 +916,11 @@
 "Portland, ME - Nasons Corner",May 2019,All Residential,Neighborhood,False,ME,1.005727087,1.1%,-1.5%,15,25.0%,-6.3%,8,100.0%,,21,-7,8,$290K,-0.9%,5.0%,16,14.3%,100.0%
 "Portland, ME - Nasons Corner",June 2019,All Residential,Neighborhood,False,ME,1.006060628,0.0%,-2.3%,13,-13.3%,-13.3%,4,-50.0%,100.0%,11,-10,3,$290K,0.0%,-4.3%,20,25.0%,185.7%
 "Portland, ME - Nasons Corner",July 2019,All Residential,Neighborhood,False,ME,1.009918905,0.4%,-1.7%,18,38.5%,100.0%,10,150.0%,-16.7%,8,-3,1,$283K,-2.4%,-5.7%,24,20.0%,60.0%
-"Portland, ME - Nasons Corner",August 2019,All Residential,Neighborhood,False,ME,1.015117021,0.5%,-1.7%,19,5.6%,216.7%,9,-10.0%,50.0%,7,-1,2,$280K,-1.1%,-19.7%,24,0.0%,41.2%
-"Portland, ME - Nasons Corner",September 2019,All Residential,Neighborhood,False,ME,1.020141112,0.5%,0.5%,22,15.8%,120.0%,9,0.0%,0.0%,8,1,-2.5,$281K,0.2%,-9.5%,24,0.0%,9.1%
-"Portland, ME - Nasons Corner",October 2019,All Residential,Neighborhood,False,ME,1.019632734,-0.1%,-0.1%,17,-22.7%,30.8%,8,-11.1%,0.0%,15,7,4,$280K,-0.2%,-8.2%,20,-16.7%,25.0%
-"Portland, ME - Nasons Corner",November 2019,All Residential,Neighborhood,False,ME,1.002286401,-1.7%,0.0%,16,-5.9%,0.0%,4,-50.0%,0.0%,18,3,5,$288K,2.7%,12.2%,14,-30.0%,-6.7%
-"Portland, ME - Nasons Corner",December 2019,All Residential,Neighborhood,False,ME,0.996317881,-0.6%,0.7%,18,12.5%,28.6%,2,-50.0%,-50.0%,20.5,2.5,-9.5,$288K,0.0%,15.6%,10,-28.6%,11.1%
+"Portland, ME - Nasons Corner",August 2019,All Residential,Neighborhood,False,ME,1.015117021,0.5%,-1.7%,19,5.6%,216.7%,9,-10.0%,50.0%,7,-1,2,$280K,-1.1%,-19.7%,23,-4.2%,35.3%
+"Portland, ME - Nasons Corner",September 2019,All Residential,Neighborhood,False,ME,1.021645989,0.7%,0.7%,21,10.5%,110.0%,9,0.0%,0.0%,7,0,-3.5,$280K,0.0%,-9.7%,23,0.0%,4.5%
+"Portland, ME - Nasons Corner",October 2019,All Residential,Neighborhood,False,ME,1.021576112,0.0%,0.0%,16,-23.8%,23.1%,8,-11.1%,0.0%,12.5,5.5,1.5,$276K,-1.6%,-9.7%,19,-17.4%,18.8%
+"Portland, ME - Nasons Corner",November 2019,All Residential,Neighborhood,False,ME,1.003202915,-1.8%,0.1%,15,-6.3%,-6.3%,4,-50.0%,0.0%,19,6.5,6,$285K,3.4%,11.2%,14,-26.3%,-6.7%
+"Portland, ME - Nasons Corner",December 2019,All Residential,Neighborhood,False,ME,0.996317881,-0.7%,0.7%,18,20.0%,28.6%,2,-50.0%,-50.0%,20.5,1.5,-9.5,$288K,0.9%,15.6%,10,-28.6%,11.1%
 "Portland, ME - Nasons Corner",January 2020,All Residential,Neighborhood,False,ME,0.994187271,-0.2%,1.8%,17,-5.6%,30.8%,2,0.0%,0.0%,21,0.5,-15,$285K,-0.9%,5.9%,7,-30.0%,16.7%
 "Portland, ME - Nasons Corner",February 2020,All Residential,Neighborhood,False,ME,0.994050208,0.0%,1.8%,14,-17.6%,55.6%,,,,29,8,-19,$278K,-2.6%,2.8%,7,0.0%,-22.2%
 "Portland, ME - Nasons Corner",March 2020,All Residential,Neighborhood,False,ME,0.964836829,-2.9%,-2.1%,10,-28.6%,11.1%,1,,-66.7%,34.5,5.5,0.5,$267K,-4.0%,-3.1%,8,14.3%,-11.1%
@@ -908,50 +928,52 @@
 "Portland, ME - Nasons Corner",May 2020,All Residential,Neighborhood,False,ME,0.994596732,0.6%,-1.1%,8,-11.1%,-46.7%,4,300.0%,-50.0%,15,-3,-6,$293K,4.5%,0.9%,10,42.9%,-37.5%
 "Portland, ME - Nasons Corner",June 2020,All Residential,Neighborhood,False,ME,1.032603926,3.8%,2.7%,8,0.0%,-38.5%,5,25.0%,25.0%,6,-9,-5,$340K,16.1%,17.2%,13,30.0%,-35.0%
 "Portland, ME - Nasons Corner",July 2020,All Residential,Neighborhood,False,ME,1.015031224,-1.8%,0.5%,11,37.5%,-38.9%,2,-60.0%,-80.0%,6.5,0.5,-1.5,$330K,-2.9%,16.6%,14,7.7%,-41.7%
-"Portland, ME - Nasons Corner",August 2020,All Residential,Neighborhood,False,ME,1.013610469,-0.1%,-0.2%,13,18.2%,-31.6%,1,-50.0%,-88.9%,11,4.5,4,$330K,0.0%,17.9%,10,-28.6%,-58.3%
-"Portland, ME - Nasons Corner",September 2020,All Residential,Neighborhood,False,ME,1.015287368,0.2%,-0.5%,14,7.7%,-36.4%,2,100.0%,-77.8%,7,-4,-1,$333K,0.9%,18.7%,5,-50.0%,-79.2%
-"Portland, ME - Nasons Corner",October 2020,All Residential,Neighborhood,False,ME,1.018277016,0.3%,-0.1%,8,-42.9%,-52.9%,2,0.0%,-75.0%,7,0,-8,$355K,6.6%,26.8%,8,60.0%,-60.0%
-"Portland, ME - Nasons Corner",November 2020,All Residential,Neighborhood,False,ME,1.032837387,1.5%,3.1%,9,12.5%,-43.8%,2,0.0%,-50.0%,4.5,-2.5,-13.5,$375K,5.7%,30.4%,10,25.0%,-28.6%
+"Portland, ME - Nasons Corner",August 2020,All Residential,Neighborhood,False,ME,1.013610469,-0.1%,-0.2%,13,18.2%,-31.6%,1,-50.0%,-88.9%,11,4.5,4,$330K,0.0%,17.9%,10,-28.6%,-56.5%
+"Portland, ME - Nasons Corner",September 2020,All Residential,Neighborhood,False,ME,1.015287368,0.2%,-0.6%,14,7.7%,-33.3%,2,100.0%,-77.8%,7,-4,0,$333K,0.9%,18.9%,5,-50.0%,-78.3%
+"Portland, ME - Nasons Corner",October 2020,All Residential,Neighborhood,False,ME,1.018277016,0.3%,-0.3%,8,-42.9%,-50.0%,2,0.0%,-75.0%,7,0,-5.5,$355K,6.6%,28.8%,8,60.0%,-57.9%
+"Portland, ME - Nasons Corner",November 2020,All Residential,Neighborhood,False,ME,1.032837387,1.5%,3.0%,9,12.5%,-40.0%,2,0.0%,-50.0%,4.5,-2.5,-14.5,$375K,5.7%,31.6%,10,25.0%,-28.6%
 "Portland, ME - Nasons Corner",December 2020,All Residential,Neighborhood,False,ME,1.057304014,2.4%,6.1%,9,0.0%,-50.0%,1,-50.0%,-50.0%,6,1.5,-14.5,$375K,0.0%,30.4%,8,-20.0%,-20.0%
 "Portland, ME - Nasons Corner",January 2021,All Residential,Neighborhood,False,ME,1.056046291,-0.1%,6.2%,9,0.0%,-47.1%,2,100.0%,0.0%,6,0,-15,$370K,-1.3%,29.8%,3,-62.5%,-57.1%
-"Portland, ME - Nasons Corner",February 2021,All Residential,Neighborhood,False,ME,1.068700727,1.3%,7.5%,5,-44.4%,-64.3%,3,50.0%,,6,0,-23,$370K,0.0%,33.3%,4,33.3%,-42.9%
-"Portland, ME - Nasons Corner",March 2021,All Residential,Neighborhood,False,ME,1.127653129,5.9%,16.3%,3,-40.0%,-70.0%,4,33.3%,300.0%,7,1,-27.5,$495K,33.8%,85.7%,9,125.0%,12.5%
-"Portland, ME - Nasons Corner",April 2021,All Residential,Neighborhood,False,ME,1.134211255,0.7%,14.6%,6,100.0%,-33.3%,6,50.0%,500.0%,5.5,-1.5,-12.5,$485K,-2.0%,73.2%,18,100.0%,157.1%
-"Portland, ME - Nasons Corner",May 2021,All Residential,Neighborhood,False,ME,1.094672442,-4.0%,10.0%,11,83.3%,37.5%,2,-66.7%,-50.0%,7.5,2,-7.5,$383K,-21.0%,30.8%,17,-5.6%,70.0%
-"Portland, ME - Nasons Corner",June 2021,All Residential,Neighborhood,False,ME,1.086696613,-0.8%,5.4%,16,45.5%,100.0%,3,50.0%,-40.0%,7,-0.5,1,$385K,0.4%,13.1%,17,0.0%,30.8%
+"Portland, ME - Nasons Corner",February 2021,All Residential,Neighborhood,False,ME,1.068700727,1.3%,7.5%,5,-44.4%,-64.3%,3,50.0%,,6,0,-23,$370K,0.0%,33.3%,3,0.0%,-57.1%
+"Portland, ME - Nasons Corner",March 2021,All Residential,Neighborhood,False,ME,1.127653129,5.9%,16.3%,3,-40.0%,-70.0%,3,0.0%,200.0%,7,1,-27.5,$495K,33.8%,85.7%,7,133.3%,-12.5%
+"Portland, ME - Nasons Corner",April 2021,All Residential,Neighborhood,False,ME,1.134211255,0.7%,14.6%,6,100.0%,-33.3%,6,100.0%,500.0%,5.5,-1.5,-12.5,$485K,-2.0%,73.2%,16,128.6%,128.6%
+"Portland, ME - Nasons Corner",May 2021,All Residential,Neighborhood,False,ME,1.094672442,-4.0%,10.0%,11,83.3%,37.5%,2,-66.7%,-50.0%,7.5,2,-7.5,$383K,-21.0%,30.8%,16,0.0%,60.0%
+"Portland, ME - Nasons Corner",June 2021,All Residential,Neighborhood,False,ME,1.086696613,-0.8%,5.4%,16,45.5%,100.0%,3,50.0%,-40.0%,7,-0.5,1,$385K,0.4%,13.1%,17,6.3%,30.8%
 "Portland, ME - Nasons Corner",July 2021,All Residential,Neighborhood,False,ME,1.075388813,-1.1%,6.0%,12,-25.0%,9.1%,4,33.3%,100.0%,9,2,2.5,$385K,0.0%,16.5%,15,-11.8%,7.1%
 "Portland, ME - Nasons Corner",August 2021,All Residential,Neighborhood,False,ME,1.105413432,3.0%,9.2%,14,16.7%,7.7%,4,0.0%,300.0%,6,-3,-5,$421K,9.5%,27.6%,18,20.0%,80.0%
-"Portland, ME - Nasons Corner",September 2021,All Residential,Neighborhood,False,ME,1.086623486,-1.9%,7.1%,12,-14.3%,-14.3%,2,-50.0%,0.0%,6.5,0.5,-0.5,$406K,-3.7%,21.8%,17,-5.6%,240.0%
-"Portland, ME - Nasons Corner",October 2021,All Residential,Neighborhood,False,ME,1.068735961,-1.8%,5.0%,19,58.3%,137.5%,1,-50.0%,-50.0%,8,1.5,1,$417K,2.8%,17.4%,9,-47.1%,12.5%
-"Portland, ME - Nasons Corner",November 2021,All Residential,Neighborhood,False,ME,1.041479929,-2.7%,0.9%,16,-15.8%,77.8%,2,100.0%,0.0%,14,6,9.5,$418K,0.4%,11.6%,5,-44.4%,-50.0%
-"Portland, ME - North Deering",July 2015,All Residential,Neighborhood,False,ME,0.990346184,,,78,,,58,,,14,,,$239K,,,103,,
-"Portland, ME - North Deering",August 2015,All Residential,Neighborhood,False,ME,0.988280516,-0.2%,,79,1.3%,,68,17.2%,,14,0,,$255K,6.9%,,82,-20.4%,
-"Portland, ME - North Deering",September 2015,All Residential,Neighborhood,False,ME,0.989992909,0.2%,,70,-11.4%,,64,-5.9%,,19,5,,$255K,0.0%,,67,-18.3%,
-"Portland, ME - North Deering",October 2015,All Residential,Neighborhood,False,ME,0.988812902,-0.1%,,59,-15.7%,,67,4.7%,,31,12,,$250K,-2.0%,,69,3.0%,
-"Portland, ME - North Deering",November 2015,All Residential,Neighborhood,False,ME,0.985134443,-0.4%,,51,-13.6%,,53,-20.9%,,31,0,,$235K,-6.0%,,57,-17.4%,
+"Portland, ME - Nasons Corner",September 2021,All Residential,Neighborhood,False,ME,1.086623486,-1.9%,7.1%,12,-14.3%,-14.3%,3,-25.0%,50.0%,6.5,0.5,-0.5,$406K,-3.7%,21.8%,18,0.0%,260.0%
+"Portland, ME - Nasons Corner",October 2021,All Residential,Neighborhood,False,ME,1.068735961,-1.8%,5.0%,19,58.3%,137.5%,3,0.0%,50.0%,8,1.5,1,$417K,2.8%,17.4%,12,-33.3%,50.0%
+"Portland, ME - Nasons Corner",November 2021,All Residential,Neighborhood,False,ME,1.042870751,-2.6%,1.0%,15,-21.1%,66.7%,3,0.0%,50.0%,16,8,11.5,$417K,0.0%,11.1%,8,-33.3%,-20.0%
+"Portland, ME - Nasons Corner",December 2021,All Residential,Neighborhood,False,ME,1.027063456,-1.6%,-3.0%,12,-20.0%,33.3%,,,,18,2,12,$418K,0.4%,11.6%,7,-12.5%,-12.5%
+"Portland, ME - Nasons Corner",January 2022,All Residential,Neighborhood,False,ME,1.029243829,0.2%,-2.7%,11,-8.3%,22.2%,,,,16,-2,10,$415K,-0.8%,12.2%,5,-28.6%,66.7%
+"Portland, ME - North Deering",July 2015,All Residential,Neighborhood,False,ME,0.991301684,,,79,,,58,,,14,,,$238K,,,103,,
+"Portland, ME - North Deering",August 2015,All Residential,Neighborhood,False,ME,0.989249894,-0.2%,,80,1.3%,,69,19.0%,,14,0,,$255K,7.1%,,83,-19.4%,
+"Portland, ME - North Deering",September 2015,All Residential,Neighborhood,False,ME,0.989992909,0.1%,,70,-12.5%,,65,-5.8%,,19,5,,$255K,0.0%,,68,-18.1%,
+"Portland, ME - North Deering",October 2015,All Residential,Neighborhood,False,ME,0.988812902,-0.1%,,59,-15.7%,,67,3.1%,,31,12,,$250K,-2.0%,,70,2.9%,
+"Portland, ME - North Deering",November 2015,All Residential,Neighborhood,False,ME,0.985134443,-0.4%,,51,-13.6%,,53,-20.9%,,31,0,,$235K,-6.0%,,57,-18.6%,
 "Portland, ME - North Deering",December 2015,All Residential,Neighborhood,False,ME,0.984521020,-0.1%,,46,-9.8%,,42,-20.8%,,26,-5,,$229K,-2.8%,,46,-19.3%,
 "Portland, ME - North Deering",January 2016,All Residential,Neighborhood,False,ME,0.976759217,-0.8%,,46,0.0%,,41,-2.4%,,40.5,14.5,,$234K,2.3%,,37,-19.6%,
 "Portland, ME - North Deering",February 2016,All Residential,Neighborhood,False,ME,0.979656239,0.3%,,47,2.2%,,37,-9.8%,,59,18.5,,$226K,-3.3%,,43,16.2%,
 "Portland, ME - North Deering",March 2016,All Residential,Neighborhood,False,ME,0.985486215,0.6%,,52,10.6%,,41,10.8%,,49,-10,,$224K,-0.7%,,68,58.1%,
 "Portland, ME - North Deering",April 2016,All Residential,Neighborhood,False,ME,0.991922370,0.6%,,51,-1.9%,,38,-7.3%,,19.5,-29.5,,$228K,1.6%,,87,27.9%,
-"Portland, ME - North Deering",May 2016,All Residential,Neighborhood,False,ME,0.996666781,0.5%,,68,33.3%,,39,2.6%,,13,-6.5,,$230K,0.9%,,94,8.0%,
-"Portland, ME - North Deering",June 2016,All Residential,Neighborhood,False,ME,1.003323670,0.7%,,79,16.2%,,35,-10.3%,,12,-1,,$251K,9.1%,,84,-10.6%,
-"Portland, ME - North Deering",July 2016,All Residential,Neighborhood,False,ME,1.001972738,-0.1%,1.2%,81,2.5%,3.8%,36,2.9%,-37.9%,12,0,-2,$268K,6.6%,12.2%,69,-17.9%,-33.0%
-"Portland, ME - North Deering",August 2016,All Residential,Neighborhood,False,ME,1.002273309,0.0%,1.4%,76,-6.2%,-3.8%,37,2.8%,-45.6%,11.5,-0.5,-2.5,$285K,6.4%,11.7%,67,-2.9%,-18.3%
-"Portland, ME - North Deering",September 2016,All Residential,Neighborhood,False,ME,0.996944402,-0.5%,0.7%,57,-25.0%,-18.6%,40,8.1%,-37.5%,13,1.5,-6,$280K,-1.8%,9.6%,60,-10.4%,-10.4%
-"Portland, ME - North Deering",October 2016,All Residential,Neighborhood,False,ME,0.993978529,-0.3%,0.5%,56,-1.8%,-5.1%,41,2.5%,-38.8%,13,0,-18,$256K,-8.6%,2.2%,60,0.0%,-13.0%
-"Portland, ME - North Deering",November 2016,All Residential,Neighborhood,False,ME,0.987093799,-0.7%,0.2%,47,-16.1%,-7.8%,35,-14.6%,-34.0%,18.5,5.5,-12.5,$245K,-4.1%,4.3%,55,-8.3%,-3.5%
+"Portland, ME - North Deering",May 2016,All Residential,Neighborhood,False,ME,0.996666781,0.5%,,68,33.3%,,38,0.0%,,13,-6.5,,$230K,0.9%,,93,6.9%,
+"Portland, ME - North Deering",June 2016,All Residential,Neighborhood,False,ME,1.003323670,0.7%,,79,16.2%,,34,-10.5%,,12,-1,,$251K,9.1%,,83,-10.8%,
+"Portland, ME - North Deering",July 2016,All Residential,Neighborhood,False,ME,1.001972738,-0.1%,1.1%,81,2.5%,2.5%,36,5.9%,-37.9%,12,0,-2,$268K,6.6%,12.4%,68,-18.1%,-34.0%
+"Portland, ME - North Deering",August 2016,All Residential,Neighborhood,False,ME,1.002443971,0.0%,1.3%,75,-7.4%,-6.3%,37,2.8%,-46.4%,11,-1,-3,$280K,4.5%,9.6%,67,-1.5%,-19.3%
+"Portland, ME - North Deering",September 2016,All Residential,Neighborhood,False,ME,0.997077807,-0.5%,0.7%,56,-25.3%,-20.0%,40,8.1%,-38.5%,13,2,-6,$277K,-0.8%,8.7%,60,-10.4%,-11.8%
+"Portland, ME - North Deering",October 2016,All Residential,Neighborhood,False,ME,0.994060435,-0.3%,0.5%,55,-1.8%,-6.8%,41,2.5%,-38.8%,13,0,-18,$251K,-9.5%,0.4%,60,0.0%,-14.3%
+"Portland, ME - North Deering",November 2016,All Residential,Neighborhood,False,ME,0.987093799,-0.7%,0.2%,47,-14.5%,-7.8%,35,-14.6%,-34.0%,18.5,5.5,-12.5,$245K,-2.4%,4.3%,55,-8.3%,-3.5%
 "Portland, ME - North Deering",December 2016,All Residential,Neighborhood,False,ME,0.985655587,-0.1%,0.1%,46,-2.1%,0.0%,32,-8.6%,-23.8%,18,-0.5,-8,$245K,0.0%,7.2%,48,-12.7%,4.3%
 "Portland, ME - North Deering",January 2017,All Residential,Neighborhood,False,ME,0.984488160,-0.1%,0.8%,48,4.3%,4.3%,29,-9.4%,-29.3%,14,-4,-26.5,$256K,4.3%,9.3%,35,-27.1%,-5.4%
 "Portland, ME - North Deering",February 2017,All Residential,Neighborhood,False,ME,0.983224149,-0.1%,0.4%,44,-8.3%,-6.4%,20,-31.0%,-45.9%,25,11,-34,$260K,1.6%,14.8%,23,-34.3%,-46.5%
 "Portland, ME - North Deering",March 2017,All Residential,Neighborhood,False,ME,0.982535070,-0.1%,-0.3%,50,13.6%,-3.8%,28,40.0%,-31.7%,35,10,-14,$263K,1.4%,17.3%,49,113.0%,-27.9%
 "Portland, ME - North Deering",April 2017,All Residential,Neighborhood,False,ME,0.988794050,0.6%,-0.3%,44,-12.0%,-13.7%,14,-50.0%,-63.2%,29,-6,9.5,$263K,-0.3%,15.1%,55,12.2%,-36.8%
-"Portland, ME - North Deering",May 2017,All Residential,Neighborhood,False,ME,0.990166625,0.1%,-0.7%,56,27.3%,-17.6%,27,92.9%,-30.8%,13,-16,0,$280K,6.6%,21.7%,79,43.6%,-16.0%
-"Portland, ME - North Deering",June 2017,All Residential,Neighborhood,False,ME,0.995829941,0.6%,-0.7%,65,16.1%,-17.7%,31,14.8%,-11.4%,11.5,-1.5,-0.5,$280K,0.0%,11.6%,74,-6.3%,-11.9%
-"Portland, ME - North Deering",July 2017,All Residential,Neighborhood,False,ME,0.995991114,0.0%,-0.6%,66,1.5%,-18.5%,29,-6.5%,-19.4%,11,-0.5,-1,$318K,13.4%,18.7%,82,10.8%,18.8%
-"Portland, ME - North Deering",August 2017,All Residential,Neighborhood,False,ME,0.998624157,0.3%,-0.4%,69,4.5%,-9.2%,34,17.2%,-8.1%,13.5,2.5,2,$305K,-3.9%,7.1%,74,-9.8%,10.4%
-"Portland, ME - North Deering",September 2017,All Residential,Neighborhood,False,ME,0.996394074,-0.2%,-0.1%,62,-10.1%,8.8%,34,0.0%,-15.0%,16,2.5,3,$297K,-2.8%,6.1%,67,-9.5%,11.7%
-"Portland, ME - North Deering",October 2017,All Residential,Neighborhood,False,ME,0.990325311,-0.6%,-0.4%,67,8.1%,19.6%,27,-20.6%,-34.1%,18,2,5,$275K,-7.3%,7.6%,59,-11.9%,-1.7%
+"Portland, ME - North Deering",May 2017,All Residential,Neighborhood,False,ME,0.990166625,0.1%,-0.7%,56,27.3%,-17.6%,27,92.9%,-28.9%,13,-16,0,$280K,6.6%,21.7%,79,43.6%,-15.1%
+"Portland, ME - North Deering",June 2017,All Residential,Neighborhood,False,ME,0.995829941,0.6%,-0.7%,65,16.1%,-17.7%,31,14.8%,-8.8%,11.5,-1.5,-0.5,$280K,0.0%,11.6%,74,-6.3%,-10.8%
+"Portland, ME - North Deering",July 2017,All Residential,Neighborhood,False,ME,0.995991114,0.0%,-0.6%,66,1.5%,-18.5%,29,-6.5%,-19.4%,11,-0.5,-1,$318K,13.4%,18.7%,82,10.8%,20.6%
+"Portland, ME - North Deering",August 2017,All Residential,Neighborhood,False,ME,0.998624157,0.3%,-0.4%,69,4.5%,-8.0%,34,17.2%,-8.1%,13.5,2.5,2.5,$305K,-3.9%,9.1%,74,-9.8%,10.4%
+"Portland, ME - North Deering",September 2017,All Residential,Neighborhood,False,ME,0.996394074,-0.2%,-0.1%,62,-10.1%,10.7%,34,0.0%,-15.0%,16,2.5,3,$297K,-2.8%,6.9%,67,-9.5%,11.7%
+"Portland, ME - North Deering",October 2017,All Residential,Neighborhood,False,ME,0.990325311,-0.6%,-0.4%,67,8.1%,21.8%,27,-20.6%,-34.1%,18,2,5,$275K,-7.3%,9.6%,59,-11.9%,-1.7%
 "Portland, ME - North Deering",November 2017,All Residential,Neighborhood,False,ME,0.987459491,-0.3%,0.0%,58,-13.4%,23.4%,21,-22.2%,-40.0%,19.5,1.5,1,$274K,-0.4%,11.8%,54,-8.5%,-1.8%
 "Portland, ME - North Deering",December 2017,All Residential,Neighborhood,False,ME,0.986391790,-0.1%,0.1%,60,3.4%,30.4%,15,-28.6%,-53.1%,20,0.5,2,$286K,4.2%,16.5%,40,-25.9%,-16.7%
 "Portland, ME - North Deering",January 2018,All Residential,Neighborhood,False,ME,0.992588008,0.6%,0.8%,54,-10.0%,12.5%,9,-40.0%,-69.0%,16.5,-3.5,2.5,$287K,0.5%,12.3%,35,-12.5%,0.0%
@@ -976,31 +998,33 @@
 "Portland, ME - North Deering",August 2019,All Residential,Neighborhood,False,ME,1.016060234,0.1%,1.5%,84,-1.2%,16.7%,20,0.0%,-13.0%,8,0,1,$337K,0.5%,4.0%,70,-17.6%,-12.5%
 "Portland, ME - North Deering",September 2019,All Residential,Neighborhood,False,ME,1.010477803,-0.6%,0.5%,65,-22.6%,-12.2%,32,60.0%,10.3%,9,1,1,$335K,-0.4%,5.7%,65,-7.1%,-13.3%
 "Portland, ME - North Deering",October 2019,All Residential,Neighborhood,False,ME,1.000818002,-1.0%,-0.5%,55,-15.4%,-17.9%,29,-9.4%,0.0%,10.5,1.5,0,$308K,-8.1%,1.0%,65,0.0%,-12.2%
-"Portland, ME - North Deering",November 2019,All Residential,Neighborhood,False,ME,0.993782139,-0.7%,-0.5%,44,-20.0%,-31.3%,24,-17.2%,-11.1%,17,6.5,2,$312K,1.1%,9.7%,57,-12.3%,7.5%
-"Portland, ME - North Deering",December 2019,All Residential,Neighborhood,False,ME,0.994298274,0.1%,0.4%,51,15.9%,-8.9%,15,-37.5%,-34.8%,24,7,-0.5,$310K,-0.5%,15.0%,43,-24.6%,7.5%
-"Portland, ME - North Deering",January 2020,All Residential,Neighborhood,False,ME,0.995826617,0.2%,1.4%,47,-7.8%,11.9%,19,26.7%,-13.6%,25,1,-2,$325K,4.8%,20.6%,33,-23.3%,0.0%
-"Portland, ME - North Deering",February 2020,All Residential,Neighborhood,False,ME,0.994088004,-0.2%,1.5%,44,-6.4%,29.4%,10,-47.4%,-52.4%,25,0,-2,$318K,-2.2%,11.3%,32,-3.0%,-13.5%
-"Portland, ME - North Deering",March 2020,All Residential,Neighborhood,False,ME,1.002381307,0.8%,2.3%,40,-9.1%,11.1%,10,0.0%,-54.5%,18.5,-6.5,-12,$325K,2.2%,10.2%,35,9.4%,-23.9%
-"Portland, ME - North Deering",April 2020,All Residential,Neighborhood,False,ME,1.006861499,0.4%,2.8%,39,-2.5%,2.6%,9,-10.0%,-30.8%,11,-7.5,-20.5,$340K,4.6%,7.3%,29,-17.1%,-45.3%
-"Portland, ME - North Deering",May 2020,All Residential,Neighborhood,False,ME,1.012071647,0.5%,1.8%,36,-7.7%,-36.8%,12,33.3%,-40.0%,6,-5,-10.5,$355K,4.3%,18.2%,40,37.9%,-45.9%
-"Portland, ME - North Deering",June 2020,All Residential,Neighborhood,False,ME,1.011278628,-0.1%,0.4%,39,8.3%,-45.1%,10,-16.7%,-54.5%,6,0,-2,$347K,-2.1%,5.2%,45,12.5%,-46.4%
-"Portland, ME - North Deering",July 2020,All Residential,Neighborhood,False,ME,1.019255597,0.8%,0.4%,46,17.9%,-45.9%,9,-10.0%,-55.0%,6,0,-2,$364K,4.9%,8.7%,63,40.0%,-25.9%
-"Portland, ME - North Deering",August 2020,All Residential,Neighborhood,False,ME,1.027016918,0.8%,1.1%,60,30.4%,-28.6%,17,88.9%,-15.0%,5.5,-0.5,-2.5,$345K,-5.2%,2.5%,80,27.0%,14.3%
-"Portland, ME - North Deering",September 2020,All Residential,Neighborhood,False,ME,1.035547283,0.9%,2.5%,62,3.3%,-4.6%,12,-29.4%,-62.5%,5.5,0,-3.5,$357K,3.3%,6.4%,81,1.3%,24.6%
-"Portland, ME - North Deering",October 2020,All Residential,Neighborhood,False,ME,1.028592047,-0.7%,2.8%,75,21.0%,36.4%,11,-8.3%,-62.1%,6.5,1,-4,$352K,-1.3%,14.3%,79,-2.5%,21.5%
-"Portland, ME - North Deering",November 2020,All Residential,Neighborhood,False,ME,1.030871483,0.2%,3.7%,72,-4.0%,63.6%,10,-9.1%,-58.3%,8,1.5,-9,$371K,5.5%,19.2%,57,-27.8%,0.0%
-"Portland, ME - North Deering",December 2020,All Residential,Neighborhood,False,ME,1.027877380,-0.3%,3.4%,78,8.3%,52.9%,9,-10.0%,-40.0%,8,0,-16,$374K,0.7%,20.6%,45,-21.1%,4.7%
-"Portland, ME - North Deering",January 2021,All Residential,Neighborhood,False,ME,1.030343910,0.2%,3.5%,55,-29.5%,17.0%,7,-22.2%,-63.2%,11,3,-14,$375K,0.3%,15.4%,25,-44.4%,-24.2%
-"Portland, ME - North Deering",February 2021,All Residential,Neighborhood,False,ME,1.017693186,-1.3%,2.4%,40,-27.3%,-9.1%,8,14.3%,-20.0%,11,0,-14,$375K,0.0%,17.9%,17,-32.0%,-46.9%
-"Portland, ME - North Deering",March 2021,All Residential,Neighborhood,False,ME,1.034898629,1.7%,3.3%,18,-55.0%,-55.0%,8,0.0%,-20.0%,8.5,-2.5,-10,$370K,-1.3%,13.8%,26,52.9%,-25.7%
-"Portland, ME - North Deering",April 2021,All Residential,Neighborhood,False,ME,1.081526873,4.7%,7.5%,28,55.6%,-28.2%,7,-12.5%,-22.2%,6,-2.5,-5,$414K,11.9%,21.8%,44,69.2%,51.7%
-"Portland, ME - North Deering",May 2021,All Residential,Neighborhood,False,ME,1.099819353,1.8%,8.8%,40,42.9%,11.1%,12,71.4%,0.0%,6,0,0,$401K,-3.3%,13.0%,67,52.3%,67.5%
-"Portland, ME - North Deering",June 2021,All Residential,Neighborhood,False,ME,1.097240596,-0.3%,8.6%,65,62.5%,66.7%,15,25.0%,50.0%,5.5,-0.5,-0.5,$425K,6.1%,22.5%,89,32.8%,97.8%
-"Portland, ME - North Deering",July 2021,All Residential,Neighborhood,False,ME,1.094403821,-0.3%,7.5%,76,16.9%,65.2%,18,20.0%,100.0%,6,0.5,0,$433K,1.9%,19.0%,86,-3.4%,36.5%
-"Portland, ME - North Deering",August 2021,All Residential,Neighborhood,False,ME,1.087729953,-0.7%,6.1%,83,9.2%,38.3%,19,5.6%,11.8%,6,0,0.5,$460K,6.2%,33.3%,81,-5.8%,1.3%
-"Portland, ME - North Deering",September 2021,All Residential,Neighborhood,False,ME,1.071005111,-1.7%,3.5%,80,-3.6%,29.0%,13,-31.6%,8.3%,7,1,1.5,$460K,0.0%,29.0%,64,-21.0%,-21.0%
-"Portland, ME - North Deering",October 2021,All Residential,Neighborhood,False,ME,1.053649868,-1.7%,2.5%,74,-7.5%,-1.3%,2,-84.6%,-81.8%,7,0,0.5,$419K,-9.0%,19.0%,54,-15.6%,-31.6%
-"Portland, ME - North Deering",November 2021,All Residential,Neighborhood,False,ME,1.054199404,0.1%,2.3%,64,-13.5%,-11.1%,2,0.0%,-80.0%,8,1,0,$401K,-4.2%,8.0%,32,-40.7%,-43.9%
+"Portland, ME - North Deering",November 2019,All Residential,Neighborhood,False,ME,0.993782139,-0.7%,-0.5%,44,-20.0%,-31.3%,25,-13.8%,-7.4%,17,6.5,2,$312K,1.1%,9.7%,58,-10.8%,9.4%
+"Portland, ME - North Deering",December 2019,All Residential,Neighborhood,False,ME,0.994298274,0.1%,0.4%,51,15.9%,-8.9%,16,-36.0%,-30.4%,24,7,-0.5,$310K,-0.5%,15.0%,44,-24.1%,10.0%
+"Portland, ME - North Deering",January 2020,All Residential,Neighborhood,False,ME,0.995826617,0.2%,1.4%,47,-7.8%,11.9%,20,25.0%,-9.1%,25,1,-2,$325K,4.8%,20.6%,34,-22.7%,3.0%
+"Portland, ME - North Deering",February 2020,All Residential,Neighborhood,False,ME,0.994088004,-0.2%,1.5%,44,-6.4%,29.4%,11,-45.0%,-47.6%,25,0,-2,$318K,-2.2%,11.3%,32,-5.9%,-13.5%
+"Portland, ME - North Deering",March 2020,All Residential,Neighborhood,False,ME,1.002381307,0.8%,2.3%,40,-9.1%,11.1%,11,0.0%,-50.0%,18.5,-6.5,-12,$325K,2.2%,10.2%,35,9.4%,-23.9%
+"Portland, ME - North Deering",April 2020,All Residential,Neighborhood,False,ME,1.006861499,0.4%,2.8%,39,-2.5%,2.6%,10,-9.1%,-23.1%,11,-7.5,-20.5,$340K,4.6%,7.3%,29,-17.1%,-45.3%
+"Portland, ME - North Deering",May 2020,All Residential,Neighborhood,False,ME,1.012071647,0.5%,1.8%,36,-7.7%,-36.8%,13,30.0%,-35.0%,6,-5,-10.5,$355K,4.3%,18.2%,40,37.9%,-45.9%
+"Portland, ME - North Deering",June 2020,All Residential,Neighborhood,False,ME,1.011278628,-0.1%,0.4%,39,8.3%,-45.1%,10,-23.1%,-54.5%,6,0,-2,$347K,-2.1%,5.2%,44,10.0%,-47.6%
+"Portland, ME - North Deering",July 2020,All Residential,Neighborhood,False,ME,1.019255597,0.8%,0.4%,46,17.9%,-45.9%,9,-10.0%,-55.0%,6,0,-2,$364K,4.9%,8.7%,62,40.9%,-27.1%
+"Portland, ME - North Deering",August 2020,All Residential,Neighborhood,False,ME,1.027016918,0.8%,1.1%,60,30.4%,-28.6%,17,88.9%,-15.0%,5.5,-0.5,-2.5,$345K,-5.2%,2.5%,79,27.4%,12.9%
+"Portland, ME - North Deering",September 2020,All Residential,Neighborhood,False,ME,1.035547283,0.9%,2.5%,62,3.3%,-4.6%,13,-23.5%,-59.4%,5.5,0,-3.5,$357K,3.3%,6.4%,81,2.5%,24.6%
+"Portland, ME - North Deering",October 2020,All Residential,Neighborhood,False,ME,1.028592047,-0.7%,2.8%,75,21.0%,36.4%,12,-7.7%,-58.6%,6.5,1,-4,$352K,-1.3%,14.3%,79,-2.5%,21.5%
+"Portland, ME - North Deering",November 2020,All Residential,Neighborhood,False,ME,1.031306293,0.3%,3.8%,71,-5.3%,61.4%,10,-16.7%,-60.0%,7.5,1,-9.5,$370K,5.1%,18.7%,57,-27.8%,-1.7%
+"Portland, ME - North Deering",December 2020,All Residential,Neighborhood,False,ME,1.028239424,-0.3%,3.4%,77,8.5%,51.0%,9,-10.0%,-43.8%,8,0.5,-16,$373K,0.7%,20.2%,45,-21.1%,2.3%
+"Portland, ME - North Deering",January 2021,All Residential,Neighborhood,False,ME,1.031855273,0.4%,3.6%,55,-28.6%,17.0%,7,-22.2%,-65.0%,11,3,-14,$375K,0.7%,15.4%,25,-44.4%,-26.5%
+"Portland, ME - North Deering",February 2021,All Residential,Neighborhood,False,ME,1.019289084,-1.3%,2.5%,41,-25.5%,-6.8%,8,14.3%,-27.3%,11,0,-14,$375K,0.0%,17.9%,17,-32.0%,-46.9%
+"Portland, ME - North Deering",March 2021,All Residential,Neighborhood,False,ME,1.037436860,1.8%,3.5%,19,-53.7%,-52.5%,8,0.0%,-27.3%,10,-1,-8.5,$375K,0.0%,15.4%,24,41.2%,-31.4%
+"Portland, ME - North Deering",April 2021,All Residential,Neighborhood,False,ME,1.076616454,3.9%,7.0%,26,36.8%,-33.3%,7,-12.5%,-30.0%,5,-5,-6,$390K,4.1%,14.8%,42,75.0%,44.8%
+"Portland, ME - North Deering",May 2021,All Residential,Neighborhood,False,ME,1.097422354,2.1%,8.5%,38,46.2%,5.6%,12,71.4%,-7.7%,6,1,0,$393K,0.6%,10.7%,65,54.8%,62.5%
+"Portland, ME - North Deering",June 2021,All Residential,Neighborhood,False,ME,1.095712923,-0.2%,8.4%,63,65.8%,61.5%,16,33.3%,60.0%,5,-1,-1,$425K,8.3%,22.5%,90,38.5%,104.5%
+"Portland, ME - North Deering",July 2021,All Residential,Neighborhood,False,ME,1.094403821,-0.1%,7.5%,76,20.6%,65.2%,20,25.0%,122.2%,6,1,0,$433K,1.9%,19.0%,88,-2.2%,41.9%
+"Portland, ME - North Deering",August 2021,All Residential,Neighborhood,False,ME,1.087729953,-0.7%,6.1%,83,9.2%,38.3%,20,0.0%,17.6%,6,0,0.5,$460K,6.2%,33.3%,85,-3.4%,7.6%
+"Portland, ME - North Deering",September 2021,All Residential,Neighborhood,False,ME,1.071005111,-1.7%,3.5%,80,-3.6%,29.0%,17,-15.0%,30.8%,7,1,1.5,$460K,0.0%,29.0%,70,-17.6%,-13.6%
+"Portland, ME - North Deering",October 2021,All Residential,Neighborhood,False,ME,1.053649868,-1.7%,2.5%,74,-7.5%,-1.3%,7,-58.8%,-41.7%,7,0,0.5,$419K,-9.0%,19.0%,66,-5.7%,-16.5%
+"Portland, ME - North Deering",November 2021,All Residential,Neighborhood,False,ME,1.054199404,0.1%,2.3%,64,-13.5%,-9.9%,5,-28.6%,-50.0%,8,1,0.5,$401K,-4.2%,8.4%,48,-27.3%,-15.8%
+"Portland, ME - North Deering",December 2021,All Residential,Neighborhood,False,ME,1.040850695,-1.3%,1.3%,57,-10.9%,-26.0%,1,-80.0%,-88.9%,8,0,0,$400K,-0.2%,7.4%,25,-47.9%,-44.4%
+"Portland, ME - North Deering",January 2022,All Residential,Neighborhood,False,ME,1.045372331,0.5%,1.4%,42,-26.3%,-23.6%,2,100.0%,-71.4%,7.5,-0.5,-3.5,$408K,1.9%,8.7%,12,-52.0%,-52.0%
 "Portland, ME - Oakdale",July 2015,All Residential,Neighborhood,False,ME,0.979270510,,,11,,,12,,,9.5,,,$295K,,,23,,
 "Portland, ME - Oakdale",August 2015,All Residential,Neighborhood,False,ME,0.984795308,0.6%,,13,18.2%,,12,0.0%,,7,-2.5,,$330K,11.8%,,22,-4.3%,
 "Portland, ME - Oakdale",September 2015,All Residential,Neighborhood,False,ME,0.993312487,0.9%,,16,23.1%,,12,0.0%,,7.5,0.5,,$304K,-7.9%,,13,-40.9%,
@@ -1050,10 +1074,10 @@
 "Portland, ME - Oakdale",May 2019,All Residential,Neighborhood,False,ME,1.012171135,1.7%,4.6%,13,18.2%,116.7%,1,-50.0%,-66.7%,8,-2.5,-1.5,$371K,-17.7%,7.7%,12,0.0%,33.3%
 "Portland, ME - Oakdale",June 2019,All Residential,Neighborhood,False,ME,1.020608780,0.8%,3.5%,13,0.0%,44.4%,1,0.0%,-50.0%,8,0,-2,$410K,10.7%,2.8%,8,-33.3%,-11.1%
 "Portland, ME - Oakdale",July 2019,All Residential,Neighborhood,False,ME,1.007846732,-1.3%,3.9%,12,-7.7%,20.0%,4,300.0%,0.0%,8,0,-3,$415K,1.2%,-3.4%,11,37.5%,10.0%
-"Portland, ME - Oakdale",August 2019,All Residential,Neighborhood,False,ME,0.999819761,-0.8%,0.7%,11,-8.3%,22.2%,6,50.0%,20.0%,8,0,-2,$420K,1.2%,-8.7%,15,36.4%,66.7%
-"Portland, ME - Oakdale",September 2019,All Residential,Neighborhood,False,ME,0.987312127,-1.3%,-2.1%,9,-18.2%,28.6%,10,66.7%,11.1%,16,8,9,$415K,-1.2%,10.7%,21,40.0%,40.0%
-"Portland, ME - Oakdale",October 2019,All Residential,Neighborhood,False,ME,0.988249259,0.1%,-3.6%,13,44.4%,62.5%,4,-60.0%,0.0%,16,0,7.5,$425K,2.4%,3.6%,18,-14.3%,63.6%
-"Portland, ME - Oakdale",November 2019,All Residential,Neighborhood,False,ME,0.975643045,-1.3%,-3.4%,13,0.0%,44.4%,6,50.0%,20.0%,21,5,3,$450K,5.9%,18.6%,15,-16.7%,36.4%
+"Portland, ME - Oakdale",August 2019,All Residential,Neighborhood,False,ME,0.999801737,-0.8%,0.7%,10,-16.7%,11.1%,6,50.0%,20.0%,8,0,-2,$439K,5.7%,-4.7%,15,36.4%,66.7%
+"Portland, ME - Oakdale",September 2019,All Residential,Neighborhood,False,ME,0.985726143,-1.4%,-2.3%,8,-20.0%,14.3%,10,66.7%,11.1%,16,8,9,$398K,-9.3%,6.1%,21,40.0%,40.0%
+"Portland, ME - Oakdale",October 2019,All Residential,Neighborhood,False,ME,0.987270030,0.2%,-3.7%,12,50.0%,50.0%,4,-60.0%,0.0%,16,0,7.5,$438K,10.0%,6.6%,18,-14.3%,63.6%
+"Portland, ME - Oakdale",November 2019,All Residential,Neighborhood,False,ME,0.975643045,-1.2%,-3.4%,13,8.3%,44.4%,6,50.0%,20.0%,21,5,3,$450K,2.9%,18.6%,15,-16.7%,36.4%
 "Portland, ME - Oakdale",December 2019,All Residential,Neighborhood,False,ME,0.984000065,0.8%,0.2%,14,7.7%,75.0%,3,-50.0%,0.0%,11,-10,-16,$440K,-2.3%,17.0%,8,-46.7%,100.0%
 "Portland, ME - Oakdale",January 2020,All Residential,Neighborhood,False,ME,0.979056989,-0.5%,0.5%,11,-21.4%,83.3%,2,-33.3%,-33.3%,12,1,-40,$429K,-2.4%,3.7%,7,-12.5%,16.7%
 "Portland, ME - Oakdale",February 2020,All Residential,Neighborhood,False,ME,0.999203848,2.0%,2.4%,10,-9.1%,66.7%,,,,13.5,1.5,-41,$435K,1.3%,-11.3%,3,-57.1%,-50.0%
@@ -1062,9 +1086,9 @@
 "Portland, ME - Oakdale",May 2020,All Residential,Neighborhood,False,ME,0.988413970,-2.9%,-2.4%,3,-40.0%,-76.9%,4,33.3%,300.0%,37,5,29,$500K,13.6%,35.0%,9,125.0%,-25.0%
 "Portland, ME - Oakdale",June 2020,All Residential,Neighborhood,False,ME,1.015491720,2.7%,-0.5%,5,66.7%,-61.5%,3,-25.0%,200.0%,7,-30,-1,$500K,0.0%,22.0%,10,11.1%,25.0%
 "Portland, ME - Oakdale",July 2020,All Residential,Neighborhood,False,ME,1.032492857,1.7%,2.5%,7,40.0%,-41.7%,10,233.3%,150.0%,6,-1,-2,$455K,-9.0%,9.6%,15,50.0%,36.4%
-"Portland, ME - Oakdale",August 2020,All Residential,Neighborhood,False,ME,1.032616867,0.0%,3.3%,8,14.3%,-27.3%,11,10.0%,83.3%,6.5,0.5,-1.5,$405K,-11.0%,-3.6%,16,6.7%,6.7%
-"Portland, ME - Oakdale",September 2020,All Residential,Neighborhood,False,ME,1.046068891,1.3%,5.9%,8,0.0%,-11.1%,8,-27.3%,-20.0%,7,0.5,-9,$443K,9.5%,6.9%,16,0.0%,-23.8%
-"Portland, ME - Oakdale",October 2020,All Residential,Neighborhood,False,ME,1.026702186,-1.9%,3.8%,11,37.5%,-15.4%,9,12.5%,125.0%,10,3,-6,$419K,-5.6%,-1.5%,13,-18.8%,-27.8%
+"Portland, ME - Oakdale",August 2020,All Residential,Neighborhood,False,ME,1.032616867,0.0%,3.3%,8,14.3%,-20.0%,11,10.0%,83.3%,6.5,0.5,-1.5,$405K,-11.0%,-7.6%,16,6.7%,6.7%
+"Portland, ME - Oakdale",September 2020,All Residential,Neighborhood,False,ME,1.046068891,1.3%,6.0%,8,0.0%,0.0%,8,-27.3%,-20.0%,7,0.5,-9,$443K,9.5%,11.5%,16,0.0%,-23.8%
+"Portland, ME - Oakdale",October 2020,All Residential,Neighborhood,False,ME,1.026702186,-1.9%,3.9%,11,37.5%,-8.3%,9,12.5%,125.0%,10,3,-6,$419K,-5.6%,-4.3%,13,-18.8%,-27.8%
 "Portland, ME - Oakdale",November 2020,All Residential,Neighborhood,False,ME,1.023646751,-0.3%,4.8%,10,-9.1%,-23.1%,9,0.0%,50.0%,10,0,-11,$434K,3.7%,-3.6%,14,7.7%,-6.7%
 "Portland, ME - Oakdale",December 2020,All Residential,Neighborhood,False,ME,1.020834559,-0.3%,3.7%,15,50.0%,7.1%,6,-33.3%,100.0%,13.5,3.5,2.5,$449K,3.5%,2.2%,13,-7.1%,62.5%
 "Portland, ME - Oakdale",January 2021,All Residential,Neighborhood,False,ME,1.012826795,-0.8%,3.4%,12,-20.0%,9.1%,5,-16.7%,150.0%,13,-0.5,1,$452K,0.5%,5.3%,9,-30.8%,28.6%
@@ -1076,8 +1100,10 @@
 "Portland, ME - Oakdale",July 2021,All Residential,Neighborhood,False,ME,1.059280632,-6.3%,2.7%,25,25.0%,257.1%,4,33.3%,-60.0%,6.5,-0.5,0.5,$563K,4.0%,23.6%,16,-5.9%,6.7%
 "Portland, ME - Oakdale",August 2021,All Residential,Neighborhood,False,ME,1.042681140,-1.7%,1.0%,22,-12.0%,175.0%,4,0.0%,-63.6%,8,1.5,1.5,$588K,4.5%,45.1%,14,-12.5%,-12.5%
 "Portland, ME - Oakdale",September 2021,All Residential,Neighborhood,False,ME,1.035655880,-0.7%,-1.0%,17,-22.7%,112.5%,6,50.0%,-25.0%,8.5,0.5,1.5,$595K,1.2%,34.2%,13,-7.1%,-18.8%
-"Portland, ME - Oakdale",October 2021,All Residential,Neighborhood,False,ME,1.043225137,0.8%,1.7%,10,-41.2%,-9.1%,,,,8,-0.5,-2,$588K,-1.3%,40.4%,9,-30.8%,-30.8%
-"Portland, ME - Oakdale",November 2021,All Residential,Neighborhood,False,ME,1.022660922,-2.1%,-0.1%,10,0.0%,0.0%,,,,10,2,0,$588K,0.0%,35.4%,5,-44.4%,-64.3%
+"Portland, ME - Oakdale",October 2021,All Residential,Neighborhood,False,ME,1.043225137,0.8%,1.7%,10,-41.2%,-9.1%,1,-83.3%,-88.9%,8,-0.5,-2,$588K,-1.3%,40.4%,9,-30.8%,-30.8%
+"Portland, ME - Oakdale",November 2021,All Residential,Neighborhood,False,ME,1.022660922,-2.1%,-0.1%,10,0.0%,0.0%,,,,10,2,0,$588K,0.0%,35.4%,6,-33.3%,-57.1%
+"Portland, ME - Oakdale",December 2021,All Residential,Neighborhood,False,ME,1.027725671,0.5%,0.7%,11,10.0%,-26.7%,,,,10,0,-3.5,$615K,4.7%,36.9%,5,-16.7%,-61.5%
+"Portland, ME - Oakdale",January 2022,All Residential,Neighborhood,False,ME,1.035128890,0.7%,2.2%,11,0.0%,-8.3%,1,,-80.0%,10,0,-3,$620K,0.8%,37.3%,6,20.0%,-33.3%
 "Portland, ME - Parkside",July 2015,All Residential,Neighborhood,False,ME,1.002121911,,,8,,,3,,,21,,,$224K,,,11,,
 "Portland, ME - Parkside",August 2015,All Residential,Neighborhood,False,ME,1.005254006,0.3%,,11,37.5%,,4,33.3%,,17,-4,,$226K,0.8%,,10,-9.1%,
 "Portland, ME - Parkside",September 2015,All Residential,Neighborhood,False,ME,0.989467578,-1.6%,,10,-9.1%,,2,-50.0%,,7,-10,,$198K,-12.4%,,8,-20.0%,
@@ -1096,10 +1122,10 @@
 "Portland, ME - Parkside",October 2016,All Residential,Neighborhood,False,ME,0.998686106,0.3%,0.6%,7,0.0%,-36.4%,5,0.0%,150.0%,26,19,19,$200K,-4.3%,17.6%,10,11.1%,150.0%
 "Portland, ME - Parkside",November 2016,All Residential,Neighborhood,False,ME,1.005554824,0.7%,-4.4%,6,-14.3%,-14.3%,4,-20.0%,33.3%,32,6,27,$304K,52.2%,79.1%,8,-20.0%,166.7%
 "Portland, ME - Parkside",December 2016,All Residential,Neighborhood,False,ME,1.041504303,3.6%,2.9%,6,0.0%,-14.3%,3,-25.0%,50.0%,23.5,-8.5,-52.5,$252K,-17.2%,0.8%,8,0.0%,60.0%
-"Portland, ME - Parkside",January 2017,All Residential,Neighborhood,False,ME,1.054796102,1.3%,4.1%,4,-33.3%,-20.0%,4,33.3%,33.3%,5,-18.5,-80,$250K,-0.9%,-16.8%,9,12.5%,50.0%
-"Portland, ME - Parkside",February 2017,All Residential,Neighborhood,False,ME,1.059866143,0.5%,11.5%,3,-25.0%,-40.0%,3,-25.0%,-25.0%,5,0,-80,$200K,-19.9%,-33.3%,9,0.0%,28.6%
-"Portland, ME - Parkside",March 2017,All Residential,Neighborhood,False,ME,1.018189610,-4.2%,3.0%,8,166.7%,60.0%,4,33.3%,,6,1,-5,$212K,5.8%,24.4%,13,44.4%,85.7%
-"Portland, ME - Parkside",April 2017,All Residential,Neighborhood,False,ME,1.017525407,-0.1%,2.3%,8,0.0%,0.0%,5,25.0%,400.0%,8,2,-4.5,$212K,0.0%,25.5%,10,-23.1%,42.9%
+"Portland, ME - Parkside",January 2017,All Residential,Neighborhood,False,ME,1.054796102,1.3%,4.1%,4,-33.3%,-20.0%,4,33.3%,33.3%,5,-18.5,-80,$250K,-0.9%,-16.8%,8,0.0%,33.3%
+"Portland, ME - Parkside",February 2017,All Residential,Neighborhood,False,ME,1.059866143,0.5%,11.5%,3,-25.0%,-40.0%,3,-25.0%,-25.0%,5,0,-80,$200K,-19.9%,-33.3%,8,0.0%,14.3%
+"Portland, ME - Parkside",March 2017,All Residential,Neighborhood,False,ME,1.018189610,-4.2%,3.0%,8,166.7%,60.0%,4,33.3%,,6,1,-5,$212K,5.8%,24.4%,12,50.0%,71.4%
+"Portland, ME - Parkside",April 2017,All Residential,Neighborhood,False,ME,1.017525407,-0.1%,2.3%,8,0.0%,0.0%,5,25.0%,400.0%,8,2,-4.5,$212K,0.0%,25.5%,10,-16.7%,42.9%
 "Portland, ME - Parkside",May 2017,All Residential,Neighborhood,False,ME,1.014530883,-0.3%,1.7%,11,37.5%,37.5%,6,20.0%,200.0%,9,1,-0.5,$215K,1.7%,28.0%,13,30.0%,116.7%
 "Portland, ME - Parkside",June 2017,All Residential,Neighborhood,False,ME,0.999927233,-1.5%,-0.4%,9,-18.2%,28.6%,5,-16.7%,66.7%,9,0,1,$332K,54.2%,93.9%,11,-15.4%,57.1%
 "Portland, ME - Parkside",July 2017,All Residential,Neighborhood,False,ME,0.997029705,-0.3%,-1.6%,10,11.1%,66.7%,7,40.0%,40.0%,16.5,7.5,9.5,$318K,-4.0%,35.7%,13,18.2%,44.4%
@@ -1108,39 +1134,39 @@
 "Portland, ME - Parkside",October 2017,All Residential,Neighborhood,False,ME,1.000714669,-0.5%,0.2%,10,0.0%,42.9%,9,28.6%,80.0%,8.5,0,-17.5,$247K,10.0%,23.7%,13,8.3%,30.0%
 "Portland, ME - Parkside",November 2017,All Residential,Neighborhood,False,ME,0.982001300,-1.9%,-2.4%,13,30.0%,116.7%,6,-33.3%,50.0%,14,5.5,-18,$320K,29.3%,5.1%,11,-15.4%,37.5%
 "Portland, ME - Parkside",December 2017,All Residential,Neighborhood,False,ME,0.976270287,-0.6%,-6.5%,8,-38.5%,33.3%,2,-66.7%,-33.3%,33,19,9.5,$340K,6.2%,34.9%,8,-27.3%,0.0%
-"Portland, ME - Parkside",January 2018,All Residential,Neighborhood,False,ME,0.970891535,-0.5%,-8.4%,10,25.0%,150.0%,2,0.0%,-50.0%,36.5,3.5,31.5,$299K,-11.9%,19.8%,3,-62.5%,-66.7%
-"Portland, ME - Parkside",February 2018,All Residential,Neighborhood,False,ME,0.972752870,0.2%,-8.7%,6,-40.0%,100.0%,2,0.0%,-33.3%,36.5,0,31.5,$299K,0.0%,49.6%,3,0.0%,-66.7%
-"Portland, ME - Parkside",March 2018,All Residential,Neighborhood,False,ME,0.967303444,-0.5%,-5.1%,5,-16.7%,-37.5%,1,-50.0%,-75.0%,43,6.5,37,$300K,0.1%,41.6%,3,0.0%,-76.9%
+"Portland, ME - Parkside",January 2018,All Residential,Neighborhood,False,ME,0.970891535,-0.5%,-8.4%,10,25.0%,150.0%,2,0.0%,-50.0%,36.5,3.5,31.5,$299K,-11.9%,19.8%,3,-62.5%,-62.5%
+"Portland, ME - Parkside",February 2018,All Residential,Neighborhood,False,ME,0.972752870,0.2%,-8.7%,6,-40.0%,100.0%,2,0.0%,-33.3%,36.5,0,31.5,$299K,0.0%,49.6%,3,0.0%,-62.5%
+"Portland, ME - Parkside",March 2018,All Residential,Neighborhood,False,ME,0.967303444,-0.5%,-5.1%,5,-16.7%,-37.5%,1,-50.0%,-75.0%,43,6.5,37,$300K,0.1%,41.6%,3,0.0%,-75.0%
 "Portland, ME - Parkside",April 2018,All Residential,Neighborhood,False,ME,0.982758263,1.5%,-3.5%,4,-20.0%,-50.0%,3,200.0%,-40.0%,30,-13,22,$271K,-9.4%,28.3%,6,100.0%,-40.0%
 "Portland, ME - Parkside",May 2018,All Residential,Neighborhood,False,ME,0.988694866,0.6%,-2.6%,3,-25.0%,-72.7%,8,166.7%,33.3%,8,-22,-1,$224K,-17.6%,4.0%,14,133.3%,7.7%
 "Portland, ME - Parkside",June 2018,All Residential,Neighborhood,False,ME,0.987150180,-0.2%,-1.3%,6,100.0%,-33.3%,10,25.0%,100.0%,18,10,9,$225K,0.6%,-32.2%,23,64.3%,109.1%
 "Portland, ME - Parkside",July 2018,All Residential,Neighborhood,False,ME,1.002611334,1.5%,0.6%,6,0.0%,-40.0%,8,-20.0%,14.3%,14,-4,-2.5,$452K,101.2%,42.1%,22,-4.3%,69.2%
 "Portland, ME - Parkside",August 2018,All Residential,Neighborhood,False,ME,1.000148254,-0.2%,-1.5%,12,100.0%,50.0%,9,12.5%,50.0%,14,0,5.5,$388K,-14.3%,37.3%,20,-9.1%,81.8%
 "Portland, ME - Parkside",September 2018,All Residential,Neighborhood,False,ME,0.995383003,-0.5%,-1.0%,18,50.0%,80.0%,11,22.2%,57.1%,26.5,12.5,18,$352K,-9.2%,56.6%,15,-25.0%,25.0%
-"Portland, ME - Parkside",October 2018,All Residential,Neighborhood,False,ME,0.990704604,-0.5%,-1.0%,17,-5.6%,70.0%,11,0.0%,22.2%,38,11.5,29.5,$297K,-15.7%,20.0%,18,20.0%,38.5%
-"Portland, ME - Parkside",November 2018,All Residential,Neighborhood,False,ME,0.989923704,-0.1%,0.8%,14,-17.6%,7.7%,9,-18.2%,50.0%,32.5,-5.5,18.5,$278K,-6.6%,-13.3%,16,-11.1%,45.5%
-"Portland, ME - Parkside",December 2018,All Residential,Neighborhood,False,ME,0.991365709,0.1%,1.5%,12,-14.3%,50.0%,7,-22.2%,250.0%,22,-10.5,-11,$293K,5.4%,-13.9%,11,-31.3%,37.5%
-"Portland, ME - Parkside",January 2019,All Residential,Neighborhood,False,ME,0.998793079,0.7%,2.8%,14,16.7%,40.0%,4,-42.9%,100.0%,15,-7,-21.5,$464K,58.6%,55.1%,5,-54.5%,66.7%
-"Portland, ME - Parkside",February 2019,All Residential,Neighborhood,False,ME,1.004613183,0.6%,3.2%,14,0.0%,133.3%,5,25.0%,150.0%,34.5,19.5,-2,$587K,26.5%,96.2%,2,-60.0%,-33.3%
-"Portland, ME - Parkside",March 2019,All Residential,Neighborhood,False,ME,1.009321649,0.5%,4.2%,12,-14.3%,140.0%,3,-40.0%,200.0%,45,10.5,2,$364K,-38.0%,21.5%,5,150.0%,66.7%
-"Portland, ME - Parkside",April 2019,All Residential,Neighborhood,False,ME,1.009447687,0.0%,2.7%,12,0.0%,200.0%,4,33.3%,33.3%,70,25,40,$269K,-26.2%,-0.9%,11,120.0%,83.3%
-"Portland, ME - Parkside",May 2019,All Residential,Neighborhood,False,ME,1.002825013,-0.7%,1.4%,12,0.0%,300.0%,10,150.0%,25.0%,7,-63,-1,$274K,1.9%,22.5%,21,90.9%,50.0%
-"Portland, ME - Parkside",June 2019,All Residential,Neighborhood,False,ME,1.009228265,0.6%,2.2%,13,8.3%,116.7%,5,-50.0%,-50.0%,6,-1,-12,$295K,7.8%,31.3%,21,0.0%,-8.7%
-"Portland, ME - Parkside",July 2019,All Residential,Neighborhood,False,ME,0.997732107,-1.1%,-0.5%,14,7.7%,133.3%,7,40.0%,-12.5%,7.5,1.5,-6.5,$295K,0.0%,-34.8%,18,-14.3%,-18.2%
-"Portland, ME - Parkside",August 2019,All Residential,Neighborhood,False,ME,0.996850884,-0.1%,-0.3%,15,7.1%,25.0%,6,-14.3%,-33.3%,9,1.5,-5,$295K,0.0%,-23.9%,8,-55.6%,-60.0%
-"Portland, ME - Parkside",September 2019,All Residential,Neighborhood,False,ME,0.992597305,-0.4%,-0.3%,11,-26.7%,-38.9%,7,16.7%,-36.4%,14,5,-12.5,$295K,0.0%,-16.3%,10,25.0%,-33.3%
-"Portland, ME - Parkside",October 2019,All Residential,Neighborhood,False,ME,1.001541229,0.9%,1.1%,10,-9.1%,-41.2%,6,-14.3%,-45.5%,16,2,-22,$252K,-14.4%,-15.0%,10,0.0%,-44.4%
-"Portland, ME - Parkside",November 2019,All Residential,Neighborhood,False,ME,1.008218909,0.7%,1.8%,8,-20.0%,-42.9%,4,-33.3%,-55.6%,5,-11,-27.5,$236K,-6.7%,-15.1%,9,-10.0%,-43.8%
-"Portland, ME - Parkside",December 2019,All Residential,Neighborhood,False,ME,1.010894449,0.3%,2.0%,7,-12.5%,-41.7%,1,-75.0%,-85.7%,4,-1,-18,$245K,4.0%,-16.2%,4,-55.6%,-63.6%
-"Portland, ME - Parkside",January 2020,All Residential,Neighborhood,False,ME,1.008935509,-0.2%,1.0%,4,-42.9%,-71.4%,1,0.0%,-75.0%,11.5,7.5,-3.5,$508K,107.3%,9.5%,1,-75.0%,-80.0%
-"Portland, ME - Parkside",February 2020,All Residential,Neighborhood,False,ME,0.952071794,-5.7%,-5.3%,3,-25.0%,-78.6%,2,100.0%,-60.0%,26,14.5,-8.5,$484K,-4.8%,-17.6%,4,300.0%,100.0%
-"Portland, ME - Parkside",March 2020,All Residential,Neighborhood,False,ME,0.918583881,-3.3%,-9.1%,2,-33.3%,-83.3%,2,0.0%,-33.3%,51.5,25.5,6.5,$442K,-8.6%,21.4%,5,25.0%,0.0%
-"Portland, ME - Parkside",April 2020,All Residential,Neighborhood,False,ME,0.973348104,5.5%,-3.6%,6,200.0%,-50.0%,2,0.0%,-50.0%,26.5,-25,-43.5,$365K,-17.4%,35.8%,6,20.0%,-45.5%
-"Portland, ME - Parkside",May 2020,All Residential,Neighborhood,False,ME,0.998432938,2.5%,-0.4%,6,0.0%,-50.0%,3,50.0%,-70.0%,13.5,-13,6.5,$365K,0.0%,33.3%,4,-33.3%,-81.0%
-"Portland, ME - Parkside",June 2020,All Residential,Neighborhood,False,ME,0.998432938,0.0%,-1.1%,6,0.0%,-53.8%,3,0.0%,-40.0%,13.5,0,7.5,$365K,0.0%,23.7%,5,25.0%,-76.2%
-"Portland, ME - Parkside",July 2020,All Residential,Neighborhood,False,ME,0.964675325,-3.4%,-3.3%,3,-50.0%,-78.6%,9,200.0%,28.6%,17,3.5,9.5,$340K,-6.8%,15.3%,15,200.0%,-16.7%
-"Portland, ME - Parkside",August 2020,All Residential,Neighborhood,False,ME,1.013390197,4.9%,1.7%,7,133.3%,-53.3%,12,33.3%,100.0%,6,-11,-3,$310K,-8.8%,5.1%,19,26.7%,137.5%
-"Portland, ME - Parkside",September 2020,All Residential,Neighborhood,False,ME,0.998840475,-1.5%,0.6%,10,42.9%,-9.1%,9,-25.0%,28.6%,12.5,6.5,-1.5,$288K,-7.1%,-2.4%,23,21.1%,130.0%
+"Portland, ME - Parkside",October 2018,All Residential,Neighborhood,False,ME,0.990704604,-0.5%,-1.0%,17,-5.6%,70.0%,10,-9.1%,11.1%,38,11.5,29.5,$297K,-15.7%,20.0%,17,13.3%,30.8%
+"Portland, ME - Parkside",November 2018,All Residential,Neighborhood,False,ME,0.989923704,-0.1%,0.8%,14,-17.6%,7.7%,8,-20.0%,33.3%,32.5,-5.5,18.5,$278K,-6.6%,-13.3%,15,-11.8%,36.4%
+"Portland, ME - Parkside",December 2018,All Residential,Neighborhood,False,ME,0.991365709,0.1%,1.5%,12,-14.3%,50.0%,6,-25.0%,200.0%,22,-10.5,-11,$293K,5.4%,-13.9%,10,-33.3%,25.0%
+"Portland, ME - Parkside",January 2019,All Residential,Neighborhood,False,ME,0.998793079,0.7%,2.8%,14,16.7%,40.0%,3,-50.0%,50.0%,15,-7,-21.5,$464K,58.6%,55.1%,5,-50.0%,66.7%
+"Portland, ME - Parkside",February 2019,All Residential,Neighborhood,False,ME,1.004613183,0.6%,3.2%,14,0.0%,133.3%,4,33.3%,100.0%,34.5,19.5,-2,$587K,26.5%,96.2%,2,-60.0%,-33.3%
+"Portland, ME - Parkside",March 2019,All Residential,Neighborhood,False,ME,1.009321649,0.5%,4.2%,12,-14.3%,140.0%,2,-50.0%,100.0%,45,10.5,2,$364K,-38.0%,21.5%,5,150.0%,66.7%
+"Portland, ME - Parkside",April 2019,All Residential,Neighborhood,False,ME,1.009447687,0.0%,2.7%,12,0.0%,200.0%,3,50.0%,0.0%,70,25,40,$269K,-26.2%,-0.9%,11,120.0%,83.3%
+"Portland, ME - Parkside",May 2019,All Residential,Neighborhood,False,ME,1.002825013,-0.7%,1.4%,12,0.0%,300.0%,11,266.7%,37.5%,7,-63,-1,$274K,1.9%,22.5%,22,100.0%,57.1%
+"Portland, ME - Parkside",June 2019,All Residential,Neighborhood,False,ME,1.009228265,0.6%,2.2%,13,8.3%,116.7%,5,-54.5%,-50.0%,6,-1,-12,$295K,7.8%,31.3%,22,0.0%,-4.3%
+"Portland, ME - Parkside",July 2019,All Residential,Neighborhood,False,ME,1.000480703,-0.9%,-0.2%,15,15.4%,150.0%,7,40.0%,-12.5%,9,3,-5,$295K,0.0%,-34.8%,19,-13.6%,-13.6%
+"Portland, ME - Parkside",August 2019,All Residential,Neighborhood,False,ME,0.999482769,-0.1%,-0.1%,16,6.7%,33.3%,6,-14.3%,-33.3%,10,1,-4,$305K,3.4%,-21.3%,8,-57.9%,-60.0%
+"Portland, ME - Parkside",September 2019,All Residential,Neighborhood,False,ME,0.996460950,-0.3%,0.1%,12,-25.0%,-33.3%,7,16.7%,-36.4%,13,3,-13.5,$305K,0.0%,-13.4%,10,25.0%,-33.3%
+"Portland, ME - Parkside",October 2019,All Residential,Neighborhood,False,ME,1.001541229,0.5%,1.1%,10,-16.7%,-41.2%,6,-14.3%,-40.0%,16,3,-22,$252K,-17.2%,-15.0%,10,0.0%,-41.2%
+"Portland, ME - Parkside",November 2019,All Residential,Neighborhood,False,ME,1.008218909,0.7%,1.8%,8,-20.0%,-42.9%,4,-33.3%,-50.0%,5,-11,-27.5,$236K,-6.7%,-15.1%,9,-10.0%,-40.0%
+"Portland, ME - Parkside",December 2019,All Residential,Neighborhood,False,ME,1.010894449,0.3%,2.0%,7,-12.5%,-41.7%,1,-75.0%,-83.3%,4,-1,-18,$245K,4.0%,-16.2%,4,-55.6%,-60.0%
+"Portland, ME - Parkside",January 2020,All Residential,Neighborhood,False,ME,1.008935509,-0.2%,1.0%,4,-42.9%,-71.4%,1,0.0%,-66.7%,11.5,7.5,-3.5,$508K,107.3%,9.5%,1,-75.0%,-80.0%
+"Portland, ME - Parkside",February 2020,All Residential,Neighborhood,False,ME,0.952071794,-5.7%,-5.3%,3,-25.0%,-78.6%,2,100.0%,-50.0%,26,14.5,-8.5,$484K,-4.8%,-17.6%,4,300.0%,100.0%
+"Portland, ME - Parkside",March 2020,All Residential,Neighborhood,False,ME,0.918583881,-3.3%,-9.1%,2,-33.3%,-83.3%,2,0.0%,0.0%,51.5,25.5,6.5,$442K,-8.6%,21.4%,5,25.0%,0.0%
+"Portland, ME - Parkside",April 2020,All Residential,Neighborhood,False,ME,0.973348104,5.5%,-3.6%,6,200.0%,-50.0%,2,0.0%,-33.3%,26.5,-25,-43.5,$365K,-17.4%,35.8%,6,20.0%,-45.5%
+"Portland, ME - Parkside",May 2020,All Residential,Neighborhood,False,ME,0.998432938,2.5%,-0.4%,6,0.0%,-50.0%,3,50.0%,-72.7%,13.5,-13,6.5,$365K,0.0%,33.3%,4,-33.3%,-81.8%
+"Portland, ME - Parkside",June 2020,All Residential,Neighborhood,False,ME,0.998432938,0.0%,-1.1%,6,0.0%,-53.8%,3,0.0%,-40.0%,13.5,0,7.5,$365K,0.0%,23.7%,5,25.0%,-77.3%
+"Portland, ME - Parkside",July 2020,All Residential,Neighborhood,False,ME,0.964675325,-3.4%,-3.6%,3,-50.0%,-80.0%,9,200.0%,28.6%,17,3.5,8,$340K,-6.8%,15.3%,15,200.0%,-21.1%
+"Portland, ME - Parkside",August 2020,All Residential,Neighborhood,False,ME,1.013390197,4.9%,1.4%,7,133.3%,-56.3%,12,33.3%,100.0%,6,-11,-4,$310K,-8.8%,1.6%,19,26.7%,137.5%
+"Portland, ME - Parkside",September 2020,All Residential,Neighborhood,False,ME,0.998840475,-1.5%,0.2%,10,42.9%,-16.7%,9,-25.0%,28.6%,12.5,6.5,-0.5,$288K,-7.1%,-5.6%,23,21.1%,130.0%
 "Portland, ME - Parkside",October 2020,All Residential,Neighborhood,False,ME,1.017303582,1.8%,1.6%,12,20.0%,20.0%,9,0.0%,50.0%,7.5,-5,-8.5,$335K,16.3%,32.7%,17,-26.1%,70.0%
 "Portland, ME - Parkside",November 2020,All Residential,Neighborhood,False,ME,0.996184574,-2.1%,-1.2%,13,8.3%,62.5%,6,-33.3%,50.0%,17,9.5,12,$372K,11.0%,58.0%,13,-23.5%,44.4%
 "Portland, ME - Parkside",December 2020,All Residential,Neighborhood,False,ME,1.002560619,0.6%,-0.8%,13,0.0%,85.7%,8,33.3%,700.0%,12,-5,8,$379K,1.9%,54.7%,11,-15.4%,175.0%
@@ -1153,31 +1179,33 @@
 "Portland, ME - Parkside",July 2021,All Residential,Neighborhood,False,ME,1.073643952,-1.0%,10.9%,15,50.0%,400.0%,2,-60.0%,-77.8%,6,0,-11,$347K,14.7%,2.1%,14,-12.5%,-6.7%
 "Portland, ME - Parkside",August 2021,All Residential,Neighborhood,False,ME,1.066371850,-0.7%,5.3%,14,-6.7%,100.0%,1,-50.0%,-91.7%,6.5,0.5,0.5,$364K,4.8%,17.3%,6,-57.1%,-68.4%
 "Portland, ME - Parkside",September 2021,All Residential,Neighborhood,False,ME,1.048333319,-1.8%,4.9%,9,-35.7%,-10.0%,2,100.0%,-77.8%,7.5,1,-5,$855K,135.2%,196.9%,7,16.7%,-69.6%
-"Portland, ME - Parkside",October 2021,All Residential,Neighborhood,False,ME,1.081994565,3.4%,6.5%,5,-44.4%,-58.3%,2,0.0%,-77.8%,7,-0.5,-0.5,$350K,-59.1%,4.5%,7,0.0%,-58.8%
-"Portland, ME - Parkside",November 2021,All Residential,Neighborhood,False,ME,1.058843514,-2.3%,6.3%,7,40.0%,-46.2%,1,-50.0%,-83.3%,7,0,-10,$350K,0.0%,-5.9%,8,14.3%,-38.5%
+"Portland, ME - Parkside",October 2021,All Residential,Neighborhood,False,ME,1.081994565,3.4%,6.5%,5,-44.4%,-58.3%,3,50.0%,-66.7%,7,-0.5,-0.5,$350K,-59.1%,4.5%,8,14.3%,-52.9%
+"Portland, ME - Parkside",November 2021,All Residential,Neighborhood,False,ME,1.058843514,-2.3%,6.3%,7,40.0%,-46.2%,1,-66.7%,-83.3%,7,0,-10,$350K,0.0%,-5.9%,10,25.0%,-23.1%
+"Portland, ME - Parkside",December 2021,All Residential,Neighborhood,False,ME,1.045553044,-1.3%,4.3%,10,42.9%,-23.1%,1,0.0%,-87.5%,7,0,-5,$343K,-2.1%,-9.6%,5,-50.0%,-54.5%
+"Portland, ME - Parkside",January 2022,All Residential,Neighborhood,False,ME,1.031389675,-1.4%,3.2%,8,-20.0%,-20.0%,1,0.0%,-88.9%,7,0,-6,$460K,34.2%,10.9%,3,-40.0%,-57.1%
 "Portland, ME - Riverton",July 2015,All Residential,Neighborhood,False,ME,0.976900434,,,21,,,12,,,28,,,$198K,,,31,,
 "Portland, ME - Riverton",August 2015,All Residential,Neighborhood,False,ME,0.967905937,-0.9%,,31,47.6%,,15,25.0%,,35,7,,$200K,1.0%,,25,-19.4%,
 "Portland, ME - Riverton",September 2015,All Residential,Neighborhood,False,ME,0.966212935,-0.2%,,28,-9.7%,,18,20.0%,,34,-1,,$204K,1.8%,,26,4.0%,
-"Portland, ME - Riverton",October 2015,All Residential,Neighborhood,False,ME,0.968373773,0.2%,,26,-7.1%,,23,27.8%,,32,-2,,$198K,-2.9%,,29,11.5%,
-"Portland, ME - Riverton",November 2015,All Residential,Neighborhood,False,ME,0.974614002,0.6%,,13,-50.0%,,23,0.0%,,27,-5,,$208K,5.3%,,25,-13.8%,
-"Portland, ME - Riverton",December 2015,All Residential,Neighborhood,False,ME,0.982467433,0.8%,,14,7.7%,,24,4.3%,,25.5,-1.5,,$212K,1.7%,,23,-8.0%,
-"Portland, ME - Riverton",January 2016,All Residential,Neighborhood,False,ME,0.995494564,1.3%,,12,-14.3%,,19,-20.8%,,48.5,23,,$217K,2.8%,,17,-26.1%,
-"Portland, ME - Riverton",February 2016,All Residential,Neighborhood,False,ME,0.993862572,-0.2%,,17,41.7%,,14,-26.3%,,43,-5.5,,$214K,-1.8%,,17,0.0%,
-"Portland, ME - Riverton",March 2016,All Residential,Neighborhood,False,ME,0.986923370,-0.7%,,18,5.9%,,12,-14.3%,,65.5,22.5,,$208K,-2.4%,,16,-5.9%,
+"Portland, ME - Riverton",October 2015,All Residential,Neighborhood,False,ME,0.968373773,0.2%,,26,-7.1%,,22,22.2%,,32,-2,,$198K,-2.9%,,28,7.7%,
+"Portland, ME - Riverton",November 2015,All Residential,Neighborhood,False,ME,0.974614002,0.6%,,13,-50.0%,,22,0.0%,,27,-5,,$208K,5.3%,,24,-14.3%,
+"Portland, ME - Riverton",December 2015,All Residential,Neighborhood,False,ME,0.982467433,0.8%,,14,7.7%,,23,4.5%,,25.5,-1.5,,$212K,1.7%,,22,-8.3%,
+"Portland, ME - Riverton",January 2016,All Residential,Neighborhood,False,ME,0.995494564,1.3%,,12,-14.3%,,18,-21.7%,,48.5,23,,$217K,2.8%,,17,-22.7%,
+"Portland, ME - Riverton",February 2016,All Residential,Neighborhood,False,ME,0.993862572,-0.2%,,17,41.7%,,13,-27.8%,,43,-5.5,,$214K,-1.8%,,17,0.0%,
+"Portland, ME - Riverton",March 2016,All Residential,Neighborhood,False,ME,0.986923370,-0.7%,,18,5.9%,,12,-7.7%,,65.5,22.5,,$208K,-2.4%,,16,-5.9%,
 "Portland, ME - Riverton",April 2016,All Residential,Neighborhood,False,ME,0.985014705,-0.2%,,23,27.8%,,9,-25.0%,,73.5,8,,$214K,2.4%,,24,50.0%,
 "Portland, ME - Riverton",May 2016,All Residential,Neighborhood,False,ME,0.980843828,-0.4%,,25,8.7%,,13,44.4%,,64.5,-9,,$215K,0.7%,,31,29.2%,
 "Portland, ME - Riverton",June 2016,All Residential,Neighborhood,False,ME,0.989602209,0.9%,,31,24.0%,,10,-23.1%,,8,-56.5,,$233K,8.4%,,27,-12.9%,
 "Portland, ME - Riverton",July 2016,All Residential,Neighborhood,False,ME,0.986585193,-0.3%,1.0%,29,-6.5%,38.1%,11,10.0%,-8.3%,8,0,-20,$235K,0.9%,18.7%,19,-29.6%,-38.7%
 "Portland, ME - Riverton",August 2016,All Residential,Neighborhood,False,ME,0.991977825,0.5%,2.4%,21,-27.6%,-32.3%,15,36.4%,0.0%,8,0,-27,$244K,3.8%,22.0%,14,-26.3%,-44.0%
 "Portland, ME - Riverton",September 2016,All Residential,Neighborhood,False,ME,0.977474683,-1.5%,1.1%,14,-33.3%,-50.0%,10,-33.3%,-44.4%,24.5,16.5,-9.5,$235K,-3.9%,15.2%,17,21.4%,-34.6%
-"Portland, ME - Riverton",October 2016,All Residential,Neighborhood,False,ME,0.980334105,0.3%,1.2%,12,-14.3%,-53.8%,12,20.0%,-47.8%,24.5,0,-7.5,$198K,-15.5%,0.4%,18,5.9%,-37.9%
-"Portland, ME - Riverton",November 2016,All Residential,Neighborhood,False,ME,0.995765457,1.5%,2.1%,15,25.0%,15.4%,11,-8.3%,-52.2%,22,-2.5,-5,$215K,8.5%,3.4%,17,-5.6%,-32.0%
-"Portland, ME - Riverton",December 2016,All Residential,Neighborhood,False,ME,0.992150380,-0.4%,1.0%,15,0.0%,7.1%,9,-18.2%,-62.5%,26,4,0.5,$222K,3.3%,5.0%,15,-11.8%,-34.8%
-"Portland, ME - Riverton",January 2017,All Residential,Neighborhood,False,ME,1.001282453,0.9%,0.6%,13,-13.3%,8.3%,8,-11.1%,-57.9%,24,-2,-24.5,$225K,1.4%,3.5%,12,-20.0%,-29.4%
-"Portland, ME - Riverton",February 2017,All Residential,Neighborhood,False,ME,1.011224462,1.0%,1.7%,13,0.0%,-23.5%,7,-12.5%,-50.0%,32,8,-11,$204K,-9.3%,-4.4%,10,-16.7%,-41.2%
-"Portland, ME - Riverton",March 2017,All Residential,Neighborhood,False,ME,1.033156918,2.2%,4.6%,9,-30.8%,-50.0%,9,28.6%,-25.0%,24,-8,-41.5,$204K,0.0%,-2.1%,15,50.0%,-6.3%
-"Portland, ME - Riverton",April 2017,All Residential,Neighborhood,False,ME,1.023849229,-0.9%,3.9%,11,22.2%,-52.2%,10,11.1%,11.1%,30,6,-43.5,$182K,-10.8%,-14.8%,20,33.3%,-16.7%
-"Portland, ME - Riverton",May 2017,All Residential,Neighborhood,False,ME,1.002295526,-2.2%,2.1%,11,0.0%,-56.0%,12,20.0%,-7.7%,19,-11,-45.5,$250K,37.1%,16.0%,26,30.0%,-16.1%
+"Portland, ME - Riverton",October 2016,All Residential,Neighborhood,False,ME,0.980334105,0.3%,1.2%,12,-14.3%,-53.8%,12,20.0%,-45.5%,24.5,0,-7.5,$198K,-15.5%,0.4%,18,5.9%,-35.7%
+"Portland, ME - Riverton",November 2016,All Residential,Neighborhood,False,ME,0.995765457,1.5%,2.1%,15,25.0%,15.4%,11,-8.3%,-50.0%,22,-2.5,-5,$215K,8.5%,3.4%,17,-5.6%,-29.2%
+"Portland, ME - Riverton",December 2016,All Residential,Neighborhood,False,ME,0.992150380,-0.4%,1.0%,15,0.0%,7.1%,9,-18.2%,-60.9%,26,4,0.5,$222K,3.3%,5.0%,15,-11.8%,-31.8%
+"Portland, ME - Riverton",January 2017,All Residential,Neighborhood,False,ME,1.001282453,0.9%,0.6%,13,-13.3%,8.3%,8,-11.1%,-55.6%,24,-2,-24.5,$225K,1.4%,3.5%,11,-26.7%,-35.3%
+"Portland, ME - Riverton",February 2017,All Residential,Neighborhood,False,ME,1.010748491,0.9%,1.7%,12,-7.7%,-29.4%,7,-12.5%,-46.2%,37,13,-6,$207K,-8.0%,-3.1%,9,-18.2%,-47.1%
+"Portland, ME - Riverton",March 2017,All Residential,Neighborhood,False,ME,1.035184520,2.4%,4.8%,8,-33.3%,-55.6%,9,28.6%,-25.0%,33,-4,-32.5,$207K,0.0%,-0.7%,14,55.6%,-12.5%
+"Portland, ME - Riverton",April 2017,All Residential,Neighborhood,False,ME,1.024540541,-1.1%,4.0%,10,25.0%,-56.5%,10,11.1%,11.1%,38.5,5.5,-35,$201K,-3.1%,-6.1%,20,42.9%,-16.7%
+"Portland, ME - Riverton",May 2017,All Residential,Neighborhood,False,ME,1.002295526,-2.2%,2.1%,11,10.0%,-56.0%,12,20.0%,-7.7%,19,-19.5,-45.5,$250K,24.4%,16.0%,26,30.0%,-16.1%
 "Portland, ME - Riverton",June 2017,All Residential,Neighborhood,False,ME,1.005732187,0.3%,1.6%,20,81.8%,-35.5%,11,-8.3%,10.0%,18.5,-0.5,10.5,$249K,-0.1%,7.0%,27,3.8%,0.0%
 "Portland, ME - Riverton",July 2017,All Residential,Neighborhood,False,ME,1.007409740,0.2%,2.1%,24,20.0%,-17.2%,11,0.0%,0.0%,18.5,0,10.5,$257K,3.1%,9.4%,28,3.7%,47.4%
 "Portland, ME - Riverton",August 2017,All Residential,Neighborhood,False,ME,1.004969929,-0.2%,1.3%,30,25.0%,42.9%,9,-18.2%,-40.0%,18.5,0,10.5,$247K,-3.9%,1.2%,24,-14.3%,71.4%
@@ -1185,53 +1213,55 @@
 "Portland, ME - Riverton",October 2017,All Residential,Neighborhood,False,ME,0.988173365,-1.6%,0.8%,23,-8.0%,91.7%,14,40.0%,16.7%,20.5,0,-4,$245K,-5.7%,23.6%,22,-8.3%,22.2%
 "Portland, ME - Riverton",November 2017,All Residential,Neighborhood,False,ME,0.985759167,-0.2%,-1.0%,16,-30.4%,6.7%,12,-14.3%,9.1%,18,-2.5,-4,$257K,5.1%,19.7%,18,-18.2%,5.9%
 "Portland, ME - Riverton",December 2017,All Residential,Neighborhood,False,ME,0.980433286,-0.5%,-1.2%,13,-18.8%,-13.3%,10,-16.7%,11.1%,11.5,-6.5,-14.5,$246K,-4.4%,10.8%,12,-33.3%,-20.0%
-"Portland, ME - Riverton",January 2018,All Residential,Neighborhood,False,ME,0.995179987,1.5%,-0.6%,12,-7.7%,-7.7%,5,-50.0%,-37.5%,17,5.5,-7,$257K,4.3%,14.0%,7,-41.7%,-41.7%
-"Portland, ME - Riverton",February 2018,All Residential,Neighborhood,False,ME,0.992210830,-0.3%,-1.9%,13,8.3%,0.0%,5,0.0%,-28.6%,22.5,5.5,-9.5,$245K,-4.5%,20.1%,8,14.3%,-20.0%
-"Portland, ME - Riverton",March 2018,All Residential,Neighborhood,False,ME,0.981713591,-1.0%,-5.1%,17,30.8%,88.9%,3,-40.0%,-66.7%,64,41.5,40,$246K,0.2%,20.4%,8,0.0%,-46.7%
-"Portland, ME - Riverton",April 2018,All Residential,Neighborhood,False,ME,0.983734744,0.2%,-4.0%,15,-11.8%,36.4%,4,33.3%,-60.0%,15.5,-48.5,-14.5,$245K,-0.2%,34.6%,17,112.5%,-15.0%
+"Portland, ME - Riverton",January 2018,All Residential,Neighborhood,False,ME,0.995179987,1.5%,-0.6%,12,-7.7%,-7.7%,5,-50.0%,-37.5%,17,5.5,-7,$257K,4.3%,14.0%,7,-41.7%,-36.4%
+"Portland, ME - Riverton",February 2018,All Residential,Neighborhood,False,ME,0.992210830,-0.3%,-1.9%,13,8.3%,8.3%,5,0.0%,-28.6%,22.5,5.5,-14.5,$245K,-4.5%,18.4%,8,14.3%,-11.1%
+"Portland, ME - Riverton",March 2018,All Residential,Neighborhood,False,ME,0.981713591,-1.0%,-5.3%,17,30.8%,112.5%,3,-40.0%,-66.7%,64,41.5,31,$246K,0.2%,18.7%,8,0.0%,-42.9%
+"Portland, ME - Riverton",April 2018,All Residential,Neighborhood,False,ME,0.983734744,0.2%,-4.1%,15,-11.8%,50.0%,4,33.3%,-60.0%,15.5,-48.5,-23,$245K,-0.2%,22.2%,17,112.5%,-15.0%
 "Portland, ME - Riverton",May 2018,All Residential,Neighborhood,False,ME,0.978711521,-0.5%,-2.4%,17,13.3%,54.5%,4,0.0%,-66.7%,6,-9.5,-13,$249K,1.6%,-0.2%,28,64.7%,7.7%
 "Portland, ME - Riverton",June 2018,All Residential,Neighborhood,False,ME,1.002920582,2.4%,-0.3%,27,58.8%,35.0%,6,50.0%,-45.5%,6.5,0.5,-12,$265K,6.4%,6.3%,30,7.1%,11.1%
-"Portland, ME - Riverton",July 2018,All Residential,Neighborhood,False,ME,1.009638901,0.7%,0.2%,25,-7.4%,4.2%,4,-33.3%,-63.6%,7,0.5,-11.5,$270K,1.9%,5.0%,24,-20.0%,-14.3%
-"Portland, ME - Riverton",August 2018,All Residential,Neighborhood,False,ME,1.015205912,0.6%,1.0%,25,0.0%,-16.7%,6,50.0%,-33.3%,7,0,-11.5,$270K,0.0%,9.3%,17,-29.2%,-29.2%
-"Portland, ME - Riverton",September 2018,All Residential,Neighborhood,False,ME,1.013906508,-0.1%,1.0%,13,-48.0%,-48.0%,14,133.3%,40.0%,12,5,-8.5,$232K,-14.1%,-10.7%,26,52.9%,8.3%
-"Portland, ME - Riverton",October 2018,All Residential,Neighborhood,False,ME,1.005729287,-0.8%,1.8%,17,30.8%,-26.1%,15,7.1%,7.1%,12.5,0.5,-8,$232K,0.0%,-5.3%,29,11.5%,31.8%
-"Portland, ME - Riverton",November 2018,All Residential,Neighborhood,False,ME,1.003704672,-0.2%,1.8%,17,0.0%,6.3%,15,0.0%,25.0%,17,4.5,-1,$232K,0.0%,-9.9%,26,-10.3%,44.4%
-"Portland, ME - Riverton",December 2018,All Residential,Neighborhood,False,ME,0.992910743,-1.1%,1.2%,16,-5.9%,23.1%,10,-33.3%,0.0%,23.5,6.5,12,$274K,17.9%,11.2%,15,-42.3%,25.0%
-"Portland, ME - Riverton",January 2019,All Residential,Neighborhood,False,ME,0.986769331,-0.6%,-0.8%,13,-18.8%,8.3%,5,-50.0%,0.0%,38,14.5,21,$280K,2.4%,9.2%,10,-33.3%,42.9%
+"Portland, ME - Riverton",July 2018,All Residential,Neighborhood,False,ME,1.009638901,0.7%,0.2%,25,-7.4%,4.2%,3,-50.0%,-72.7%,7,0.5,-11.5,$270K,1.9%,5.0%,23,-23.3%,-17.9%
+"Portland, ME - Riverton",August 2018,All Residential,Neighborhood,False,ME,1.015205912,0.6%,1.0%,25,0.0%,-16.7%,5,66.7%,-44.4%,7,0,-11.5,$270K,0.0%,9.3%,16,-30.4%,-33.3%
+"Portland, ME - Riverton",September 2018,All Residential,Neighborhood,False,ME,1.013906508,-0.1%,1.0%,13,-48.0%,-48.0%,14,180.0%,40.0%,12,5,-8.5,$232K,-14.1%,-10.7%,25,56.3%,4.2%
+"Portland, ME - Riverton",October 2018,All Residential,Neighborhood,False,ME,1.011371259,-0.3%,2.3%,16,23.1%,-30.4%,15,7.1%,7.1%,12,0,-8.5,$232K,0.0%,-5.3%,29,16.0%,31.8%
+"Portland, ME - Riverton",November 2018,All Residential,Neighborhood,False,ME,1.009220106,-0.2%,2.3%,16,0.0%,0.0%,15,0.0%,25.0%,15.5,3.5,-2.5,$235K,1.2%,-8.8%,26,-10.3%,44.4%
+"Portland, ME - Riverton",December 2018,All Residential,Neighborhood,False,ME,0.998074277,-1.1%,1.8%,15,-6.3%,15.4%,10,-33.3%,0.0%,21,5.5,9.5,$277K,18.0%,12.6%,15,-42.3%,25.0%
+"Portland, ME - Riverton",January 2019,All Residential,Neighborhood,False,ME,0.986769331,-1.1%,-0.8%,13,-13.3%,8.3%,5,-50.0%,0.0%,38,17,21,$280K,1.1%,9.2%,10,-33.3%,42.9%
 "Portland, ME - Riverton",February 2019,All Residential,Neighborhood,False,ME,0.983341322,-0.3%,-0.9%,12,-7.7%,-7.7%,6,20.0%,20.0%,45.5,7.5,23,$277K,-1.3%,12.9%,11,10.0%,37.5%
 "Portland, ME - Riverton",March 2019,All Residential,Neighborhood,False,ME,0.993652982,1.0%,1.2%,14,16.7%,-17.6%,3,-50.0%,0.0%,47,1.5,-17,$269K,-2.7%,9.5%,10,-9.1%,25.0%
 "Portland, ME - Riverton",April 2019,All Residential,Neighborhood,False,ME,0.996942579,0.3%,1.3%,15,7.1%,0.0%,9,200.0%,125.0%,41,-6,25.5,$269K,0.0%,9.8%,16,60.0%,-5.9%
 "Portland, ME - Riverton",May 2019,All Residential,Neighborhood,False,ME,0.992632037,-0.4%,1.4%,14,-6.7%,-17.6%,9,0.0%,125.0%,62,21,56,$267K,-0.7%,7.2%,21,31.3%,-25.0%
 "Portland, ME - Riverton",June 2019,All Residential,Neighborhood,False,ME,0.999241455,0.7%,-0.4%,17,21.4%,-37.0%,8,-11.1%,33.3%,11,-51,4.5,$265K,-0.7%,0.0%,26,23.8%,-13.3%
-"Portland, ME - Riverton",July 2019,All Residential,Neighborhood,False,ME,1.010501672,1.1%,0.1%,18,5.9%,-28.0%,19,137.5%,375.0%,7.5,-3.5,0.5,$266K,0.4%,-1.5%,35,34.6%,45.8%
-"Portland, ME - Riverton",August 2019,All Residential,Neighborhood,False,ME,1.015166938,0.5%,0.0%,24,33.3%,-4.0%,16,-15.8%,166.7%,7,-0.5,0,$266K,-0.2%,-1.7%,31,-11.4%,82.4%
-"Portland, ME - Riverton",September 2019,All Residential,Neighborhood,False,ME,1.009492578,-0.6%,-0.4%,22,-8.3%,69.2%,13,-18.8%,-7.1%,10,3,-2,$266K,0.0%,14.4%,33,6.5%,26.9%
-"Portland, ME - Riverton",October 2019,All Residential,Neighborhood,False,ME,0.995907822,-1.4%,-1.0%,26,18.2%,52.9%,11,-15.4%,-26.7%,28,18,15.5,$277K,4.4%,19.5%,21,-36.4%,-27.6%
-"Portland, ME - Riverton",November 2019,All Residential,Neighborhood,False,ME,0.992496256,-0.3%,-1.1%,23,-11.5%,35.3%,12,9.1%,-20.0%,28.5,0.5,11.5,$280K,1.0%,20.7%,21,0.0%,-19.2%
-"Portland, ME - Riverton",December 2019,All Residential,Neighborhood,False,ME,0.998743252,0.6%,0.6%,24,4.3%,50.0%,7,-41.7%,-30.0%,33,4.5,9.5,$280K,0.0%,2.4%,14,-33.3%,-6.7%
+"Portland, ME - Riverton",July 2019,All Residential,Neighborhood,False,ME,1.010501672,1.1%,0.1%,18,5.9%,-28.0%,19,137.5%,533.3%,7.5,-3.5,0.5,$266K,0.4%,-1.5%,35,34.6%,52.2%
+"Portland, ME - Riverton",August 2019,All Residential,Neighborhood,False,ME,1.014560260,0.4%,-0.1%,25,38.9%,0.0%,16,-15.8%,220.0%,7,-0.5,0,$267K,0.4%,-1.1%,32,-8.6%,100.0%
+"Portland, ME - Riverton",September 2019,All Residential,Neighborhood,False,ME,1.008223975,-0.6%,-0.6%,24,-4.0%,84.6%,13,-18.8%,-7.1%,12,5,0,$273K,2.1%,17.5%,34,6.3%,36.0%
+"Portland, ME - Riverton",October 2019,All Residential,Neighborhood,False,ME,0.995790788,-1.2%,-1.6%,28,16.7%,75.0%,11,-15.4%,-26.7%,25.5,13.5,13.5,$279K,2.4%,20.3%,22,-35.3%,-24.1%
+"Portland, ME - Riverton",November 2019,All Residential,Neighborhood,False,ME,0.992331357,-0.3%,-1.7%,24,-14.3%,50.0%,12,9.1%,-20.0%,28,2.5,12.5,$283K,1.3%,20.3%,21,-4.5%,-19.2%
+"Portland, ME - Riverton",December 2019,All Residential,Neighborhood,False,ME,0.998743252,0.6%,0.1%,24,0.0%,60.0%,7,-41.7%,-30.0%,33,5,12,$280K,-0.9%,1.1%,14,-33.3%,-6.7%
 "Portland, ME - Riverton",January 2020,All Residential,Neighborhood,False,ME,1.008936962,1.0%,2.2%,22,-8.3%,69.2%,7,0.0%,40.0%,20,-13,-18,$278K,-0.9%,-0.9%,13,-7.1%,30.0%
 "Portland, ME - Riverton",February 2020,All Residential,Neighborhood,False,ME,1.016340689,0.7%,3.3%,18,-18.2%,50.0%,6,-14.3%,0.0%,20,0,-25.5,$268K,-3.6%,-3.3%,7,-46.2%,-36.4%
 "Portland, ME - Riverton",March 2020,All Residential,Neighborhood,False,ME,1.023815895,0.7%,3.0%,12,-33.3%,-14.3%,9,50.0%,200.0%,14.5,-5.5,-32.5,$278K,3.9%,3.3%,9,28.6%,-10.0%
 "Portland, ME - Riverton",April 2020,All Residential,Neighborhood,False,ME,1.039028387,1.5%,4.2%,6,-50.0%,-60.0%,7,-22.2%,-22.2%,9.5,-5,-31.5,$280K,0.9%,4.3%,9,0.0%,-43.8%
 "Portland, ME - Riverton",May 2020,All Residential,Neighborhood,False,ME,1.017273800,-2.2%,2.5%,8,33.3%,-42.9%,9,28.6%,0.0%,12.5,3,-49.5,$283K,1.0%,6.1%,10,11.1%,-52.4%
 "Portland, ME - Riverton",June 2020,All Residential,Neighborhood,False,ME,1.002699704,-1.5%,0.3%,9,12.5%,-47.1%,11,22.2%,37.5%,16,3.5,5,$280K,-1.1%,5.7%,11,10.0%,-57.7%
-"Portland, ME - Riverton",July 2020,All Residential,Neighborhood,False,ME,1.001285789,-0.1%,-0.9%,11,22.2%,-38.9%,4,-63.6%,-78.9%,23,7,15.5,$283K,0.9%,6.2%,13,18.2%,-62.9%
-"Portland, ME - Riverton",August 2020,All Residential,Neighborhood,False,ME,1.001560031,0.0%,-1.4%,12,9.1%,-50.0%,4,0.0%,-75.0%,11.5,-11.5,4.5,$281K,-0.5%,5.8%,19,46.2%,-38.7%
-"Portland, ME - Riverton",September 2020,All Residential,Neighborhood,False,ME,1.024748919,2.3%,1.5%,14,16.7%,-36.4%,4,0.0%,-69.2%,8.5,-3,-1.5,$308K,9.4%,15.8%,21,10.5%,-36.4%
-"Portland, ME - Riverton",October 2020,All Residential,Neighborhood,False,ME,1.025972359,0.1%,3.0%,20,42.9%,-23.1%,5,25.0%,-54.5%,8,-0.5,-20,$312K,1.5%,12.5%,24,14.3%,14.3%
-"Portland, ME - Riverton",November 2020,All Residential,Neighborhood,False,ME,1.035451010,0.9%,4.3%,21,5.0%,-8.7%,4,-20.0%,-66.7%,7,-1,-21.5,$312K,0.0%,11.4%,20,-16.7%,-4.8%
-"Portland, ME - Riverton",December 2020,All Residential,Neighborhood,False,ME,1.025921360,-1.0%,2.7%,26,23.8%,8.3%,1,-75.0%,-85.7%,8,1,-25,$312K,0.0%,11.4%,16,-20.0%,14.3%
-"Portland, ME - Riverton",January 2021,All Residential,Neighborhood,False,ME,1.036476645,1.1%,2.8%,20,-23.1%,-9.1%,3,200.0%,-57.1%,7,-1,-13,$320K,2.4%,15.1%,12,-25.0%,-7.7%
-"Portland, ME - Riverton",February 2021,All Residential,Neighborhood,False,ME,1.059189128,2.3%,4.3%,16,-20.0%,-11.1%,3,0.0%,-50.0%,7,0,-13,$325K,1.7%,21.5%,13,8.3%,85.7%
-"Portland, ME - Riverton",March 2021,All Residential,Neighborhood,False,ME,1.083546528,2.4%,6.0%,13,-18.8%,8.3%,2,-33.3%,-77.8%,7,0,-7.5,$331K,1.8%,19.1%,13,0.0%,44.4%
+"Portland, ME - Riverton",July 2020,All Residential,Neighborhood,False,ME,1.001285789,-0.1%,-0.9%,11,22.2%,-38.9%,4,-63.6%,-78.9%,23,7,15.5,$283K,0.9%,6.2%,12,9.1%,-65.7%
+"Portland, ME - Riverton",August 2020,All Residential,Neighborhood,False,ME,1.001560031,0.0%,-1.3%,12,9.1%,-52.0%,4,0.0%,-75.0%,11.5,-11.5,4.5,$281K,-0.5%,5.2%,18,50.0%,-43.8%
+"Portland, ME - Riverton",September 2020,All Residential,Neighborhood,False,ME,1.024748919,2.3%,1.7%,14,16.7%,-41.7%,4,0.0%,-69.2%,8.5,-3,-3.5,$308K,9.4%,12.8%,20,11.1%,-41.2%
+"Portland, ME - Riverton",October 2020,All Residential,Neighborhood,False,ME,1.025972359,0.1%,3.0%,20,42.9%,-28.6%,5,25.0%,-54.5%,8,-0.5,-17.5,$312K,1.5%,11.8%,24,20.0%,9.1%
+"Portland, ME - Riverton",November 2020,All Residential,Neighborhood,False,ME,1.035451010,0.9%,4.3%,21,5.0%,-12.5%,4,-20.0%,-66.7%,7,-1,-21,$312K,0.0%,10.4%,20,-16.7%,-4.8%
+"Portland, ME - Riverton",December 2020,All Residential,Neighborhood,False,ME,1.029650522,-0.6%,3.1%,25,19.0%,4.2%,1,-75.0%,-85.7%,7.5,0.5,-25.5,$312K,0.0%,11.4%,16,-20.0%,14.3%
+"Portland, ME - Riverton",January 2021,All Residential,Neighborhood,False,ME,1.041938978,1.2%,3.3%,19,-24.0%,-13.6%,3,200.0%,-57.1%,7,-0.5,-13,$315K,1.0%,13.5%,12,-25.0%,-7.7%
+"Portland, ME - Riverton",February 2021,All Residential,Neighborhood,False,ME,1.067622249,2.6%,5.1%,15,-21.1%,-16.7%,3,0.0%,-50.0%,6.5,-0.5,-13.5,$325K,3.2%,21.5%,13,8.3%,85.7%
+"Portland, ME - Riverton",March 2021,All Residential,Neighborhood,False,ME,1.083546528,1.6%,6.0%,13,-13.3%,8.3%,2,-33.3%,-77.8%,7,0.5,-7.5,$331K,1.8%,19.1%,13,0.0%,44.4%
 "Portland, ME - Riverton",April 2021,All Residential,Neighborhood,False,ME,1.092263370,0.9%,5.3%,13,0.0%,116.7%,7,250.0%,0.0%,7.5,0.5,-2,$331K,0.0%,18.0%,17,30.8%,88.9%
 "Portland, ME - Riverton",May 2021,All Residential,Neighborhood,False,ME,1.091660901,-0.1%,7.4%,13,0.0%,62.5%,6,-14.3%,-33.3%,7.5,0,-5,$355K,7.3%,25.3%,17,0.0%,70.0%
 "Portland, ME - Riverton",June 2021,All Residential,Neighborhood,False,ME,1.088684257,-0.3%,8.6%,13,0.0%,44.4%,7,16.7%,-36.4%,6.5,-1,-9.5,$370K,4.2%,32.1%,25,47.1%,127.3%
-"Portland, ME - Riverton",July 2021,All Residential,Neighborhood,False,ME,1.087476155,-0.1%,8.6%,19,46.2%,72.7%,8,14.3%,100.0%,6,-0.5,-17,$400K,8.1%,41.6%,25,0.0%,92.3%
-"Portland, ME - Riverton",August 2021,All Residential,Neighborhood,False,ME,1.064212778,-2.3%,6.3%,24,26.3%,100.0%,7,-12.5%,75.0%,7,1,-4.5,$394K,-1.6%,40.1%,29,16.0%,52.6%
-"Portland, ME - Riverton",September 2021,All Residential,Neighborhood,False,ME,1.060296448,-0.4%,3.6%,23,-4.2%,64.3%,5,-28.6%,25.0%,8,1,-0.5,$388K,-1.6%,26.0%,27,-6.9%,28.6%
-"Portland, ME - Riverton",October 2021,All Residential,Neighborhood,False,ME,1.024123869,-3.6%,-0.2%,26,13.0%,30.0%,3,-40.0%,-40.0%,9.5,1.5,1.5,$404K,4.1%,29.3%,23,-14.8%,-4.2%
-"Portland, ME - Riverton",November 2021,All Residential,Neighborhood,False,ME,1.015625326,-0.8%,-2.0%,26,0.0%,23.8%,2,-33.3%,-50.0%,13,3.5,6,$395K,-2.1%,26.6%,15,-34.8%,-25.0%
+"Portland, ME - Riverton",July 2021,All Residential,Neighborhood,False,ME,1.087476155,-0.1%,8.6%,19,46.2%,72.7%,8,14.3%,100.0%,6,-0.5,-17,$400K,8.1%,41.6%,25,0.0%,108.3%
+"Portland, ME - Riverton",August 2021,All Residential,Neighborhood,False,ME,1.064212778,-2.3%,6.3%,24,26.3%,100.0%,7,-12.5%,75.0%,7,1,-4.5,$394K,-1.6%,40.1%,29,16.0%,61.1%
+"Portland, ME - Riverton",September 2021,All Residential,Neighborhood,False,ME,1.060296448,-0.4%,3.6%,23,-4.2%,64.3%,7,0.0%,75.0%,8,1,-0.5,$388K,-1.6%,26.0%,29,0.0%,45.0%
+"Portland, ME - Riverton",October 2021,All Residential,Neighborhood,False,ME,1.024123869,-3.6%,-0.2%,26,13.0%,30.0%,9,28.6%,80.0%,9.5,1.5,1.5,$404K,4.1%,29.3%,29,0.0%,20.8%
+"Portland, ME - Riverton",November 2021,All Residential,Neighborhood,False,ME,1.015625326,-0.8%,-2.0%,26,0.0%,23.8%,5,-44.4%,25.0%,13,3.5,6,$395K,-2.1%,26.6%,21,-27.6%,5.0%
+"Portland, ME - Riverton",December 2021,All Residential,Neighborhood,False,ME,1.016505741,0.1%,-1.3%,25,-3.8%,0.0%,1,-80.0%,0.0%,25,12,17.5,$371K,-6.1%,18.9%,11,-47.6%,-31.3%
+"Portland, ME - Riverton",January 2022,All Residential,Neighborhood,False,ME,1.015079737,-0.1%,-2.7%,18,-28.0%,-5.3%,,,,25.5,0.5,18.5,$383K,3.2%,21.6%,3,-72.7%,-75.0%
 "Portland, ME - Rosemont",July 2015,All Residential,Neighborhood,False,ME,1.005013019,,,15,,,8,,,15.5,,,$250K,,,21,,
 "Portland, ME - Rosemont",August 2015,All Residential,Neighborhood,False,ME,1.004460512,-0.1%,,18,20.0%,,11,37.5%,,15,-0.5,,$239K,-4.4%,,25,19.0%,
 "Portland, ME - Rosemont",September 2015,All Residential,Neighborhood,False,ME,0.989688867,-1.5%,,21,16.7%,,15,36.4%,,14.5,-0.5,,$260K,8.8%,,29,16.0%,
@@ -1279,40 +1309,42 @@
 "Portland, ME - Rosemont",March 2019,All Residential,Neighborhood,False,ME,0.997442544,-0.6%,-1.9%,6,0.0%,-33.3%,6,20.0%,200.0%,10,4,5,$307K,-7.1%,-2.7%,13,62.5%,44.4%
 "Portland, ME - Rosemont",April 2019,All Residential,Neighborhood,False,ME,0.993726179,-0.4%,-1.3%,10,66.7%,11.1%,7,16.7%,16.7%,10,0,6,$378K,23.2%,37.3%,19,46.2%,72.7%
 "Portland, ME - Rosemont",May 2019,All Residential,Neighborhood,False,ME,1.005337830,1.2%,0.2%,14,40.0%,55.6%,6,-14.3%,20.0%,6,-4,-6,$395K,4.6%,25.4%,21,10.5%,31.3%
-"Portland, ME - Rosemont",June 2019,All Residential,Neighborhood,False,ME,1.007957844,0.3%,1.5%,22,57.1%,120.0%,7,16.7%,-41.7%,7,1,-10.5,$405K,2.5%,42.9%,22,4.8%,-18.5%
-"Portland, ME - Rosemont",July 2019,All Residential,Neighborhood,False,ME,1.018303565,1.0%,1.2%,19,-13.6%,35.7%,6,-14.3%,-33.3%,7.5,0.5,-4.5,$388K,-4.2%,9.4%,20,-9.1%,-28.6%
-"Portland, ME - Rosemont",August 2019,All Residential,Neighborhood,False,ME,1.015550851,-0.3%,1.5%,17,-10.5%,-26.1%,9,50.0%,12.5%,10.5,3,-2.5,$370K,-4.7%,15.2%,21,5.0%,-12.5%
-"Portland, ME - Rosemont",September 2019,All Residential,Neighborhood,False,ME,1.017843573,0.2%,1.3%,14,-17.6%,-36.4%,10,11.1%,66.7%,11,0.5,-1,$348K,-6.1%,3.6%,21,0.0%,31.3%
-"Portland, ME - Rosemont",October 2019,All Residential,Neighborhood,False,ME,1.014513631,-0.3%,1.8%,14,0.0%,-26.3%,9,-10.0%,800.0%,10.5,-0.5,-9,$348K,0.0%,14.9%,15,-28.6%,25.0%
-"Portland, ME - Rosemont",November 2019,All Residential,Neighborhood,False,ME,1.007988249,-0.7%,-0.5%,13,-7.1%,-27.8%,10,11.1%,233.3%,14,3.5,-5,$320K,-7.9%,-14.0%,13,-13.3%,8.3%
+"Portland, ME - Rosemont",June 2019,All Residential,Neighborhood,False,ME,1.007957844,0.3%,1.5%,22,57.1%,120.0%,8,33.3%,-33.3%,7,1,-10.5,$405K,2.5%,42.9%,23,9.5%,-14.8%
+"Portland, ME - Rosemont",July 2019,All Residential,Neighborhood,False,ME,1.018303565,1.0%,1.2%,19,-13.6%,35.7%,6,-25.0%,-33.3%,7.5,0.5,-4.5,$388K,-4.2%,9.4%,21,-8.7%,-25.0%
+"Portland, ME - Rosemont",August 2019,All Residential,Neighborhood,False,ME,1.012728556,-0.6%,1.2%,18,-5.3%,-21.7%,9,50.0%,12.5%,13,5.5,0,$363K,-6.3%,13.2%,22,4.8%,-8.3%
+"Portland, ME - Rosemont",September 2019,All Residential,Neighborhood,False,ME,1.014303970,0.2%,1.0%,15,-16.7%,-31.8%,10,11.1%,66.7%,14,1,2,$343K,-5.6%,2.3%,21,-4.5%,31.3%
+"Portland, ME - Rosemont",October 2019,All Residential,Neighborhood,False,ME,1.011196024,-0.3%,1.5%,15,0.0%,-21.1%,9,-10.0%,800.0%,13,-1,-6.5,$343K,0.0%,13.4%,15,-28.6%,25.0%
+"Portland, ME - Rosemont",November 2019,All Residential,Neighborhood,False,ME,1.007988249,-0.3%,-0.5%,13,-13.3%,-27.8%,10,11.1%,233.3%,14,1,-5,$320K,-6.7%,-14.0%,13,-13.3%,8.3%
 "Portland, ME - Rosemont",December 2019,All Residential,Neighborhood,False,ME,1.008288575,0.0%,-0.7%,10,-23.1%,-33.3%,5,-50.0%,,16,2,-3,$306K,-4.2%,-19.1%,8,-38.5%,0.0%
 "Portland, ME - Rosemont",January 2020,All Residential,Neighborhood,False,ME,0.989377690,-1.9%,-2.8%,11,10.0%,-21.4%,4,-20.0%,100.0%,23,7,16,$309K,0.8%,-15.9%,7,-12.5%,-12.5%
 "Portland, ME - Rosemont",February 2020,All Residential,Neighborhood,False,ME,1.004715754,1.5%,0.2%,11,0.0%,83.3%,3,-25.0%,-40.0%,29,6,23,$308K,-0.3%,-6.7%,5,-28.6%,-37.5%
 "Portland, ME - Rosemont",March 2020,All Residential,Neighborhood,False,ME,1.009326511,0.5%,1.2%,9,-18.2%,50.0%,3,0.0%,-50.0%,29,0,19,$309K,0.3%,0.8%,4,-20.0%,-69.2%
 "Portland, ME - Rosemont",April 2020,All Residential,Neighborhood,False,ME,1.047556559,3.8%,5.4%,6,-33.3%,-40.0%,6,100.0%,-14.3%,31,2,21,$324K,4.9%,-14.2%,9,125.0%,-52.6%
 "Portland, ME - Rosemont",May 2020,All Residential,Neighborhood,False,ME,1.029562744,-1.8%,2.4%,7,16.7%,-50.0%,9,50.0%,50.0%,6,-25,0,$404K,24.7%,2.3%,14,55.6%,-33.3%
-"Portland, ME - Rosemont",June 2020,All Residential,Neighborhood,False,ME,1.020554774,-0.9%,1.3%,13,85.7%,-40.9%,6,-33.3%,-14.3%,6.5,0.5,-0.5,$345K,-14.6%,-14.8%,17,21.4%,-22.7%
-"Portland, ME - Rosemont",July 2020,All Residential,Neighborhood,False,ME,1.022200294,0.2%,0.4%,14,7.7%,-26.3%,4,-33.3%,-33.3%,6,-0.5,-1.5,$360K,4.3%,-7.2%,12,-29.4%,-40.0%
-"Portland, ME - Rosemont",August 2020,All Residential,Neighborhood,False,ME,1.024367104,0.2%,0.9%,13,-7.1%,-23.5%,3,-25.0%,-66.7%,6.5,0.5,-4,$330K,-8.3%,-10.8%,6,-50.0%,-71.4%
-"Portland, ME - Rosemont",September 2020,All Residential,Neighborhood,False,ME,1.038192764,1.4%,2.0%,7,-46.2%,-50.0%,6,100.0%,-40.0%,6,-0.5,-5,$430K,30.3%,23.7%,9,50.0%,-57.1%
-"Portland, ME - Rosemont",October 2020,All Residential,Neighborhood,False,ME,1.019029426,-1.9%,0.5%,6,-14.3%,-57.1%,8,33.3%,-11.1%,10,4,-0.5,$452K,5.2%,30.2%,17,88.9%,13.3%
-"Portland, ME - Rosemont",November 2020,All Residential,Neighborhood,False,ME,1.041964802,2.3%,3.4%,9,50.0%,-30.8%,7,-12.5%,-30.0%,10,0,-4,$472K,4.3%,47.6%,22,29.4%,69.2%
-"Portland, ME - Rosemont",December 2020,All Residential,Neighborhood,False,ME,1.047367065,0.5%,3.9%,17,88.9%,70.0%,4,-42.9%,-20.0%,8,-2,-8,$472K,0.0%,54.0%,16,-27.3%,100.0%
-"Portland, ME - Rosemont",January 2021,All Residential,Neighborhood,False,ME,1.054017348,0.7%,6.5%,20,17.6%,81.8%,3,-25.0%,-25.0%,8,0,-15,$500K,6.0%,61.9%,11,-31.3%,57.1%
-"Portland, ME - Rosemont",February 2021,All Residential,Neighborhood,False,ME,1.048133794,-0.6%,4.3%,20,0.0%,81.8%,2,-33.3%,-33.3%,8,0,-21,$514K,2.6%,66.7%,7,-36.4%,40.0%
-"Portland, ME - Rosemont",March 2021,All Residential,Neighborhood,False,ME,1.052532829,0.4%,4.3%,14,-30.0%,55.6%,1,-50.0%,-66.7%,8.5,0.5,-20.5,$564K,9.8%,82.5%,10,42.9%,150.0%
-"Portland, ME - Rosemont",April 2021,All Residential,Neighborhood,False,ME,1.051347288,-0.1%,0.4%,10,-28.6%,66.7%,,,,13.5,5,-17.5,$530K,-6.0%,63.6%,10,0.0%,11.1%
-"Portland, ME - Rosemont",May 2021,All Residential,Neighborhood,False,ME,1.085075257,3.4%,5.6%,12,20.0%,71.4%,1,,-88.9%,7.5,-6,1.5,$553K,4.2%,36.7%,9,-10.0%,-35.7%
-"Portland, ME - Rosemont",June 2021,All Residential,Neighborhood,False,ME,1.118159441,3.3%,9.8%,10,-16.7%,-23.1%,1,0.0%,-83.3%,6.5,-1,0,$554K,0.2%,60.5%,10,11.1%,-41.2%
-"Portland, ME - Rosemont",July 2021,All Residential,Neighborhood,False,ME,1.125808955,0.8%,10.4%,11,10.0%,-21.4%,6,500.0%,50.0%,6,-0.5,0,$550K,-0.7%,52.8%,14,40.0%,16.7%
-"Portland, ME - Rosemont",August 2021,All Residential,Neighborhood,False,ME,1.158969152,3.3%,13.5%,7,-36.4%,-46.2%,5,-16.7%,66.7%,6,0,-0.5,$612K,11.3%,85.5%,20,42.9%,233.3%
-"Portland, ME - Rosemont",September 2021,All Residential,Neighborhood,False,ME,1.118569290,-4.0%,8.0%,12,71.4%,71.4%,4,-20.0%,-33.3%,7,1,1,$547K,-10.6%,27.2%,23,15.0%,155.6%
-"Portland, ME - Rosemont",October 2021,All Residential,Neighborhood,False,ME,1.084216720,-3.4%,6.5%,21,75.0%,250.0%,1,-75.0%,-87.5%,6,-1,-4,$565K,3.3%,24.9%,22,-4.3%,29.4%
-"Portland, ME - Rosemont",November 2021,All Residential,Neighborhood,False,ME,1.069281153,-1.5%,2.7%,27,28.6%,200.0%,,,,7,1,-3,$485K,-14.2%,2.7%,14,-36.4%,-36.4%
-"Portland, ME - West End",July 2015,All Residential,Neighborhood,False,ME,0.978195497,,,31,,,20,,,17,,,$308K,,,35,,
-"Portland, ME - West End",August 2015,All Residential,Neighborhood,False,ME,0.981024167,0.3%,,34,9.7%,,26,30.0%,,22,5,,$351K,14.2%,,37,5.7%,
-"Portland, ME - West End",September 2015,All Residential,Neighborhood,False,ME,0.981635018,0.1%,,31,-8.8%,,31,19.2%,,22,0,,$366K,4.2%,,38,2.7%,
-"Portland, ME - West End",October 2015,All Residential,Neighborhood,False,ME,0.976216165,-0.5%,,29,-6.5%,,20,-35.5%,,25,3,,$311K,-15.0%,,32,-15.8%,
+"Portland, ME - Rosemont",June 2020,All Residential,Neighborhood,False,ME,1.020554774,-0.9%,1.3%,13,85.7%,-40.9%,6,-33.3%,-25.0%,6.5,0.5,-0.5,$345K,-14.6%,-14.8%,17,21.4%,-26.1%
+"Portland, ME - Rosemont",July 2020,All Residential,Neighborhood,False,ME,1.022200294,0.2%,0.4%,14,7.7%,-26.3%,4,-33.3%,-33.3%,6,-0.5,-1.5,$360K,4.3%,-7.2%,12,-29.4%,-42.9%
+"Portland, ME - Rosemont",August 2020,All Residential,Neighborhood,False,ME,1.024367104,0.2%,1.2%,13,-7.1%,-27.8%,3,-25.0%,-66.7%,6.5,0.5,-6.5,$330K,-8.3%,-9.2%,6,-50.0%,-72.7%
+"Portland, ME - Rosemont",September 2020,All Residential,Neighborhood,False,ME,1.038192764,1.4%,2.4%,7,-46.2%,-53.3%,7,133.3%,-30.0%,6,-0.5,-8,$430K,30.3%,25.3%,10,66.7%,-52.4%
+"Portland, ME - Rosemont",October 2020,All Residential,Neighborhood,False,ME,1.019029426,-1.9%,0.8%,6,-14.3%,-60.0%,9,28.6%,0.0%,10,4,-3,$452K,5.2%,31.9%,18,80.0%,20.0%
+"Portland, ME - Rosemont",November 2020,All Residential,Neighborhood,False,ME,1.041964802,2.3%,3.4%,9,50.0%,-30.8%,8,-11.1%,-20.0%,10,0,-4,$472K,4.3%,47.6%,23,27.8%,76.9%
+"Portland, ME - Rosemont",December 2020,All Residential,Neighborhood,False,ME,1.047367065,0.5%,3.9%,17,88.9%,70.0%,5,-37.5%,0.0%,8,-2,-8,$472K,0.0%,54.0%,16,-30.4%,100.0%
+"Portland, ME - Rosemont",January 2021,All Residential,Neighborhood,False,ME,1.054017348,0.7%,6.5%,20,17.6%,81.8%,4,-20.0%,0.0%,8,0,-15,$500K,6.0%,61.9%,11,-31.3%,57.1%
+"Portland, ME - Rosemont",February 2021,All Residential,Neighborhood,False,ME,1.048133794,-0.6%,4.3%,20,0.0%,81.8%,3,-25.0%,0.0%,8,0,-21,$514K,2.6%,66.7%,7,-36.4%,40.0%
+"Portland, ME - Rosemont",March 2021,All Residential,Neighborhood,False,ME,1.052532829,0.4%,4.3%,14,-30.0%,55.6%,2,-33.3%,-33.3%,8.5,0.5,-20.5,$564K,9.8%,82.5%,10,42.9%,150.0%
+"Portland, ME - Rosemont",April 2021,All Residential,Neighborhood,False,ME,1.051347288,-0.1%,0.4%,10,-28.6%,66.7%,2,0.0%,-66.7%,13.5,5,-17.5,$530K,-6.0%,63.6%,11,10.0%,22.2%
+"Portland, ME - Rosemont",May 2021,All Residential,Neighborhood,False,ME,1.085075257,3.4%,5.6%,12,20.0%,71.4%,3,50.0%,-66.7%,7.5,-6,1.5,$553K,4.2%,36.7%,10,-9.1%,-28.6%
+"Portland, ME - Rosemont",June 2021,All Residential,Neighborhood,False,ME,1.118159441,3.3%,9.8%,10,-16.7%,-23.1%,4,33.3%,-33.3%,6.5,-1,0,$554K,0.2%,60.5%,12,20.0%,-29.4%
+"Portland, ME - Rosemont",July 2021,All Residential,Neighborhood,False,ME,1.125808955,0.8%,10.4%,11,10.0%,-21.4%,9,125.0%,125.0%,6,-0.5,0,$550K,-0.7%,52.8%,15,25.0%,25.0%
+"Portland, ME - Rosemont",August 2021,All Residential,Neighborhood,False,ME,1.158969152,3.3%,13.5%,7,-36.4%,-46.2%,8,-11.1%,166.7%,6,0,-0.5,$612K,11.3%,85.5%,21,40.0%,250.0%
+"Portland, ME - Rosemont",September 2021,All Residential,Neighborhood,False,ME,1.118569290,-4.0%,8.0%,12,71.4%,71.4%,6,-25.0%,-14.3%,7,1,1,$547K,-10.6%,27.2%,24,14.3%,140.0%
+"Portland, ME - Rosemont",October 2021,All Residential,Neighborhood,False,ME,1.084216720,-3.4%,6.5%,21,75.0%,250.0%,4,-33.3%,-55.6%,6,-1,-4,$565K,3.3%,24.9%,26,8.3%,44.4%
+"Portland, ME - Rosemont",November 2021,All Residential,Neighborhood,False,ME,1.069281153,-1.5%,2.7%,27,28.6%,200.0%,1,-75.0%,-87.5%,7,1,-3,$485K,-14.2%,2.7%,18,-30.8%,-21.7%
+"Portland, ME - Rosemont",December 2021,All Residential,Neighborhood,False,ME,1.060183015,-0.9%,1.3%,23,-14.8%,35.3%,2,100.0%,-60.0%,7,0,-1,$560K,15.5%,18.6%,13,-27.8%,-18.8%
+"Portland, ME - Rosemont",January 2022,All Residential,Neighborhood,False,ME,1.069634870,0.9%,1.6%,17,-26.1%,-15.0%,,,,7,0,-1,$560K,0.0%,11.9%,4,-69.2%,-63.6%
+"Portland, ME - West End",July 2015,All Residential,Neighborhood,False,ME,0.977858739,,,32,,,20,,,25.5,,,$323K,,,36,,
+"Portland, ME - West End",August 2015,All Residential,Neighborhood,False,ME,0.980635456,0.3%,,35,9.4%,,26,30.0%,,26.5,1,,$343K,6.0%,,37,2.8%,
+"Portland, ME - West End",September 2015,All Residential,Neighborhood,False,ME,0.981190776,0.1%,,32,-8.6%,,31,19.2%,,26.5,0,,$363K,6.0%,,38,2.7%,
+"Portland, ME - West End",October 2015,All Residential,Neighborhood,False,ME,0.976216165,-0.5%,,29,-9.4%,,20,-35.5%,,25,-1.5,,$311K,-14.3%,,32,-15.8%,
 "Portland, ME - West End",November 2015,All Residential,Neighborhood,False,ME,0.972888538,-0.3%,,29,0.0%,,15,-25.0%,,26,1,,$408K,31.2%,,25,-21.9%,
 "Portland, ME - West End",December 2015,All Residential,Neighborhood,False,ME,0.969739897,-0.3%,,29,0.0%,,15,0.0%,,26,0,,$403K,-1.2%,,15,-40.0%,
 "Portland, ME - West End",January 2016,All Residential,Neighborhood,False,ME,0.977174322,0.7%,,26,-10.3%,,11,-26.7%,,26,0,,$409K,1.5%,,13,-13.3%,
@@ -1321,25 +1353,25 @@
 "Portland, ME - West End",April 2016,All Residential,Neighborhood,False,ME,0.982958754,0.1%,,13,-7.1%,,14,16.7%,,19,2,,$365K,6.3%,,25,25.0%,
 "Portland, ME - West End",May 2016,All Residential,Neighborhood,False,ME,0.994252948,1.1%,,15,15.4%,,16,14.3%,,7,-12,,$375K,2.7%,,28,12.0%,
 "Portland, ME - West End",June 2016,All Residential,Neighborhood,False,ME,0.995134624,0.1%,,18,20.0%,,19,18.8%,,6.5,-0.5,,$395K,5.3%,,32,14.3%,
-"Portland, ME - West End",July 2016,All Residential,Neighborhood,False,ME,1.003357069,0.8%,2.5%,23,27.8%,-25.8%,18,-5.3%,-10.0%,7,0.5,-10,$298K,-24.7%,-3.3%,30,-6.3%,-14.3%
-"Portland, ME - West End",August 2016,All Residential,Neighborhood,False,ME,1.002167812,-0.1%,2.1%,23,0.0%,-32.4%,17,-5.6%,-34.6%,8,1,-14,$395K,32.8%,12.5%,30,0.0%,-18.9%
-"Portland, ME - West End",September 2016,All Residential,Neighborhood,False,ME,0.993165106,-0.9%,1.2%,25,8.7%,-19.4%,20,17.6%,-35.5%,7.5,-0.5,-14.5,$298K,-24.7%,-18.7%,31,3.3%,-18.4%
-"Portland, ME - West End",October 2016,All Residential,Neighborhood,False,ME,0.977686610,-1.5%,0.1%,21,-16.0%,-27.6%,23,15.0%,15.0%,9,1.5,-16,$373K,25.2%,19.8%,38,22.6%,18.8%
-"Portland, ME - West End",November 2016,All Residential,Neighborhood,False,ME,0.977077022,-0.1%,0.4%,28,33.3%,-3.4%,17,-26.1%,13.3%,11,2,-15,$329K,-11.8%,-19.5%,34,-10.5%,36.0%
-"Portland, ME - West End",December 2016,All Residential,Neighborhood,False,ME,0.985015471,0.8%,1.5%,33,17.9%,13.8%,17,0.0%,13.3%,17.5,6.5,-8.5,$353K,7.5%,-12.4%,22,-35.3%,46.7%
-"Portland, ME - West End",January 2017,All Residential,Neighborhood,False,ME,0.985608555,0.1%,0.8%,34,3.0%,30.8%,12,-29.4%,9.1%,22,4.5,-4,$350K,-0.8%,-14.4%,15,-31.8%,15.4%
-"Portland, ME - West End",February 2017,All Residential,Neighborhood,False,ME,0.985131990,0.0%,1.2%,28,-17.6%,47.4%,13,8.3%,44.4%,27.5,5.5,-2,$352K,0.4%,-11.9%,14,-6.7%,-6.7%
+"Portland, ME - West End",July 2016,All Residential,Neighborhood,False,ME,1.003357069,0.8%,2.5%,23,27.8%,-28.1%,18,-5.3%,-10.0%,7,0.5,-18.5,$298K,-24.7%,-7.9%,30,-6.3%,-16.7%
+"Portland, ME - West End",August 2016,All Residential,Neighborhood,False,ME,1.002167812,-0.1%,2.2%,23,0.0%,-34.3%,17,-5.6%,-34.6%,8,1,-18.5,$395K,32.8%,15.3%,30,0.0%,-18.9%
+"Portland, ME - West End",September 2016,All Residential,Neighborhood,False,ME,0.993165106,-0.9%,1.2%,25,8.7%,-21.9%,20,17.6%,-35.5%,7.5,-0.5,-19,$298K,-24.7%,-18.0%,30,0.0%,-21.1%
+"Portland, ME - West End",October 2016,All Residential,Neighborhood,False,ME,0.977686610,-1.5%,0.1%,21,-16.0%,-27.6%,23,15.0%,15.0%,9,1.5,-16,$373K,25.2%,19.8%,37,23.3%,15.6%
+"Portland, ME - West End",November 2016,All Residential,Neighborhood,False,ME,0.975992867,-0.2%,0.3%,27,28.6%,-6.9%,17,-26.1%,13.3%,10,1,-16,$337K,-9.5%,-17.4%,33,-10.8%,32.0%
+"Portland, ME - West End",December 2016,All Residential,Neighborhood,False,ME,0.984348791,0.8%,1.5%,32,18.5%,10.3%,17,0.0%,13.3%,17,7,-9,$355K,5.2%,-12.0%,22,-33.3%,46.7%
+"Portland, ME - West End",January 2017,All Residential,Neighborhood,False,ME,0.984980050,0.1%,0.8%,33,3.1%,26.9%,12,-29.4%,9.1%,22,5,-4,$350K,-1.3%,-14.4%,15,-31.8%,15.4%
+"Portland, ME - West End",February 2017,All Residential,Neighborhood,False,ME,0.985131990,0.0%,1.2%,28,-15.2%,47.4%,13,8.3%,44.4%,27.5,5.5,-2,$352K,0.4%,-11.9%,14,-6.7%,-6.7%
 "Portland, ME - West End",March 2017,All Residential,Neighborhood,False,ME,0.980694994,-0.4%,-0.1%,21,-25.0%,50.0%,13,0.0%,8.3%,61,33.5,44,$320K,-9.0%,-6.8%,19,35.7%,-5.0%
 "Portland, ME - West End",April 2017,All Residential,Neighborhood,False,ME,0.985009878,0.4%,0.2%,17,-19.0%,30.8%,15,15.4%,7.1%,63,2,44,$343K,7.0%,-6.2%,26,36.8%,4.0%
 "Portland, ME - West End",May 2017,All Residential,Neighborhood,False,ME,0.996047910,1.1%,0.2%,22,29.4%,46.7%,16,6.7%,0.0%,24.5,-38.5,17.5,$347K,1.2%,-7.5%,34,30.8%,21.4%
 "Portland, ME - West End",June 2017,All Residential,Neighborhood,False,ME,0.994384382,-0.2%,-0.1%,29,31.8%,61.1%,21,31.3%,10.5%,13,-11.5,6.5,$351K,1.2%,-11.1%,38,11.8%,18.8%
 "Portland, ME - West End",July 2017,All Residential,Neighborhood,False,ME,0.994695971,0.0%,-0.9%,28,-3.4%,21.7%,20,-4.8%,11.1%,9,-4,2,$395K,12.5%,32.8%,34,-10.5%,13.3%
 "Portland, ME - West End",August 2017,All Residential,Neighborhood,False,ME,0.998920002,0.4%,-0.3%,30,7.1%,30.4%,21,5.0%,23.5%,9,0,1,$399K,1.1%,1.1%,31,-8.8%,3.3%
-"Portland, ME - West End",September 2017,All Residential,Neighborhood,False,ME,1.005151114,0.6%,1.2%,25,-16.7%,0.0%,22,4.8%,10.0%,20.5,11.5,13,$450K,12.7%,51.3%,27,-12.9%,-12.9%
-"Portland, ME - West End",October 2017,All Residential,Neighborhood,False,ME,1.001894115,-0.3%,2.4%,28,12.0%,33.3%,19,-13.6%,-17.4%,23,2.5,14,$382K,-15.2%,2.5%,25,-7.4%,-34.2%
-"Portland, ME - West End",November 2017,All Residential,Neighborhood,False,ME,0.992079037,-1.0%,1.5%,19,-32.1%,-32.1%,18,-5.3%,5.9%,53,30,42,$295K,-22.7%,-10.2%,17,-32.0%,-50.0%
-"Portland, ME - West End",December 2017,All Residential,Neighborhood,False,ME,0.982303588,-1.0%,-0.3%,15,-21.1%,-54.5%,14,-22.2%,-17.6%,23,-30,5.5,$318K,7.8%,-9.9%,12,-29.4%,-45.5%
-"Portland, ME - West End",January 2018,All Residential,Neighborhood,False,ME,0.976988690,-0.5%,-0.9%,10,-33.3%,-70.6%,17,21.4%,41.7%,53,30,31,$348K,9.4%,-0.6%,13,8.3%,-13.3%
+"Portland, ME - West End",September 2017,All Residential,Neighborhood,False,ME,1.005151114,0.6%,1.2%,25,-16.7%,0.0%,22,4.8%,10.0%,20.5,11.5,13,$450K,12.7%,51.3%,27,-12.9%,-10.0%
+"Portland, ME - West End",October 2017,All Residential,Neighborhood,False,ME,1.001894115,-0.3%,2.4%,28,12.0%,33.3%,19,-13.6%,-17.4%,23,2.5,14,$382K,-15.2%,2.5%,25,-7.4%,-32.4%
+"Portland, ME - West End",November 2017,All Residential,Neighborhood,False,ME,0.992079037,-1.0%,1.6%,19,-32.1%,-29.6%,18,-5.3%,5.9%,53,30,43,$295K,-22.7%,-12.5%,17,-32.0%,-48.5%
+"Portland, ME - West End",December 2017,All Residential,Neighborhood,False,ME,0.982303588,-1.0%,-0.2%,15,-21.1%,-53.1%,14,-22.2%,-17.6%,23,-30,6,$318K,7.8%,-10.3%,12,-29.4%,-45.5%
+"Portland, ME - West End",January 2018,All Residential,Neighborhood,False,ME,0.976988690,-0.5%,-0.8%,10,-33.3%,-69.7%,17,21.4%,41.7%,53,30,31,$348K,9.4%,-0.6%,13,8.3%,-13.3%
 "Portland, ME - West End",February 2018,All Residential,Neighborhood,False,ME,0.986396813,0.9%,0.1%,14,40.0%,-50.0%,14,-17.6%,7.7%,11.5,-41.5,-16,$496K,42.7%,41.2%,19,46.2%,35.7%
 "Portland, ME - West End",March 2018,All Residential,Neighborhood,False,ME,0.993792768,0.7%,1.3%,19,35.7%,-9.5%,9,-35.7%,-30.8%,29,17.5,-32,$375K,-24.4%,17.2%,27,42.1%,42.1%
 "Portland, ME - West End",April 2018,All Residential,Neighborhood,False,ME,0.995113990,0.1%,1.0%,25,31.6%,47.1%,14,55.6%,-6.7%,29,0,-34,$360K,-4.0%,5.1%,29,7.4%,11.5%
@@ -1349,43 +1381,45 @@
 "Portland, ME - West End",August 2018,All Residential,Neighborhood,False,ME,0.989442750,-1.8%,-0.9%,27,-3.6%,-10.0%,19,11.8%,-9.5%,11.5,-0.5,2.5,$460K,-0.9%,15.2%,30,0.0%,-3.2%
 "Portland, ME - West End",September 2018,All Residential,Neighborhood,False,ME,0.977055778,-1.2%,-2.8%,21,-22.2%,-16.0%,22,15.8%,0.0%,14,2.5,-6.5,$450K,-2.2%,0.0%,33,10.0%,22.2%
 "Portland, ME - West End",October 2018,All Residential,Neighborhood,False,ME,0.976053715,-0.1%,-2.6%,24,14.3%,-14.3%,32,45.5%,68.4%,14,0,-9,$448K,-0.6%,17.2%,46,39.4%,84.0%
-"Portland, ME - West End",November 2018,All Residential,Neighborhood,False,ME,0.978612140,0.3%,-1.3%,23,-4.2%,21.1%,30,-6.3%,66.7%,14,0,-39,$325K,-27.4%,10.2%,43,-6.5%,152.9%
-"Portland, ME - West End",December 2018,All Residential,Neighborhood,False,ME,0.978944746,0.0%,-0.3%,26,13.0%,73.3%,19,-36.7%,35.7%,17,3,-6,$299K,-8.2%,-6.1%,31,-27.9%,158.3%
-"Portland, ME - West End",January 2019,All Residential,Neighborhood,False,ME,0.978145585,-0.1%,0.1%,23,-11.5%,130.0%,17,-10.5%,0.0%,17.5,0.5,-35.5,$297K,-0.7%,-14.7%,12,-61.3%,-7.7%
-"Portland, ME - West End",February 2019,All Residential,Neighborhood,False,ME,0.981535288,0.3%,-0.5%,23,0.0%,64.3%,19,11.8%,35.7%,67.5,50,56,$311K,5.0%,-37.3%,10,-16.7%,-47.4%
-"Portland, ME - West End",March 2019,All Residential,Neighborhood,False,ME,0.985876251,0.4%,-0.8%,19,-17.4%,0.0%,23,21.1%,155.6%,73.5,6,44.5,$326K,4.7%,-13.1%,24,140.0%,-11.1%
+"Portland, ME - West End",November 2018,All Residential,Neighborhood,False,ME,0.978612140,0.3%,-1.3%,23,-4.2%,21.1%,30,-6.3%,66.7%,14,0,-39,$325K,-27.4%,10.2%,44,-4.3%,158.8%
+"Portland, ME - West End",December 2018,All Residential,Neighborhood,False,ME,0.979098340,0.0%,-0.3%,27,17.4%,80.0%,19,-36.7%,35.7%,17,3,-6,$300K,-7.7%,-5.7%,32,-27.3%,166.7%
+"Portland, ME - West End",January 2019,All Residential,Neighborhood,False,ME,0.978351677,-0.1%,0.1%,24,-11.1%,140.0%,17,-10.5%,0.0%,18,1,-35,$298K,-0.6%,-14.2%,13,-59.4%,0.0%
+"Portland, ME - West End",February 2019,All Residential,Neighborhood,False,ME,0.981600142,0.3%,-0.5%,24,0.0%,71.4%,19,11.8%,35.7%,65,47,53.5,$319K,6.8%,-35.8%,10,-23.1%,-47.4%
+"Portland, ME - West End",March 2019,All Residential,Neighborhood,False,ME,0.985876251,0.4%,-0.8%,19,-20.8%,0.0%,23,21.1%,155.6%,73.5,8.5,44.5,$326K,2.3%,-13.1%,24,140.0%,-11.1%
 "Portland, ME - West End",April 2019,All Residential,Neighborhood,False,ME,0.995796338,1.0%,0.1%,24,26.3%,-4.0%,22,-4.3%,57.1%,77,3.5,48,$297K,-8.8%,-17.4%,34,41.7%,17.2%
 "Portland, ME - West End",May 2019,All Residential,Neighborhood,False,ME,1.006717502,1.1%,0.5%,26,8.3%,-16.1%,25,13.6%,92.3%,15,-62,-16,$311K,4.4%,-13.7%,43,26.5%,38.7%
 "Portland, ME - West End",June 2019,All Residential,Neighborhood,False,ME,1.003219228,-0.3%,-0.4%,31,19.2%,-3.1%,25,0.0%,25.0%,14.5,-0.5,2.5,$311K,0.2%,-17.7%,39,-9.3%,21.9%
 "Portland, ME - West End",July 2019,All Residential,Neighborhood,False,ME,0.996456195,-0.7%,-1.1%,28,-9.7%,0.0%,26,4.0%,52.9%,15,0.5,3,$392K,26.0%,-15.5%,38,-2.6%,26.7%
 "Portland, ME - West End",August 2019,All Residential,Neighborhood,False,ME,0.992280060,-0.4%,0.3%,29,3.6%,7.4%,21,-19.2%,10.5%,26,11,14.5,$410K,4.6%,-10.9%,28,-26.3%,-6.7%
-"Portland, ME - West End",September 2019,All Residential,Neighborhood,False,ME,0.978873342,-1.3%,0.2%,28,-3.4%,33.3%,24,14.3%,9.1%,33,7,19,$385K,-6.1%,-14.5%,28,0.0%,-15.2%
-"Portland, ME - West End",October 2019,All Residential,Neighborhood,False,ME,0.968674366,-1.0%,-0.7%,30,7.1%,25.0%,20,-16.7%,-37.5%,27.5,-5.5,13.5,$385K,0.0%,-14.0%,24,-14.3%,-47.8%
-"Portland, ME - West End",November 2019,All Residential,Neighborhood,False,ME,0.957763387,-1.1%,-2.1%,25,-16.7%,8.7%,18,-10.0%,-40.0%,56,28.5,42,$327K,-15.2%,0.5%,27,12.5%,-37.2%
-"Portland, ME - West End",December 2019,All Residential,Neighborhood,False,ME,0.970494822,1.3%,-0.8%,25,0.0%,-3.8%,14,-22.2%,-26.3%,24,-32,7,$348K,6.6%,16.6%,17,-37.0%,-45.2%
-"Portland, ME - West End",January 2020,All Residential,Neighborhood,False,ME,0.989705133,1.9%,1.2%,29,16.0%,26.1%,11,-21.4%,-35.3%,40,16,22.5,$340K,-2.3%,14.7%,15,-11.8%,25.0%
-"Portland, ME - West End",February 2020,All Residential,Neighborhood,False,ME,0.988834814,-0.1%,0.7%,24,-17.2%,4.3%,11,0.0%,-42.1%,39,-1,-28.5,$373K,9.8%,20.0%,14,-6.7%,40.0%
-"Portland, ME - West End",March 2020,All Residential,Neighborhood,False,ME,0.990955904,0.2%,0.5%,23,-4.2%,21.1%,14,27.3%,-39.1%,35,-4,-38.5,$390K,4.4%,19.6%,20,42.9%,-16.7%
-"Portland, ME - West End",April 2020,All Residential,Neighborhood,False,ME,0.978733458,-1.2%,-1.7%,18,-21.7%,-25.0%,8,-42.9%,-63.6%,21,-14,-56,$378K,-3.1%,27.1%,18,-10.0%,-47.1%
-"Portland, ME - West End",May 2020,All Residential,Neighborhood,False,ME,0.981441570,0.3%,-2.5%,20,11.1%,-23.1%,14,75.0%,-44.0%,27.5,6.5,12.5,$385K,1.9%,24.0%,23,27.8%,-46.5%
-"Portland, ME - West End",June 2020,All Residential,Neighborhood,False,ME,0.992457732,1.1%,-1.1%,20,0.0%,-35.5%,17,21.4%,-32.0%,20.5,-7,6,$394K,2.3%,26.6%,25,8.7%,-35.9%
-"Portland, ME - West End",July 2020,All Residential,Neighborhood,False,ME,1.003215484,1.1%,0.7%,21,5.0%,-25.0%,15,-11.8%,-42.3%,21,0.5,6,$420K,6.7%,7.1%,36,44.0%,-5.3%
-"Portland, ME - West End",August 2020,All Residential,Neighborhood,False,ME,1.004870432,0.2%,1.3%,23,9.5%,-20.7%,17,13.3%,-19.0%,9,-12,-17,$455K,8.3%,11.0%,32,-11.1%,14.3%
-"Portland, ME - West End",September 2020,All Residential,Neighborhood,False,ME,0.997298339,-0.8%,1.8%,29,26.1%,3.6%,15,-11.8%,-37.5%,18,9,-15,$405K,-11.0%,5.2%,29,-9.4%,3.6%
-"Portland, ME - West End",October 2020,All Residential,Neighborhood,False,ME,0.995928831,-0.1%,2.7%,25,-13.8%,-16.7%,9,-40.0%,-55.0%,14,-4,-13.5,$405K,0.0%,5.2%,20,-31.0%,-16.7%
-"Portland, ME - West End",November 2020,All Residential,Neighborhood,False,ME,1.002866906,0.7%,4.5%,27,8.0%,8.0%,8,-11.1%,-55.6%,18,4,-38,$399K,-1.5%,22.2%,19,-5.0%,-29.6%
-"Portland, ME - West End",December 2020,All Residential,Neighborhood,False,ME,1.000792313,-0.2%,3.0%,18,-33.3%,-28.0%,6,-25.0%,-57.1%,21,3,-3,$533K,33.5%,53.0%,13,-31.6%,-23.5%
-"Portland, ME - West End",January 2021,All Residential,Neighborhood,False,ME,0.999346443,-0.1%,1.0%,20,11.1%,-31.0%,6,0.0%,-45.5%,33,12,-7,$533K,0.0%,56.6%,16,23.1%,6.7%
-"Portland, ME - West End",February 2021,All Residential,Neighborhood,False,ME,0.997622066,-0.2%,0.9%,15,-25.0%,-37.5%,7,16.7%,-36.4%,39.5,6.5,0.5,$500K,-6.1%,33.9%,15,-6.3%,7.1%
-"Portland, ME - West End",March 2021,All Residential,Neighborhood,False,ME,1.010103764,1.2%,1.9%,18,20.0%,-21.7%,8,14.3%,-42.9%,21,-18.5,-14,$438K,-12.5%,12.2%,26,73.3%,30.0%
-"Portland, ME - West End",April 2021,All Residential,Neighborhood,False,ME,1.020828171,1.1%,4.2%,23,27.8%,27.8%,4,-50.0%,-50.0%,7,-14,-14,$430K,-1.7%,13.8%,25,-3.8%,38.9%
-"Portland, ME - West End",May 2021,All Residential,Neighborhood,False,ME,1.022846909,0.2%,4.1%,28,21.7%,40.0%,6,50.0%,-57.1%,7.5,0.5,-20,$477K,10.9%,23.9%,34,36.0%,47.8%
-"Portland, ME - West End",June 2021,All Residential,Neighborhood,False,ME,1.051889731,2.9%,5.9%,38,35.7%,90.0%,5,-16.7%,-70.6%,7,-0.5,-13.5,$471K,-1.3%,19.6%,30,-11.8%,20.0%
-"Portland, ME - West End",July 2021,All Residential,Neighborhood,False,ME,1.053005315,0.1%,5.0%,37,-2.6%,76.2%,6,20.0%,-60.0%,8,1,-13,$506K,7.5%,20.5%,34,13.3%,-5.6%
-"Portland, ME - West End",August 2021,All Residential,Neighborhood,False,ME,1.065037545,1.2%,6.0%,32,-13.5%,39.1%,3,-50.0%,-82.4%,8,0,-1,$478K,-5.6%,4.9%,30,-11.8%,-6.3%
-"Portland, ME - West End",September 2021,All Residential,Neighborhood,False,ME,1.025400121,-4.0%,2.8%,28,-12.5%,-3.4%,4,33.3%,-73.3%,9,1,-9,$515K,7.9%,27.2%,26,-13.3%,-10.3%
-"Portland, ME - West End",October 2021,All Residential,Neighborhood,False,ME,1.025410552,0.0%,2.9%,25,-10.7%,0.0%,5,25.0%,-44.4%,9,0,-5,$442K,-14.2%,9.1%,19,-26.9%,-5.0%
-"Portland, ME - West End",November 2021,All Residential,Neighborhood,False,ME,1.015384096,-1.0%,1.3%,24,-4.0%,-11.1%,5,0.0%,-37.5%,8.5,-0.5,-9.5,$441K,-0.2%,10.5%,13,-31.6%,-31.6%
+"Portland, ME - West End",September 2019,All Residential,Neighborhood,False,ME,0.978873342,-1.3%,0.2%,28,-3.4%,33.3%,24,14.3%,9.1%,33,7,19,$385K,-6.1%,-14.5%,27,-3.6%,-18.2%
+"Portland, ME - West End",October 2019,All Residential,Neighborhood,False,ME,0.969912340,-0.9%,-0.6%,29,3.6%,20.8%,20,-16.7%,-37.5%,29,-4,15,$380K,-1.3%,-15.1%,23,-14.8%,-50.0%
+"Portland, ME - West End",November 2019,All Residential,Neighborhood,False,ME,0.958804648,-1.1%,-2.0%,24,-17.2%,4.3%,18,-10.0%,-40.0%,57,28,43,$326K,-14.3%,0.2%,26,13.0%,-40.9%
+"Portland, ME - West End",December 2019,All Residential,Neighborhood,False,ME,0.972066560,1.3%,-0.7%,24,0.0%,-11.1%,14,-22.2%,-26.3%,31.5,-25.5,14.5,$344K,5.6%,14.7%,17,-34.6%,-46.9%
+"Portland, ME - West End",January 2020,All Residential,Neighborhood,False,ME,0.989705133,1.8%,1.1%,29,20.8%,20.8%,11,-21.4%,-35.3%,40,8.5,22,$340K,-1.2%,14.0%,15,-11.8%,15.4%
+"Portland, ME - West End",February 2020,All Residential,Neighborhood,False,ME,0.988834814,-0.1%,0.7%,24,-17.2%,0.0%,11,0.0%,-42.1%,39,-1,-26,$373K,9.8%,17.2%,14,-6.7%,40.0%
+"Portland, ME - West End",March 2020,All Residential,Neighborhood,False,ME,0.990955904,0.2%,0.5%,23,-4.2%,21.1%,13,18.2%,-43.5%,35,-4,-38.5,$390K,4.4%,19.6%,19,35.7%,-20.8%
+"Portland, ME - West End",April 2020,All Residential,Neighborhood,False,ME,0.978733458,-1.2%,-1.7%,18,-21.7%,-25.0%,7,-46.2%,-68.2%,21,-14,-56,$378K,-3.1%,27.1%,17,-10.5%,-50.0%
+"Portland, ME - West End",May 2020,All Residential,Neighborhood,False,ME,0.981441570,0.3%,-2.5%,20,11.1%,-23.1%,13,85.7%,-48.0%,27.5,6.5,12.5,$385K,1.9%,24.0%,22,29.4%,-48.8%
+"Portland, ME - West End",June 2020,All Residential,Neighborhood,False,ME,0.992457732,1.1%,-1.1%,20,0.0%,-35.5%,17,30.8%,-32.0%,20.5,-7,6,$394K,2.3%,26.6%,25,13.6%,-35.9%
+"Portland, ME - West End",July 2020,All Residential,Neighborhood,False,ME,1.003215484,1.1%,0.7%,21,5.0%,-25.0%,16,-5.9%,-38.5%,21,0.5,6,$420K,6.7%,7.1%,37,48.0%,-2.6%
+"Portland, ME - West End",August 2020,All Residential,Neighborhood,False,ME,1.007617067,0.4%,1.5%,22,4.8%,-24.1%,18,12.5%,-14.3%,8.5,-12.5,-17.5,$446K,6.1%,8.7%,33,-10.8%,17.9%
+"Portland, ME - West End",September 2020,All Residential,Neighborhood,False,ME,0.999185978,-0.8%,2.0%,28,27.3%,0.0%,16,-11.1%,-33.3%,17,8.5,-16,$405K,-9.1%,5.2%,31,-6.1%,14.8%
+"Portland, ME - West End",October 2020,All Residential,Neighborhood,False,ME,0.996981951,-0.2%,2.7%,25,-10.7%,-13.8%,10,-37.5%,-50.0%,14,-3,-15,$405K,0.0%,6.6%,21,-32.3%,-8.7%
+"Portland, ME - West End",November 2020,All Residential,Neighborhood,False,ME,1.001720676,0.5%,4.3%,28,12.0%,16.7%,9,-10.0%,-50.0%,18.5,4.5,-38.5,$402K,-0.7%,23.4%,20,-4.8%,-23.1%
+"Portland, ME - West End",December 2020,All Residential,Neighborhood,False,ME,0.999212320,-0.3%,2.7%,19,-32.1%,-20.8%,7,-22.2%,-50.0%,23,4.5,-8.5,$480K,19.4%,39.5%,13,-35.0%,-23.5%
+"Portland, ME - West End",January 2021,All Residential,Neighborhood,False,ME,0.999346443,0.0%,1.0%,20,5.3%,-31.0%,7,0.0%,-36.4%,33,10,-7,$533K,10.9%,56.6%,15,15.4%,0.0%
+"Portland, ME - West End",February 2021,All Residential,Neighborhood,False,ME,0.997622066,-0.2%,0.9%,15,-25.0%,-37.5%,8,14.3%,-27.3%,39.5,6.5,0.5,$500K,-6.1%,33.9%,14,-6.7%,0.0%
+"Portland, ME - West End",March 2021,All Residential,Neighborhood,False,ME,0.999493621,0.2%,0.9%,17,13.3%,-26.1%,9,12.5%,-30.8%,27,-12.5,-8,$430K,-14.0%,10.3%,25,78.6%,31.6%
+"Portland, ME - West End",April 2021,All Residential,Neighborhood,False,ME,1.013116897,1.4%,3.4%,22,29.4%,22.2%,5,-44.4%,-28.6%,7.5,-19.5,-13.5,$411K,-4.4%,8.8%,25,0.0%,47.1%
+"Portland, ME - West End",May 2021,All Residential,Neighborhood,False,ME,1.016638417,0.4%,3.5%,27,22.7%,35.0%,7,40.0%,-46.2%,8,0.5,-19.5,$479K,16.5%,24.4%,34,36.0%,54.5%
+"Portland, ME - West End",June 2021,All Residential,Neighborhood,False,ME,1.051889731,3.5%,5.9%,38,40.7%,90.0%,6,-14.3%,-64.7%,7,-1,-13.5,$471K,-1.7%,19.6%,30,-11.8%,20.0%
+"Portland, ME - West End",July 2021,All Residential,Neighborhood,False,ME,1.053005315,0.1%,5.0%,37,-2.6%,76.2%,7,16.7%,-56.3%,8,1,-13,$506K,7.5%,20.5%,34,13.3%,-8.1%
+"Portland, ME - West End",August 2021,All Residential,Neighborhood,False,ME,1.065037545,1.2%,5.7%,32,-13.5%,45.5%,4,-42.9%,-77.8%,8,0,-0.5,$478K,-5.6%,7.2%,30,-11.8%,-9.1%
+"Portland, ME - West End",September 2021,All Residential,Neighborhood,False,ME,1.025400121,-4.0%,2.6%,28,-12.5%,0.0%,5,25.0%,-68.8%,9,1,-8,$515K,7.9%,27.2%,27,-10.0%,-12.9%
+"Portland, ME - West End",October 2021,All Residential,Neighborhood,False,ME,1.025410552,0.0%,2.8%,25,-10.7%,0.0%,6,20.0%,-40.0%,9,0,-5,$442K,-14.2%,9.1%,20,-25.9%,-4.8%
+"Portland, ME - West End",November 2021,All Residential,Neighborhood,False,ME,1.015384096,-1.0%,1.4%,24,-4.0%,-14.3%,6,0.0%,-33.3%,8.5,-0.5,-10,$441K,-0.2%,9.7%,19,-5.0%,-5.0%
+"Portland, ME - West End",December 2021,All Residential,Neighborhood,False,ME,1.042481268,2.7%,4.3%,17,-29.2%,-10.5%,2,-66.7%,-71.4%,8,-0.5,-15,$540K,22.4%,12.5%,14,-26.3%,7.7%
+"Portland, ME - West End",January 2022,All Residential,Neighborhood,False,ME,1.041909112,-0.1%,4.3%,20,17.6%,0.0%,1,-50.0%,-85.7%,11,3,-22,$560K,3.6%,5.1%,12,-14.3%,-20.0%
 "South Portland, ME - Broadview Park",July 2015,All Residential,Neighborhood,False,ME,0.996055130,,,17,,,17,,,29,,,$188K,,,22,,
 "South Portland, ME - Broadview Park",August 2015,All Residential,Neighborhood,False,ME,1.002449187,0.6%,,17,0.0%,,17,0.0%,,14.5,-14.5,,$220K,17.0%,,26,18.2%,
 "South Portland, ME - Broadview Park",September 2015,All Residential,Neighborhood,False,ME,1.001855439,-0.1%,,14,-17.6%,,12,-29.4%,,14,-0.5,,$229K,4.1%,,17,-34.6%,
@@ -1460,9 +1494,11 @@
 "South Portland, ME - Broadview Park",June 2021,All Residential,Neighborhood,False,ME,1.113504402,-0.1%,11.1%,11,10.0%,37.5%,1,-75.0%,-50.0%,8,0.5,0,$350K,1.4%,13.7%,18,38.5%,80.0%
 "South Portland, ME - Broadview Park",July 2021,All Residential,Neighborhood,False,ME,1.094835275,-1.9%,7.7%,15,36.4%,150.0%,3,200.0%,50.0%,7,-1,3,$360K,2.9%,17.0%,19,5.6%,90.0%
 "South Portland, ME - Broadview Park",August 2021,All Residential,Neighborhood,False,ME,1.094019906,-0.1%,4.8%,16,6.7%,100.0%,4,33.3%,100.0%,7,0,1,$360K,-0.1%,15.8%,16,-15.8%,60.0%
-"South Portland, ME - Broadview Park",September 2021,All Residential,Neighborhood,False,ME,1.077447908,-1.7%,1.2%,16,0.0%,77.8%,3,-25.0%,-25.0%,7,0,1,$360K,0.0%,19.9%,15,-6.3%,114.3%
-"South Portland, ME - Broadview Park",October 2021,All Residential,Neighborhood,False,ME,1.090096851,1.3%,3.9%,11,-31.3%,37.5%,,,,7,0,-1.5,$330K,-8.2%,10.7%,10,-33.3%,-9.1%
-"South Portland, ME - Broadview Park",November 2021,All Residential,Neighborhood,False,ME,1.039254237,-5.1%,0.7%,13,18.2%,44.4%,,,,7,0,-1,$379K,14.8%,28.0%,5,-50.0%,-44.4%
+"South Portland, ME - Broadview Park",September 2021,All Residential,Neighborhood,False,ME,1.077447908,-1.7%,1.2%,16,0.0%,77.8%,3,-25.0%,-25.0%,7,0,1,$360K,0.0%,19.9%,14,-12.5%,100.0%
+"South Portland, ME - Broadview Park",October 2021,All Residential,Neighborhood,False,ME,1.090096851,1.3%,3.9%,11,-31.3%,37.5%,,,,7,0,-1.5,$330K,-8.2%,10.7%,9,-35.7%,-18.2%
+"South Portland, ME - Broadview Park",November 2021,All Residential,Neighborhood,False,ME,1.039254237,-5.1%,0.7%,13,18.2%,44.4%,,,,7,0,-1,$379K,14.8%,28.0%,6,-33.3%,-33.3%
+"South Portland, ME - Broadview Park",December 2021,All Residential,Neighborhood,False,ME,1.019046626,-2.0%,0.1%,10,-23.1%,-9.1%,,,,6.5,-0.5,-1.5,$388K,2.2%,22.8%,4,-33.3%,-55.6%
+"South Portland, ME - Broadview Park",January 2022,All Residential,Neighborhood,False,ME,1.018708317,0.0%,-0.7%,10,0.0%,-23.1%,,,,6.5,0,-1.5,$388K,0.0%,22.8%,4,0.0%,-42.9%
 "South Portland, ME - Country Gardens",July 2015,All Residential,Neighborhood,False,ME,0.992562674,,,5,,,2,,,6,,,$225K,,,6,,
 "South Portland, ME - Country Gardens",August 2015,All Residential,Neighborhood,False,ME,1.004310345,1.2%,,3,-40.0%,,4,100.0%,,4,-2,,$235K,4.4%,,5,-16.7%,
 "South Portland, ME - Country Gardens",September 2015,All Residential,Neighborhood,False,ME,1.012931034,0.9%,,1,-66.7%,,5,25.0%,,7,3,,$235K,0.0%,,6,20.0%,
@@ -1539,7 +1575,9 @@
 "South Portland, ME - Country Gardens",August 2021,All Residential,Neighborhood,False,ME,1.124384822,0.7%,7.7%,8,0.0%,60.0%,1,-66.7%,-66.7%,7,-1,1,$361K,-3.7%,15.6%,7,-36.4%,-22.2%
 "South Portland, ME - Country Gardens",September 2021,All Residential,Neighborhood,False,ME,1.064080471,-6.0%,1.4%,6,-25.0%,-14.3%,2,100.0%,100.0%,8,1,3,$361K,0.0%,9.3%,8,14.3%,-33.3%
 "South Portland, ME - Country Gardens",October 2021,All Residential,Neighborhood,False,ME,1.077466715,1.3%,4.0%,6,0.0%,-40.0%,,,,6,-2,-5,$394K,9.3%,19.2%,4,-50.0%,-50.0%
-"South Portland, ME - Country Gardens",November 2021,All Residential,Neighborhood,False,ME,1.045986912,-3.1%,1.5%,7,16.7%,-46.2%,,,,9,3,-2,$410K,4.0%,20.6%,2,-50.0%,-80.0%
+"South Portland, ME - Country Gardens",November 2021,All Residential,Neighborhood,False,ME,1.045986912,-3.1%,1.5%,7,16.7%,-46.2%,,,,9,3,-2,$410K,4.0%,20.6%,4,0.0%,-60.0%
+"South Portland, ME - Country Gardens",December 2021,All Residential,Neighborhood,False,ME,1.049688756,0.4%,4.2%,6,-14.3%,-25.0%,,,,6.5,-2.5,-5.5,$368K,-10.4%,6.7%,2,-50.0%,-75.0%
+"South Portland, ME - Country Gardens",January 2022,All Residential,Neighborhood,False,ME,1.021340792,-2.8%,1.1%,5,-16.7%,-44.4%,,,,7,0.5,-11.5,$360K,-2.0%,3.2%,3,50.0%,-50.0%
 "South Portland, ME - Ferry Village",July 2015,All Residential,Neighborhood,False,ME,0.990603654,,,14,,,5,,,8,,,$174K,,,14,,
 "South Portland, ME - Ferry Village",August 2015,All Residential,Neighborhood,False,ME,0.987843782,-0.3%,,17,21.4%,,3,-40.0%,,9,1,,$175K,0.6%,,14,0.0%,
 "South Portland, ME - Ferry Village",September 2015,All Residential,Neighborhood,False,ME,0.982216251,-0.6%,,13,-23.5%,,6,100.0%,,9,0,,$165K,-5.7%,,11,-21.4%,
@@ -1613,10 +1651,12 @@
 "South Portland, ME - Ferry Village",May 2021,All Residential,Neighborhood,False,ME,1.091760304,2.9%,1.0%,6,20.0%,0.0%,,,,5.5,0.5,0.5,$500K,58.7%,61.4%,7,0.0%,0.0%
 "South Portland, ME - Ferry Village",June 2021,All Residential,Neighborhood,False,ME,1.075158941,-1.7%,0.8%,7,16.7%,-12.5%,1,,0.0%,6,0.5,1,$530K,6.0%,67.5%,5,-28.6%,-28.6%
 "South Portland, ME - Ferry Village",July 2021,All Residential,Neighborhood,False,ME,1.075830610,0.1%,4.8%,6,-14.3%,0.0%,1,0.0%,0.0%,7,1,-4,$588K,10.8%,30.7%,7,40.0%,0.0%
-"South Portland, ME - Ferry Village",August 2021,All Residential,Neighborhood,False,ME,1.051468697,-2.4%,2.9%,7,16.7%,40.0%,,,,8,1,2,$545K,-7.2%,10.8%,6,-14.3%,0.0%
-"South Portland, ME - Ferry Village",September 2021,All Residential,Neighborhood,False,ME,1.059291320,0.8%,2.5%,6,-14.3%,50.0%,3,,0.0%,7.5,-0.5,0,$437K,-19.9%,0.1%,11,83.3%,22.2%
-"South Portland, ME - Ferry Village",October 2021,All Residential,Neighborhood,False,ME,1.061506961,0.2%,1.3%,10,66.7%,42.9%,,,,6.5,-1,-2.5,$423K,-3.2%,12.7%,9,-18.2%,-25.0%
-"South Portland, ME - Ferry Village",November 2021,All Residential,Neighborhood,False,ME,1.069190127,0.8%,3.1%,10,0.0%,-9.1%,,,,6,-0.5,-5,$428K,1.2%,11.1%,8,-11.1%,-27.3%
+"South Portland, ME - Ferry Village",August 2021,All Residential,Neighborhood,False,ME,1.051468697,-2.4%,2.9%,7,16.7%,40.0%,1,0.0%,-50.0%,8,1,2,$545K,-7.2%,10.8%,7,0.0%,16.7%
+"South Portland, ME - Ferry Village",September 2021,All Residential,Neighborhood,False,ME,1.059291320,0.8%,2.5%,6,-14.3%,50.0%,4,300.0%,33.3%,7.5,-0.5,0,$437K,-19.9%,0.1%,12,71.4%,33.3%
+"South Portland, ME - Ferry Village",October 2021,All Residential,Neighborhood,False,ME,1.061506961,0.2%,1.3%,10,66.7%,42.9%,2,-50.0%,0.0%,6.5,-1,-2.5,$423K,-3.2%,12.7%,11,-8.3%,-8.3%
+"South Portland, ME - Ferry Village",November 2021,All Residential,Neighborhood,False,ME,1.069190127,0.8%,3.1%,10,0.0%,-9.1%,1,-50.0%,0.0%,6,-0.5,-5,$428K,1.2%,11.1%,12,9.1%,9.1%
+"South Portland, ME - Ferry Village",December 2021,All Residential,Neighborhood,False,ME,1.068657911,-0.1%,4.4%,10,0.0%,-33.3%,,,,6,0,-3.5,$434K,1.4%,11.4%,5,-58.3%,-37.5%
+"South Portland, ME - Ferry Village",January 2022,All Residential,Neighborhood,False,ME,1.053763409,-1.5%,4.4%,9,-10.0%,-10.0%,,,,13,7,3.5,$460K,6.1%,16.8%,3,-40.0%,0.0%
 "South Portland, ME - Knightville",July 2015,All Residential,Neighborhood,False,ME,0.996101378,,,13,,,7,,,13,,,$210K,,,25,,
 "South Portland, ME - Knightville",August 2015,All Residential,Neighborhood,False,ME,1.002097764,0.6%,,19,46.2%,,5,-28.6%,,12,-1,,$210K,0.0%,,21,-16.0%,
 "South Portland, ME - Knightville",September 2015,All Residential,Neighborhood,False,ME,0.994294773,-0.8%,,17,-10.5%,,7,40.0%,,15,3,,$225K,7.1%,,13,-38.1%,
@@ -1686,14 +1726,16 @@
 "South Portland, ME - Knightville",January 2021,All Residential,Neighborhood,False,ME,1.063135327,1.8%,7.3%,11,-15.4%,0.0%,3,,-25.0%,6.5,-0.5,-8.5,$315K,0.0%,34.0%,7,16.7%,-22.2%
 "South Portland, ME - Knightville",February 2021,All Residential,Neighborhood,False,ME,1.069517527,0.6%,8.0%,6,-45.5%,-50.0%,2,-33.3%,-50.0%,7,0.5,-3.5,$288K,-8.7%,27.2%,7,0.0%,-22.2%
 "South Portland, ME - Knightville",March 2021,All Residential,Neighborhood,False,ME,1.091944890,2.2%,10.0%,7,16.7%,-46.2%,3,50.0%,0.0%,6,-1,-1.5,$285K,-0.9%,13.1%,8,14.3%,-52.9%
-"South Portland, ME - Knightville",April 2021,All Residential,Neighborhood,False,ME,1.092522598,0.1%,10.6%,7,0.0%,-36.4%,1,-66.7%,-75.0%,7,1,0,$285K,0.0%,7.1%,11,37.5%,-26.7%
-"South Portland, ME - Knightville",May 2021,All Residential,Neighborhood,False,ME,1.106041405,1.4%,10.7%,10,42.9%,-23.1%,4,300.0%,33.3%,7,0,-3.5,$297K,4.0%,11.5%,13,18.2%,-13.3%
-"South Portland, ME - Knightville",June 2021,All Residential,Neighborhood,False,ME,1.096693250,-0.9%,8.7%,11,10.0%,-21.4%,1,-75.0%,-66.7%,6,-1,-7,$321K,8.3%,7.9%,14,7.7%,0.0%
-"South Portland, ME - Knightville",July 2021,All Residential,Neighborhood,False,ME,1.096869066,0.0%,7.2%,13,18.2%,-18.8%,5,400.0%,25.0%,7,1,-3,$463K,44.2%,59.7%,17,21.4%,21.4%
-"South Portland, ME - Knightville",August 2021,All Residential,Neighborhood,False,ME,1.080406835,-1.6%,4.3%,18,38.5%,12.5%,5,0.0%,150.0%,7,0,0.5,$402K,-13.2%,31.4%,20,17.6%,53.8%
-"South Portland, ME - Knightville",September 2021,All Residential,Neighborhood,False,ME,1.065621117,-1.5%,0.8%,17,-5.6%,13.3%,4,-20.0%,33.3%,7,0,0,$430K,7.0%,30.3%,25,25.0%,78.6%
-"South Portland, ME - Knightville",October 2021,All Residential,Neighborhood,False,ME,1.036303292,-2.9%,-2.5%,25,47.1%,92.3%,7,75.0%,600.0%,7,0,1,$400K,-7.0%,21.2%,21,-16.0%,50.0%
-"South Portland, ME - Knightville",November 2021,All Residential,Neighborhood,False,ME,1.033960597,-0.2%,-2.4%,19,-24.0%,35.7%,5,-28.6%,,7.5,0.5,1.5,$375K,-6.3%,15.0%,15,-28.6%,7.1%
+"South Portland, ME - Knightville",April 2021,All Residential,Neighborhood,False,ME,1.092522598,0.1%,10.6%,7,0.0%,-36.4%,2,-33.3%,-50.0%,7,1,0,$285K,0.0%,7.1%,12,50.0%,-20.0%
+"South Portland, ME - Knightville",May 2021,All Residential,Neighborhood,False,ME,1.106041405,1.4%,10.7%,10,42.9%,-23.1%,5,150.0%,66.7%,7,0,-3.5,$297K,4.0%,11.5%,14,16.7%,-6.7%
+"South Portland, ME - Knightville",June 2021,All Residential,Neighborhood,False,ME,1.096693250,-0.9%,8.7%,11,10.0%,-21.4%,3,-40.0%,0.0%,6,-1,-7,$321K,8.3%,7.9%,16,14.3%,14.3%
+"South Portland, ME - Knightville",July 2021,All Residential,Neighborhood,False,ME,1.096869066,0.0%,7.2%,13,18.2%,-18.8%,7,133.3%,75.0%,7,1,-3,$463K,44.2%,59.7%,18,12.5%,28.6%
+"South Portland, ME - Knightville",August 2021,All Residential,Neighborhood,False,ME,1.080406835,-1.6%,4.3%,18,38.5%,12.5%,7,0.0%,250.0%,7,0,0.5,$402K,-13.2%,31.4%,21,16.7%,61.5%
+"South Portland, ME - Knightville",September 2021,All Residential,Neighborhood,False,ME,1.065621117,-1.5%,0.8%,17,-5.6%,13.3%,8,14.3%,166.7%,7,0,0,$430K,7.0%,30.3%,27,28.6%,92.9%
+"South Portland, ME - Knightville",October 2021,All Residential,Neighborhood,False,ME,1.036303292,-2.9%,-2.5%,25,47.1%,92.3%,10,25.0%,900.0%,7,0,1,$400K,-7.0%,21.2%,23,-14.8%,64.3%
+"South Portland, ME - Knightville",November 2021,All Residential,Neighborhood,False,ME,1.033960597,-0.2%,-2.4%,19,-24.0%,35.7%,9,-10.0%,,7.5,0.5,1.5,$375K,-6.3%,15.0%,20,-13.0%,42.9%
+"South Portland, ME - Knightville",December 2021,All Residential,Neighborhood,False,ME,1.040163598,0.6%,-0.5%,23,21.1%,76.9%,3,-66.7%,,7.5,0,0.5,$390K,4.0%,23.8%,14,-30.0%,133.3%
+"South Portland, ME - Knightville",January 2022,All Residential,Neighborhood,False,ME,1.057318184,1.7%,-0.6%,16,-30.4%,45.5%,2,-33.3%,-33.3%,9,1.5,2.5,$422K,8.3%,34.1%,10,-28.6%,42.9%
 "South Portland, ME - Meetinghouse Hill",July 2015,All Residential,Neighborhood,False,ME,0.999684876,,,19,,,18,,,12,,,$294K,,,36,,
 "South Portland, ME - Meetinghouse Hill",August 2015,All Residential,Neighborhood,False,ME,0.997771628,-0.2%,,22,15.8%,,19,5.6%,,12,0,,$273K,-7.1%,,34,-5.6%,
 "South Portland, ME - Meetinghouse Hill",September 2015,All Residential,Neighborhood,False,ME,1.001428112,0.4%,,23,4.5%,,16,-15.8%,,12,0,,$271K,-0.7%,,31,-8.8%,
@@ -1708,69 +1750,71 @@
 "South Portland, ME - Meetinghouse Hill",June 2016,All Residential,Neighborhood,False,ME,1.011693960,2.5%,,14,75.0%,,8,-20.0%,,11.5,-29,,$283K,-10.3%,,31,29.2%,
 "South Portland, ME - Meetinghouse Hill",July 2016,All Residential,Neighborhood,False,ME,1.003666557,-0.8%,0.4%,25,78.6%,31.6%,10,25.0%,-44.4%,11.5,0,-0.5,$280K,-0.9%,-4.8%,29,-6.5%,-19.4%
 "South Portland, ME - Meetinghouse Hill",August 2016,All Residential,Neighborhood,False,ME,0.996879940,-0.7%,-0.1%,33,32.0%,50.0%,9,-10.0%,-52.6%,12.5,1,0.5,$279K,-0.4%,2.2%,29,0.0%,-14.7%
-"South Portland, ME - Meetinghouse Hill",September 2016,All Residential,Neighborhood,False,ME,0.994672384,-0.2%,-0.7%,29,-12.1%,26.1%,9,0.0%,-43.8%,15,2.5,3,$285K,2.2%,5.2%,23,-20.7%,-25.8%
-"South Portland, ME - Meetinghouse Hill",October 2016,All Residential,Neighborhood,False,ME,0.994404792,0.0%,-0.6%,27,-6.9%,22.7%,9,0.0%,-10.0%,17,2,-6,$271K,-5.1%,12.5%,20,-13.0%,5.3%
-"South Portland, ME - Meetinghouse Hill",November 2016,All Residential,Neighborhood,False,ME,1.003109836,0.9%,0.2%,19,-29.6%,5.6%,5,-44.4%,-28.6%,8,-9,-16.5,$268K,-0.9%,11.4%,15,-25.0%,15.4%
-"South Portland, ME - Meetinghouse Hill",December 2016,All Residential,Neighborhood,False,ME,0.992572036,-1.1%,-0.6%,20,5.3%,-44.4%,1,-80.0%,-80.0%,17,9,-8,$274K,2.2%,-6.2%,7,-53.3%,-12.5%
-"South Portland, ME - Meetinghouse Hill",January 2017,All Residential,Neighborhood,False,ME,0.980489277,-1.2%,-2.3%,11,-45.0%,-63.3%,1,0.0%,-80.0%,20,3,-5,$280K,2.2%,-9.1%,3,-57.1%,-66.7%
-"South Portland, ME - Meetinghouse Hill",February 2017,All Residential,Neighborhood,False,ME,0.970802523,-1.0%,-2.8%,9,-18.2%,-71.9%,1,0.0%,-50.0%,52,32,27,$300K,7.1%,-5.5%,5,66.7%,0.0%
-"South Portland, ME - Meetinghouse Hill",March 2017,All Residential,Neighborhood,False,ME,0.977929512,0.7%,0.0%,9,0.0%,-10.0%,,,,10,-42,-36.5,$258K,-14.0%,-8.4%,7,40.0%,-36.4%
+"South Portland, ME - Meetinghouse Hill",September 2016,All Residential,Neighborhood,False,ME,0.994672384,-0.2%,-0.7%,29,-12.1%,26.1%,8,-11.1%,-50.0%,15,2.5,3,$285K,2.2%,5.2%,22,-24.1%,-29.0%
+"South Portland, ME - Meetinghouse Hill",October 2016,All Residential,Neighborhood,False,ME,0.994833299,0.0%,-0.6%,26,-10.3%,18.2%,9,12.5%,-10.0%,18.5,3.5,-4.5,$278K,-2.5%,15.5%,19,-13.6%,0.0%
+"South Portland, ME - Meetinghouse Hill",November 2016,All Residential,Neighborhood,False,ME,1.004324868,0.9%,0.4%,19,-26.9%,5.6%,5,-44.4%,-28.6%,9,-9.5,-15.5,$280K,0.8%,16.4%,14,-26.3%,7.7%
+"South Portland, ME - Meetinghouse Hill",December 2016,All Residential,Neighborhood,False,ME,0.998035381,-0.6%,0.0%,19,0.0%,-47.2%,1,-80.0%,-80.0%,20.5,11.5,-4.5,$280K,0.0%,-4.1%,7,-50.0%,-12.5%
+"South Portland, ME - Meetinghouse Hill",January 2017,All Residential,Neighborhood,False,ME,0.989079741,-0.9%,-1.5%,11,-42.1%,-63.3%,1,0.0%,-80.0%,21,0.5,-4,$280K,0.0%,-9.1%,3,-57.1%,-66.7%
+"South Portland, ME - Meetinghouse Hill",February 2017,All Residential,Neighborhood,False,ME,0.978171076,-1.1%,-2.1%,8,-27.3%,-75.0%,1,0.0%,-50.0%,53.5,32.5,28.5,$303K,8.0%,-4.7%,5,66.7%,0.0%
+"South Portland, ME - Meetinghouse Hill",March 2017,All Residential,Neighborhood,False,ME,0.977929512,0.0%,0.0%,9,12.5%,-10.0%,,,,10,-43.5,-36.5,$258K,-14.7%,-8.4%,7,40.0%,-36.4%
 "South Portland, ME - Meetinghouse Hill",April 2017,All Residential,Neighborhood,False,ME,0.986580721,0.9%,1.0%,8,-11.1%,-11.1%,1,,-91.7%,5.5,-4.5,-42.5,$257K,-0.4%,-9.8%,8,14.3%,-55.6%
 "South Portland, ME - Meetinghouse Hill",May 2017,All Residential,Neighborhood,False,ME,0.998662316,1.2%,1.2%,8,0.0%,0.0%,3,200.0%,-70.0%,7,1.5,-33.5,$262K,1.8%,-17.0%,12,50.0%,-50.0%
-"South Portland, ME - Meetinghouse Hill",June 2017,All Residential,Neighborhood,False,ME,0.998886391,0.0%,-1.3%,9,12.5%,-35.7%,6,100.0%,-25.0%,8,1,-3.5,$265K,1.3%,-6.2%,17,41.7%,-45.2%
-"South Portland, ME - Meetinghouse Hill",July 2017,All Residential,Neighborhood,False,ME,0.997087157,-0.2%,-0.7%,11,22.2%,-56.0%,5,-16.7%,-50.0%,8,0,-3.5,$330K,24.5%,17.9%,22,29.4%,-24.1%
-"South Portland, ME - Meetinghouse Hill",August 2017,All Residential,Neighborhood,False,ME,0.996600087,0.0%,0.0%,17,54.5%,-48.5%,4,-20.0%,-55.6%,8,0,-4.5,$325K,-1.5%,16.5%,22,0.0%,-24.1%
-"South Portland, ME - Meetinghouse Hill",September 2017,All Residential,Neighborhood,False,ME,1.007237389,1.1%,1.3%,17,0.0%,-41.4%,7,75.0%,-22.2%,12,4,-3,$336K,3.4%,17.9%,19,-13.6%,-17.4%
-"South Portland, ME - Meetinghouse Hill",October 2017,All Residential,Neighborhood,False,ME,1.015055157,0.8%,2.1%,17,0.0%,-37.0%,3,-57.1%,-66.7%,11,-1,-6,$325K,-3.3%,20.1%,14,-26.3%,-30.0%
-"South Portland, ME - Meetinghouse Hill",November 2017,All Residential,Neighborhood,False,ME,1.002256919,-1.3%,-0.1%,17,0.0%,-10.5%,1,-66.7%,-80.0%,17.5,6.5,9.5,$324K,-0.4%,20.7%,10,-28.6%,-33.3%
-"South Portland, ME - Meetinghouse Hill",December 2017,All Residential,Neighborhood,False,ME,0.993387433,-0.9%,0.1%,14,-17.6%,-30.0%,2,100.0%,100.0%,16,-1.5,-1,$292K,-9.7%,6.6%,9,-10.0%,28.6%
-"South Portland, ME - Meetinghouse Hill",January 2018,All Residential,Neighborhood,False,ME,0.981884081,-1.2%,0.1%,11,-21.4%,0.0%,1,-50.0%,0.0%,20.5,4.5,0.5,$265K,-9.2%,-5.4%,9,0.0%,200.0%
-"South Portland, ME - Meetinghouse Hill",February 2018,All Residential,Neighborhood,False,ME,1.019014166,3.7%,4.8%,9,-18.2%,0.0%,2,100.0%,100.0%,7,-13.5,-45,$285K,7.5%,-5.0%,11,22.2%,120.0%
+"South Portland, ME - Meetinghouse Hill",June 2017,All Residential,Neighborhood,False,ME,0.998886391,0.0%,-1.3%,9,12.5%,-35.7%,5,66.7%,-37.5%,8,1,-3.5,$265K,1.3%,-6.2%,16,33.3%,-48.4%
+"South Portland, ME - Meetinghouse Hill",July 2017,All Residential,Neighborhood,False,ME,0.997087157,-0.2%,-0.7%,11,22.2%,-56.0%,5,0.0%,-50.0%,8,0,-3.5,$330K,24.5%,17.9%,21,31.3%,-27.6%
+"South Portland, ME - Meetinghouse Hill",August 2017,All Residential,Neighborhood,False,ME,0.998139929,0.1%,0.1%,16,45.5%,-51.5%,4,-20.0%,-55.6%,8.5,0.5,-4,$328K,-0.8%,17.4%,21,0.0%,-27.6%
+"South Portland, ME - Meetinghouse Hill",September 2017,All Residential,Neighborhood,False,ME,1.009442062,1.1%,1.5%,16,0.0%,-44.8%,7,75.0%,-12.5%,12.5,4,-2.5,$338K,3.1%,18.5%,19,-9.5%,-13.6%
+"South Portland, ME - Meetinghouse Hill",October 2017,All Residential,Neighborhood,False,ME,1.017748440,0.8%,2.3%,16,0.0%,-38.5%,3,-57.1%,-66.7%,11.5,-1,-7,$325K,-3.8%,17.0%,14,-26.3%,-26.3%
+"South Portland, ME - Meetinghouse Hill",November 2017,All Residential,Neighborhood,False,ME,1.002256919,-1.5%,-0.2%,17,6.3%,-10.5%,1,-66.7%,-80.0%,17.5,6,8.5,$324K,-0.4%,15.5%,10,-28.6%,-28.6%
+"South Portland, ME - Meetinghouse Hill",December 2017,All Residential,Neighborhood,False,ME,0.993387433,-0.9%,-0.5%,14,-17.6%,-26.3%,2,100.0%,100.0%,16,-1.5,-4.5,$292K,-9.7%,4.3%,9,-10.0%,28.6%
+"South Portland, ME - Meetinghouse Hill",January 2018,All Residential,Neighborhood,False,ME,0.981884081,-1.2%,-0.7%,11,-21.4%,0.0%,1,-50.0%,0.0%,20.5,4.5,-0.5,$265K,-9.2%,-5.4%,9,0.0%,200.0%
+"South Portland, ME - Meetinghouse Hill",February 2018,All Residential,Neighborhood,False,ME,1.019014166,3.7%,4.1%,9,-18.2%,12.5%,2,100.0%,100.0%,7,-13.5,-46.5,$285K,7.5%,-5.8%,11,22.2%,120.0%
 "South Portland, ME - Meetinghouse Hill",March 2018,All Residential,Neighborhood,False,ME,1.030732417,1.2%,5.3%,11,22.2%,22.2%,2,0.0%,,6.5,-0.5,-3.5,$280K,-1.8%,8.5%,10,-9.1%,42.9%
 "South Portland, ME - Meetinghouse Hill",April 2018,All Residential,Neighborhood,False,ME,1.040539254,1.0%,5.4%,13,18.2%,62.5%,2,0.0%,100.0%,6.5,0,1,$285K,1.8%,10.9%,13,30.0%,62.5%
 "South Portland, ME - Meetinghouse Hill",May 2018,All Residential,Neighborhood,False,ME,1.054049112,1.4%,5.5%,11,-15.4%,37.5%,5,150.0%,66.7%,8.5,2,1.5,$280K,-1.8%,7.1%,17,30.8%,41.7%
-"South Portland, ME - Meetinghouse Hill",June 2018,All Residential,Neighborhood,False,ME,1.038475971,-1.6%,4.0%,11,0.0%,22.2%,4,-20.0%,-33.3%,5.5,-3,-2.5,$340K,21.4%,28.3%,23,35.3%,35.3%
-"South Portland, ME - Meetinghouse Hill",July 2018,All Residential,Neighborhood,False,ME,1.023117484,-1.5%,2.6%,20,81.8%,81.8%,8,100.0%,60.0%,6.5,1,-1.5,$350K,2.9%,6.1%,28,21.7%,27.3%
-"South Portland, ME - Meetinghouse Hill",August 2018,All Residential,Neighborhood,False,ME,1.020109939,-0.3%,2.4%,23,15.0%,35.3%,5,-37.5%,25.0%,7,0.5,-1,$345K,-1.4%,6.2%,23,-17.9%,4.5%
-"South Portland, ME - Meetinghouse Hill",September 2018,All Residential,Neighborhood,False,ME,1.014636740,-0.5%,0.7%,23,0.0%,35.3%,6,20.0%,-14.3%,13,6,1,$342K,-0.9%,1.8%,22,-4.3%,15.8%
-"South Portland, ME - Meetinghouse Hill",October 2018,All Residential,Neighborhood,False,ME,1.003189634,-1.1%,-1.2%,18,-21.7%,5.9%,9,50.0%,200.0%,13.5,0.5,2.5,$327K,-4.3%,0.7%,20,-9.1%,42.9%
-"South Portland, ME - Meetinghouse Hill",November 2018,All Residential,Neighborhood,False,ME,0.989962363,-1.3%,-1.2%,15,-16.7%,-11.8%,8,-11.1%,700.0%,12,-1.5,-5.5,$335K,2.4%,3.6%,21,5.0%,110.0%
-"South Portland, ME - Meetinghouse Hill",December 2018,All Residential,Neighborhood,False,ME,1.007222801,1.7%,1.4%,16,6.7%,14.3%,7,-12.5%,250.0%,10,-2,-6,$332K,-1.0%,13.5%,15,-28.6%,66.7%
-"South Portland, ME - Meetinghouse Hill",January 2019,All Residential,Neighborhood,False,ME,1.011626478,0.4%,3.0%,12,-25.0%,9.1%,2,-71.4%,100.0%,10,0,-10.5,$313K,-5.7%,18.0%,8,-46.7%,-11.1%
-"South Portland, ME - Meetinghouse Hill",February 2019,All Residential,Neighborhood,False,ME,1.005893036,-0.6%,-1.3%,12,0.0%,33.3%,4,100.0%,100.0%,16,6,9,$313K,0.0%,9.7%,8,0.0%,-27.3%
-"South Portland, ME - Meetinghouse Hill",March 2019,All Residential,Neighborhood,False,ME,0.996306672,-1.0%,-3.4%,12,0.0%,9.1%,6,50.0%,200.0%,14,-2,7.5,$286K,-8.6%,2.1%,13,62.5%,30.0%
-"South Portland, ME - Meetinghouse Hill",April 2019,All Residential,Neighborhood,False,ME,1.007158462,1.1%,-3.3%,16,33.3%,23.1%,7,16.7%,250.0%,14,0,7.5,$310K,8.4%,8.8%,26,100.0%,100.0%
-"South Portland, ME - Meetinghouse Hill",May 2019,All Residential,Neighborhood,False,ME,1.029015791,2.2%,-2.5%,22,37.5%,100.0%,10,42.9%,100.0%,8,-6,-0.5,$315K,1.8%,12.7%,34,30.8%,100.0%
+"South Portland, ME - Meetinghouse Hill",June 2018,All Residential,Neighborhood,False,ME,1.038475971,-1.6%,4.0%,11,0.0%,22.2%,4,-20.0%,-20.0%,5.5,-3,-2.5,$340K,21.4%,28.3%,23,35.3%,43.8%
+"South Portland, ME - Meetinghouse Hill",July 2018,All Residential,Neighborhood,False,ME,1.023117484,-1.5%,2.6%,20,81.8%,81.8%,8,100.0%,60.0%,6.5,1,-1.5,$350K,2.9%,6.1%,28,21.7%,33.3%
+"South Portland, ME - Meetinghouse Hill",August 2018,All Residential,Neighborhood,False,ME,1.020109939,-0.3%,2.2%,23,15.0%,43.8%,5,-37.5%,25.0%,7,0.5,-1.5,$345K,-1.4%,5.3%,23,-17.9%,9.5%
+"South Portland, ME - Meetinghouse Hill",September 2018,All Residential,Neighborhood,False,ME,1.014636740,-0.5%,0.5%,23,0.0%,43.8%,6,20.0%,-14.3%,13,6,0.5,$342K,-0.9%,1.3%,22,-4.3%,15.8%
+"South Portland, ME - Meetinghouse Hill",October 2018,All Residential,Neighborhood,False,ME,1.003189634,-1.1%,-1.5%,18,-21.7%,12.5%,9,50.0%,200.0%,13.5,0.5,2,$327K,-4.3%,0.7%,20,-9.1%,42.9%
+"South Portland, ME - Meetinghouse Hill",November 2018,All Residential,Neighborhood,False,ME,0.989962363,-1.3%,-1.2%,15,-16.7%,-11.8%,8,-11.1%,700.0%,12,-1.5,-5.5,$335K,2.4%,3.6%,20,0.0%,100.0%
+"South Portland, ME - Meetinghouse Hill",December 2018,All Residential,Neighborhood,False,ME,1.007126351,1.7%,1.4%,15,0.0%,7.1%,6,-25.0%,200.0%,10,-2,-6,$335K,0.0%,14.7%,13,-35.0%,44.4%
+"South Portland, ME - Meetinghouse Hill",January 2019,All Residential,Neighborhood,False,ME,1.011895289,0.5%,3.0%,11,-26.7%,0.0%,2,-66.7%,100.0%,10,0,-10.5,$323K,-3.6%,21.9%,6,-53.8%,-33.3%
+"South Portland, ME - Meetinghouse Hill",February 2019,All Residential,Neighborhood,False,ME,1.010220752,-0.2%,-0.9%,10,-9.1%,11.1%,4,100.0%,100.0%,16,6,9,$326K,0.8%,14.2%,7,16.7%,-36.4%
+"South Portland, ME - Meetinghouse Hill",March 2019,All Residential,Neighborhood,False,ME,0.999621882,-1.1%,-3.1%,11,10.0%,0.0%,6,50.0%,200.0%,13.5,-2.5,7,$290K,-10.9%,3.6%,13,85.7%,30.0%
+"South Portland, ME - Meetinghouse Hill",April 2019,All Residential,Neighborhood,False,ME,1.010313069,1.1%,-3.0%,15,36.4%,15.4%,7,16.7%,250.0%,13.5,0,7,$310K,6.9%,8.8%,26,100.0%,100.0%
+"South Portland, ME - Meetinghouse Hill",May 2019,All Residential,Neighborhood,False,ME,1.029015791,1.9%,-2.5%,22,46.7%,100.0%,10,42.9%,100.0%,8,-5.5,-0.5,$315K,1.8%,12.7%,34,30.8%,100.0%
 "South Portland, ME - Meetinghouse Hill",June 2019,All Residential,Neighborhood,False,ME,1.032965679,0.4%,-0.6%,27,22.7%,145.5%,12,20.0%,200.0%,9,1,3.5,$355K,12.5%,4.4%,39,14.7%,69.6%
 "South Portland, ME - Meetinghouse Hill",July 2019,All Residential,Neighborhood,False,ME,1.027135016,-0.6%,0.4%,32,18.5%,60.0%,7,-41.7%,-12.5%,8,-1,1.5,$355K,0.0%,1.4%,30,-23.1%,7.1%
-"South Portland, ME - Meetinghouse Hill",August 2019,All Residential,Neighborhood,False,ME,1.017517194,-1.0%,-0.3%,31,-3.1%,34.8%,6,-14.3%,20.0%,9,1,2,$340K,-4.2%,-1.4%,22,-26.7%,-4.3%
-"South Portland, ME - Meetinghouse Hill",September 2019,All Residential,Neighborhood,False,ME,1.007497154,-1.0%,-0.7%,23,-25.8%,0.0%,3,-50.0%,-50.0%,14,5,1,$312K,-8.2%,-8.8%,14,-36.4%,-36.4%
-"South Portland, ME - Meetinghouse Hill",October 2019,All Residential,Neighborhood,False,ME,1.014227177,0.7%,1.1%,20,-13.0%,11.1%,4,33.3%,-55.6%,20.5,6.5,7,$290K,-7.2%,-11.5%,15,7.1%,-25.0%
-"South Portland, ME - Meetinghouse Hill",November 2019,All Residential,Neighborhood,False,ME,0.999000885,-1.5%,0.9%,15,-25.0%,0.0%,6,50.0%,-25.0%,23,2.5,11,$325K,12.3%,-3.0%,13,-13.3%,-38.1%
-"South Portland, ME - Meetinghouse Hill",December 2019,All Residential,Neighborhood,False,ME,1.009231337,1.0%,0.2%,16,6.7%,0.0%,3,-50.0%,-57.1%,21,-2,11,$325K,0.0%,-2.0%,11,-15.4%,-26.7%
-"South Portland, ME - Meetinghouse Hill",January 2020,All Residential,Neighborhood,False,ME,0.987029542,-2.2%,-2.5%,11,-31.3%,-8.3%,3,0.0%,50.0%,31,10,21,$325K,0.0%,3.9%,10,-9.1%,25.0%
-"South Portland, ME - Meetinghouse Hill",February 2020,All Residential,Neighborhood,False,ME,1.010856143,2.4%,0.5%,14,27.3%,16.7%,1,-66.7%,-75.0%,14,-17,-2,$390K,20.0%,24.7%,8,-20.0%,0.0%
-"South Portland, ME - Meetinghouse Hill",March 2020,All Residential,Neighborhood,False,ME,1.010992791,0.0%,1.5%,10,-28.6%,-16.7%,2,100.0%,-66.7%,21.5,7.5,7.5,$399K,2.2%,39.4%,11,37.5%,-15.4%
-"South Portland, ME - Meetinghouse Hill",April 2020,All Residential,Neighborhood,False,ME,1.011236441,0.0%,0.4%,11,10.0%,-31.3%,4,100.0%,-42.9%,7,-14.5,-7,$395K,-0.9%,27.4%,8,-27.3%,-69.2%
+"South Portland, ME - Meetinghouse Hill",August 2019,All Residential,Neighborhood,False,ME,1.017252615,-1.0%,-0.3%,30,-6.3%,30.4%,6,-14.3%,20.0%,9,1,2,$345K,-3.0%,-0.1%,22,-26.7%,-4.3%
+"South Portland, ME - Meetinghouse Hill",September 2019,All Residential,Neighborhood,False,ME,1.006680909,-1.1%,-0.8%,22,-26.7%,-4.3%,3,-50.0%,-50.0%,14,5,1,$314K,-9.0%,-8.3%,14,-36.4%,-36.4%
+"South Portland, ME - Meetinghouse Hill",October 2019,All Residential,Neighborhood,False,ME,1.013636263,0.7%,1.0%,19,-13.6%,5.6%,4,33.3%,-55.6%,20.5,6.5,7,$290K,-7.5%,-11.3%,15,7.1%,-25.0%
+"South Portland, ME - Meetinghouse Hill",November 2019,All Residential,Neighborhood,False,ME,0.999000885,-1.5%,0.9%,15,-21.1%,0.0%,6,50.0%,-25.0%,23,2.5,11,$325K,12.1%,-3.0%,13,-13.3%,-35.0%
+"South Portland, ME - Meetinghouse Hill",December 2019,All Residential,Neighborhood,False,ME,1.009231337,1.0%,0.2%,16,6.7%,6.7%,3,-50.0%,-50.0%,21,-2,11,$325K,0.0%,-3.0%,11,-15.4%,-15.4%
+"South Portland, ME - Meetinghouse Hill",January 2020,All Residential,Neighborhood,False,ME,0.987029542,-2.2%,-2.5%,11,-31.3%,0.0%,3,0.0%,50.0%,31,10,21,$325K,0.0%,0.6%,10,-9.1%,66.7%
+"South Portland, ME - Meetinghouse Hill",February 2020,All Residential,Neighborhood,False,ME,1.010856143,2.4%,0.1%,14,27.3%,40.0%,1,-66.7%,-75.0%,14,-17,-2,$390K,20.0%,19.8%,8,-20.0%,14.3%
+"South Portland, ME - Meetinghouse Hill",March 2020,All Residential,Neighborhood,False,ME,1.010992791,0.0%,1.1%,10,-28.6%,-9.1%,2,100.0%,-66.7%,21.5,7.5,8,$399K,2.2%,37.5%,11,37.5%,-15.4%
+"South Portland, ME - Meetinghouse Hill",April 2020,All Residential,Neighborhood,False,ME,1.011236441,0.0%,0.1%,11,10.0%,-26.7%,4,100.0%,-42.9%,7,-14.5,-6.5,$395K,-0.9%,27.4%,8,-27.3%,-69.2%
 "South Portland, ME - Meetinghouse Hill",May 2020,All Residential,Neighborhood,False,ME,0.980251918,-3.1%,-4.9%,7,-36.4%,-68.2%,3,-25.0%,-70.0%,8,1,0,$347K,-12.2%,10.0%,12,50.0%,-64.7%
 "South Portland, ME - Meetinghouse Hill",June 2020,All Residential,Neighborhood,False,ME,1.014548605,3.4%,-1.8%,10,42.9%,-63.0%,2,-33.3%,-83.3%,7.5,-0.5,-1.5,$349K,0.6%,-1.7%,17,41.7%,-56.4%
 "South Portland, ME - Meetinghouse Hill",July 2020,All Residential,Neighborhood,False,ME,1.040481829,2.6%,1.3%,16,60.0%,-50.0%,3,50.0%,-57.1%,7.5,0,-0.5,$393K,12.5%,10.6%,21,23.5%,-30.0%
-"South Portland, ME - Meetinghouse Hill",August 2020,All Residential,Neighborhood,False,ME,1.054824169,1.4%,3.7%,22,37.5%,-29.0%,5,66.7%,-16.7%,7,-0.5,-2,$443K,12.9%,30.3%,26,23.8%,18.2%
-"South Portland, ME - Meetinghouse Hill",September 2020,All Residential,Neighborhood,False,ME,1.060396448,0.6%,5.3%,30,36.4%,30.4%,6,20.0%,100.0%,7,0,-7,$443K,0.0%,42.0%,25,-3.8%,78.6%
-"South Portland, ME - Meetinghouse Hill",October 2020,All Residential,Neighborhood,False,ME,1.069477587,0.9%,5.5%,27,-10.0%,35.0%,5,-16.7%,25.0%,7,0,-13.5,$450K,1.6%,55.4%,31,24.0%,106.7%
+"South Portland, ME - Meetinghouse Hill",August 2020,All Residential,Neighborhood,False,ME,1.054824169,1.4%,3.8%,22,37.5%,-26.7%,5,66.7%,-16.7%,7,-0.5,-2,$443K,12.9%,28.6%,26,23.8%,18.2%
+"South Portland, ME - Meetinghouse Hill",September 2020,All Residential,Neighborhood,False,ME,1.060396448,0.6%,5.4%,30,36.4%,36.4%,6,20.0%,100.0%,7,0,-7,$443K,0.0%,41.3%,25,-3.8%,78.6%
+"South Portland, ME - Meetinghouse Hill",October 2020,All Residential,Neighborhood,False,ME,1.069477587,0.9%,5.6%,27,-10.0%,42.1%,5,-16.7%,25.0%,7,0,-13.5,$450K,1.6%,55.2%,31,24.0%,106.7%
 "South Portland, ME - Meetinghouse Hill",November 2020,All Residential,Neighborhood,False,ME,1.065507798,-0.4%,6.7%,30,11.1%,100.0%,2,-60.0%,-66.7%,7,0,-16,$437K,-2.8%,34.6%,23,-25.8%,76.9%
 "South Portland, ME - Meetinghouse Hill",December 2020,All Residential,Neighborhood,False,ME,1.059780917,-0.6%,5.1%,26,-13.3%,62.5%,2,0.0%,-33.3%,7,0,-14,$412K,-5.9%,26.7%,16,-30.4%,45.5%
-"South Portland, ME - Meetinghouse Hill",January 2021,All Residential,Neighborhood,False,ME,1.051953923,-0.8%,6.5%,20,-23.1%,81.8%,2,0.0%,-33.3%,7,0,-24,$404K,-2.0%,24.2%,8,-50.0%,-20.0%
-"South Portland, ME - Meetinghouse Hill",February 2021,All Residential,Neighborhood,False,ME,1.066150191,1.4%,5.5%,10,-50.0%,-28.6%,1,-50.0%,0.0%,7.5,0.5,-6.5,$370K,-8.3%,-5.1%,9,12.5%,12.5%
-"South Portland, ME - Meetinghouse Hill",March 2021,All Residential,Neighborhood,False,ME,1.059341943,-0.7%,4.8%,10,0.0%,0.0%,1,0.0%,-50.0%,8,0.5,-13.5,$426K,15.0%,6.7%,14,55.6%,27.3%
-"South Portland, ME - Meetinghouse Hill",April 2021,All Residential,Neighborhood,False,ME,1.078682390,1.9%,6.7%,14,40.0%,27.3%,,,,8,0,1,$470K,10.5%,19.0%,9,-35.7%,12.5%
-"South Portland, ME - Meetinghouse Hill",May 2021,All Residential,Neighborhood,False,ME,1.086853918,0.8%,10.7%,14,0.0%,100.0%,2,,-33.3%,7.5,-0.5,-0.5,$543K,15.4%,56.3%,10,11.1%,-16.7%
-"South Portland, ME - Meetinghouse Hill",June 2021,All Residential,Neighborhood,False,ME,1.112754871,2.6%,9.8%,9,-35.7%,-10.0%,,,,7,-0.5,-0.5,$575K,6.0%,64.8%,11,10.0%,-35.3%
-"South Portland, ME - Meetinghouse Hill",July 2021,All Residential,Neighborhood,False,ME,1.082550969,-3.0%,4.2%,9,0.0%,-43.8%,2,,-33.3%,7,0,-0.5,$475K,-17.4%,21.0%,15,36.4%,-28.6%
-"South Portland, ME - Meetinghouse Hill",August 2021,All Residential,Neighborhood,False,ME,1.075559256,-0.7%,2.1%,13,44.4%,-40.9%,,,,6,-1,-1,$425K,-10.5%,-4.1%,12,-20.0%,-53.8%
-"South Portland, ME - Meetinghouse Hill",September 2021,All Residential,Neighborhood,False,ME,1.057298257,-1.8%,-0.3%,14,7.7%,-53.3%,2,,-66.7%,6,0,-1,$425K,0.0%,-4.1%,9,-25.0%,-64.0%
-"South Portland, ME - Meetinghouse Hill",October 2021,All Residential,Neighborhood,False,ME,1.070040791,1.3%,0.1%,12,-14.3%,-55.6%,1,-50.0%,-80.0%,6,0,-1,$475K,11.6%,5.4%,11,22.2%,-64.5%
-"South Portland, ME - Meetinghouse Hill",November 2021,All Residential,Neighborhood,False,ME,1.057510339,-1.3%,-0.8%,13,8.3%,-56.7%,2,100.0%,0.0%,7,1,0,$499K,5.2%,14.1%,11,0.0%,-52.2%
+"South Portland, ME - Meetinghouse Hill",January 2021,All Residential,Neighborhood,False,ME,1.051953923,-0.8%,6.5%,20,-23.1%,81.8%,2,0.0%,-33.3%,7,0,-24,$404K,-2.0%,24.2%,9,-43.8%,-10.0%
+"South Portland, ME - Meetinghouse Hill",February 2021,All Residential,Neighborhood,False,ME,1.066150191,1.4%,5.5%,10,-50.0%,-28.6%,1,-50.0%,0.0%,7.5,0.5,-6.5,$370K,-8.3%,-5.1%,10,11.1%,25.0%
+"South Portland, ME - Meetinghouse Hill",March 2021,All Residential,Neighborhood,False,ME,1.071263238,0.5%,6.0%,11,10.0%,10.0%,1,0.0%,-50.0%,8,0.5,-13.5,$431K,16.5%,8.1%,15,50.0%,36.4%
+"South Portland, ME - Meetinghouse Hill",April 2021,All Residential,Neighborhood,False,ME,1.086135310,1.5%,7.5%,15,36.4%,36.4%,,,,8,0,1,$475K,10.2%,20.3%,9,-40.0%,12.5%
+"South Portland, ME - Meetinghouse Hill",May 2021,All Residential,Neighborhood,False,ME,1.093762070,0.8%,11.4%,15,0.0%,114.3%,2,,-33.3%,7,-1,-1,$535K,12.6%,54.2%,10,11.1%,-16.7%
+"South Portland, ME - Meetinghouse Hill",June 2021,All Residential,Neighborhood,False,ME,1.112754871,1.9%,9.8%,9,-40.0%,-10.0%,,,,7,0,-0.5,$575K,7.5%,64.8%,11,10.0%,-35.3%
+"South Portland, ME - Meetinghouse Hill",July 2021,All Residential,Neighborhood,False,ME,1.082550969,-3.0%,4.2%,9,0.0%,-43.8%,2,,-33.3%,7,0,-0.5,$475K,-17.4%,21.0%,14,27.3%,-33.3%
+"South Portland, ME - Meetinghouse Hill",August 2021,All Residential,Neighborhood,False,ME,1.074143778,-0.8%,1.9%,12,33.3%,-45.5%,,,,6,-1,-1,$426K,-10.4%,-4.0%,11,-21.4%,-57.7%
+"South Portland, ME - Meetinghouse Hill",September 2021,All Residential,Neighborhood,False,ME,1.054586970,-2.0%,-0.6%,13,8.3%,-56.7%,3,,-50.0%,7,1,0,$425K,-0.1%,-4.1%,9,-18.2%,-64.0%
+"South Portland, ME - Meetinghouse Hill",October 2021,All Residential,Neighborhood,False,ME,1.067994955,1.3%,-0.1%,11,-15.4%,-59.3%,1,-66.7%,-80.0%,6.5,-0.5,-0.5,$499K,17.4%,10.9%,12,33.3%,-61.3%
+"South Portland, ME - Meetinghouse Hill",November 2021,All Residential,Neighborhood,False,ME,1.057510339,-1.0%,-0.8%,13,18.2%,-56.7%,2,100.0%,0.0%,7,0.5,0,$499K,0.0%,14.1%,13,8.3%,-43.5%
+"South Portland, ME - Meetinghouse Hill",December 2021,All Residential,Neighborhood,False,ME,1.073116775,1.6%,1.3%,12,-7.7%,-53.8%,2,0.0%,0.0%,7,0,0,$489K,-2.1%,18.7%,9,-30.8%,-43.8%
+"South Portland, ME - Meetinghouse Hill",January 2022,All Residential,Neighborhood,False,ME,1.076438694,0.3%,2.4%,10,-16.7%,-50.0%,1,-50.0%,-50.0%,6.5,-0.5,-0.5,$489K,0.0%,21.1%,5,-44.4%,-44.4%
 "South Portland, ME - Stanwood Park",July 2015,All Residential,Neighborhood,False,ME,0.981190374,,,9,,,13,,,38,,,$375K,,,17,,
 "South Portland, ME - Stanwood Park",August 2015,All Residential,Neighborhood,False,ME,0.976480222,-0.5%,,11,22.2%,,14,7.7%,,33,-5,,$375K,0.0%,,17,0.0%,
 "South Portland, ME - Stanwood Park",September 2015,All Residential,Neighborhood,False,ME,0.970304842,-0.6%,,8,-27.3%,,12,-14.3%,,31,-2,,$300K,-20.1%,,10,-41.2%,
@@ -1813,10 +1857,10 @@
 "South Portland, ME - Stanwood Park",October 2018,All Residential,Neighborhood,False,ME,0.989069325,-1.0%,-1.4%,12,100.0%,-7.7%,7,16.7%,-41.7%,26.5,18.5,15.5,$371K,-8.7%,6.1%,16,14.3%,-5.9%
 "South Portland, ME - Stanwood Park",November 2018,All Residential,Neighborhood,False,ME,0.982161082,-0.7%,-3.1%,14,16.7%,55.6%,5,-28.6%,-44.4%,19.5,-7,14.5,$353K,-5.1%,-2.1%,14,-12.5%,55.6%
 "South Portland, ME - Stanwood Park",December 2018,All Residential,Neighborhood,False,ME,0.980772823,-0.1%,-2.5%,16,14.3%,100.0%,4,-20.0%,-55.6%,19.5,0,8.5,$288K,-18.4%,-21.8%,10,-28.6%,66.7%
-"South Portland, ME - Stanwood Park",January 2019,All Residential,Neighborhood,False,ME,0.989544479,0.9%,0.5%,12,-25.0%,71.4%,4,0.0%,-33.3%,12,-7.5,-32,$213K,-26.1%,-45.5%,7,-30.0%,40.0%
-"South Portland, ME - Stanwood Park",February 2019,All Residential,Neighborhood,False,ME,0.992924465,0.3%,-1.7%,8,-33.3%,-20.0%,3,-25.0%,-40.0%,12,0,-4,$210K,-1.1%,-45.2%,4,-42.9%,0.0%
-"South Portland, ME - Stanwood Park",March 2019,All Residential,Neighborhood,False,ME,1.009810091,1.7%,0.7%,4,-50.0%,-42.9%,6,100.0%,200.0%,7,-5,-65,$260K,23.7%,-27.2%,8,100.0%,60.0%
-"South Portland, ME - Stanwood Park",April 2019,All Residential,Neighborhood,False,ME,0.998597839,-1.1%,-4.2%,3,-25.0%,-50.0%,4,-33.3%,100.0%,168,161,159,$361K,38.7%,-14.2%,10,25.0%,66.7%
+"South Portland, ME - Stanwood Park",January 2019,All Residential,Neighborhood,False,ME,0.990752856,1.0%,0.7%,13,-18.8%,85.7%,4,0.0%,-33.3%,12,-7.5,-32,$245K,-14.8%,-37.2%,7,-30.0%,40.0%
+"South Portland, ME - Stanwood Park",February 2019,All Residential,Neighborhood,False,ME,0.994294345,0.4%,-1.5%,9,-30.8%,-10.0%,3,-25.0%,-40.0%,12,0,-4,$245K,0.0%,-36.1%,4,-42.9%,0.0%
+"South Portland, ME - Stanwood Park",March 2019,All Residential,Neighborhood,False,ME,1.008898750,1.5%,0.6%,5,-44.4%,-28.6%,6,100.0%,200.0%,7,-5,-65,$275K,12.2%,-23.0%,8,100.0%,60.0%
+"South Portland, ME - Stanwood Park",April 2019,All Residential,Neighborhood,False,ME,0.998597839,-1.0%,-4.2%,3,-40.0%,-50.0%,4,-33.3%,100.0%,168,161,159,$361K,31.1%,-14.2%,10,25.0%,66.7%
 "South Portland, ME - Stanwood Park",May 2019,All Residential,Neighborhood,False,ME,0.998123040,0.0%,-3.0%,10,233.3%,66.7%,6,50.0%,200.0%,38.5,-129.5,32.5,$361K,0.2%,-5.2%,12,20.0%,100.0%
 "South Portland, ME - Stanwood Park",June 2019,All Residential,Neighborhood,False,ME,0.995771659,-0.2%,-4.0%,11,10.0%,83.3%,5,-16.7%,0.0%,22,-16.5,17,$362K,0.2%,-15.6%,9,-25.0%,12.5%
 "South Portland, ME - Stanwood Park",July 2019,All Residential,Neighborhood,False,ME,0.999850974,0.4%,-2.6%,11,0.0%,120.0%,7,40.0%,75.0%,14,-8,9,$345K,-4.7%,-17.4%,10,11.1%,66.7%
@@ -1825,9 +1869,9 @@
 "South Portland, ME - Stanwood Park",October 2019,All Residential,Neighborhood,False,ME,1.002206427,-0.8%,1.3%,10,0.0%,-16.7%,8,0.0%,14.3%,13,0,-13.5,$405K,11.7%,9.0%,12,-7.7%,-25.0%
 "South Portland, ME - Stanwood Park",November 2019,All Residential,Neighborhood,False,ME,0.991550597,-1.1%,0.9%,12,20.0%,-14.3%,6,-25.0%,20.0%,21.5,8.5,2,$410K,1.2%,16.3%,10,-16.7%,-28.6%
 "South Portland, ME - Stanwood Park",December 2019,All Residential,Neighborhood,False,ME,0.979104744,-1.2%,-0.2%,8,-33.3%,-50.0%,4,-33.3%,0.0%,22,0.5,2.5,$456K,11.2%,58.6%,4,-60.0%,-60.0%
-"South Portland, ME - Stanwood Park",January 2020,All Residential,Neighborhood,False,ME,0.976320475,-0.3%,-1.3%,6,-25.0%,-50.0%,3,-25.0%,-25.0%,22,0,10,$456K,0.0%,114.6%,3,-25.0%,-57.1%
-"South Portland, ME - Stanwood Park",February 2020,All Residential,Neighborhood,False,ME,0.991829240,1.6%,-0.1%,3,-50.0%,-62.5%,2,-33.3%,-33.3%,37,15,25,$315K,-30.9%,49.8%,4,33.3%,0.0%
-"South Portland, ME - Stanwood Park",March 2020,All Residential,Neighborhood,False,ME,0.980047330,-1.2%,-3.0%,7,133.3%,75.0%,2,0.0%,-66.7%,40,3,33,$375K,19.0%,44.2%,7,75.0%,-12.5%
+"South Portland, ME - Stanwood Park",January 2020,All Residential,Neighborhood,False,ME,0.976320475,-0.3%,-1.4%,6,-25.0%,-53.8%,3,-25.0%,-25.0%,22,0,10,$456K,0.0%,86.1%,3,-25.0%,-57.1%
+"South Portland, ME - Stanwood Park",February 2020,All Residential,Neighborhood,False,ME,0.991829240,1.6%,-0.2%,3,-50.0%,-66.7%,2,-33.3%,-33.3%,37,15,25,$315K,-30.9%,28.6%,4,33.3%,0.0%
+"South Portland, ME - Stanwood Park",March 2020,All Residential,Neighborhood,False,ME,0.980047330,-1.2%,-2.9%,7,133.3%,40.0%,2,0.0%,-66.7%,40,3,33,$375K,19.0%,36.4%,7,75.0%,-12.5%
 "South Portland, ME - Stanwood Park",April 2020,All Residential,Neighborhood,False,ME,0.984708782,0.5%,-1.4%,9,28.6%,200.0%,2,0.0%,-50.0%,40,0,-128,$370K,-1.4%,2.6%,7,0.0%,-30.0%
 "South Portland, ME - Stanwood Park",May 2020,All Residential,Neighborhood,False,ME,0.989022625,0.4%,-0.9%,11,22.2%,10.0%,2,0.0%,-66.7%,24,-16,-14.5,$375K,1.4%,3.8%,6,-14.3%,-50.0%
 "South Portland, ME - Stanwood Park",June 2020,All Residential,Neighborhood,False,ME,1.004143874,1.5%,0.8%,5,-54.5%,-54.5%,1,-50.0%,-80.0%,20,-4,-2,$375K,0.0%,3.6%,2,-66.7%,-77.8%
@@ -1847,7 +1891,9 @@
 "South Portland, ME - Stanwood Park",August 2021,All Residential,Neighborhood,False,ME,1.050632508,0.2%,6.9%,15,50.0%,650.0%,1,,-66.7%,10,-1,-31,$474K,3.8%,-35.5%,12,-7.7%,140.0%
 "South Portland, ME - Stanwood Park",September 2021,All Residential,Neighborhood,False,ME,1.056127436,0.5%,3.2%,15,0.0%,150.0%,,,,9,-1,3,$475K,0.2%,1.2%,7,-41.7%,0.0%
 "South Portland, ME - Stanwood Park",October 2021,All Residential,Neighborhood,False,ME,1.062051197,0.6%,1.3%,9,-40.0%,50.0%,,,,9,0,4,$680K,43.1%,44.8%,2,-71.4%,-77.8%
-"South Portland, ME - Stanwood Park",November 2021,All Residential,Neighborhood,False,ME,1.054643997,-0.7%,1.3%,4,-55.6%,-50.0%,,,,7,-2,2,$527K,-22.4%,42.6%,1,-50.0%,-87.5%
+"South Portland, ME - Stanwood Park",November 2021,All Residential,Neighborhood,False,ME,1.054643997,-0.7%,1.3%,4,-55.6%,-50.0%,,,,7,-2,2,$527K,-22.4%,42.6%,3,50.0%,-62.5%
+"South Portland, ME - Stanwood Park",December 2021,All Residential,Neighborhood,False,ME,1.069230769,1.5%,-0.8%,2,-50.0%,-80.0%,,,,15,8,8,$348K,-34.1%,16.8%,3,0.0%,-57.1%
+"South Portland, ME - Stanwood Park",January 2022,All Residential,Neighborhood,False,ME,1.037144837,-3.2%,-2.0%,3,50.0%,-72.7%,,,,12,-3,4.5,$375K,7.9%,7.1%,2,-33.3%,-71.4%
 "South Portland, ME - Sunset Park",July 2015,All Residential,Neighborhood,False,ME,1.013124224,,,9,,,4,,,10,,,$123K,,,10,,
 "South Portland, ME - Sunset Park",August 2015,All Residential,Neighborhood,False,ME,0.996376626,-1.7%,,8,-11.1%,,4,0.0%,,25,15,,$167K,36.5%,,5,-50.0%,
 "South Portland, ME - Sunset Park",September 2015,All Residential,Neighborhood,False,ME,0.985315122,-1.1%,,8,0.0%,,5,25.0%,,25,0,,$192K,14.8%,,6,20.0%,
@@ -1923,8 +1969,10 @@
 "South Portland, ME - Sunset Park",July 2021,All Residential,Neighborhood,False,ME,1.145238998,9.9%,12.7%,4,-20.0%,-20.0%,,,,5.5,-0.5,-27.5,$289K,4.9%,67.2%,2,-60.0%,100.0%
 "South Portland, ME - Sunset Park",August 2021,All Residential,Neighborhood,False,ME,1.126098911,-1.9%,11.2%,2,-50.0%,-50.0%,1,,0.0%,5.5,0,-34,$339K,17.5%,97.4%,3,50.0%,50.0%
 "South Portland, ME - Sunset Park",September 2021,All Residential,Neighborhood,False,ME,1.056987185,-6.9%,4.1%,3,50.0%,50.0%,1,0.0%,-50.0%,6,0.5,-19,$403K,18.9%,138.8%,2,-33.3%,-66.7%
-"South Portland, ME - Sunset Park",October 2021,All Residential,Neighborhood,False,ME,1.014753619,-4.2%,-0.5%,3,0.0%,-25.0%,,,,7,1,2,$437K,8.4%,23.0%,2,0.0%,-71.4%
-"South Portland, ME - Sunset Park",November 2021,All Residential,Neighborhood,False,ME,1.014753619,0.0%,-1.4%,3,0.0%,-50.0%,,,,7,0,2,$437K,0.0%,33.3%,1,-50.0%,-87.5%
+"South Portland, ME - Sunset Park",October 2021,All Residential,Neighborhood,False,ME,1.014753619,-4.2%,-0.5%,3,0.0%,-25.0%,,,,7,1,2,$437K,8.4%,23.0%,3,50.0%,-57.1%
+"South Portland, ME - Sunset Park",November 2021,All Residential,Neighborhood,False,ME,1.014753619,0.0%,-1.4%,3,0.0%,-50.0%,,,,7,0,2,$437K,0.0%,33.3%,3,0.0%,-62.5%
+"South Portland, ME - Sunset Park",December 2021,All Residential,Neighborhood,False,ME,1.047393293,3.3%,2.5%,3,0.0%,-57.1%,,,,8,1,2,$439K,0.5%,39.4%,2,-33.3%,-33.3%
+"South Portland, ME - Sunset Park",January 2022,All Residential,Neighborhood,False,ME,1.058561466,1.1%,4.6%,2,-33.3%,-60.0%,,,,7.5,-0.5,0.5,$352K,-19.8%,28.0%,1,-50.0%,-50.0%
 "South Portland, ME - Thornton Heights",July 2015,All Residential,Neighborhood,False,ME,0.990082360,,,14,,,7,,,25,,,$209K,,,15,,
 "South Portland, ME - Thornton Heights",August 2015,All Residential,Neighborhood,False,ME,0.989031756,-0.1%,,10,-28.6%,,5,-28.6%,,9,-16,,$197K,-5.5%,,10,-33.3%,
 "South Portland, ME - Thornton Heights",September 2015,All Residential,Neighborhood,False,ME,0.989254813,0.0%,,10,0.0%,,8,60.0%,,36,27,,$218K,10.2%,,12,20.0%,
@@ -2000,8 +2048,10 @@
 "South Portland, ME - Thornton Heights",July 2021,All Residential,Neighborhood,False,ME,1.119276401,-0.6%,7.8%,15,-25.0%,0.0%,6,200.0%,-14.3%,7,0,-2,$403K,11.8%,32.1%,19,26.7%,-5.0%
 "South Portland, ME - Thornton Heights",August 2021,All Residential,Neighborhood,False,ME,1.122152464,0.3%,8.9%,11,-26.7%,-21.4%,4,-33.3%,0.0%,8,1,0,$350K,-13.2%,14.5%,17,-10.5%,6.3%
 "South Portland, ME - Thornton Heights",September 2021,All Residential,Neighborhood,False,ME,1.032472725,-9.0%,-1.2%,12,9.1%,-14.3%,3,-25.0%,50.0%,8,0,-1.5,$340K,-2.8%,3.7%,19,11.8%,18.8%
-"South Portland, ME - Thornton Heights",October 2021,All Residential,Neighborhood,False,ME,1.032747783,0.0%,-0.2%,15,25.0%,25.0%,,,,13,5,-3,$348K,2.1%,5.9%,12,-36.8%,-7.7%
-"South Portland, ME - Thornton Heights",November 2021,All Residential,Neighborhood,False,ME,1.017606601,-1.5%,-1.6%,17,13.3%,-10.5%,,,,17,4,6,$348K,0.0%,5.3%,5,-58.3%,-68.8%
+"South Portland, ME - Thornton Heights",October 2021,All Residential,Neighborhood,False,ME,1.032747783,0.0%,-0.2%,15,25.0%,25.0%,1,-66.7%,-50.0%,13,5,-3,$348K,2.1%,5.9%,13,-31.6%,0.0%
+"South Portland, ME - Thornton Heights",November 2021,All Residential,Neighborhood,False,ME,1.017606601,-1.5%,-1.6%,17,13.3%,-10.5%,3,200.0%,-25.0%,17,4,6,$348K,0.0%,5.3%,11,-15.4%,-31.3%
+"South Portland, ME - Thornton Heights",December 2021,All Residential,Neighborhood,False,ME,1.030454686,1.3%,0.7%,16,-5.9%,-15.8%,1,-66.7%,-50.0%,11.5,-5.5,5.5,$365K,5.0%,23.7%,9,-18.2%,-35.7%
+"South Portland, ME - Thornton Heights",January 2022,All Residential,Neighborhood,False,ME,1.020139282,-1.0%,-0.4%,13,-18.8%,-31.6%,,,,11,-0.5,5,$370K,1.4%,25.4%,9,0.0%,-25.0%
 "South Portland, ME - Willard Square",July 2015,All Residential,Neighborhood,False,ME,1.037530497,,,11,,,4,,,6,,,$284K,,,21,,
 "South Portland, ME - Willard Square",August 2015,All Residential,Neighborhood,False,ME,1.038009714,0.0%,,15,36.4%,,3,-25.0%,,8,2,,$297K,4.7%,,16,-23.8%,
 "South Portland, ME - Willard Square",September 2015,All Residential,Neighborhood,False,ME,1.027996035,-1.0%,,21,40.0%,,2,-33.3%,,10,2,,$297K,0.0%,,16,0.0%,
@@ -2072,13 +2122,15 @@
 "South Portland, ME - Willard Square",February 2021,All Residential,Neighborhood,False,ME,1.005801011,0.9%,1.1%,6,-45.5%,-40.0%,,,,14,-14,0,$436K,24.6%,9.3%,3,0.0%,-40.0%
 "South Portland, ME - Willard Square",March 2021,All Residential,Neighborhood,False,ME,1.011746832,0.6%,0.4%,4,-33.3%,0.0%,2,,0.0%,47.5,33.5,36,$547K,25.4%,38.0%,6,100.0%,20.0%
 "South Portland, ME - Willard Square",April 2021,All Residential,Neighborhood,False,ME,1.050107782,3.8%,4.5%,5,25.0%,25.0%,2,0.0%,100.0%,8,-39.5,-2.5,$547K,0.1%,52.3%,7,16.7%,40.0%
-"South Portland, ME - Willard Square",May 2021,All Residential,Neighborhood,False,ME,1.036213012,-1.4%,6.2%,6,20.0%,20.0%,3,50.0%,-25.0%,9.5,1.5,2.5,$582K,6.2%,55.1%,10,42.9%,0.0%
-"South Portland, ME - Willard Square",June 2021,All Residential,Neighborhood,False,ME,1.105685144,6.9%,10.0%,6,0.0%,-40.0%,4,33.3%,33.3%,7,-2.5,0.5,$550K,-5.4%,43.5%,12,20.0%,-14.3%
-"South Portland, ME - Willard Square",July 2021,All Residential,Neighborhood,False,ME,1.086424269,-1.9%,5.0%,10,66.7%,-23.1%,3,-25.0%,0.0%,7,0,1,$562K,2.1%,13.0%,15,25.0%,-21.1%
-"South Portland, ME - Willard Square",August 2021,All Residential,Neighborhood,False,ME,1.088374529,0.2%,4.2%,10,0.0%,-37.5%,4,33.3%,-33.3%,7,0,0,$700K,24.6%,29.6%,16,6.7%,-23.8%
-"South Portland, ME - Willard Square",September 2021,All Residential,Neighborhood,False,ME,1.077273241,-1.1%,1.9%,17,70.0%,30.8%,2,-50.0%,0.0%,8,1,1,$650K,-7.1%,15.9%,15,-6.3%,-25.0%
-"South Portland, ME - Willard Square",October 2021,All Residential,Neighborhood,False,ME,1.078753295,0.1%,3.6%,12,-29.4%,-33.3%,,,,8.5,0.5,0.5,$618K,-5.0%,7.8%,10,-33.3%,-44.4%
-"South Portland, ME - Willard Square",November 2021,All Residential,Neighborhood,False,ME,1.074521986,-0.4%,4.3%,16,33.3%,-15.8%,,,,8,-0.5,-2,$531K,-14.1%,-5.4%,5,-50.0%,-54.5%
+"South Portland, ME - Willard Square",May 2021,All Residential,Neighborhood,False,ME,1.036213012,-1.4%,6.2%,6,20.0%,20.0%,4,100.0%,0.0%,9.5,1.5,2.5,$582K,6.2%,55.1%,11,57.1%,10.0%
+"South Portland, ME - Willard Square",June 2021,All Residential,Neighborhood,False,ME,1.105685144,6.9%,10.0%,6,0.0%,-40.0%,5,25.0%,66.7%,7,-2.5,0.5,$550K,-5.4%,43.5%,13,18.2%,-7.1%
+"South Portland, ME - Willard Square",July 2021,All Residential,Neighborhood,False,ME,1.086424269,-1.9%,5.0%,10,66.7%,-23.1%,4,-20.0%,33.3%,7,0,1,$562K,2.1%,13.0%,16,23.1%,-15.8%
+"South Portland, ME - Willard Square",August 2021,All Residential,Neighborhood,False,ME,1.088374529,0.2%,4.2%,10,0.0%,-37.5%,5,25.0%,-16.7%,7,0,0,$700K,24.6%,29.6%,16,0.0%,-23.8%
+"South Portland, ME - Willard Square",September 2021,All Residential,Neighborhood,False,ME,1.077273241,-1.1%,1.9%,17,70.0%,30.8%,4,-20.0%,100.0%,8,1,1,$650K,-7.1%,15.9%,16,0.0%,-20.0%
+"South Portland, ME - Willard Square",October 2021,All Residential,Neighborhood,False,ME,1.078753295,0.1%,3.6%,12,-29.4%,-33.3%,2,-50.0%,-50.0%,8.5,0.5,0.5,$618K,-5.0%,7.8%,11,-31.3%,-38.9%
+"South Portland, ME - Willard Square",November 2021,All Residential,Neighborhood,False,ME,1.074521986,-0.4%,4.3%,16,33.3%,-15.8%,,,,8,-0.5,-2,$531K,-14.1%,-5.4%,7,-36.4%,-36.4%
+"South Portland, ME - Willard Square",December 2021,All Residential,Neighborhood,False,ME,1.053920118,-2.1%,3.5%,9,-43.8%,-55.0%,1,,-50.0%,8,0,-5,$495K,-6.7%,-2.5%,5,-28.6%,-16.7%
+"South Portland, ME - Willard Square",January 2022,All Residential,Neighborhood,False,ME,1.050765028,-0.3%,5.4%,11,22.2%,0.0%,1,0.0%,0.0%,14,6,-14,$495K,0.0%,41.4%,6,20.0%,100.0%
 "Portland, ME - Cliff Island",May 2017,All Residential,Neighborhood,False,ME,0.977310924,,,1,,,,,,148,,,$582K,,,,,
 "Portland, ME - Cliff Island",June 2017,All Residential,Neighborhood,False,ME,0.977310924,0.0%,,1,0.0%,,,,,148,0,,$582K,0.0%,,,,
 "Portland, ME - Cliff Island",July 2017,All Residential,Neighborhood,False,ME,0.977310924,0.0%,,1,0.0%,,,,,148,0,,$582K,0.0%,,,,
@@ -2156,15 +2208,17 @@
 "Portland, ME - East Bayside",February 2021,All Residential,Neighborhood,False,ME,0.989833002,1.2%,1.0%,4,-20.0%,300.0%,6,50.0%,-50.0%,144.5,37.5,-1.5,$475K,15.7%,-1.1%,3,200.0%,0.0%
 "Portland, ME - East Bayside",March 2021,All Residential,Neighborhood,False,ME,1.008888889,1.9%,11.3%,1,-75.0%,-50.0%,7,16.7%,-30.0%,53,-91.5,-67,$454K,-4.3%,12.8%,9,200.0%,50.0%
 "Portland, ME - East Bayside",April 2021,All Residential,Neighborhood,False,ME,1.063918129,5.5%,11.0%,2,100.0%,-50.0%,5,-28.6%,-54.5%,29,-24,-36,$493K,8.5%,8.4%,9,0.0%,50.0%
-"Portland, ME - East Bayside",May 2021,All Residential,Neighborhood,False,ME,1.034263600,-3.0%,6.7%,2,0.0%,-60.0%,7,40.0%,-46.2%,9,-20,-85,$548K,11.3%,9.9%,9,0.0%,12.5%
-"Portland, ME - East Bayside",June 2021,All Residential,Neighborhood,False,ME,1.043044420,0.9%,4.3%,3,50.0%,-40.0%,12,71.4%,-7.7%,7,-2,-43,$532K,-3.1%,4.2%,9,0.0%,-10.0%
-"Portland, ME - East Bayside",July 2021,All Residential,Neighborhood,False,ME,1.082760377,4.0%,9.1%,3,0.0%,-25.0%,11,-8.3%,0.0%,7,0,-76.5,$565K,6.3%,2.9%,9,0.0%,-18.2%
-"Portland, ME - East Bayside",August 2021,All Residential,Neighborhood,False,ME,1.055880592,-2.7%,6.2%,4,33.3%,-20.0%,9,-18.2%,12.5%,21,14,3,$508K,-10.2%,6.8%,9,0.0%,28.6%
-"Portland, ME - East Bayside",September 2021,All Residential,Neighborhood,False,ME,1.030253950,-2.6%,4.7%,9,125.0%,50.0%,10,11.1%,25.0%,35,14,-32,$685K,35.0%,48.1%,5,-44.4%,66.7%
-"Portland, ME - East Bayside",October 2021,All Residential,Neighborhood,False,ME,0.994646994,-3.6%,1.4%,19,111.1%,216.7%,7,-30.0%,16.7%,113,78,29,$510K,-25.5%,10.3%,5,0.0%,66.7%
-"Portland, ME - East Bayside",November 2021,All Residential,Neighborhood,False,ME,0.998024240,0.3%,3.3%,20,5.3%,300.0%,7,0.0%,40.0%,211,98,159,$538K,5.4%,31.1%,3,-40.0%,0.0%
-"Portland, ME - Government District",July 2015,All Residential,Neighborhood,False,ME,1,,,1,,,,,,6,,,$285K,,,1,,
-"Portland, ME - Government District",August 2015,All Residential,Neighborhood,False,ME,1,0.0%,,1,0.0%,,,,,6,0,,$285K,0.0%,,1,0.0%,
+"Portland, ME - East Bayside",May 2021,All Residential,Neighborhood,False,ME,1.034263600,-3.0%,6.7%,2,0.0%,-60.0%,6,20.0%,-53.8%,9,-20,-85,$548K,11.3%,9.9%,8,-11.1%,0.0%
+"Portland, ME - East Bayside",June 2021,All Residential,Neighborhood,False,ME,1.043044420,0.9%,4.3%,3,50.0%,-40.0%,11,83.3%,-15.4%,7,-2,-43,$532K,-3.1%,4.2%,8,0.0%,-20.0%
+"Portland, ME - East Bayside",July 2021,All Residential,Neighborhood,False,ME,1.082760377,4.0%,9.1%,3,0.0%,-25.0%,10,-9.1%,-9.1%,7,0,-76.5,$565K,6.3%,2.9%,8,0.0%,-27.3%
+"Portland, ME - East Bayside",August 2021,All Residential,Neighborhood,False,ME,1.055880592,-2.7%,6.2%,4,33.3%,-20.0%,8,-20.0%,0.0%,21,14,3,$508K,-10.2%,6.8%,9,12.5%,28.6%
+"Portland, ME - East Bayside",September 2021,All Residential,Neighborhood,False,ME,1.030253950,-2.6%,4.7%,9,125.0%,50.0%,9,12.5%,12.5%,35,14,-32,$685K,35.0%,48.1%,5,-44.4%,66.7%
+"Portland, ME - East Bayside",October 2021,All Residential,Neighborhood,False,ME,0.994646994,-3.6%,1.4%,19,111.1%,216.7%,6,-33.3%,0.0%,113,78,29,$510K,-25.5%,10.3%,5,0.0%,66.7%
+"Portland, ME - East Bayside",November 2021,All Residential,Neighborhood,False,ME,0.998024240,0.3%,3.3%,20,5.3%,300.0%,6,0.0%,20.0%,211,98,159,$538K,5.4%,31.1%,3,-40.0%,0.0%
+"Portland, ME - East Bayside",December 2021,All Residential,Neighborhood,False,ME,0.989365397,-0.9%,1.2%,14,-30.0%,133.3%,6,0.0%,100.0%,269.5,58.5,190,$500K,-7.1%,24.9%,1,-66.7%,-50.0%
+"Portland, ME - East Bayside",January 2022,All Residential,Neighborhood,False,ME,1.020432664,3.1%,4.2%,4,-71.4%,-20.0%,6,0.0%,50.0%,168.5,-101,61.5,$562K,12.5%,37.1%,1,0.0%,0.0%
+"Portland, ME - Government District",July 2015,All Residential,Neighborhood,False,ME,1,,,1,,,1,,,6,,,$285K,,,1,,
+"Portland, ME - Government District",August 2015,All Residential,Neighborhood,False,ME,1,0.0%,,1,0.0%,,1,0.0%,,6,0,,$285K,0.0%,,1,0.0%,
 "Portland, ME - Government District",September 2015,All Residential,Neighborhood,False,ME,1,0.0%,,1,0.0%,,,,,6,0,,$285K,0.0%,,,,
 "Portland, ME - Government District",February 2016,All Residential,Neighborhood,False,ME,1,,,1,,,1,,,71,,,$280K,,,1,,
 "Portland, ME - Government District",March 2016,All Residential,Neighborhood,False,ME,1,0.0%,,1,0.0%,,1,0.0%,,71,0,,$280K,0.0%,,2,100.0%,
@@ -2172,7 +2226,7 @@
 "Portland, ME - Government District",May 2016,All Residential,Neighborhood,False,ME,1.007627514,0.8%,,2,100.0%,,1,,,53.5,-17.5,,$356K,27.2%,,2,100.0%,
 "Portland, ME - Government District",June 2016,All Residential,Neighborhood,False,ME,1.007627514,0.0%,,2,0.0%,,1,0.0%,,53.5,0,,$356K,0.0%,,1,-50.0%,
 "Portland, ME - Government District",July 2016,All Residential,Neighborhood,False,ME,0.988985171,-1.9%,-1.1%,3,50.0%,200.0%,,,,52,-1.5,46,$333K,-6.5%,16.8%,1,0.0%,0.0%
-"Portland, ME - Government District",August 2016,All Residential,Neighborhood,False,ME,0.951700486,-3.7%,-4.8%,1,-66.7%,0.0%,1,,,52,0,46,$333K,0.0%,16.8%,1,0.0%,0.0%
+"Portland, ME - Government District",August 2016,All Residential,Neighborhood,False,ME,0.951700486,-3.7%,-4.8%,1,-66.7%,0.0%,1,,0.0%,52,0,46,$333K,0.0%,16.8%,1,0.0%,0.0%
 "Portland, ME - Government District",September 2016,All Residential,Neighborhood,False,ME,0.951700486,0.0%,-4.8%,1,0.0%,0.0%,1,0.0%,,52,0,46,$333K,0.0%,16.8%,1,0.0%,
 "Portland, ME - Government District",March 2017,All Residential,Neighborhood,False,ME,1,,0.0%,1,,0.0%,2,,100.0%,,,,$525K,,87.5%,2,,0.0%
 "Portland, ME - Government District",April 2017,All Residential,Neighborhood,False,ME,1,0.0%,0.0%,1,0.0%,0.0%,,,,,,,$525K,0.0%,87.5%,1,-50.0%,0.0%
@@ -2190,10 +2244,10 @@
 "Portland, ME - Government District",May 2018,All Residential,Neighborhood,False,ME,0.947256744,-2.5%,-4.3%,1,-66.7%,-66.7%,1,,,13,-13,-34,$313K,-2.3%,-22.2%,1,,-50.0%
 "Portland, ME - Government District",August 2018,All Residential,Neighborhood,False,ME,1,,1.7%,1,,0.0%,,,,42,,14,$419K,,47.5%,,,
 "Portland, ME - Government District",September 2018,All Residential,Neighborhood,False,ME,1,0.0%,,1,0.0%,,,,,42,0,,$419K,0.0%,,,,
-"Portland, ME - Government District",October 2018,All Residential,Neighborhood,False,ME,1,0.0%,2.0%,1,0.0%,0.0%,,,,42,0,11,$419K,0.0%,14.0%,,,
+"Portland, ME - Government District",October 2018,All Residential,Neighborhood,False,ME,1,0.0%,2.0%,1,0.0%,0.0%,1,,-50.0%,42,0,11,$419K,0.0%,14.0%,1,,-75.0%
 "Portland, ME - Government District",August 2019,All Residential,Neighborhood,False,ME,0.974683544,,-2.5%,1,,0.0%,1,,,40,,-2,$385K,,-8.1%,3,,
 "Portland, ME - Government District",September 2019,All Residential,Neighborhood,False,ME,0.974683544,0.0%,-2.5%,1,0.0%,0.0%,1,0.0%,,40,0,-2,$385K,0.0%,-8.1%,2,-33.3%,
-"Portland, ME - Government District",October 2019,All Residential,Neighborhood,False,ME,1.004928037,3.0%,0.5%,2,100.0%,100.0%,2,100.0%,,30,-10,-12,$503K,30.6%,20.0%,1,-50.0%,
+"Portland, ME - Government District",October 2019,All Residential,Neighborhood,False,ME,1.004928037,3.0%,0.5%,2,100.0%,100.0%,2,100.0%,100.0%,30,-10,-12,$503K,30.6%,20.0%,1,-50.0%,0.0%
 "Portland, ME - Government District",November 2019,All Residential,Neighborhood,False,ME,1.035172529,3.0%,,1,-50.0%,,2,0.0%,,20,-10,,$621K,23.5%,,1,0.0%,
 "Portland, ME - Government District",December 2019,All Residential,Neighborhood,False,ME,1.035172529,0.0%,,1,0.0%,,2,0.0%,,20,0,,$621K,0.0%,,1,0.0%,
 "Portland, ME - Government District",February 2020,All Residential,Neighborhood,False,ME,0.941176471,,,1,,,,,,99,,,$400K,,,,,
@@ -2212,8 +2266,9 @@
 "Portland, ME - Government District",April 2021,All Residential,Neighborhood,False,ME,1.000260662,-1.4%,5.9%,3,50.0%,200.0%,,,,42,0,-57,$450K,4.5%,12.5%,2,0.0%,
 "Portland, ME - Government District",May 2021,All Residential,Neighborhood,False,ME,0.986512524,-1.4%,,2,-33.3%,,,,,75,33,,$478K,6.1%,,1,-50.0%,
 "Portland, ME - Government District",June 2021,All Residential,Neighborhood,False,ME,0.973025048,-1.3%,-4.2%,1,-50.0%,0.0%,,,,,,,$505K,5.8%,24.7%,,,
-"Portland, ME - Government District",October 2021,All Residential,Neighborhood,False,ME,0.912124583,,-7.7%,1,,0.0%,,,,6,,-76,$410K,,-12.8%,1,,-50.0%
-"Portland, ME - Government District",November 2021,All Residential,Neighborhood,False,ME,0.912124583,0.0%,-7.7%,1,0.0%,0.0%,,,,6,0,-76,$410K,0.0%,-12.8%,1,0.0%,-50.0%
+"Portland, ME - Government District",October 2021,All Residential,Neighborhood,False,ME,0.912124583,,-7.7%,1,,0.0%,1,,0.0%,6,,-76,$410K,,-12.8%,2,,0.0%
+"Portland, ME - Government District",November 2021,All Residential,Neighborhood,False,ME,0.912124583,0.0%,-7.7%,1,0.0%,0.0%,1,0.0%,,6,0,-76,$410K,0.0%,-12.8%,2,0.0%,0.0%
+"Portland, ME - Government District",December 2021,All Residential,Neighborhood,False,ME,0.912124583,0.0%,-8.8%,1,0.0%,0.0%,1,0.0%,0.0%,6,0,-34,$410K,0.0%,2.8%,1,-50.0%,0.0%
 "Portland, ME - Great Diamond Island",July 2015,All Residential,Neighborhood,False,ME,0.946990172,,,2,,,12,,,73,,,$192K,,,5,,
 "Portland, ME - Great Diamond Island",August 2015,All Residential,Neighborhood,False,ME,0.946990172,0.0%,,2,0.0%,,12,0.0%,,73,0,,$192K,0.0%,,4,-20.0%,
 "Portland, ME - Great Diamond Island",September 2015,All Residential,Neighborhood,False,ME,0.946990172,0.0%,,2,0.0%,,12,0.0%,,73,0,,$192K,0.0%,,5,25.0%,
@@ -2273,10 +2328,11 @@
 "Portland, ME - Great Diamond Island",August 2021,All Residential,Neighborhood,False,ME,0.96,0.0%,-4.0%,1,0.0%,0.0%,1,0.0%,-80.0%,145,0,96,"$1,200K",0.0%,306.9%,,,
 "Portland, ME - Great Diamond Island",September 2021,All Residential,Neighborhood,False,ME,0.68,-28.0%,-32.0%,1,0.0%,0.0%,,,,92,-53,43,"$1,700K",41.7%,476.5%,,,
 "Portland, ME - Great Diamond Island",October 2021,All Residential,Neighborhood,False,ME,0.803499421,12.3%,-19.2%,2,100.0%,0.0%,,,,124.5,32.5,64.5,"$1,250K",-26.5%,237.9%,,,
-"Portland, ME - Great Diamond Island",November 2021,All Residential,Neighborhood,False,ME,0.803499421,0.0%,-19.4%,2,0.0%,-33.3%,1,,-50.0%,124.5,0,53.5,"$1,250K",0.0%,180.9%,1,,0.0%
-"Portland, ME - India Street",July 2015,All Residential,Neighborhood,False,ME,0.997111682,,,4,,,17,,,13,,,$460K,,,7,,
-"Portland, ME - India Street",August 2015,All Residential,Neighborhood,False,ME,0.981651376,-1.5%,,2,-50.0%,,15,-11.8%,,144,131,,$460K,0.0%,,4,-42.9%,
-"Portland, ME - India Street",September 2015,All Residential,Neighborhood,False,ME,0.975891615,-0.6%,,3,50.0%,,16,6.7%,,7,-137,,$610K,32.6%,,7,75.0%,
+"Portland, ME - Great Diamond Island",November 2021,All Residential,Neighborhood,False,ME,0.803499421,0.0%,-19.4%,2,0.0%,-33.3%,,,,124.5,0,53.5,"$1,250K",0.0%,180.9%,,,
+"Portland, ME - Great Diamond Island",December 2021,All Residential,Neighborhood,False,ME,0.926998841,12.3%,-5.4%,1,-50.0%,-75.0%,1,,0.0%,157,32.5,45,$800K,-36.0%,50.9%,1,,
+"Portland, ME - India Street",July 2015,All Residential,Neighborhood,False,ME,0.997111682,,,4,,,16,,,13,,,$460K,,,7,,
+"Portland, ME - India Street",August 2015,All Residential,Neighborhood,False,ME,0.981651376,-1.5%,,2,-50.0%,,14,-12.5%,,144,131,,$460K,0.0%,,4,-42.9%,
+"Portland, ME - India Street",September 2015,All Residential,Neighborhood,False,ME,0.975891615,-0.6%,,3,50.0%,,16,14.3%,,7,-137,,$610K,32.6%,,7,75.0%,
 "Portland, ME - India Street",October 2015,All Residential,Neighborhood,False,ME,0.975891615,0.0%,,3,0.0%,,16,0.0%,,7,0,,$610K,0.0%,,5,-28.6%,
 "Portland, ME - India Street",November 2015,All Residential,Neighborhood,False,ME,0.982112007,0.6%,,3,0.0%,,17,6.3%,,7,0,,$610K,0.0%,,5,0.0%,
 "Portland, ME - India Street",December 2015,All Residential,Neighborhood,False,ME,0.981963928,0.0%,,1,-66.7%,,15,-11.8%,,69,62,,$490K,-19.7%,,2,-60.0%,
@@ -2285,8 +2341,8 @@
 "Portland, ME - India Street",March 2016,All Residential,Neighborhood,False,ME,0.946248600,0.0%,,1,0.0%,,18,-10.0%,,77,0,,$845K,0.0%,,15,66.7%,
 "Portland, ME - India Street",May 2016,All Residential,Neighborhood,False,ME,1,,,1,,,23,,,6,,,$495K,,,15,,
 "Portland, ME - India Street",June 2016,All Residential,Neighborhood,False,ME,0.991463415,-0.9%,,2,100.0%,,26,13.0%,,34.5,28.5,,$449K,-9.3%,,12,-20.0%,
-"Portland, ME - India Street",July 2016,All Residential,Neighborhood,False,ME,0.991463415,0.0%,-0.6%,2,0.0%,-50.0%,24,-7.7%,41.2%,34.5,0,21.5,$449K,0.0%,-2.4%,8,-33.3%,14.3%
-"Portland, ME - India Street",August 2016,All Residential,Neighborhood,False,ME,0.982926829,-0.9%,0.1%,1,-50.0%,-50.0%,24,0.0%,60.0%,63,28.5,-81,$403K,-10.2%,-12.4%,5,-37.5%,25.0%
+"Portland, ME - India Street",July 2016,All Residential,Neighborhood,False,ME,0.991463415,0.0%,-0.6%,2,0.0%,-50.0%,24,-7.7%,50.0%,34.5,0,21.5,$449K,0.0%,-2.4%,8,-33.3%,14.3%
+"Portland, ME - India Street",August 2016,All Residential,Neighborhood,False,ME,0.982926829,-0.9%,0.1%,1,-50.0%,-50.0%,24,0.0%,71.4%,63,28.5,-81,$403K,-10.2%,-12.4%,5,-37.5%,25.0%
 "Portland, ME - India Street",September 2016,All Residential,Neighborhood,False,ME,1,1.7%,2.4%,1,0.0%,-66.7%,21,-12.5%,31.3%,14,-49,7,$489K,21.3%,-19.8%,4,-20.0%,-42.9%
 "Portland, ME - India Street",October 2016,All Residential,Neighborhood,False,ME,0.987597876,-1.2%,1.2%,8,700.0%,166.7%,23,9.5%,43.8%,213,199,206,$410K,-16.3%,-32.9%,10,150.0%,100.0%
 "Portland, ME - India Street",November 2016,All Residential,Neighborhood,False,ME,0.993588138,0.6%,1.1%,18,125.0%,500.0%,19,-17.4%,11.8%,205,-8,198,$410K,0.1%,-32.8%,11,10.0%,120.0%
@@ -2312,10 +2368,10 @@
 "Portland, ME - India Street",July 2018,All Residential,Neighborhood,False,ME,0.986845551,1.7%,-0.3%,31,244.4%,287.5%,7,75.0%,-46.2%,76,12,-0.5,$550K,23.6%,-6.0%,7,-12.5%,-36.4%
 "Portland, ME - India Street",August 2018,All Residential,Neighborhood,False,ME,0.993125518,0.6%,2.2%,35,12.9%,400.0%,8,14.3%,-42.9%,92,16,10,$550K,0.0%,-23.6%,10,42.9%,11.1%
 "Portland, ME - India Street",September 2018,All Residential,Neighborhood,False,ME,0.994957948,0.2%,3.1%,31,-11.4%,287.5%,9,12.5%,-18.2%,103,11,-163.5,$595K,8.2%,-14.4%,8,-20.0%,-11.1%
-"Portland, ME - India Street",October 2018,All Residential,Neighborhood,False,ME,0.993251247,-0.2%,2.7%,9,-71.0%,0.0%,14,55.6%,55.6%,115,12,-145,$595K,0.0%,-14.4%,14,75.0%,366.7%
-"Portland, ME - India Street",November 2018,All Residential,Neighborhood,False,ME,0.975216253,-1.8%,-4.6%,3,-66.7%,-80.0%,18,28.6%,100.0%,83,-32,-38,$660K,10.9%,20.2%,14,0.0%,250.0%
-"Portland, ME - India Street",December 2018,All Residential,Neighborhood,False,ME,0.962824380,-1.2%,-8.1%,2,-33.3%,-85.7%,17,-5.6%,70.0%,45.5,-37.5,-14.5,$635K,-3.8%,34.1%,14,0.0%,75.0%
-"Portland, ME - India Street",January 2019,All Residential,Neighborhood,False,ME,0.954210652,-0.9%,-10.2%,3,50.0%,-80.0%,13,-23.5%,8.3%,83,37.5,-39,$610K,-3.9%,55.6%,5,-64.3%,-66.7%
+"Portland, ME - India Street",October 2018,All Residential,Neighborhood,False,ME,0.993251247,-0.2%,2.7%,9,-71.0%,0.0%,13,44.4%,44.4%,115,12,-145,$595K,0.0%,-14.4%,13,62.5%,333.3%
+"Portland, ME - India Street",November 2018,All Residential,Neighborhood,False,ME,0.975216253,-1.8%,-4.6%,3,-66.7%,-80.0%,17,30.8%,88.9%,83,-32,-38,$660K,10.9%,20.2%,13,0.0%,225.0%
+"Portland, ME - India Street",December 2018,All Residential,Neighborhood,False,ME,0.962824380,-1.2%,-8.1%,2,-33.3%,-85.7%,16,-5.9%,60.0%,45.5,-37.5,-14.5,$635K,-3.8%,34.1%,13,0.0%,62.5%
+"Portland, ME - India Street",January 2019,All Residential,Neighborhood,False,ME,0.954210652,-0.9%,-10.2%,3,50.0%,-80.0%,13,-18.8%,8.3%,83,37.5,-39,$610K,-3.9%,55.6%,5,-61.5%,-66.7%
 "Portland, ME - India Street",February 2019,All Residential,Neighborhood,False,ME,0.957306586,0.3%,-9.8%,4,33.3%,-33.3%,16,23.1%,45.5%,108.5,25.5,-131.5,$460K,-24.7%,17.7%,7,40.0%,-46.2%
 "Portland, ME - India Street",March 2019,All Residential,Neighborhood,False,ME,0.954821646,-0.2%,-6.7%,5,25.0%,-16.7%,18,12.5%,50.0%,133,24.5,-142.5,$500K,8.8%,-7.0%,9,28.6%,-18.2%
 "Portland, ME - India Street",April 2019,All Residential,Neighborhood,False,ME,0.949058613,-0.6%,-5.1%,4,-20.0%,33.3%,18,0.0%,63.6%,156,23,-380.5,$669K,33.7%,48.6%,10,11.1%,25.0%
@@ -2324,9 +2380,9 @@
 "Portland, ME - India Street",July 2019,All Residential,Neighborhood,False,ME,0.979164953,0.8%,-0.8%,6,20.0%,-80.6%,15,-11.8%,114.3%,147.5,-31.5,71.5,$503K,-14.0%,-8.5%,5,0.0%,-28.6%
 "Portland, ME - India Street",August 2019,All Residential,Neighborhood,False,ME,0.974122936,-0.5%,-1.9%,6,0.0%,-82.9%,12,-20.0%,50.0%,94.5,-53,2.5,$503K,0.0%,-8.5%,3,-40.0%,-70.0%
 "Portland, ME - India Street",September 2019,All Residential,Neighborhood,False,ME,0.973598686,-0.1%,-2.1%,5,-16.7%,-83.9%,13,8.3%,44.4%,52,-42.5,-51,$403K,-19.9%,-32.3%,4,33.3%,-50.0%
-"Portland, ME - India Street",October 2019,All Residential,Neighborhood,False,ME,0.971658475,-0.2%,-2.2%,4,-20.0%,-55.6%,10,-23.1%,-28.6%,42,-10,-73,$469K,16.3%,-21.2%,4,0.0%,-71.4%
-"Portland, ME - India Street",November 2019,All Residential,Neighborhood,False,ME,0.981132075,0.9%,0.6%,2,-50.0%,-33.3%,9,-10.0%,-50.0%,25.5,-16.5,-57.5,$831K,77.3%,25.9%,3,-25.0%,-78.6%
-"Portland, ME - India Street",December 2019,All Residential,Neighborhood,False,ME,0.961108518,-2.0%,-0.2%,2,0.0%,0.0%,8,-11.1%,-52.9%,105.5,80,60,"$1,045K",25.7%,64.6%,1,-66.7%,-92.9%
+"Portland, ME - India Street",October 2019,All Residential,Neighborhood,False,ME,0.971658475,-0.2%,-2.2%,4,-20.0%,-55.6%,10,-23.1%,-23.1%,42,-10,-73,$469K,16.3%,-21.2%,4,0.0%,-69.2%
+"Portland, ME - India Street",November 2019,All Residential,Neighborhood,False,ME,0.981132075,0.9%,0.6%,2,-50.0%,-33.3%,9,-10.0%,-47.1%,25.5,-16.5,-57.5,$831K,77.3%,25.9%,3,-25.0%,-76.9%
+"Portland, ME - India Street",December 2019,All Residential,Neighborhood,False,ME,0.961108518,-2.0%,-0.2%,2,0.0%,0.0%,8,-11.1%,-50.0%,105.5,80,60,"$1,045K",25.7%,64.6%,1,-66.7%,-92.3%
 "Portland, ME - India Street",January 2020,All Residential,Neighborhood,False,ME,0.964318823,0.3%,1.0%,2,0.0%,-33.3%,8,0.0%,-38.5%,248.5,143,165.5,$640K,-38.8%,4.8%,2,100.0%,-60.0%
 "Portland, ME - India Street",February 2020,All Residential,Neighborhood,False,ME,0.964318823,0.0%,0.7%,2,0.0%,-50.0%,4,-50.0%,-75.0%,248.5,0,140,$640K,0.0%,39.2%,3,50.0%,-57.1%
 "Portland, ME - India Street",March 2020,All Residential,Neighborhood,False,ME,0.979428392,1.5%,2.5%,4,100.0%,-20.0%,4,0.0%,-77.8%,191.5,-57,58.5,$492K,-23.1%,-1.6%,5,66.7%,-44.4%
@@ -2348,8 +2404,10 @@
 "Portland, ME - India Street",July 2021,All Residential,Neighborhood,False,ME,0.990247684,-1.5%,2.5%,11,-52.2%,175.0%,9,0.0%,-10.0%,88,57,22,$750K,4.9%,-0.2%,13,18.2%,44.4%
 "Portland, ME - India Street",August 2021,All Residential,Neighborhood,False,ME,1.001336418,1.1%,1.8%,8,-27.3%,60.0%,7,-22.2%,-30.0%,39,-49,26,"$1,044K",39.2%,77.6%,11,-15.4%,57.1%
 "Portland, ME - India Street",September 2021,All Residential,Neighborhood,False,ME,0.997589826,-0.4%,1.6%,9,12.5%,50.0%,1,-85.7%,-90.0%,60,21,29,"$1,048K",0.4%,85.8%,8,-27.3%,-11.1%
-"Portland, ME - India Street",October 2021,All Residential,Neighborhood,False,ME,0.983887144,-1.4%,-0.1%,15,66.7%,400.0%,2,100.0%,-77.8%,47,-13,-2,"$1,048K",0.0%,146.6%,5,-37.5%,-28.6%
-"Portland, ME - India Street",November 2021,All Residential,Neighborhood,False,ME,0.976840110,-0.7%,-0.6%,15,0.0%,400.0%,1,-50.0%,-83.3%,65,18,16,"$1,298K",23.8%,140.3%,2,-60.0%,-80.0%
+"Portland, ME - India Street",October 2021,All Residential,Neighborhood,False,ME,0.983887144,-1.4%,-0.1%,15,66.7%,400.0%,1,0.0%,-88.9%,47,-13,-2,"$1,048K",0.0%,146.6%,4,-50.0%,-42.9%
+"Portland, ME - India Street",November 2021,All Residential,Neighborhood,False,ME,0.976840110,-0.7%,-0.6%,15,0.0%,400.0%,,,,65,18,16,"$1,298K",23.8%,140.3%,1,-75.0%,-90.0%
+"Portland, ME - India Street",December 2021,All Residential,Neighborhood,False,ME,0.970288285,-0.7%,-2.1%,11,-26.7%,120.0%,,,,51,-14,38,"$1,200K",-7.5%,122.2%,1,0.0%,-85.7%
+"Portland, ME - India Street",January 2022,All Residential,Neighborhood,False,ME,0.975019905,0.5%,-1.8%,4,-63.6%,-33.3%,,,,38.5,-12.5,29,"$1,334K",11.1%,172.2%,1,0.0%,-90.9%
 "Portland, ME - Little Diamond Island",November 2018,All Residential,Neighborhood,False,ME,0.843478261,,,1,,,,,,72,,,$970K,,,,,
 "Portland, ME - Little Diamond Island",December 2018,All Residential,Neighborhood,False,ME,0.801739130,-4.2%,,2,100.0%,,,,,316,244,,$628K,-35.3%,,,,
 "Portland, ME - Little Diamond Island",January 2019,All Residential,Neighborhood,False,ME,0.801739130,0.0%,,2,0.0%,,,,,316,0,,$628K,0.0%,,,,
@@ -2428,11 +2486,13 @@
 "Portland, ME - Old Port District",April 2021,All Residential,Neighborhood,False,ME,0.973333333,-1.3%,2.3%,3,-40.0%,-25.0%,1,-50.0%,-80.0%,79,0,56,$266K,-22.9%,-16.6%,3,200.0%,-25.0%
 "Portland, ME - Old Port District",May 2021,All Residential,Neighborhood,False,ME,1.035897436,6.3%,6.7%,3,0.0%,-40.0%,1,0.0%,-66.7%,54,-25,41,$266K,0.0%,-18.2%,4,33.3%,-20.0%
 "Portland, ME - Old Port District",June 2021,All Residential,Neighborhood,False,ME,1.023290746,-1.3%,6.1%,4,33.3%,-42.9%,,,,5,-49,-17,$370K,39.2%,-1.3%,4,0.0%,-50.0%
-"Portland, ME - Old Port District",July 2021,All Residential,Neighborhood,False,ME,1.027546246,0.4%,5.7%,5,25.0%,-16.7%,,,,13,8,-19.5,$375K,1.3%,1.4%,3,-25.0%,-66.7%
-"Portland, ME - Old Port District",August 2021,All Residential,Neighborhood,False,ME,1.006007784,-2.2%,4.4%,5,0.0%,-28.6%,,,,13.5,0.5,-32.5,$375K,0.0%,4.2%,2,-33.3%,-80.0%
-"Portland, ME - Old Port District",September 2021,All Residential,Neighborhood,False,ME,1.016398179,1.0%,4.9%,4,-20.0%,0.0%,,,,10,-3.5,-35,$363K,-3.3%,3.6%,2,0.0%,-66.7%
-"Portland, ME - Old Port District",October 2021,All Residential,Neighborhood,False,ME,1.007008158,-0.9%,2.2%,3,-25.0%,-50.0%,,,,10,0,-34,$350K,-3.4%,1.4%,1,-50.0%,-80.0%
-"Portland, ME - Old Port District",November 2021,All Residential,Neighborhood,False,ME,1.010512236,0.4%,1.0%,2,-33.3%,-50.0%,1,,-75.0%,10,0,-14,$338K,-3.6%,-3.6%,2,100.0%,0.0%
+"Portland, ME - Old Port District",July 2021,All Residential,Neighborhood,False,ME,1.027546246,0.4%,5.7%,5,25.0%,-16.7%,1,,-80.0%,13,8,-19.5,$375K,1.3%,1.4%,4,0.0%,-55.6%
+"Portland, ME - Old Port District",August 2021,All Residential,Neighborhood,False,ME,1.006007784,-2.2%,4.4%,5,0.0%,-28.6%,1,0.0%,-85.7%,13.5,0.5,-32.5,$375K,0.0%,4.2%,3,-25.0%,-70.0%
+"Portland, ME - Old Port District",September 2021,All Residential,Neighborhood,False,ME,1.016398179,1.0%,4.9%,4,-20.0%,0.0%,1,0.0%,-75.0%,10,-3.5,-35,$363K,-3.3%,3.6%,3,0.0%,-50.0%
+"Portland, ME - Old Port District",October 2021,All Residential,Neighborhood,False,ME,1.007008158,-0.9%,2.2%,3,-25.0%,-50.0%,2,100.0%,-60.0%,10,0,-34,$350K,-3.4%,1.4%,2,-33.3%,-60.0%
+"Portland, ME - Old Port District",November 2021,All Residential,Neighborhood,False,ME,1.010512236,0.4%,1.0%,2,-33.3%,-50.0%,2,0.0%,-50.0%,10,0,-14,$338K,-3.6%,-3.6%,5,150.0%,150.0%
+"Portland, ME - Old Port District",December 2021,All Residential,Neighborhood,False,ME,1.026119403,1.6%,3.1%,2,0.0%,-66.7%,1,-50.0%,-75.0%,11,1,-98,$329K,-2.7%,-6.1%,6,20.0%,50.0%
+"Portland, ME - Old Port District",January 2022,All Residential,Neighborhood,False,ME,1.027765584,0.2%,3.2%,4,100.0%,-20.0%,1,0.0%,-66.7%,11,0,-117,$413K,25.6%,11.5%,5,-16.7%,150.0%
 "Portland, ME - Peaks Island",July 2015,All Residential,Neighborhood,False,ME,0.965620719,,,6,,,27,,,39,,,$313K,,,16,,
 "Portland, ME - Peaks Island",August 2015,All Residential,Neighborhood,False,ME,0.956003970,-1.0%,,8,33.3%,,27,0.0%,,46,7,,$344K,10.0%,,18,12.5%,
 "Portland, ME - Peaks Island",September 2015,All Residential,Neighborhood,False,ME,0.964969368,0.9%,,9,12.5%,,30,11.1%,,53,7,,$338K,-2.0%,,16,-11.1%,
@@ -2456,31 +2516,31 @@
 "Portland, ME - Peaks Island",March 2017,All Residential,Neighborhood,False,ME,0.943429544,1.7%,1.2%,6,0.0%,50.0%,15,25.0%,-40.0%,348,103,74.5,$325K,31.0%,9.2%,10,25.0%,42.9%
 "Portland, ME - Peaks Island",April 2017,All Residential,Neighborhood,False,ME,0.951005302,0.8%,-1.4%,6,0.0%,100.0%,18,20.0%,-30.8%,279.5,-68.5,227.5,$328K,0.9%,39.0%,13,30.0%,18.2%
 "Portland, ME - Peaks Island",May 2017,All Residential,Neighborhood,False,ME,0.943477215,-0.8%,-2.0%,4,-33.3%,-20.0%,16,-11.1%,-38.5%,242,-37.5,147,$333K,1.5%,-26.0%,17,30.8%,0.0%
-"Portland, ME - Peaks Island",June 2017,All Residential,Neighborhood,False,ME,0.955051032,1.2%,-1.1%,7,75.0%,-22.2%,22,37.5%,-18.5%,54.5,-187.5,-141.5,$296K,-11.1%,-10.0%,23,35.3%,64.3%
-"Portland, ME - Peaks Island",July 2017,All Residential,Neighborhood,False,ME,0.953043313,-0.2%,-0.9%,14,100.0%,75.0%,17,-22.7%,-32.0%,28.5,-26,-188,$279K,-5.9%,-20.9%,20,-13.0%,42.9%
-"Portland, ME - Peaks Island",August 2017,All Residential,Neighborhood,False,ME,0.947939410,-0.5%,-0.1%,19,35.7%,137.5%,14,-17.6%,-33.3%,41,12.5,-175.5,$296K,6.3%,-7.0%,14,-30.0%,55.6%
-"Portland, ME - Peaks Island",September 2017,All Residential,Neighborhood,False,ME,0.951180189,0.3%,2.3%,18,-5.3%,200.0%,10,-28.6%,-47.4%,50,9,-41,$306K,3.3%,-15.7%,5,-64.3%,-37.5%
-"Portland, ME - Peaks Island",October 2017,All Residential,Neighborhood,False,ME,0.947810776,-0.3%,2.6%,14,-22.2%,40.0%,11,10.0%,-38.9%,83.5,33.5,-21.5,$382K,24.9%,-3.3%,6,20.0%,20.0%
-"Portland, ME - Peaks Island",November 2017,All Residential,Neighborhood,False,ME,0.955678718,0.8%,2.7%,9,-35.7%,12.5%,11,0.0%,-21.4%,93,9.5,4.5,$377K,-1.3%,10.2%,4,-33.3%,33.3%
-"Portland, ME - Peaks Island",December 2017,All Residential,Neighborhood,False,ME,0.952096732,-0.4%,3.6%,4,-55.6%,-55.6%,11,0.0%,-8.3%,124,31,-100,$317K,-16.0%,-9.6%,5,25.0%,150.0%
-"Portland, ME - Peaks Island",February 2018,All Residential,Neighborhood,False,ME,0.917468609,,-0.8%,3,,-50.0%,7,,-41.7%,79,,-166,$349K,,40.7%,4,,-50.0%
-"Portland, ME - Peaks Island",March 2018,All Residential,Neighborhood,False,ME,0.938101457,2.1%,-0.5%,4,33.3%,-33.3%,8,14.3%,-46.7%,113.5,34.5,-234.5,$349K,0.0%,7.4%,5,25.0%,-50.0%
-"Portland, ME - Peaks Island",April 2018,All Residential,Neighborhood,False,ME,0.938790772,0.1%,-1.2%,6,50.0%,0.0%,6,-25.0%,-66.7%,82,-31.5,-197.5,$349K,0.0%,6.4%,2,-60.0%,-84.6%
-"Portland, ME - Peaks Island",May 2018,All Residential,Neighborhood,False,ME,0.960112936,2.1%,1.7%,3,-50.0%,-25.0%,5,-16.7%,-68.8%,85,3,-157,$349K,0.0%,4.8%,3,50.0%,-82.4%
-"Portland, ME - Peaks Island",June 2018,All Residential,Neighborhood,False,ME,0.965308008,0.5%,1.0%,4,33.3%,-42.9%,9,80.0%,-59.1%,71,-14,16.5,$337K,-3.6%,13.7%,6,100.0%,-73.9%
-"Portland, ME - Peaks Island",July 2018,All Residential,Neighborhood,False,ME,0.986315553,2.1%,3.3%,3,-25.0%,-78.6%,9,0.0%,-47.1%,314,243,285.5,$513K,52.3%,84.0%,9,50.0%,-55.0%
-"Portland, ME - Peaks Island",August 2018,All Residential,Neighborhood,False,ME,0.956137576,-3.0%,0.8%,4,33.3%,-78.9%,12,33.3%,-14.3%,177.5,-136.5,136.5,$446K,-12.9%,50.8%,13,44.4%,-7.1%
-"Portland, ME - Peaks Island",September 2018,All Residential,Neighborhood,False,ME,0.924293273,-3.2%,-2.7%,4,0.0%,-77.8%,10,-16.7%,0.0%,58.5,-119,8.5,$446K,0.0%,46.0%,9,-30.8%,80.0%
-"Portland, ME - Peaks Island",October 2018,All Residential,Neighborhood,False,ME,0.918884735,-0.5%,-2.9%,5,25.0%,-64.3%,9,-10.0%,-18.2%,42,-16.5,-41.5,$380K,-14.8%,-0.5%,7,-22.2%,16.7%
-"Portland, ME - Peaks Island",November 2018,All Residential,Neighborhood,False,ME,0.950353950,3.1%,-0.5%,6,20.0%,-33.3%,9,0.0%,-18.2%,58.5,16.5,-34.5,$630K,65.8%,67.1%,4,-42.9%,0.0%
-"Portland, ME - Peaks Island",December 2018,All Residential,Neighborhood,False,ME,0.962151922,1.2%,1.0%,4,-33.3%,0.0%,9,0.0%,-18.2%,70,11.5,-54,$745K,18.3%,135.3%,5,25.0%,0.0%
+"Portland, ME - Peaks Island",June 2017,All Residential,Neighborhood,False,ME,0.955051032,1.2%,-1.1%,7,75.0%,-22.2%,21,31.3%,-22.2%,54.5,-187.5,-141.5,$296K,-11.1%,-10.0%,22,29.4%,57.1%
+"Portland, ME - Peaks Island",July 2017,All Residential,Neighborhood,False,ME,0.953043313,-0.2%,-0.9%,14,100.0%,75.0%,16,-23.8%,-36.0%,28.5,-26,-188,$279K,-5.9%,-20.9%,19,-13.6%,35.7%
+"Portland, ME - Peaks Island",August 2017,All Residential,Neighborhood,False,ME,0.947939410,-0.5%,-0.1%,19,35.7%,137.5%,13,-18.8%,-38.1%,41,12.5,-175.5,$296K,6.3%,-7.0%,13,-31.6%,44.4%
+"Portland, ME - Peaks Island",September 2017,All Residential,Neighborhood,False,ME,0.951180189,0.3%,2.3%,18,-5.3%,200.0%,9,-30.8%,-52.6%,50,9,-41,$306K,3.3%,-15.7%,5,-61.5%,-37.5%
+"Portland, ME - Peaks Island",October 2017,All Residential,Neighborhood,False,ME,0.947810776,-0.3%,2.6%,14,-22.2%,40.0%,10,11.1%,-44.4%,83.5,33.5,-21.5,$382K,24.9%,-3.3%,6,20.0%,20.0%
+"Portland, ME - Peaks Island",November 2017,All Residential,Neighborhood,False,ME,0.955678718,0.8%,2.7%,9,-35.7%,12.5%,10,0.0%,-28.6%,93,9.5,4.5,$377K,-1.3%,10.2%,4,-33.3%,33.3%
+"Portland, ME - Peaks Island",December 2017,All Residential,Neighborhood,False,ME,0.952096732,-0.4%,3.6%,4,-55.6%,-55.6%,10,0.0%,-16.7%,124,31,-100,$317K,-16.0%,-9.6%,5,25.0%,150.0%
+"Portland, ME - Peaks Island",February 2018,All Residential,Neighborhood,False,ME,0.917468609,,-0.8%,3,,-50.0%,6,,-50.0%,79,,-166,$349K,,40.7%,4,,-50.0%
+"Portland, ME - Peaks Island",March 2018,All Residential,Neighborhood,False,ME,0.938101457,2.1%,-0.5%,4,33.3%,-33.3%,7,16.7%,-53.3%,113.5,34.5,-234.5,$349K,0.0%,7.4%,5,25.0%,-50.0%
+"Portland, ME - Peaks Island",April 2018,All Residential,Neighborhood,False,ME,0.938790772,0.1%,-1.2%,6,50.0%,0.0%,5,-28.6%,-72.2%,82,-31.5,-197.5,$349K,0.0%,6.4%,2,-60.0%,-84.6%
+"Portland, ME - Peaks Island",May 2018,All Residential,Neighborhood,False,ME,0.960112936,2.1%,1.7%,3,-50.0%,-25.0%,5,0.0%,-68.8%,85,3,-157,$349K,0.0%,4.8%,3,50.0%,-82.4%
+"Portland, ME - Peaks Island",June 2018,All Residential,Neighborhood,False,ME,0.965308008,0.5%,1.0%,4,33.3%,-42.9%,9,80.0%,-57.1%,71,-14,16.5,$337K,-3.6%,13.7%,6,100.0%,-72.7%
+"Portland, ME - Peaks Island",July 2018,All Residential,Neighborhood,False,ME,0.986315553,2.1%,3.3%,3,-25.0%,-78.6%,9,0.0%,-43.8%,314,243,285.5,$513K,52.3%,84.0%,9,50.0%,-52.6%
+"Portland, ME - Peaks Island",August 2018,All Residential,Neighborhood,False,ME,0.956137576,-3.0%,0.8%,4,33.3%,-78.9%,12,33.3%,-7.7%,177.5,-136.5,136.5,$446K,-12.9%,50.8%,13,44.4%,0.0%
+"Portland, ME - Peaks Island",September 2018,All Residential,Neighborhood,False,ME,0.924293273,-3.2%,-2.7%,4,0.0%,-77.8%,10,-16.7%,11.1%,58.5,-119,8.5,$446K,0.0%,46.0%,9,-30.8%,80.0%
+"Portland, ME - Peaks Island",October 2018,All Residential,Neighborhood,False,ME,0.918884735,-0.5%,-2.9%,5,25.0%,-64.3%,9,-10.0%,-10.0%,42,-16.5,-41.5,$380K,-14.8%,-0.5%,7,-22.2%,16.7%
+"Portland, ME - Peaks Island",November 2018,All Residential,Neighborhood,False,ME,0.950353950,3.1%,-0.5%,6,20.0%,-33.3%,9,0.0%,-10.0%,58.5,16.5,-34.5,$630K,65.8%,67.1%,4,-42.9%,0.0%
+"Portland, ME - Peaks Island",December 2018,All Residential,Neighborhood,False,ME,0.962151922,1.2%,1.0%,4,-33.3%,0.0%,9,0.0%,-10.0%,70,11.5,-54,$745K,18.3%,135.3%,5,25.0%,0.0%
 "Portland, ME - Peaks Island",January 2019,All Residential,Neighborhood,False,ME,0.973937719,1.2%,,3,-25.0%,,7,-22.2%,,108,38,,$875K,17.4%,,4,-20.0%,
-"Portland, ME - Peaks Island",February 2019,All Residential,Neighborhood,False,ME,0.955197065,-1.9%,3.8%,3,0.0%,0.0%,7,0.0%,0.0%,108,0,29,$350K,-60.0%,0.3%,4,0.0%,0.0%
-"Portland, ME - Peaks Island",March 2019,All Residential,Neighborhood,False,ME,0.965405288,1.0%,2.7%,7,133.3%,75.0%,8,14.3%,0.0%,72.5,-35.5,-41,$380K,8.6%,8.9%,5,25.0%,0.0%
-"Portland, ME - Peaks Island",April 2019,All Residential,Neighborhood,False,ME,0.966283067,0.1%,2.7%,7,0.0%,16.7%,10,25.0%,66.7%,22,-50.5,-60,$400K,5.3%,14.6%,8,60.0%,300.0%
-"Portland, ME - Peaks Island",May 2019,All Residential,Neighborhood,False,ME,0.968911947,0.3%,0.9%,7,0.0%,133.3%,11,10.0%,120.0%,32,10,-53,$380K,-5.0%,8.9%,10,25.0%,233.3%
-"Portland, ME - Peaks Island",June 2019,All Residential,Neighborhood,False,ME,0.964263101,-0.5%,-0.1%,4,-42.9%,0.0%,11,0.0%,22.2%,20.5,-11.5,-50.5,$352K,-7.5%,4.5%,13,30.0%,116.7%
-"Portland, ME - Peaks Island",July 2019,All Residential,Neighborhood,False,ME,0.959760866,-0.5%,-2.7%,7,75.0%,133.3%,11,0.0%,22.2%,19,-1.5,-295,$435K,23.8%,-15.1%,15,15.4%,66.7%
+"Portland, ME - Peaks Island",February 2019,All Residential,Neighborhood,False,ME,0.955197065,-1.9%,3.8%,3,0.0%,0.0%,7,0.0%,16.7%,108,0,29,$350K,-60.0%,0.3%,4,0.0%,0.0%
+"Portland, ME - Peaks Island",March 2019,All Residential,Neighborhood,False,ME,0.965405288,1.0%,2.7%,7,133.3%,75.0%,8,14.3%,14.3%,72.5,-35.5,-41,$380K,8.6%,8.9%,4,0.0%,-20.0%
+"Portland, ME - Peaks Island",April 2019,All Residential,Neighborhood,False,ME,0.968221255,0.3%,2.9%,6,-14.3%,0.0%,10,25.0%,100.0%,37,-35.5,-45,$398K,4.6%,13.9%,7,75.0%,250.0%
+"Portland, ME - Peaks Island",May 2019,All Residential,Neighborhood,False,ME,0.971288282,0.3%,1.1%,6,0.0%,100.0%,11,10.0%,120.0%,37,0,-48,$355K,-10.7%,1.7%,9,28.6%,200.0%
+"Portland, ME - Peaks Island",June 2019,All Residential,Neighborhood,False,ME,0.967466155,-0.4%,0.2%,3,-50.0%,-25.0%,11,0.0%,22.2%,27,-10,-44,$326K,-8.2%,-3.1%,13,44.4%,116.7%
+"Portland, ME - Peaks Island",July 2019,All Residential,Neighborhood,False,ME,0.959760866,-0.8%,-2.7%,7,133.3%,133.3%,11,0.0%,22.2%,19,-8,-295,$435K,33.4%,-15.1%,15,15.4%,66.7%
 "Portland, ME - Peaks Island",August 2019,All Residential,Neighborhood,False,ME,0.968152958,0.8%,1.2%,9,28.6%,125.0%,16,45.5%,33.3%,19,0,-158.5,$549K,26.2%,23.0%,19,26.7%,46.2%
 "Portland, ME - Peaks Island",September 2019,All Residential,Neighborhood,False,ME,0.955280864,-1.3%,3.1%,13,44.4%,225.0%,15,-6.3%,50.0%,24.5,5.5,-34,$549K,0.0%,23.0%,17,-10.5%,88.9%
 "Portland, ME - Peaks Island",October 2019,All Residential,Neighborhood,False,ME,0.954686133,-0.1%,3.6%,13,0.0%,160.0%,10,-33.3%,11.1%,30,5.5,-12,$425K,-22.6%,11.8%,12,-29.4%,71.4%
@@ -2488,27 +2548,29 @@
 "Portland, ME - Peaks Island",December 2019,All Residential,Neighborhood,False,ME,0.951934070,0.2%,-1.0%,10,-23.1%,150.0%,4,-20.0%,-55.6%,42,17.5,-28,$450K,5.8%,-39.7%,,,
 "Portland, ME - Peaks Island",January 2020,All Residential,Neighborhood,False,ME,0.939214093,-1.3%,-3.5%,9,-10.0%,200.0%,4,0.0%,-42.9%,84,42,-24,$435K,-3.3%,-50.3%,1,,-75.0%
 "Portland, ME - Peaks Island",February 2020,All Residential,Neighborhood,False,ME,0.917095141,-2.2%,-3.8%,5,-44.4%,66.7%,3,-25.0%,-57.1%,91,7,-17,$435K,0.0%,24.1%,1,0.0%,-75.0%
-"Portland, ME - Peaks Island",March 2020,All Residential,Neighborhood,False,ME,0.918919216,0.2%,-4.6%,5,0.0%,-28.6%,3,0.0%,-62.5%,91,0,18.5,$435K,0.0%,14.3%,2,100.0%,-60.0%
-"Portland, ME - Peaks Island",April 2020,All Residential,Neighborhood,False,ME,0.926406926,0.7%,-4.0%,2,-60.0%,-71.4%,1,-66.7%,-90.0%,227,136,205,$448K,3.2%,12.1%,1,-50.0%,-87.5%
-"Portland, ME - Peaks Island",May 2020,All Residential,Neighborhood,False,ME,0.963437951,3.7%,-0.5%,3,50.0%,-57.1%,6,500.0%,-45.5%,7,-220,-25,$415K,-7.4%,9.2%,7,600.0%,-30.0%
-"Portland, ME - Peaks Island",June 2020,All Residential,Neighborhood,False,ME,1.031492718,6.8%,6.7%,2,-33.3%,-50.0%,6,0.0%,-45.5%,20.5,13.5,0,$366K,-11.8%,4.1%,9,28.6%,-30.8%
-"Portland, ME - Peaks Island",July 2020,All Residential,Neighborhood,False,ME,1.007971707,-2.4%,4.8%,4,100.0%,-42.9%,9,50.0%,-18.2%,27.5,7,8.5,$366K,0.0%,-15.9%,15,66.7%,0.0%
-"Portland, ME - Peaks Island",August 2020,All Residential,Neighborhood,False,ME,1.008025220,0.0%,4.0%,7,75.0%,-22.2%,7,-22.2%,-56.3%,21,-6.5,2,$476K,29.9%,-13.4%,10,-33.3%,-47.4%
-"Portland, ME - Peaks Island",September 2020,All Residential,Neighborhood,False,ME,0.984237923,-2.4%,2.9%,7,0.0%,-46.2%,6,-14.3%,-60.0%,21,0,-3.5,$476K,0.0%,-13.4%,8,-20.0%,-52.9%
-"Portland, ME - Peaks Island",October 2020,All Residential,Neighborhood,False,ME,1.003403196,1.9%,4.9%,9,28.6%,-30.8%,8,33.3%,-20.0%,33,12,3,$540K,13.6%,27.1%,5,-37.5%,-58.3%
+"Portland, ME - Peaks Island",March 2020,All Residential,Neighborhood,False,ME,0.918919216,0.2%,-4.6%,5,0.0%,-28.6%,3,0.0%,-62.5%,91,0,18.5,$435K,0.0%,14.3%,2,100.0%,-50.0%
+"Portland, ME - Peaks Island",April 2020,All Residential,Neighborhood,False,ME,0.926406926,0.7%,-4.2%,2,-60.0%,-66.7%,1,-66.7%,-90.0%,227,136,190,$448K,3.2%,12.8%,1,-50.0%,-85.7%
+"Portland, ME - Peaks Island",May 2020,All Residential,Neighborhood,False,ME,0.963437951,3.7%,-0.8%,3,50.0%,-50.0%,6,500.0%,-45.5%,7,-220,-30,$415K,-7.4%,16.9%,7,600.0%,-22.2%
+"Portland, ME - Peaks Island",June 2020,All Residential,Neighborhood,False,ME,1.031492718,6.8%,6.4%,2,-33.3%,-33.3%,6,0.0%,-45.5%,20.5,13.5,-6.5,$366K,-11.8%,12.3%,9,28.6%,-30.8%
+"Portland, ME - Peaks Island",July 2020,All Residential,Neighborhood,False,ME,1.007971707,-2.4%,4.8%,4,100.0%,-42.9%,9,50.0%,-18.2%,27.5,7,8.5,$366K,0.0%,-15.9%,16,77.8%,6.7%
+"Portland, ME - Peaks Island",August 2020,All Residential,Neighborhood,False,ME,1.008025220,0.0%,4.0%,7,75.0%,-22.2%,7,-22.2%,-56.3%,21,-6.5,2,$476K,29.9%,-13.4%,11,-31.3%,-42.1%
+"Portland, ME - Peaks Island",September 2020,All Residential,Neighborhood,False,ME,0.984237923,-2.4%,2.9%,7,0.0%,-46.2%,6,-14.3%,-60.0%,21,0,-3.5,$476K,0.0%,-13.4%,9,-18.2%,-47.1%
+"Portland, ME - Peaks Island",October 2020,All Residential,Neighborhood,False,ME,1.003403196,1.9%,4.9%,9,28.6%,-30.8%,8,33.3%,-20.0%,33,12,3,$540K,13.6%,27.1%,5,-44.4%,-58.3%
 "Portland, ME - Peaks Island",November 2020,All Residential,Neighborhood,False,ME,0.993767810,-1.0%,4.4%,5,-44.4%,-61.5%,9,12.5%,80.0%,43,10,18.5,$540K,0.0%,27.1%,7,40.0%,75.0%
-"Portland, ME - Peaks Island",December 2020,All Residential,Neighborhood,False,ME,1.019089737,2.5%,6.7%,5,0.0%,-50.0%,7,-22.2%,75.0%,35,-8,-7,$540K,0.0%,20.1%,8,14.3%,
-"Portland, ME - Peaks Island",January 2021,All Residential,Neighborhood,False,ME,0.896832402,-12.2%,-4.2%,2,-60.0%,-77.8%,4,-42.9%,0.0%,37,2,-47,$368K,-31.9%,-15.4%,5,-37.5%,400.0%
-"Portland, ME - Peaks Island",February 2021,All Residential,Neighborhood,False,ME,0.893788446,-0.3%,-2.3%,3,50.0%,-40.0%,3,-25.0%,0.0%,67,30,-24,$400K,8.8%,-7.9%,3,-40.0%,200.0%
-"Portland, ME - Peaks Island",March 2021,All Residential,Neighborhood,False,ME,0.903425462,1.0%,-1.5%,4,33.3%,-20.0%,4,33.3%,33.3%,102,35,11,$495K,23.8%,13.9%,3,0.0%,50.0%
-"Portland, ME - Peaks Island",April 2021,All Residential,Neighborhood,False,ME,0.951405260,4.8%,2.5%,4,0.0%,100.0%,4,0.0%,300.0%,102,0,-125,$515K,4.0%,14.9%,4,33.3%,300.0%
-"Portland, ME - Peaks Island",May 2021,All Residential,Neighborhood,False,ME,0.963646793,1.2%,0.0%,4,0.0%,33.3%,3,-25.0%,-50.0%,96.5,-5.5,89.5,$515K,0.0%,24.1%,6,50.0%,-14.3%
-"Portland, ME - Peaks Island",June 2021,All Residential,Neighborhood,False,ME,0.999322900,3.6%,-3.2%,5,25.0%,150.0%,4,33.3%,-33.3%,7,-89.5,-13.5,$650K,26.2%,77.6%,7,16.7%,-22.2%
-"Portland, ME - Peaks Island",July 2021,All Residential,Neighborhood,False,ME,0.995716136,-0.4%,-1.2%,9,80.0%,125.0%,3,-25.0%,-66.7%,9,2,-18.5,$575K,-11.5%,57.1%,9,28.6%,-40.0%
-"Portland, ME - Peaks Island",August 2021,All Residential,Neighborhood,False,ME,0.995205380,-0.1%,-1.3%,11,22.2%,57.1%,2,-33.3%,-71.4%,61,52,40,$530K,-7.8%,11.5%,8,-11.1%,-20.0%
-"Portland, ME - Peaks Island",September 2021,All Residential,Neighborhood,False,ME,1.008873939,1.4%,2.5%,12,9.1%,71.4%,2,0.0%,-66.7%,34,-27,13,$500K,-5.7%,5.2%,7,-12.5%,-12.5%
-"Portland, ME - Peaks Island",October 2021,All Residential,Neighborhood,False,ME,1.017206066,0.8%,1.4%,8,-33.3%,-11.1%,,,,55.5,21.5,22.5,$555K,11.0%,2.8%,4,-42.9%,-20.0%
-"Portland, ME - Peaks Island",November 2021,All Residential,Neighborhood,False,ME,1.031459755,1.4%,3.8%,8,0.0%,60.0%,,,,23.5,-32,-19.5,$695K,25.2%,28.7%,2,-50.0%,-71.4%
+"Portland, ME - Peaks Island",December 2020,All Residential,Neighborhood,False,ME,1.004690165,1.1%,5.3%,6,20.0%,-40.0%,7,-22.2%,75.0%,28.5,-14.5,-13.5,$513K,-5.1%,14.0%,8,14.3%,
+"Portland, ME - Peaks Island",January 2021,All Residential,Neighborhood,False,ME,0.908785704,-9.6%,-3.0%,3,-50.0%,-66.7%,4,-42.9%,0.0%,22,-6.5,-62,$400K,-22.0%,-7.9%,5,-37.5%,400.0%
+"Portland, ME - Peaks Island",February 2021,All Residential,Neighborhood,False,ME,0.903514411,-0.5%,-1.4%,4,33.3%,-20.0%,3,-25.0%,0.0%,44.5,22.5,-46.5,$443K,10.6%,1.8%,3,-40.0%,200.0%
+"Portland, ME - Peaks Island",March 2021,All Residential,Neighborhood,False,ME,0.903425462,0.0%,-1.5%,4,0.0%,-20.0%,5,66.7%,66.7%,102,57.5,11,$495K,11.9%,13.9%,4,33.3%,100.0%
+"Portland, ME - Peaks Island",April 2021,All Residential,Neighborhood,False,ME,0.951405260,4.8%,2.5%,4,0.0%,100.0%,5,0.0%,400.0%,102,0,-125,$515K,4.0%,14.9%,5,25.0%,400.0%
+"Portland, ME - Peaks Island",May 2021,All Residential,Neighborhood,False,ME,0.963646793,1.2%,0.0%,4,0.0%,33.3%,4,-20.0%,-33.3%,96.5,-5.5,89.5,$515K,0.0%,24.1%,7,40.0%,0.0%
+"Portland, ME - Peaks Island",June 2021,All Residential,Neighborhood,False,ME,0.999322900,3.6%,-3.2%,5,25.0%,150.0%,5,25.0%,-16.7%,7,-89.5,-13.5,$650K,26.2%,77.6%,8,14.3%,-11.1%
+"Portland, ME - Peaks Island",July 2021,All Residential,Neighborhood,False,ME,1.001079758,0.2%,-0.7%,10,100.0%,150.0%,4,-20.0%,-55.6%,8,1,-19.5,$608K,-6.5%,66.0%,10,25.0%,-37.5%
+"Portland, ME - Peaks Island",August 2021,All Residential,Neighborhood,False,ME,0.999717628,-0.1%,-0.8%,12,20.0%,71.4%,3,-25.0%,-57.1%,35,27,14,$553K,-9.1%,16.2%,9,-10.0%,-18.2%
+"Portland, ME - Peaks Island",September 2021,All Residential,Neighborhood,False,ME,1.011987663,1.2%,2.8%,13,8.3%,85.7%,4,33.3%,-33.3%,18,-17,-3,$530K,-4.1%,11.5%,8,-11.1%,-11.1%
+"Portland, ME - Peaks Island",October 2021,All Residential,Neighborhood,False,ME,1.017206066,0.5%,1.4%,8,-38.5%,-11.1%,,,,55.5,37.5,22.5,$555K,4.7%,2.8%,6,-25.0%,20.0%
+"Portland, ME - Peaks Island",November 2021,All Residential,Neighborhood,False,ME,1.028097453,1.1%,3.4%,9,12.5%,80.0%,,,,18,-37.5,-25,$750K,35.1%,38.9%,4,-33.3%,-42.9%
+"Portland, ME - Peaks Island",December 2021,All Residential,Neighborhood,False,ME,0.972454545,-5.6%,-3.2%,7,-22.2%,16.7%,,,,55,37,26.5,$640K,-14.7%,24.9%,3,-25.0%,-62.5%
+"Portland, ME - Peaks Island",January 2022,All Residential,Neighborhood,False,ME,0.978747761,0.6%,7.0%,7,0.0%,133.3%,1,,-75.0%,29,-26,7,$835K,30.5%,108.8%,3,0.0%,-40.0%
 "Portland, ME - Stroudwater",July 2015,All Residential,Neighborhood,False,ME,1,,,1,,,3,,,4,,,$300K,,,4,,
 "Portland, ME - Stroudwater",August 2015,All Residential,Neighborhood,False,ME,1.050350117,5.0%,,1,0.0%,,5,66.7%,,7,3,,$315K,5.0%,,7,75.0%,
 "Portland, ME - Stroudwater",September 2015,All Residential,Neighborhood,False,ME,1.011015194,-3.9%,,3,200.0%,,5,0.0%,,7,0,,$455K,44.4%,,6,-14.3%,
@@ -2550,49 +2612,51 @@
 "Portland, ME - Stroudwater",November 2018,All Residential,Neighborhood,False,ME,0.985104869,0.5%,0.4%,4,33.3%,100.0%,2,-50.0%,100.0%,28,10,-25,$558K,-7.1%,13.6%,2,-60.0%,-33.3%
 "Portland, ME - Stroudwater",December 2018,All Residential,Neighborhood,False,ME,0.981658192,-0.3%,-0.6%,5,25.0%,66.7%,3,50.0%,,38,10,-1,$515K,-7.6%,22.6%,2,0.0%,0.0%
 "Portland, ME - Stroudwater",January 2019,All Residential,Neighborhood,False,ME,0.983935743,0.2%,-1.6%,2,-60.0%,0.0%,3,0.0%,,64.5,26.5,42,$340K,-33.9%,-17.5%,4,100.0%,100.0%
-"Portland, ME - Stroudwater",February 2019,All Residential,Neighborhood,False,ME,0.972243078,-1.2%,-0.6%,3,50.0%,50.0%,5,66.7%,,45,-19.5,25,$241K,-29.2%,-28.4%,8,100.0%,700.0%
-"Portland, ME - Stroudwater",March 2019,All Residential,Neighborhood,False,ME,0.982952582,1.1%,3.6%,3,0.0%,0.0%,4,-20.0%,,14,-31,-20,$495K,105.4%,24.1%,7,-12.5%,600.0%
-"Portland, ME - Stroudwater",April 2019,All Residential,Neighborhood,False,ME,0.982988842,0.0%,2.7%,4,33.3%,0.0%,6,50.0%,500.0%,20,6,-47.5,$390K,-21.2%,-14.2%,10,42.9%,400.0%
-"Portland, ME - Stroudwater",May 2019,All Residential,Neighborhood,False,ME,0.994337849,1.1%,3.8%,4,0.0%,33.3%,9,50.0%,200.0%,16,-4,-85,$464K,19.0%,-9.0%,9,-10.0%,200.0%
-"Portland, ME - Stroudwater",June 2019,All Residential,Neighborhood,False,ME,0.992450466,-0.2%,1.0%,3,-25.0%,200.0%,13,44.4%,550.0%,26,10,-75,$285K,-38.6%,-44.1%,14,55.6%,180.0%
-"Portland, ME - Stroudwater",July 2019,All Residential,Neighborhood,False,ME,1.000621058,0.8%,1.1%,4,33.3%,33.3%,10,-23.1%,150.0%,42,16,31,$508K,78.1%,58.6%,12,-14.3%,100.0%
-"Portland, ME - Stroudwater",August 2019,All Residential,Neighborhood,False,ME,0.988495482,-1.2%,-0.1%,6,50.0%,100.0%,10,0.0%,66.7%,44,2,33,$465K,-8.4%,45.3%,10,-16.7%,42.9%
-"Portland, ME - Stroudwater",September 2019,All Residential,Neighborhood,False,ME,0.990138984,0.2%,0.0%,7,16.7%,133.3%,10,0.0%,100.0%,8,-36,-3,$490K,5.4%,53.2%,4,-60.0%,-42.9%
-"Portland, ME - Stroudwater",October 2019,All Residential,Neighborhood,False,ME,0.987123740,-0.3%,0.7%,6,-14.3%,100.0%,8,-20.0%,100.0%,14.5,6.5,-3.5,$515K,5.1%,-14.2%,2,-50.0%,-60.0%
-"Portland, ME - Stroudwater",November 2019,All Residential,Neighborhood,False,ME,0.980952381,-0.6%,-0.4%,3,-50.0%,-25.0%,10,25.0%,400.0%,7,-7.5,-21,$750K,45.6%,34.5%,3,50.0%,50.0%
-"Portland, ME - Stroudwater",December 2019,All Residential,Neighborhood,False,ME,0.980475586,0.0%,-0.1%,3,0.0%,-40.0%,9,-10.0%,200.0%,21,14,-17,$629K,-16.1%,22.1%,4,33.3%,100.0%
-"Portland, ME - Stroudwater",January 2020,All Residential,Neighborhood,False,ME,0.979898552,-0.1%,-0.4%,3,0.0%,50.0%,9,0.0%,200.0%,175,154,110.5,$519K,-17.5%,52.5%,3,-25.0%,-25.0%
-"Portland, ME - Stroudwater",February 2020,All Residential,Neighborhood,False,ME,0.998419256,1.9%,2.6%,2,-33.3%,-33.3%,8,-11.1%,60.0%,233,58,188,$574K,10.6%,138.2%,2,-33.3%,-75.0%
-"Portland, ME - Stroudwater",March 2020,All Residential,Neighborhood,False,ME,0.991018364,-0.7%,0.8%,2,0.0%,-33.3%,9,12.5%,125.0%,244.5,11.5,230.5,$560K,-2.5%,13.0%,3,50.0%,-57.1%
-"Portland, ME - Stroudwater",April 2020,All Residential,Neighborhood,False,ME,0.991883915,0.1%,0.9%,2,0.0%,-50.0%,11,22.2%,83.3%,328,83.5,308,$617K,10.2%,58.1%,6,100.0%,-40.0%
-"Portland, ME - Stroudwater",May 2020,All Residential,Neighborhood,False,ME,0.978557213,-1.3%,-1.6%,3,50.0%,-25.0%,7,-36.4%,-22.2%,342,14,326,$600K,-2.7%,29.3%,5,-16.7%,-44.4%
-"Portland, ME - Stroudwater",June 2020,All Residential,Neighborhood,False,ME,0.976449139,-0.2%,-1.6%,3,0.0%,0.0%,6,-14.3%,-53.8%,342,0,316,$475K,-20.8%,66.7%,6,20.0%,-57.1%
-"Portland, ME - Stroudwater",July 2020,All Residential,Neighborhood,False,ME,0.966566781,-1.0%,-3.4%,5,66.7%,25.0%,6,0.0%,-40.0%,360,18,318,$475K,0.0%,-6.4%,4,-33.3%,-66.7%
-"Portland, ME - Stroudwater",August 2020,All Residential,Neighborhood,False,ME,0.973433945,0.7%,-1.5%,6,20.0%,0.0%,3,-50.0%,-70.0%,331,-29,287,$526K,10.7%,13.1%,5,25.0%,-50.0%
-"Portland, ME - Stroudwater",September 2020,All Residential,Neighborhood,False,ME,0.972632012,-0.1%,-1.8%,5,-16.7%,-28.6%,4,33.3%,-60.0%,339,8,331,$532K,1.2%,8.6%,4,-20.0%,0.0%
-"Portland, ME - Stroudwater",October 2020,All Residential,Neighborhood,False,ME,0.997196388,2.5%,1.0%,5,0.0%,-16.7%,6,50.0%,-25.0%,42,-297,27.5,$532K,0.0%,3.3%,7,75.0%,250.0%
-"Portland, ME - Stroudwater",November 2020,All Residential,Neighborhood,False,ME,1.006840248,1.0%,2.6%,4,-20.0%,33.3%,5,-16.7%,-50.0%,35,-7,28,$455K,-14.4%,-39.3%,6,-14.3%,100.0%
-"Portland, ME - Stroudwater",December 2020,All Residential,Neighborhood,False,ME,1.049945951,4.3%,6.9%,6,50.0%,100.0%,4,-20.0%,-55.6%,35,0,14,$525K,15.4%,-16.5%,5,-16.7%,25.0%
-"Portland, ME - Stroudwater",January 2021,All Residential,Neighborhood,False,ME,1.063120210,1.3%,8.3%,5,-16.7%,66.7%,1,-75.0%,-88.9%,75,40,-100,$575K,9.5%,10.8%,1,-80.0%,-66.7%
-"Portland, ME - Stroudwater",February 2021,All Residential,Neighborhood,False,ME,1.057034860,-0.6%,5.9%,6,20.0%,200.0%,1,0.0%,-87.5%,122,47,-111,$573K,-0.5%,-0.2%,4,300.0%,100.0%
-"Portland, ME - Stroudwater",March 2021,All Residential,Neighborhood,False,ME,1.064030027,0.7%,7.3%,6,0.0%,200.0%,3,200.0%,-66.7%,84,-38,-160.5,$565K,-1.2%,1.1%,6,50.0%,100.0%
-"Portland, ME - Stroudwater",April 2021,All Residential,Neighborhood,False,ME,1.085486615,2.1%,9.4%,4,-33.3%,100.0%,4,33.3%,-63.6%,45.5,-38.5,-282.5,$565K,0.0%,-8.3%,8,33.3%,33.3%
-"Portland, ME - Stroudwater",May 2021,All Residential,Neighborhood,False,ME,1.068708337,-1.7%,9.0%,5,25.0%,66.7%,2,-50.0%,-71.4%,6.5,-39,-335.5,$540K,-4.5%,-10.0%,7,-12.5%,40.0%
-"Portland, ME - Stroudwater",June 2021,All Residential,Neighborhood,False,ME,1.009751990,-5.9%,3.3%,3,-40.0%,0.0%,2,0.0%,-66.7%,51,44.5,-291,$540K,0.0%,13.7%,6,-14.3%,0.0%
-"Portland, ME - Stroudwater",July 2021,All Residential,Neighborhood,False,ME,1.025502501,1.6%,5.9%,5,66.7%,0.0%,3,50.0%,-50.0%,12.5,-38.5,-347.5,$540K,0.0%,13.7%,5,-16.7%,25.0%
-"Portland, ME - Stroudwater",August 2021,All Residential,Neighborhood,False,ME,1.062263548,3.7%,8.9%,3,-40.0%,-50.0%,2,-33.3%,-33.3%,7,-5.5,-324,$585K,8.4%,11.2%,3,-40.0%,-40.0%
-"Portland, ME - Stroudwater",September 2021,All Residential,Neighborhood,False,ME,1.039683633,-2.3%,6.7%,4,33.3%,-20.0%,1,-50.0%,-75.0%,12.5,5.5,-326.5,$535K,-8.5%,0.6%,2,-33.3%,-50.0%
-"Portland, ME - Stroudwater",October 2021,All Residential,Neighborhood,False,ME,1.019988121,-2.0%,2.3%,6,50.0%,20.0%,2,100.0%,-66.7%,32.5,20,-9.5,$610K,14.0%,14.7%,2,0.0%,-71.4%
-"Portland, ME - Stroudwater",November 2021,All Residential,Neighborhood,False,ME,1.016484963,-0.4%,1.0%,7,16.7%,75.0%,2,0.0%,-60.0%,32.5,0,-2.5,$584K,-4.2%,28.3%,5,150.0%,-16.7%
+"Portland, ME - Stroudwater",February 2019,All Residential,Neighborhood,False,ME,0.972243078,-1.2%,-0.6%,3,50.0%,50.0%,6,100.0%,,45,-19.5,25,$241K,-29.2%,-28.4%,9,125.0%,800.0%
+"Portland, ME - Stroudwater",March 2019,All Residential,Neighborhood,False,ME,0.982952582,1.1%,3.6%,3,0.0%,0.0%,5,-16.7%,,14,-31,-20,$495K,105.4%,24.1%,8,-11.1%,700.0%
+"Portland, ME - Stroudwater",April 2019,All Residential,Neighborhood,False,ME,0.982988842,0.0%,2.7%,4,33.3%,0.0%,7,40.0%,600.0%,20,6,-47.5,$390K,-21.2%,-14.2%,11,37.5%,450.0%
+"Portland, ME - Stroudwater",May 2019,All Residential,Neighborhood,False,ME,0.994337849,1.1%,3.8%,4,0.0%,33.3%,9,28.6%,200.0%,16,-4,-85,$464K,19.0%,-9.0%,9,-18.2%,200.0%
+"Portland, ME - Stroudwater",June 2019,All Residential,Neighborhood,False,ME,0.995267217,0.1%,1.3%,4,0.0%,300.0%,13,44.4%,550.0%,51,35,-50,$413K,-11.1%,-19.1%,14,55.6%,180.0%
+"Portland, ME - Stroudwater",July 2019,All Residential,Neighborhood,False,ME,1.001240341,0.6%,1.1%,5,25.0%,66.7%,10,-23.1%,150.0%,76,25,65,$525K,27.3%,64.1%,12,-14.3%,100.0%
+"Portland, ME - Stroudwater",August 2019,All Residential,Neighborhood,False,ME,0.990670052,-1.1%,0.1%,7,40.0%,133.3%,11,10.0%,83.3%,76,0,65,$490K,-6.7%,53.2%,11,-8.3%,57.1%
+"Portland, ME - Stroudwater",September 2019,All Residential,Neighborhood,False,ME,0.990138984,-0.1%,0.0%,7,0.0%,133.3%,10,-9.1%,100.0%,8,-68,-3,$490K,0.0%,53.2%,5,-54.5%,-28.6%
+"Portland, ME - Stroudwater",October 2019,All Residential,Neighborhood,False,ME,0.987123740,-0.3%,0.7%,6,-14.3%,100.0%,8,-20.0%,100.0%,14.5,6.5,-3.5,$515K,5.1%,-14.2%,3,-40.0%,-40.0%
+"Portland, ME - Stroudwater",November 2019,All Residential,Neighborhood,False,ME,0.980722529,-0.6%,-0.4%,4,-33.3%,0.0%,10,25.0%,400.0%,14,-0.5,-14,$643K,24.8%,15.2%,3,0.0%,50.0%
+"Portland, ME - Stroudwater",December 2019,All Residential,Neighborhood,False,ME,0.980364933,0.0%,-0.1%,4,0.0%,-20.0%,9,-10.0%,200.0%,24.5,10.5,-13.5,$582K,-9.4%,13.0%,4,33.3%,100.0%
+"Portland, ME - Stroudwater",January 2020,All Residential,Neighborhood,False,ME,0.979932157,0.0%,-0.4%,4,0.0%,100.0%,9,0.0%,200.0%,101.5,77,37,$527K,-9.5%,54.9%,3,-25.0%,-25.0%
+"Portland, ME - Stroudwater",February 2020,All Residential,Neighborhood,False,ME,0.998419256,1.8%,2.6%,2,-50.0%,-33.3%,8,-11.1%,33.3%,233,131.5,188,$574K,8.9%,138.2%,2,-33.3%,-77.8%
+"Portland, ME - Stroudwater",March 2020,All Residential,Neighborhood,False,ME,0.991018364,-0.7%,0.8%,2,0.0%,-33.3%,10,25.0%,100.0%,244.5,11.5,230.5,$560K,-2.5%,13.0%,4,100.0%,-50.0%
+"Portland, ME - Stroudwater",April 2020,All Residential,Neighborhood,False,ME,0.991883915,0.1%,0.9%,2,0.0%,-50.0%,12,20.0%,71.4%,328,83.5,308,$617K,10.2%,58.1%,7,75.0%,-36.4%
+"Portland, ME - Stroudwater",May 2020,All Residential,Neighborhood,False,ME,0.978557213,-1.3%,-1.6%,3,50.0%,-25.0%,8,-33.3%,-11.1%,342,14,326,$600K,-2.7%,29.3%,6,-14.3%,-33.3%
+"Portland, ME - Stroudwater",June 2020,All Residential,Neighborhood,False,ME,0.976449139,-0.2%,-1.9%,3,0.0%,-25.0%,7,-12.5%,-46.2%,342,0,291,$475K,-20.8%,15.2%,6,0.0%,-57.1%
+"Portland, ME - Stroudwater",July 2020,All Residential,Neighborhood,False,ME,0.966566781,-1.0%,-3.5%,5,66.7%,0.0%,7,0.0%,-30.0%,360,18,284,$475K,0.0%,-9.5%,4,-33.3%,-66.7%
+"Portland, ME - Stroudwater",August 2020,All Residential,Neighborhood,False,ME,0.973433945,0.7%,-1.7%,6,20.0%,-14.3%,5,-28.6%,-54.5%,331,-29,255,$526K,10.7%,7.3%,6,50.0%,-45.5%
+"Portland, ME - Stroudwater",September 2020,All Residential,Neighborhood,False,ME,0.972632012,-0.1%,-1.8%,5,-16.7%,-28.6%,5,0.0%,-50.0%,339,8,331,$532K,1.2%,8.6%,5,-16.7%,0.0%
+"Portland, ME - Stroudwater",October 2020,All Residential,Neighborhood,False,ME,0.997196388,2.5%,1.0%,5,0.0%,-16.7%,10,100.0%,25.0%,42,-297,27.5,$532K,0.0%,3.3%,11,120.0%,266.7%
+"Portland, ME - Stroudwater",November 2020,All Residential,Neighborhood,False,ME,1.006840248,1.0%,2.6%,4,-20.0%,0.0%,9,-10.0%,-10.0%,35,-7,21,$455K,-14.4%,-29.1%,9,-18.2%,200.0%
+"Portland, ME - Stroudwater",December 2020,All Residential,Neighborhood,False,ME,1.049945951,4.3%,7.0%,6,50.0%,50.0%,8,-11.1%,-11.1%,35,0,10.5,$525K,15.4%,-9.7%,8,-11.1%,100.0%
+"Portland, ME - Stroudwater",January 2021,All Residential,Neighborhood,False,ME,1.063120210,1.3%,8.3%,5,-16.7%,25.0%,5,-37.5%,-44.4%,75,40,-26.5,$575K,9.5%,9.2%,1,-87.5%,-66.7%
+"Portland, ME - Stroudwater",February 2021,All Residential,Neighborhood,False,ME,1.057034860,-0.6%,5.9%,6,20.0%,200.0%,3,-40.0%,-62.5%,122,47,-111,$573K,-0.5%,-0.2%,5,400.0%,150.0%
+"Portland, ME - Stroudwater",March 2021,All Residential,Neighborhood,False,ME,1.064030027,0.7%,7.3%,6,0.0%,200.0%,6,100.0%,-40.0%,84,-38,-160.5,$565K,-1.2%,1.1%,8,60.0%,100.0%
+"Portland, ME - Stroudwater",April 2021,All Residential,Neighborhood,False,ME,1.085486615,2.1%,9.4%,4,-33.3%,100.0%,6,0.0%,-50.0%,45.5,-38.5,-282.5,$565K,0.0%,-8.3%,10,25.0%,42.9%
+"Portland, ME - Stroudwater",May 2021,All Residential,Neighborhood,False,ME,1.068708337,-1.7%,9.0%,5,25.0%,66.7%,4,-33.3%,-50.0%,6.5,-39,-335.5,$540K,-4.5%,-10.0%,8,-20.0%,33.3%
+"Portland, ME - Stroudwater",June 2021,All Residential,Neighborhood,False,ME,1.009751990,-5.9%,3.3%,3,-40.0%,0.0%,3,-25.0%,-57.1%,51,44.5,-291,$540K,0.0%,13.7%,6,-25.0%,0.0%
+"Portland, ME - Stroudwater",July 2021,All Residential,Neighborhood,False,ME,1.029783406,2.0%,6.3%,6,100.0%,20.0%,3,0.0%,-57.1%,18,-33,-342,$559K,3.5%,17.6%,5,-16.7%,25.0%
+"Portland, ME - Stroudwater",August 2021,All Residential,Neighborhood,False,ME,1.059494643,3.0%,8.6%,4,-33.3%,-33.3%,3,0.0%,-40.0%,12.5,-5.5,-318.5,$592K,6.0%,12.6%,4,-20.0%,-33.3%
+"Portland, ME - Stroudwater",September 2021,All Residential,Neighborhood,False,ME,1.042760242,-1.7%,7.0%,6,50.0%,20.0%,1,-66.7%,-80.0%,20.5,8,-318.5,$570K,-3.8%,7.1%,3,-25.0%,-40.0%
+"Portland, ME - Stroudwater",October 2021,All Residential,Neighborhood,False,ME,1.023795388,-1.9%,2.7%,7,16.7%,40.0%,2,100.0%,-80.0%,42,21.5,0,$584K,2.5%,9.8%,3,0.0%,-72.7%
+"Portland, ME - Stroudwater",November 2021,All Residential,Neighborhood,False,ME,1.020294592,-0.4%,1.3%,9,28.6%,125.0%,5,150.0%,-44.4%,32.5,-9.5,-2.5,$584K,0.0%,28.3%,7,133.3%,-22.2%
+"Portland, ME - Stroudwater",December 2021,All Residential,Neighborhood,False,ME,1.027823617,0.8%,-2.2%,10,11.1%,66.7%,2,-60.0%,-75.0%,15,-17.5,-20,$637K,9.0%,21.2%,6,-14.3%,-25.0%
+"Portland, ME - Stroudwater",January 2022,All Residential,Neighborhood,False,ME,1.036464240,0.9%,-2.7%,6,-40.0%,20.0%,1,-50.0%,-80.0%,9,-6,-66,$657K,3.2%,14.3%,5,-16.7%,400.0%
 "Portland, ME - Valley Street",July 2015,All Residential,Neighborhood,False,ME,0.970670391,,,4,,,3,,,14,,,$347K,,,3,,
 "Portland, ME - Valley Street",August 2015,All Residential,Neighborhood,False,ME,1,2.9%,,3,-25.0%,,3,0.0%,,6,-8,,$270K,-22.3%,,4,33.3%,
 "Portland, ME - Valley Street",September 2015,All Residential,Neighborhood,False,ME,1,0.0%,,1,-66.7%,,4,33.3%,,,,,$425K,57.5%,,3,-25.0%,
 "Portland, ME - Valley Street",November 2015,All Residential,Neighborhood,False,ME,0.957446809,,,1,,,2,,,39,,,$225K,,,2,,
 "Portland, ME - Valley Street",December 2015,All Residential,Neighborhood,False,ME,0.957446809,0.0%,,1,0.0%,,1,-50.0%,,39,0,,$225K,0.0%,,1,-50.0%,
-"Portland, ME - Valley Street",January 2016,All Residential,Neighborhood,False,ME,0.937439001,-2.0%,,2,100.0%,,4,300.0%,,21.5,-17.5,,$163K,-27.8%,,5,400.0%,
-"Portland, ME - Valley Street",February 2016,All Residential,Neighborhood,False,ME,0.917431193,-2.0%,,1,-50.0%,,4,0.0%,,4,-17.5,,$100K,-38.5%,,6,20.0%,
-"Portland, ME - Valley Street",March 2016,All Residential,Neighborhood,False,ME,0.917431193,0.0%,,1,0.0%,,4,0.0%,,4,0,,$100K,0.0%,,7,16.7%,
-"Portland, ME - Valley Street",April 2016,All Residential,Neighborhood,False,ME,0.985291879,6.8%,,3,200.0%,,3,-25.0%,,26,22,,$186K,86.0%,,4,-42.9%,
+"Portland, ME - Valley Street",January 2016,All Residential,Neighborhood,False,ME,0.937439001,-2.0%,,2,100.0%,,3,200.0%,,21.5,-17.5,,$163K,-27.8%,,4,300.0%,
+"Portland, ME - Valley Street",February 2016,All Residential,Neighborhood,False,ME,0.917431193,-2.0%,,1,-50.0%,,3,0.0%,,4,-17.5,,$100K,-38.5%,,5,25.0%,
+"Portland, ME - Valley Street",March 2016,All Residential,Neighborhood,False,ME,0.917431193,0.0%,,1,0.0%,,3,0.0%,,4,0,,$100K,0.0%,,6,20.0%,
+"Portland, ME - Valley Street",April 2016,All Residential,Neighborhood,False,ME,0.985291879,6.8%,,3,200.0%,,3,0.0%,,26,22,,$186K,86.0%,,4,-33.3%,
 "Portland, ME - Valley Street",May 2016,All Residential,Neighborhood,False,ME,0.978249839,-0.7%,,6,100.0%,,2,-33.3%,,26.5,0.5,,$246K,32.3%,,3,-25.0%,
 "Portland, ME - Valley Street",June 2016,All Residential,Neighborhood,False,ME,0.978249839,0.0%,,6,0.0%,,3,50.0%,,26.5,0,,$246K,0.0%,,3,0.0%,
 "Portland, ME - Valley Street",July 2016,All Residential,Neighborhood,False,ME,0.971207799,-0.7%,0.1%,3,-50.0%,-25.0%,3,0.0%,0.0%,53,26.5,39,$250K,1.6%,-28.0%,3,0.0%,0.0%
@@ -2601,8 +2665,8 @@
 "Portland, ME - Valley Street",October 2016,All Residential,Neighborhood,False,ME,0.889299921,-7.4%,,3,200.0%,,2,-33.3%,,25,0,,$122K,-48.1%,,3,-25.0%,
 "Portland, ME - Valley Street",November 2016,All Residential,Neighborhood,False,ME,0.955254694,6.6%,-0.2%,4,33.3%,300.0%,2,0.0%,0.0%,78.5,53.5,39.5,$132K,7.8%,-41.6%,2,-33.3%,0.0%
 "Portland, ME - Valley Street",December 2016,All Residential,Neighborhood,False,ME,0.955254694,0.0%,-0.2%,4,0.0%,300.0%,2,0.0%,100.0%,78.5,0,39.5,$132K,0.0%,-41.6%,1,-50.0%,0.0%
-"Portland, ME - Valley Street",January 2017,All Residential,Neighborhood,False,ME,1.058116883,10.3%,12.1%,2,-50.0%,0.0%,3,50.0%,-25.0%,72,-6.5,50.5,$223K,69.6%,37.2%,2,100.0%,-60.0%
-"Portland, ME - Valley Street",March 2017,All Residential,Neighborhood,False,ME,0.978401445,,6.1%,2,,100.0%,2,,-50.0%,88,,84,$316K,,216.0%,2,,-71.4%
+"Portland, ME - Valley Street",January 2017,All Residential,Neighborhood,False,ME,1.058116883,10.3%,12.1%,2,-50.0%,0.0%,3,50.0%,0.0%,72,-6.5,50.5,$223K,69.6%,37.2%,2,100.0%,-50.0%
+"Portland, ME - Valley Street",March 2017,All Residential,Neighborhood,False,ME,0.978401445,,6.1%,2,,100.0%,2,,-33.3%,88,,84,$316K,,216.0%,2,,-66.7%
 "Portland, ME - Valley Street",April 2017,All Residential,Neighborhood,False,ME,0.978401445,0.0%,-0.7%,2,0.0%,-33.3%,1,-50.0%,-66.7%,88,0,62,$316K,0.0%,69.9%,4,100.0%,0.0%
 "Portland, ME - Valley Street",May 2017,All Residential,Neighborhood,False,ME,0.973735339,-0.5%,-0.5%,4,100.0%,-33.3%,1,0.0%,-50.0%,39,-49,12.5,$400K,26.6%,62.6%,4,0.0%,33.3%
 "Portland, ME - Valley Street",June 2017,All Residential,Neighborhood,False,ME,0.973326866,0.0%,-0.5%,4,0.0%,-33.3%,2,100.0%,-33.3%,22.5,-16.5,-4,$521K,30.3%,111.9%,5,25.0%,66.7%
@@ -2620,33 +2684,32 @@
 "Portland, ME - Valley Street",June 2018,All Residential,Neighborhood,False,ME,0.982090372,2.8%,0.9%,3,200.0%,-25.0%,1,,-50.0%,10,-39,-12.5,$282K,68.9%,-45.9%,3,0.0%,-40.0%
 "Portland, ME - Valley Street",July 2018,All Residential,Neighborhood,False,ME,0.982090372,0.0%,-2.0%,3,0.0%,-40.0%,,,,10,0,-3,$282K,0.0%,-41.9%,3,0.0%,50.0%
 "Portland, ME - Valley Street",August 2018,All Residential,Neighborhood,False,ME,0.995989975,1.4%,-2.8%,2,-33.3%,-33.3%,1,,-66.7%,9.5,-0.5,-3.5,$341K,20.9%,-29.7%,2,-33.3%,-50.0%
-"Portland, ME - Valley Street",July 2019,All Residential,Neighborhood,False,ME,1.094,,11.2%,1,,-66.7%,6,,,6,,-4,$274K,,-3.0%,5,,66.7%
-"Portland, ME - Valley Street",August 2019,All Residential,Neighborhood,False,ME,1.002293725,-9.2%,0.6%,3,200.0%,50.0%,5,-16.7%,400.0%,8,2,-1.5,$274K,0.0%,-19.8%,2,-60.0%,0.0%
-"Portland, ME - Valley Street",September 2019,All Residential,Neighborhood,False,ME,0.994945226,-0.7%,,4,33.3%,,4,-20.0%,,19.5,11.5,,$316K,15.6%,,1,-50.0%,
-"Portland, ME - Valley Street",October 2019,All Residential,Neighborhood,False,ME,0.976708384,-1.8%,,4,0.0%,,4,0.0%,,19.5,0,,$380K,20.0%,,1,0.0%,
-"Portland, ME - Valley Street",November 2019,All Residential,Neighborhood,False,ME,0.997984120,2.1%,,3,-25.0%,,3,-25.0%,,34,14.5,,$485K,27.8%,,1,0.0%,
-"Portland, ME - Valley Street",December 2019,All Residential,Neighborhood,False,ME,1.010526316,1.3%,,2,-33.3%,,3,0.0%,,114.5,80.5,,$503K,3.6%,,,,
-"Portland, ME - Valley Street",January 2020,All Residential,Neighborhood,False,ME,0.989417989,-2.1%,,2,0.0%,,4,33.3%,,115.5,1,,$353K,-29.9%,,5,,
-"Portland, ME - Valley Street",February 2020,All Residential,Neighborhood,False,ME,0.927690961,-6.2%,,3,50.0%,,4,0.0%,,8,-107.5,,$185K,-47.5%,,5,0.0%,
-"Portland, ME - Valley Street",March 2020,All Residential,Neighborhood,False,ME,0.924665310,-0.3%,,5,66.7%,,2,-50.0%,,11,3,,$350K,89.2%,,5,0.0%,
-"Portland, ME - Valley Street",April 2020,All Residential,Neighborhood,False,ME,0.911122643,-1.4%,,4,-20.0%,,2,0.0%,,30,19,,$355K,1.4%,,2,-60.0%,
+"Portland, ME - Valley Street",July 2019,All Residential,Neighborhood,False,ME,1.094,,11.2%,1,,-66.7%,5,,,6,,-4,$274K,,-3.0%,5,,66.7%
+"Portland, ME - Valley Street",August 2019,All Residential,Neighborhood,False,ME,1.002293725,-9.2%,0.6%,3,200.0%,50.0%,4,-20.0%,300.0%,8,2,-1.5,$274K,0.0%,-19.8%,2,-60.0%,0.0%
+"Portland, ME - Valley Street",September 2019,All Residential,Neighborhood,False,ME,0.994945226,-0.7%,,4,33.3%,,3,-25.0%,,19.5,11.5,,$316K,15.6%,,1,-50.0%,
+"Portland, ME - Valley Street",October 2019,All Residential,Neighborhood,False,ME,0.976708384,-1.8%,,4,0.0%,,3,0.0%,,19.5,0,,$380K,20.0%,,1,0.0%,
+"Portland, ME - Valley Street",November 2019,All Residential,Neighborhood,False,ME,0.997984120,2.1%,,3,-25.0%,,2,-33.3%,,34,14.5,,$485K,27.8%,,1,0.0%,
+"Portland, ME - Valley Street",December 2019,All Residential,Neighborhood,False,ME,1.010526316,1.3%,,2,-33.3%,,2,0.0%,,114.5,80.5,,$503K,3.6%,,,,
+"Portland, ME - Valley Street",January 2020,All Residential,Neighborhood,False,ME,0.989417989,-2.1%,,2,0.0%,,3,50.0%,,115.5,1,,$353K,-29.9%,,5,,
+"Portland, ME - Valley Street",February 2020,All Residential,Neighborhood,False,ME,0.927690961,-6.2%,,3,50.0%,,3,0.0%,,8,-107.5,,$185K,-47.5%,,5,0.0%,
+"Portland, ME - Valley Street",March 2020,All Residential,Neighborhood,False,ME,0.924665310,-0.3%,,5,66.7%,,1,-66.7%,,11,3,,$350K,89.2%,,5,0.0%,
+"Portland, ME - Valley Street",April 2020,All Residential,Neighborhood,False,ME,0.911122643,-1.4%,,4,-20.0%,,2,100.0%,,30,19,,$355K,1.4%,,2,-60.0%,
 "Portland, ME - Valley Street",May 2020,All Residential,Neighborhood,False,ME,0.920126834,0.9%,,2,-50.0%,,3,50.0%,,30,0,,$358K,0.7%,,3,50.0%,
 "Portland, ME - Valley Street",June 2020,All Residential,Neighborhood,False,ME,1,8.0%,,1,-50.0%,,4,33.3%,,342,312,,$795K,122.4%,,4,33.3%,
-"Portland, ME - Valley Street",July 2020,All Residential,Neighborhood,False,ME,1,0.0%,-9.4%,1,0.0%,0.0%,3,-25.0%,-50.0%,342,0,336,$795K,0.0%,190.7%,2,-50.0%,-60.0%
-"Portland, ME - Valley Street",August 2020,All Residential,Neighborhood,False,ME,1,0.0%,-0.2%,1,0.0%,-66.7%,2,-33.3%,-60.0%,342,0,334,$795K,0.0%,190.7%,2,0.0%,0.0%
-"Portland, ME - Valley Street",September 2020,All Residential,Neighborhood,False,ME,0.878530495,-12.1%,-11.6%,2,100.0%,-50.0%,2,0.0%,-50.0%,110,-232,90.5,$390K,-51.0%,23.2%,1,-50.0%,0.0%
-"Portland, ME - Valley Street",October 2020,All Residential,Neighborhood,False,ME,0.925916882,4.7%,-5.1%,3,50.0%,-25.0%,3,50.0%,-25.0%,80,-30,60.5,$440K,13.0%,15.9%,2,100.0%,100.0%
-"Portland, ME - Valley Street",November 2020,All Residential,Neighborhood,False,ME,0.925916882,0.0%,-7.2%,3,0.0%,0.0%,1,-66.7%,-66.7%,80,0,46,$440K,0.0%,-9.3%,1,-50.0%,0.0%
-"Portland, ME - Valley Street",December 2020,All Residential,Neighborhood,False,ME,1.020689655,9.5%,1.0%,1,-66.7%,-50.0%,1,0.0%,-66.7%,9,-71,-105.5,$740K,68.2%,47.3%,1,0.0%,
-"Portland, ME - Valley Street",January 2021,All Residential,Neighborhood,False,ME,0.952203947,-6.8%,-3.7%,3,200.0%,50.0%,,,,187,178,71.5,$475K,-35.8%,34.8%,,,
-"Portland, ME - Valley Street",February 2021,All Residential,Neighborhood,False,ME,0.952203947,0.0%,2.5%,3,0.0%,0.0%,,,,187,0,179,$475K,0.0%,156.8%,,,
-"Portland, ME - Valley Street",March 2021,All Residential,Neighborhood,False,ME,0.955107734,0.3%,3.0%,4,33.3%,-20.0%,,,,202,15,191,$588K,23.7%,67.9%,,,
-"Portland, ME - Valley Street",April 2021,All Residential,Neighborhood,False,ME,0.963819095,0.9%,5.3%,1,-75.0%,-75.0%,1,,-50.0%,217,15,187,$959K,63.2%,170.1%,1,,-50.0%
+"Portland, ME - Valley Street",July 2020,All Residential,Neighborhood,False,ME,1,0.0%,-9.4%,1,0.0%,0.0%,3,-25.0%,-40.0%,342,0,336,$795K,0.0%,190.7%,2,-50.0%,-60.0%
+"Portland, ME - Valley Street",August 2020,All Residential,Neighborhood,False,ME,1,0.0%,-0.2%,1,0.0%,-66.7%,2,-33.3%,-50.0%,342,0,334,$795K,0.0%,190.7%,1,-50.0%,-50.0%
+"Portland, ME - Valley Street",September 2020,All Residential,Neighborhood,False,ME,0.878530495,-12.1%,-11.6%,2,100.0%,-50.0%,2,0.0%,-33.3%,110,-232,90.5,$390K,-51.0%,23.2%,,,
+"Portland, ME - Valley Street",October 2020,All Residential,Neighborhood,False,ME,0.878530495,0.0%,-9.8%,2,0.0%,-50.0%,3,50.0%,0.0%,110,0,90.5,$390K,0.0%,2.6%,1,,0.0%
+"Portland, ME - Valley Street",November 2020,All Residential,Neighborhood,False,ME,0.878530495,0.0%,-11.9%,2,0.0%,-33.3%,1,-66.7%,-50.0%,110,0,76,$390K,0.0%,-19.7%,1,0.0%,0.0%
+"Portland, ME - Valley Street",January 2021,All Residential,Neighborhood,False,ME,0.928305921,,-6.1%,2,,0.0%,,,,109.5,,-6,$480K,,36.2%,,,
+"Portland, ME - Valley Street",February 2021,All Residential,Neighborhood,False,ME,0.928305921,0.0%,0.1%,2,0.0%,-33.3%,,,,109.5,0,101.5,$480K,0.0%,159.5%,,,
+"Portland, ME - Valley Street",March 2021,All Residential,Neighborhood,False,ME,0.940143646,1.2%,1.5%,3,50.0%,-40.0%,,,,187,77.5,176,$700K,45.8%,100.0%,,,
+"Portland, ME - Valley Street",April 2021,All Residential,Neighborhood,False,ME,0.963819095,2.4%,5.3%,1,-66.7%,-75.0%,1,,-50.0%,217,30,187,$959K,37.0%,170.1%,1,,-50.0%
 "Portland, ME - Valley Street",May 2021,All Residential,Neighborhood,False,ME,0.963819095,0.0%,4.4%,1,0.0%,-50.0%,,,,217,0,187,$959K,0.0%,168.3%,2,100.0%,-33.3%
 "Portland, ME - Valley Street",June 2021,All Residential,Neighborhood,False,ME,1.112903226,14.9%,11.3%,1,0.0%,0.0%,,,,2,-215,-340,$345K,-64.0%,-56.6%,3,50.0%,-25.0%
 "Portland, ME - Valley Street",July 2021,All Residential,Neighborhood,False,ME,1.042928589,-7.0%,4.3%,3,200.0%,200.0%,1,,-66.7%,10,8,-332,$383K,11.1%,-51.8%,3,0.0%,50.0%
-"Portland, ME - Valley Street",August 2021,All Residential,Neighborhood,False,ME,1.042928589,0.0%,4.3%,3,0.0%,200.0%,,,,10,0,-332,$383K,0.0%,-51.8%,2,-33.3%,0.0%
-"Portland, ME - Valley Street",September 2021,All Residential,Neighborhood,False,ME,1.007941271,-3.5%,12.9%,2,-33.3%,0.0%,,,,18,8,-92,$469K,22.4%,20.5%,1,-50.0%,0.0%
+"Portland, ME - Valley Street",August 2021,All Residential,Neighborhood,False,ME,1.042928589,0.0%,4.3%,3,0.0%,200.0%,,,,10,0,-332,$383K,0.0%,-51.8%,2,-33.3%,100.0%
+"Portland, ME - Valley Street",September 2021,All Residential,Neighborhood,False,ME,1.007941271,-3.5%,12.9%,2,-33.3%,0.0%,,,,18,8,-92,$469K,22.4%,20.5%,1,-50.0%,
 "Portland, ME - Waterfront District",July 2015,All Residential,Neighborhood,False,ME,0.986150353,,,3,,,5,,,33,,,$447K,,,3,,
 "Portland, ME - Waterfront District",August 2015,All Residential,Neighborhood,False,ME,0.986150353,0.0%,,3,0.0%,,4,-20.0%,,33,0,,$447K,0.0%,,4,33.3%,
 "Portland, ME - Waterfront District",September 2015,All Residential,Neighborhood,False,ME,0.962840330,-2.3%,,3,0.0%,,5,25.0%,,33,0,,$500K,11.9%,,3,-25.0%,
@@ -2712,7 +2775,9 @@
 "Portland, ME - Waterfront District",August 2021,All Residential,Neighborhood,False,ME,0.992721987,-1.5%,1.9%,5,25.0%,25.0%,2,100.0%,0.0%,45,-34,38,$710K,4.0%,-4.8%,3,-40.0%,-40.0%
 "Portland, ME - Waterfront District",September 2021,All Residential,Neighborhood,False,ME,0.978293788,-1.4%,0.4%,4,-20.0%,0.0%,,,,51.5,6.5,44.5,$715K,0.7%,1.2%,2,-33.3%,-60.0%
 "Portland, ME - Waterfront District",October 2021,All Residential,Neighborhood,False,ME,0.976461841,-0.2%,1.8%,4,0.0%,33.3%,,,,36,-15.5,-142.5,$720K,0.7%,0.7%,1,-50.0%,-85.7%
-"Portland, ME - Waterfront District",November 2021,All Residential,Neighborhood,False,ME,0.996872828,2.0%,2.0%,2,-50.0%,-33.3%,,,,38,2,-35,$720K,0.0%,6.7%,,,
+"Portland, ME - Waterfront District",November 2021,All Residential,Neighborhood,False,ME,0.996872828,2.0%,2.0%,2,-50.0%,-33.3%,,,,38,2,-35,$720K,0.0%,6.7%,1,0.0%,-83.3%
+"Portland, ME - Waterfront District",December 2021,All Residential,Neighborhood,False,ME,1.000234975,0.3%,1.2%,4,100.0%,33.3%,,,,27,-11,16,$720K,0.0%,30.9%,1,0.0%,-66.7%
+"Portland, ME - Waterfront District",January 2022,All Residential,Neighborhood,False,ME,1.003597122,0.3%,1.7%,2,-50.0%,-33.3%,,,,3,-24,-8,"$1,025K",42.4%,86.4%,1,0.0%,-50.0%
 "Portland, ME - West Bayside",July 2015,All Residential,Neighborhood,False,ME,0.9625,,,1,,,2,,,70,,,$154K,,,4,,
 "Portland, ME - West Bayside",August 2015,All Residential,Neighborhood,False,ME,0.944931653,-1.8%,,4,300.0%,,3,50.0%,,52,-18,,$242K,57.1%,,5,25.0%,
 "Portland, ME - West Bayside",September 2015,All Residential,Neighborhood,False,ME,0.944931653,0.0%,,4,0.0%,,3,0.0%,,52,0,,$242K,0.0%,,1,-80.0%,
@@ -2768,9 +2833,11 @@
 "Portland, ME - West Bayside",May 2021,All Residential,Neighborhood,False,ME,0.98844,1.3%,-1.2%,3,-25.0%,200.0%,1,0.0%,-66.7%,9,-4.5,6,$395K,7.2%,32.1%,,,
 "Portland, ME - West Bayside",July 2021,All Residential,Neighborhood,False,ME,1.006329114,,,1,,,2,,,6,,,$398K,,,2,,
 "Portland, ME - West Bayside",August 2021,All Residential,Neighborhood,False,ME,1.006329114,0.0%,-4.5%,1,0.0%,-66.7%,2,0.0%,100.0%,6,0,-26,$398K,0.0%,53.5%,4,100.0%,0.0%
-"Portland, ME - West Bayside",September 2021,All Residential,Neighborhood,False,ME,0.975386779,-3.1%,-5.6%,2,100.0%,-50.0%,,,,34.5,28.5,1,$411K,3.5%,35.1%,3,-25.0%,-50.0%
-"Portland, ME - West Bayside",October 2021,All Residential,Neighborhood,False,ME,0.999557074,2.4%,-0.8%,2,0.0%,-60.0%,,,,36.5,2,4.5,$444K,8.0%,71.4%,4,33.3%,-33.3%
-"Portland, ME - West Bayside",November 2021,All Residential,Neighborhood,False,ME,1.001794666,0.2%,5.0%,4,100.0%,33.3%,5,,400.0%,9,-27.5,-12,$400K,-9.9%,-38.5%,7,75.0%,16.7%
+"Portland, ME - West Bayside",September 2021,All Residential,Neighborhood,False,ME,0.975386779,-3.1%,-5.6%,2,100.0%,-50.0%,1,-50.0%,-75.0%,34.5,28.5,1,$411K,3.5%,35.1%,4,0.0%,-33.3%
+"Portland, ME - West Bayside",October 2021,All Residential,Neighborhood,False,ME,0.999557074,2.4%,-0.8%,2,0.0%,-60.0%,1,0.0%,-66.7%,36.5,2,4.5,$444K,8.0%,71.4%,5,25.0%,-16.7%
+"Portland, ME - West Bayside",November 2021,All Residential,Neighborhood,False,ME,1.001794666,0.2%,5.0%,4,100.0%,33.3%,6,500.0%,500.0%,9,-27.5,-12,$400K,-9.9%,-38.5%,8,60.0%,33.3%
+"Portland, ME - West Bayside",December 2021,All Residential,Neighborhood,False,ME,1.020911407,1.9%,6.5%,3,-25.0%,0.0%,12,100.0%,1100.0%,8,-1,-13,$375K,-6.3%,53.1%,13,62.5%,225.0%
+"Portland, ME - West Bayside",January 2022,All Residential,Neighborhood,False,ME,0.980359623,-4.1%,-2.3%,3,0.0%,-25.0%,21,75.0%,2000.0%,8,0,-26.5,$259K,-30.9%,-36.4%,21,61.5%,600.0%
 "South Portland, ME - Cash Corner",July 2015,All Residential,Neighborhood,False,ME,0.957029957,,,7,,,4,,,11,,,$167K,,,12,,
 "South Portland, ME - Cash Corner",August 2015,All Residential,Neighborhood,False,ME,1.002413626,4.5%,,11,57.1%,,5,25.0%,,11.5,0.5,,$203K,21.6%,,9,-25.0%,
 "South Portland, ME - Cash Corner",September 2015,All Residential,Neighborhood,False,ME,1.004463395,0.2%,,9,-18.2%,,5,0.0%,,11.5,0,,$203K,0.0%,,7,-22.2%,
@@ -2845,8 +2912,10 @@
 "South Portland, ME - Cash Corner",July 2021,All Residential,Neighborhood,False,ME,1.089785880,0.8%,5.7%,5,-16.7%,-16.7%,2,,-33.3%,7,3,3,$443K,8.9%,65.3%,6,50.0%,-33.3%
 "South Portland, ME - Cash Corner",August 2021,All Residential,Neighborhood,False,ME,1.089785880,0.0%,5.3%,5,0.0%,-16.7%,,,,7,0,3,$443K,0.0%,56.3%,5,-16.7%,-58.3%
 "South Portland, ME - Cash Corner",September 2021,All Residential,Neighborhood,False,ME,1.110532615,2.1%,9.3%,4,-20.0%,-60.0%,,,,9.5,2.5,-0.5,$378K,-14.8%,16.2%,4,-20.0%,-50.0%
-"South Portland, ME - Cash Corner",October 2021,All Residential,Neighborhood,False,ME,1.080356927,-3.0%,4.1%,4,0.0%,-55.6%,,,,9.5,0,1.5,$355K,-6.1%,12.5%,2,-50.0%,-60.0%
-"South Portland, ME - Cash Corner",November 2021,All Residential,Neighborhood,False,ME,1.069114793,-1.1%,2.8%,5,25.0%,-37.5%,,,,8,-1.5,-1.5,$340K,-4.1%,5.3%,1,-50.0%,0.0%
+"South Portland, ME - Cash Corner",October 2021,All Residential,Neighborhood,False,ME,1.080356927,-3.0%,4.1%,4,0.0%,-55.6%,1,,,9.5,0,1.5,$355K,-6.1%,12.5%,3,-25.0%,-40.0%
+"South Portland, ME - Cash Corner",November 2021,All Residential,Neighborhood,False,ME,1.069114793,-1.1%,2.8%,5,25.0%,-37.5%,,,,8,-1.5,-1.5,$340K,-4.1%,5.3%,2,-33.3%,100.0%
+"South Portland, ME - Cash Corner",December 2021,All Residential,Neighborhood,False,ME,1.013023877,-5.6%,-11.5%,3,-40.0%,50.0%,,,,5.5,-2.5,0,$300K,-11.8%,-5.6%,2,0.0%,
+"South Portland, ME - Cash Corner",January 2022,All Residential,Neighborhood,False,ME,0.999362256,-1.4%,,3,0.0%,,,,,17.5,12,,$300K,0.0%,,,,
 "South Portland, ME - Fort Preble",July 2015,All Residential,Neighborhood,False,ME,0.956506677,,,5,,,4,,,30,,,$190K,,,11,,
 "South Portland, ME - Fort Preble",August 2015,All Residential,Neighborhood,False,ME,0.952644453,-0.4%,,6,20.0%,,7,75.0%,,24,-6,,$166K,-12.9%,,12,9.1%,
 "South Portland, ME - Fort Preble",September 2015,All Residential,Neighborhood,False,ME,0.962293730,1.0%,,7,16.7%,,5,-28.6%,,28,4,,$163K,-1.5%,,10,-16.7%,
@@ -2915,7 +2984,8 @@
 "South Portland, ME - Fort Preble",August 2021,All Residential,Neighborhood,False,ME,1.076744078,0.9%,9.4%,5,0.0%,66.7%,3,200.0%,200.0%,6,-15.5,-7,$750K,0.0%,-6.2%,7,40.0%,40.0%
 "South Portland, ME - Fort Preble",September 2021,All Residential,Neighborhood,False,ME,1.097776250,2.1%,13.5%,4,-20.0%,0.0%,,,,4.5,-1.5,-8.5,$551K,-26.5%,-30.0%,3,-57.1%,-40.0%
 "South Portland, ME - Fort Preble",October 2021,All Residential,Neighborhood,False,ME,1.039713479,-5.8%,10.2%,6,50.0%,50.0%,,,,12.5,8,-35,$341K,-38.1%,-40.9%,4,33.3%,0.0%
-"South Portland, ME - Fort Preble",November 2021,All Residential,Neighborhood,False,ME,1.017455563,-2.2%,5.8%,4,-33.3%,-33.3%,1,,-50.0%,21,8.5,8,$325K,-4.7%,0.3%,2,-50.0%,-66.7%
+"South Portland, ME - Fort Preble",November 2021,All Residential,Neighborhood,False,ME,1.017455563,-2.2%,5.8%,4,-33.3%,-33.3%,,,,21,8.5,8,$325K,-4.7%,0.3%,1,-75.0%,-83.3%
+"South Portland, ME - Fort Preble",December 2021,All Residential,Neighborhood,False,ME,1.000933304,-1.7%,2.8%,3,-25.0%,-57.1%,,,,24,3,11,$330K,1.5%,22.7%,1,0.0%,-88.9%
 "South Portland, ME - Ligonia",July 2015,All Residential,Neighborhood,False,ME,0.997367035,,,2,,,7,,,61,,,$192K,,,10,,
 "South Portland, ME - Ligonia",August 2015,All Residential,Neighborhood,False,ME,0.997367035,0.0%,,2,0.0%,,8,14.3%,,61,0,,$192K,0.0%,,8,-20.0%,
 "South Portland, ME - Ligonia",September 2015,All Residential,Neighborhood,False,ME,0.963251229,-3.4%,,5,150.0%,,6,-25.0%,,40,-21,,$185K,-3.6%,,7,-12.5%,
@@ -2985,11 +3055,13 @@
 "South Portland, ME - Ligonia",April 2021,All Residential,Neighborhood,False,ME,1.027046294,1.2%,7.5%,4,0.0%,300.0%,,,,4.5,-16.5,-55.5,$323K,20.1%,25.6%,4,-20.0%,33.3%
 "South Portland, ME - Ligonia",May 2021,All Residential,Neighborhood,False,ME,1.046671217,2.0%,6.2%,4,0.0%,0.0%,1,,,4.5,0,-8,$343K,6.4%,4.0%,2,-50.0%,-33.3%
 "South Portland, ME - Ligonia",June 2021,All Residential,Neighborhood,False,ME,1.046671217,0.0%,5.1%,4,0.0%,33.3%,1,0.0%,0.0%,4.5,0,-2.5,$343K,0.0%,1.0%,4,100.0%,100.0%
-"South Portland, ME - Ligonia",July 2021,All Residential,Neighborhood,False,ME,0.992550984,-5.4%,-0.3%,3,-25.0%,0.0%,2,100.0%,0.0%,5,0.5,-2,$350K,2.0%,2.9%,6,50.0%,20.0%
-"South Portland, ME - Ligonia",August 2021,All Residential,Neighborhood,False,ME,0.994384434,0.2%,-2.1%,4,33.3%,100.0%,,,,13.5,8.5,-8,$309K,-11.9%,-7.9%,5,-16.7%,-16.7%
-"South Portland, ME - Ligonia",September 2021,All Residential,Neighborhood,False,ME,1.020321524,2.6%,-2.7%,6,50.0%,100.0%,1,,0.0%,6.5,-7,-0.5,$309K,0.0%,-5.9%,3,-40.0%,-40.0%
-"South Portland, ME - Ligonia",October 2021,All Residential,Neighborhood,False,ME,1.053909143,3.4%,0.6%,4,-33.3%,0.0%,,,,6.5,0,-2,$309K,0.0%,-6.2%,1,-66.7%,-75.0%
+"South Portland, ME - Ligonia",July 2021,All Residential,Neighborhood,False,ME,0.992550984,-5.4%,-0.3%,3,-25.0%,0.0%,3,200.0%,50.0%,5,0.5,-2,$350K,2.0%,2.9%,7,75.0%,40.0%
+"South Portland, ME - Ligonia",August 2021,All Residential,Neighborhood,False,ME,0.994384434,0.2%,-2.1%,4,33.3%,100.0%,1,-66.7%,0.0%,13.5,8.5,-8,$309K,-11.9%,-7.9%,6,-14.3%,0.0%
+"South Portland, ME - Ligonia",September 2021,All Residential,Neighborhood,False,ME,1.020321524,2.6%,-2.7%,6,50.0%,100.0%,2,100.0%,100.0%,6.5,-7,-0.5,$309K,0.0%,-5.9%,4,-33.3%,-20.0%
+"South Portland, ME - Ligonia",October 2021,All Residential,Neighborhood,False,ME,1.053909143,3.4%,0.6%,4,-33.3%,0.0%,1,-50.0%,0.0%,6.5,0,-2,$309K,0.0%,-6.2%,1,-75.0%,-75.0%
 "South Portland, ME - Ligonia",November 2021,All Residential,Neighborhood,False,ME,1.027949536,-2.6%,-0.3%,3,-25.0%,-40.0%,,,,7,0.5,-3,$390K,26.4%,30.0%,1,0.0%,-80.0%
+"South Portland, ME - Ligonia",December 2021,All Residential,Neighborhood,False,ME,1.043426748,1.5%,2.1%,2,-33.3%,-60.0%,,,,65.5,58.5,54.5,$420K,7.7%,40.0%,,,
+"South Portland, ME - Ligonia",January 2022,All Residential,Neighborhood,False,ME,1.043426748,0.0%,2.5%,2,0.0%,-71.4%,,,,65.5,0,46.5,$420K,0.0%,61.8%,,,
 "South Portland, ME - Loveitts Field",July 2015,All Residential,Neighborhood,False,ME,0.995566786,,,7,,,4,,,8,,,$455K,,,5,,
 "South Portland, ME - Loveitts Field",August 2015,All Residential,Neighborhood,False,ME,1.021696517,2.6%,,6,-14.3%,,2,-50.0%,,9,1,,$425K,-6.6%,,5,0.0%,
 "South Portland, ME - Loveitts Field",September 2015,All Residential,Neighborhood,False,ME,0.980080708,-4.2%,,4,-33.3%,,2,0.0%,,20,11,,$315K,-25.9%,,4,-20.0%,
@@ -3060,6 +3132,8 @@
 "South Portland, ME - Loveitts Field",September 2021,All Residential,Neighborhood,False,ME,1.135389221,-1.7%,12.7%,3,-40.0%,-40.0%,,,,8,2,-5,$750K,0.0%,-6.3%,1,-50.0%,-75.0%
 "South Portland, ME - Loveitts Field",October 2021,All Residential,Neighborhood,False,ME,1.119365716,-1.6%,9.4%,3,0.0%,-40.0%,,,,7,-1,-6,$700K,-6.7%,-12.5%,2,100.0%,-33.3%
 "South Portland, ME - Loveitts Field",November 2021,All Residential,Neighborhood,False,ME,1.166882756,4.8%,17.3%,1,-66.7%,-66.7%,,,,7,0,-24,$630K,-10.0%,-46.8%,2,0.0%,0.0%
+"South Portland, ME - Loveitts Field",December 2021,All Residential,Neighborhood,False,ME,1.077420302,-8.9%,6.6%,3,200.0%,50.0%,,,,7,0,-15.5,$855K,35.7%,-31.9%,2,0.0%,0.0%
+"South Portland, ME - Loveitts Field",January 2022,All Residential,Neighborhood,False,ME,1.032689076,-4.5%,4.3%,2,-33.3%,0.0%,,,,7,0,-6,$890K,4.1%,-5.1%,,,
 "South Portland, ME - Maine Mall",September 2019,All Residential,Neighborhood,False,ME,1,,,1,,,,,,228,,,$424K,,,,,
 "South Portland, ME - Maine Mall",October 2019,All Residential,Neighborhood,False,ME,1,0.0%,,1,0.0%,,,,,228,0,,$424K,0.0%,,,,
 "South Portland, ME - Maine Mall",November 2019,All Residential,Neighborhood,False,ME,1,0.0%,,1,0.0%,,,,,228,0,,$424K,0.0%,,,,
@@ -3137,6 +3211,8 @@
 "South Portland, ME - Pleasantdale",August 2021,All Residential,Neighborhood,False,ME,1.055248112,-3.7%,4.9%,12,71.4%,140.0%,2,0.0%,-50.0%,7,0,0,$390K,2.6%,-3.7%,8,-20.0%,0.0%
 "South Portland, ME - Pleasantdale",September 2021,All Residential,Neighborhood,False,ME,1.023737304,-3.2%,-0.6%,8,-33.3%,33.3%,1,-50.0%,-66.7%,7,0,0,$403K,3.2%,-3.0%,5,-37.5%,-28.6%
 "South Portland, ME - Pleasantdale",October 2021,All Residential,Neighborhood,False,ME,1.003374111,-2.0%,-4.6%,5,-37.5%,-16.7%,,,,14.5,7.5,7.5,$400K,-0.6%,5.1%,1,-80.0%,-80.0%
+"South Portland, ME - Pleasantdale",December 2021,All Residential,Neighborhood,False,ME,0.878260870,,-20.7%,2,,-60.0%,,,,45.5,,37.5,$275K,,-4.2%,1,,-66.7%
+"South Portland, ME - Pleasantdale",January 2022,All Residential,Neighborhood,False,ME,0.878260870,0.0%,-19.2%,2,0.0%,-50.0%,,,,45.5,0,33,$275K,0.0%,8.9%,1,0.0%,-50.0%
 "South Portland, ME - South Portland Gardens",July 2015,All Residential,Neighborhood,False,ME,0.989242437,,,3,,,,,,16,,,$188K,,,1,,
 "South Portland, ME - South Portland Gardens",August 2015,All Residential,Neighborhood,False,ME,1.000573167,1.1%,,2,-33.3%,,,,,15.5,-0.5,,$189K,0.5%,,,,
 "South Portland, ME - South Portland Gardens",February 2016,All Residential,Neighborhood,False,ME,0.845827338,,,1,,,,,,81,,,$118K,,,1,,
@@ -3166,12 +3242,52 @@
 "South Portland, ME - South Portland Gardens",January 2021,All Residential,Neighborhood,False,ME,1,0.0%,1.8%,2,0.0%,100.0%,1,-66.7%,,28.5,0,11.5,$320K,0.0%,18.5%,1,-50.0%,
 "South Portland, ME - South Portland Gardens",February 2021,All Residential,Neighborhood,False,ME,1,0.0%,,5,150.0%,,,,,49,20.5,,$330K,3.1%,,1,0.0%,
 "South Portland, ME - South Portland Gardens",March 2021,All Residential,Neighborhood,False,ME,1.003030303,0.3%,,4,-20.0%,,,,,174,125,,$332K,0.6%,,,,
-"South Portland, ME - South Portland Gardens",April 2021,All Residential,Neighborhood,False,ME,1.002424242,-0.1%,-3.6%,5,25.0%,400.0%,2,,0.0%,136,-38,126,$330K,-0.6%,29.8%,2,,-33.3%
-"South Portland, ME - South Portland Gardens",May 2021,All Residential,Neighborhood,False,ME,1.006060606,0.4%,-3.2%,2,-60.0%,100.0%,3,50.0%,50.0%,211,75,201,$332K,0.6%,30.6%,4,100.0%,33.3%
-"South Portland, ME - South Portland Gardens",June 2021,All Residential,Neighborhood,False,ME,1.008097809,0.2%,-3.0%,2,0.0%,100.0%,2,-33.3%,0.0%,72.5,-138.5,62.5,$325K,-2.1%,27.8%,4,0.0%,100.0%
-"South Portland, ME - South Portland Gardens",July 2021,All Residential,Neighborhood,False,ME,0.993387600,-1.5%,,2,0.0%,,2,0.0%,,14.5,-58,,$325K,0.0%,,3,-25.0%,
-"South Portland, ME - South Portland Gardens",August 2021,All Residential,Neighborhood,False,ME,0.993387600,0.0%,,2,0.0%,,2,0.0%,,14.5,0,,$325K,0.0%,,2,-33.3%,
-"South Portland, ME - South Portland Gardens",September 2021,All Residential,Neighborhood,False,ME,0.970579582,-2.3%,,1,-50.0%,,2,0.0%,,20,5.5,,$330K,1.5%,,3,50.0%,
-"South Portland, ME - South Portland Gardens",November 2021,All Residential,Neighborhood,False,ME,1.003424658,,,2,,,1,,,85,,,$374K,,,1,,`;
+"South Portland, ME - South Portland Gardens",April 2021,All Residential,Neighborhood,False,ME,1.002424242,-0.1%,-3.6%,5,25.0%,400.0%,3,,50.0%,136,-38,126,$330K,-0.6%,29.8%,3,,0.0%
+"South Portland, ME - South Portland Gardens",May 2021,All Residential,Neighborhood,False,ME,1.006060606,0.4%,-3.2%,2,-60.0%,100.0%,4,33.3%,100.0%,211,75,201,$332K,0.6%,30.6%,5,66.7%,66.7%
+"South Portland, ME - South Portland Gardens",June 2021,All Residential,Neighborhood,False,ME,1.008097809,0.2%,-3.0%,2,0.0%,100.0%,3,-25.0%,50.0%,72.5,-138.5,62.5,$325K,-2.1%,27.8%,5,0.0%,150.0%
+"South Portland, ME - South Portland Gardens",July 2021,All Residential,Neighborhood,False,ME,0.993387600,-1.5%,,2,0.0%,,3,0.0%,,14.5,-58,,$325K,0.0%,,3,-40.0%,
+"South Portland, ME - South Portland Gardens",August 2021,All Residential,Neighborhood,False,ME,0.993387600,0.0%,,2,0.0%,,3,0.0%,,14.5,0,,$325K,0.0%,,2,-33.3%,
+"South Portland, ME - South Portland Gardens",September 2021,All Residential,Neighborhood,False,ME,0.970579582,-2.3%,,1,-50.0%,,3,0.0%,,20,5.5,,$330K,1.5%,,3,50.0%,
+"South Portland, ME - South Portland Gardens",November 2021,All Residential,Neighborhood,False,ME,1.003424658,,,2,,,1,,,85,,,$374K,,,1,,
+"South Portland, ME - South Portland Gardens",December 2021,All Residential,Neighborhood,False,ME,1.001369863,-0.2%,0.1%,5,150.0%,150.0%,,,,92,7,63.5,$368K,-1.7%,14.8%,,,
+"South Portland, ME - South Portland Gardens",January 2022,All Residential,Neighborhood,False,ME,1.001369863,0.0%,0.1%,5,0.0%,150.0%,,,,92,0,63.5,$368K,0.0%,14.8%,,,
+"South Portland, ME - West End",July 2015,All Residential,Neighborhood,False,ME,0.989242437,,,3,,,,,,16,,,$188K,,,1,,
+"South Portland, ME - West End",August 2015,All Residential,Neighborhood,False,ME,1.000573167,1.1%,,2,-33.3%,,,,,15.5,-0.5,,$189K,0.5%,,,,
+"South Portland, ME - West End",February 2016,All Residential,Neighborhood,False,ME,0.845827338,,,1,,,,,,81,,,$118K,,,1,,
+"South Portland, ME - West End",March 2016,All Residential,Neighborhood,False,ME,0.897913669,5.2%,,2,100.0%,,,,,48.5,-32.5,,$154K,30.8%,,2,100.0%,
+"South Portland, ME - West End",April 2016,All Residential,Neighborhood,False,ME,0.897913669,0.0%,,2,0.0%,,,,,48.5,0,,$154K,0.0%,,1,-50.0%,
+"South Portland, ME - West End",May 2016,All Residential,Neighborhood,False,ME,0.972498809,7.5%,,2,0.0%,,,,,11,-37.5,,$199K,29.7%,,1,0.0%,
+"South Portland, ME - West End",June 2016,All Residential,Neighborhood,False,ME,0.994997618,2.2%,,1,-50.0%,,,,,6,-5,,$209K,4.7%,,1,0.0%,
+"South Portland, ME - West End",July 2016,All Residential,Neighborhood,False,ME,0.997498809,0.3%,0.8%,2,100.0%,-33.3%,,,,10.5,4.5,-5.5,$204K,-2.1%,8.7%,1,0.0%,0.0%
+"South Portland, ME - West End",August 2016,All Residential,Neighborhood,False,ME,1,0.3%,-0.1%,1,-50.0%,-50.0%,,,,15,4.5,-0.5,$200K,-2.2%,5.8%,1,0.0%,
+"South Portland, ME - West End",September 2016,All Residential,Neighborhood,False,ME,1,0.0%,,1,0.0%,,,,,15,0,,$200K,0.0%,,,,
+"South Portland, ME - West End",July 2018,All Residential,Neighborhood,False,ME,0.641666667,,,1,,,,,,3,,,$385K,,,,,
+"South Portland, ME - West End",August 2018,All Residential,Neighborhood,False,ME,0.641666667,0.0%,,1,0.0%,,,,,3,0,,$385K,0.0%,,,,
+"South Portland, ME - West End",September 2018,All Residential,Neighborhood,False,ME,0.641666667,0.0%,,1,0.0%,,,,,3,0,,$385K,0.0%,,,,
+"South Portland, ME - West End",February 2019,All Residential,Neighborhood,False,ME,0.994339623,,,1,,,,,,21,,,$264K,,,1,,
+"South Portland, ME - West End",March 2019,All Residential,Neighborhood,False,ME,0.994339623,0.0%,,1,0.0%,,,,,21,0,,$264K,0.0%,,,,
+"South Portland, ME - West End",April 2019,All Residential,Neighborhood,False,ME,0.994339623,0.0%,,1,0.0%,,,,,21,0,,$264K,0.0%,,,,
+"South Portland, ME - West End",August 2019,All Residential,Neighborhood,False,ME,1,,35.8%,1,,0.0%,,,,5,,2,$275K,,-28.6%,1,,
+"South Portland, ME - West End",September 2019,All Residential,Neighborhood,False,ME,1,0.0%,35.8%,1,0.0%,0.0%,2,,,5,0,2,$275K,0.0%,-28.6%,2,100.0%,
+"South Portland, ME - West End",October 2019,All Residential,Neighborhood,False,ME,1,0.0%,,1,0.0%,,1,-50.0%,,5,0,,$275K,0.0%,,2,0.0%,
+"South Portland, ME - West End",November 2019,All Residential,Neighborhood,False,ME,0.981818182,-1.8%,,1,0.0%,,,,,17,12,,$270K,-1.8%,,2,0.0%,
+"South Portland, ME - West End",December 2019,All Residential,Neighborhood,False,ME,0.981818182,0.0%,,1,0.0%,,,,,17,0,,$270K,0.0%,,,,
+"South Portland, ME - West End",January 2020,All Residential,Neighborhood,False,ME,0.981818182,0.0%,,1,0.0%,,,,,17,0,,$270K,0.0%,,,,
+"South Portland, ME - West End",April 2020,All Residential,Neighborhood,False,ME,1.037959184,,4.4%,1,,0.0%,2,,,10,,-11,$254K,,-3.5%,3,,
+"South Portland, ME - West End",May 2020,All Residential,Neighborhood,False,ME,1.037959184,0.0%,,1,0.0%,,2,0.0%,,10,0,,$254K,0.0%,,3,0.0%,
+"South Portland, ME - West End",June 2020,All Residential,Neighborhood,False,ME,1.037959184,0.0%,,1,0.0%,,2,0.0%,,10,0,,$254K,0.0%,,2,-33.3%,
+"South Portland, ME - West End",December 2020,All Residential,Neighborhood,False,ME,1,,1.8%,2,,100.0%,3,,,28.5,,11.5,$320K,,18.5%,2,,
+"South Portland, ME - West End",January 2021,All Residential,Neighborhood,False,ME,1,0.0%,1.8%,2,0.0%,100.0%,1,-66.7%,,28.5,0,11.5,$320K,0.0%,18.5%,1,-50.0%,
+"South Portland, ME - West End",February 2021,All Residential,Neighborhood,False,ME,1,0.0%,,5,150.0%,,,,,49,20.5,,$330K,3.1%,,1,0.0%,
+"South Portland, ME - West End",March 2021,All Residential,Neighborhood,False,ME,1.003030303,0.3%,,4,-20.0%,,,,,174,125,,$332K,0.6%,,,,
+"South Portland, ME - West End",April 2021,All Residential,Neighborhood,False,ME,1.002424242,-0.1%,-3.6%,5,25.0%,400.0%,3,,50.0%,136,-38,126,$330K,-0.6%,29.8%,3,,0.0%
+"South Portland, ME - West End",May 2021,All Residential,Neighborhood,False,ME,1.006060606,0.4%,-3.2%,2,-60.0%,100.0%,4,33.3%,100.0%,211,75,201,$332K,0.6%,30.6%,5,66.7%,66.7%
+"South Portland, ME - West End",June 2021,All Residential,Neighborhood,False,ME,1.008097809,0.2%,-3.0%,2,0.0%,100.0%,3,-25.0%,50.0%,72.5,-138.5,62.5,$325K,-2.1%,27.8%,5,0.0%,150.0%
+"South Portland, ME - West End",July 2021,All Residential,Neighborhood,False,ME,0.993387600,-1.5%,,2,0.0%,,3,0.0%,,14.5,-58,,$325K,0.0%,,3,-40.0%,
+"South Portland, ME - West End",August 2021,All Residential,Neighborhood,False,ME,0.993387600,0.0%,,2,0.0%,,3,0.0%,,14.5,0,,$325K,0.0%,,2,-33.3%,
+"South Portland, ME - West End",September 2021,All Residential,Neighborhood,False,ME,0.970579582,-2.3%,,1,-50.0%,,3,0.0%,,20,5.5,,$330K,1.5%,,3,50.0%,
+"South Portland, ME - West End",November 2021,All Residential,Neighborhood,False,ME,1.003424658,,,2,,,1,,,85,,,$374K,,,1,,
+"South Portland, ME - West End",December 2021,All Residential,Neighborhood,False,ME,1.001369863,-0.2%,0.1%,5,150.0%,150.0%,,,,92,7,63.5,$368K,-1.7%,14.8%,,,
+"South Portland, ME - West End",January 2022,All Residential,Neighborhood,False,ME,1.001369863,0.0%,0.1%,5,0.0%,150.0%,,,,92,0,63.5,$368K,0.0%,14.8%,,,`;
 
 export default data;
